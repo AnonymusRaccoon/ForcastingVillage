@@ -3,7 +3,7 @@
 **/*.gcdo
 **/*.gcna
 **/vgcore*
-my_world
+my_rpg
 **/ut
 .vscode/
 .idea/

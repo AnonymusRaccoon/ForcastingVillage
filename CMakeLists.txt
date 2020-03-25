@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(My3D C)
+project(my_rpg C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -12,7 +12,7 @@ include_directories(lib/gamacon/include/systems/controllers)
 include_directories(lib/my/include)
 include_directories(lib/xmlparser/include)
 
-add_executable(My3D
+add_executable(my_rpg
         include/my.h
         include/setup.h
         lib/gamacon/include/components/controllers/keyboard_controller.h
