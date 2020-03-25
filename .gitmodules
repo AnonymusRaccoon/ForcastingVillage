@@ -1,0 +1,9 @@
+[submodule "lib/gamacon"]
+	path = lib/gamacon
+	url = git@github.com:AnonymusRaccoon/Gamacon.git
+[submodule "lib/xmlparser"]
+	path = lib/xmlparser
+	url = git@github.com:AnonymusRaccoon/xmlParser.git
+[submodule "lib/quadtree"]
+	path = lib/quadtree
+	url = git@github.com:AnonymusRaccoon/quadtree.git
