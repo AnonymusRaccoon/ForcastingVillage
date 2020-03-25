@@ -1,0 +1,11 @@
+**/*.o
+**/*.a
+**/*.gcdo
+**/*.gcna
+**/vgcore*
+my_world
+**/ut
+.vscode/
+.idea/
+cmake-build-debug/
+CmakeFiles/
