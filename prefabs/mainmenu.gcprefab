@@ -1,0 +1,15 @@
+<gc_scene>
+    <data>
+        <sprite name="panel" src="assets/ui/panel.png" />
+        <sprite name="button_background" src="assets/ui/button_background.png" />
+        <font src="assets/fonts/roboto.ttf" />
+    </data>
+    <gc_entities>
+        <camera x="0" y="0" />
+        <panel src="panel" x="50%" y="45%" width="300" height="69%"/>
+        <text text="DPR tycoon" x="50%" y="25%" resize="false"/>
+        <button text="Start Game" x="50%" y="50%" click="start_button" color="black" width="200" resize="false" />
+        <button text="Options" x="50%" y="61%" click="options" color="black" width="200" resize="false" />
+        <button text="Quit game" x="50%" y="72%" click="quit" color="black" width="200" resize="false" />
+    </gc_entities>
+</gc_scene>

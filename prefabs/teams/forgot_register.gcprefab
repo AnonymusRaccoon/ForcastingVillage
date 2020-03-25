@@ -1,0 +1,6 @@
+<gc_entities>
+    <panel src="front_panel" x="89%" y="80%" width="20%" height="8%" tag="teams" />
+    <text text="I forgot to register for the module,\n could you register me?" x="89%" y="82%" color="black" size="9" tag="teams" />
+    <button sprite="front_panel" text="LMFAO" color="black" size="9" x="89%" y="86%" width="17%" height="5%" click="forgot_lmfao" tag="teams" />
+    <button sprite="front_panel" text="It's the first and the last time." color="black" size="9" x="89%" y="90%" width="17%" height="5%" click="forgot_ok" tag="teams" />
+</gc_entities>
