@@ -1,6 +1,9 @@
-//
-// Created by anonymus-raccoon on 3/6/20.
-//
+/*
+** EPITECH PROJECT, 2019
+** MUL_my_runner_2019
+** File description:
+** runner
+*/
 
 #ifndef _DPR_ERRORS_H_
 #define _DPR_ERRORS_H_

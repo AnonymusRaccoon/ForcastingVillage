@@ -13,12 +13,10 @@
 
 static void ctr(void *component, va_list args)
 {
-    struct game_manager *cmp = (struct game_manager *)component;
 }
 
 static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
 {
-    struct game_manager *cmp = (struct game_manager *)component;
     if (scene->get_entity_by_cmp(scene, "game_manager"))
         my_printf(MULTIPLE_GAME_MGR_ERROR);
 }

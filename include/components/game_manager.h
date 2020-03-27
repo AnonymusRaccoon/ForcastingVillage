@@ -1,6 +1,9 @@
-//
-// Created by anonymus-raccoon on 3/3/20.
-//
+/*
+** EPITECH PROJECT, 2019
+** MUL_my_runner_2019
+** File description:
+** runner
+*/
 
 #ifndef _TEAMS_COMPONENT_C_
 #define _TEAMS_COMPONENT_H_

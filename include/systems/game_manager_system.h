@@ -1,6 +1,9 @@
-//
-// Created by anonymus-raccoon on 3/9/20.
-//
+/*
+** EPITECH PROJECT, 2019
+** MUL_my_runner_2019
+** File description:
+** runner
+*/
 
 #ifndef _GAME_MANAGER_SYSTEM_H_
 #define _GAME_MANAGER_SYSTEM_H_

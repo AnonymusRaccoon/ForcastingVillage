@@ -38,7 +38,8 @@ int checkbox_update(gc_scene *s, gc_entity *entity, bool checked)
     return (0);
 }
 
-void resolution_set_text(gc_entity *entity, gc_engine *engine)
+void resolution_set_txt(gc_entity *entity, gc_engine *engine, \
+enum gc_mousekeys __)
 {
     struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
     struct renderer *renderer;
@@ -56,7 +57,8 @@ void resolution_set_text(gc_entity *entity, gc_engine *engine)
     ((gc_text *)renderer->data)->text = resolution;
 }
 
-bool fullscreen(gc_engine *engine, gc_entity *entity, gc_vector2 _)
+bool fullscreen(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __)
 {
     struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
 
@@ -72,11 +74,12 @@ bool fullscreen(gc_engine *engine, gc_entity *entity, gc_vector2 _)
     else
         rend->window = sfRenderWindow_create((sfVideoMode){rend->resolution.x, \
 rend->resolution.y, 32}, "My3D", sfDefaultStyle, NULL);
-    resolution_set_text(engine->scene->get_entity(engine->scene, 51), engine);
+    resolution_set_txt(engine->scene->get_entity(engine->scene, 51), engine, 0);
     return (true);
 }
 
-bool resolution_down(gc_engine *engine, gc_entity *entity, gc_vector2 _)
+bool resolution_down(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __)
 {
     struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
     int i = 2;
@@ -90,11 +93,12 @@ bool resolution_down(gc_engine *engine, gc_entity *entity, gc_vector2 _)
         resolutions[i].y
     });
     rend->resolution = resolutions[i];
-    resolution_set_text(engine->scene->get_entity(engine->scene, 51), engine);
+    resolution_set_txt(engine->scene->get_entity(engine->scene, 51), engine, 0);
     return (true);
 }
 
-bool resolution_up(gc_engine *engine, gc_entity *entity, gc_vector2 _)
+bool resolution_up(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __)
 {
     struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
     int i = 0;
@@ -110,6 +114,6 @@ bool resolution_up(gc_engine *engine, gc_entity *entity, gc_vector2 _)
         resolutions[i].y
     });
     rend->resolution = resolutions[i];
-    resolution_set_text(engine->scene->get_entity(engine->scene, 51), engine);
+    resolution_set_txt(engine->scene->get_entity(engine->scene, 51), engine, 0);
     return (true);
 }

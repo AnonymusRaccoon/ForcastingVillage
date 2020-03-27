@@ -36,7 +36,8 @@ void framerate_set_text(gc_entity *entity, gc_engine *engine)
     ((gc_text *)renderer->data)->text = framerate;
 }
 
-bool framerate_down(gc_engine *engine, gc_entity *entity, gc_vector2 _)
+bool framerate_down(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __)
 {
     struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
     int i = 2;
@@ -51,7 +52,8 @@ bool framerate_down(gc_engine *engine, gc_entity *entity, gc_vector2 _)
     return (true);
 }
 
-bool framerate_up(gc_engine *engine, gc_entity *entity, gc_vector2 _)
+bool framerate_up(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __)
 {
     struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
     int i = 0;

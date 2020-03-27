@@ -10,21 +10,34 @@
 #define ERROR 84
 #include "scene.h"
 
-int start_game();
+int start_game(void);
 
-bool start_button(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool options(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool goto_main_menu(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool quit(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool catch(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool toggle_pause(gc_engine *engine, gc_entity *entity, gc_vector2 _);
+bool start_button(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool options(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool goto_main_menu(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool quit(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool catch(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool toggle_pause(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
 
 int checkbox_update(gc_scene *s, gc_entity *entity, bool checked);
-void resolution_set_text(gc_entity *entity, gc_engine *engine);
-void framerate_set_text(gc_entity *entity, gc_engine *engine);
+void resolution_set_txt(gc_entity *entity, gc_engine *engine, \
+enum gc_mousekeys __);
+void framerate_set_text(gc_entity *entity, gc_engine *engine, \
+enum gc_mousekeys __);
 
-bool fullscreen(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool resolution_down(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool resolution_up(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool framerate_up(gc_engine *engine, gc_entity *entity, gc_vector2 _);
-bool framerate_down(gc_engine *engine, gc_entity *entity, gc_vector2 _);
+bool fullscreen(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool resolution_down(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool resolution_up(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool framerate_up(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
+bool framerate_down(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
