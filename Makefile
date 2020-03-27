@@ -10,19 +10,8 @@ SRC = 	src/main.c \
 	src/framerate.c \
 	src/main_menu.c \
 	src/options.c \
-	src/selectors.c \
-	src/toolbar.c \
-	src/teams/absent.c \
-	src/teams/forgot.c \
-	src/systems/game_display_system.c \
 	src/systems/game_manager_system.c \
-	src/systems/teams_system.c \
-	src/isometry/map_interactions.c \
-	src/isometry/tile_collision_manager.c \
-	src/components/map_manager_component.c \
-	src/components/game_display.c \
-	src/components/game_manager.c \
-	src/components/teams_component.c
+	src/components/game_manager.c
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -30,8 +19,8 @@ INCLUDE = -I ./include -I lib/gamacon/include -I lib/gamacon/lib/xmlparser/inclu
 
 CFLAGS = $(INCLUDE) -Wall -Wshadow -Wextra -Wno-unused-parameter
 
-LDFLAGS = -L lib/gamacon -L lib/my -L lib/xmlparser -L lib/quadtree\
--lgamacon -lxmlparser -lquadtree -lmy -lcsfml-system -lcsfml-graphics -lcsfml-audio -lcsfml-window -lm
+LDFLAGS = -L lib/gamacon -L lib/my -L lib/xmlparser -L lib/quadtree \
+	-lgamacon -lxmlparser -lquadtree -lmy -lcsfml-system -lcsfml-graphics -lcsfml-audio -lcsfml-window -lm
 
 NAME = my_rpg
 
@@ -72,4 +61,4 @@ dbg: clean $(OBJ)
 	$(MAKE) -C lib/quadtree dbg
 	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
-.PHONY: all build clean fclean ffclean
+.PHONY: all build clean fclean ffclean dbg re

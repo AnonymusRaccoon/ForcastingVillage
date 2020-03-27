@@ -5,14 +5,6 @@
         <sprite name="cross" src="assets/ui/cross.png" />
         <sprite name="front_panel" src="assets/ui/front_panel.png" />
         <sprite name="button_background" src="assets/ui/button_background.png" />
-        <sprite name="happiness" src="assets/ui/happiness.png" />
-        <sprite name="clown" src="assets/ui/clown.png" />
-        <sprite name="tile_select" src="assets/ui/tile_select.png" />
-        <sprite name="vertex_select" src="assets/ui/vertex_select.png" />
-        <sprite name="up_down" src="assets/ui/up_down.png" />
-        <sprite name="reset" src="assets/ui/reset.png" />
-        <sprite name="rotate" src="assets/ui/rotate.png" />
-        <sprite name="texture" src="assets/ui/texture.png" />
         <sprite name="cobblestone" src="assets/sprites/cobblestone.png" />
         <sprite name="comparator_on" src="assets/sprites/comparator_on.png" />
         <sprite name="mossy_cobblestone" src="assets/sprites/cobblestone_mossy.png" />
@@ -35,8 +27,6 @@
     <gc_entities>
         <camera x="0" y="0" />
         <gc_entity>
-            <clickable_component click="map_manage_click"/>
-            <map_manager_component />
             <transform_component>
                 <Position x="0" y="300" />
                 <Size x="100000000" y="100000000" />
@@ -49,36 +39,6 @@
 
         <gc_entity>
             <game_manager happiness="50%" stupidity="0%" />
-            <teams_component delay="10">
-                <prefab src="prefabs/teams/forgot_register.gcprefab" height="20%" />
-                <prefab src="prefabs/teams/absent.gcprefab" height="20%" />
-            </teams_component>
         </gc_entity>
-
-        <panel src="panel" x="7%" y="3%" width="37%" height="6%"/>
-        <button sprite="tile_select" x="3%" y="3%" width="%" height="3%" tooltip="Select a tile." tooltip_x="5" tooltip_y="-5" size="15" click="tile_select" />
-        <button sprite="vertex_select" x="7%" y="3%" width="%" height="3%" tooltip="Select a Vertex." tooltip_y="-5" size="15" click="vertex_select" />
-        <button sprite="up_down" x="12%" y="3%" width="%" height="3%" tooltip="Move a tiles.\n - Up with left click.\n - Down with right click" tooltip_y="-15" size="15" click="up_down" />
-        <button sprite="reset" x="15%" y="3%" width="%" height="3%" tooltip="Reset the height of a tile." tooltip_y="-5" size="15" click="reset" />
-        <button sprite="rotate" x="19%" y="3%" width="%" height="3%" tooltip="Rotate a texture" tooltip_y="-5" size="15" click="rotate" />
-        <button sprite="texture" x="23%" y="3%" width="%" height="3%" tooltip="Change the texture of a tile" tooltip_y="-5" size="15" click="texture" />
-
-        <panel src="panel" x="30%" y="3%" width="%" height="6%"/>
-        <button sprite="texture" x="30%" y="3%" width="%" height="3%" tooltip="Select the texture to draw." tooltip_y="-5" size="15" click="switch_texture">
-            <game_display stats="selected_tile" />
-        </button>
-
-        <panel src="panel" x="100%" y="50%" width="50%" height="120%"/>
-        <text text="TEAMS" x="88%" y="40"/>
-
-        <panel src="panel" x="50%" y="98%" width="120%" height="4%"/>
-        <panel src="happiness" x="3%" y="98%" width="%" height="3%"/>
-        <text text="100%" x="6%" y="98%" size="13" tooltip="The level of happiness of your students.\n" padding_x="17" tooltip_x="10" tooltip_y="5">
-            <game_display stats="happiness" />
-        </text>
-        <panel src="clown" x="10%" y="98%" width="%" height="3%" />
-        <text text="100%" x="13%" y="98%" size="13" tooltip="The level of stupidity of your students.\nThey start doing stupid things if you'are too kind with them.\n\nYou will loose if this stat reach 100%" padding_x="17" tooltip_x="10" tooltip_y="5">
-            <game_display stats="stupidity" />
-        </text>
     </gc_entities>
 </gc_scene>

@@ -211,7 +211,6 @@ add_executable(my_rpg
         lib/my/my/my_str_replace.c
         lib/gamacon/src/sfml_renderer/sfml_init.c
         lib/gamacon/src/sfml_renderer/sfml_events.c
-        lib/gamacon/src/isometry/map_utils.c
         lib/gamacon/include/map_utils.h
         lib/xmlparser/src/otherget.c
         src/options.c
@@ -221,48 +220,35 @@ add_executable(my_rpg
         src/options.c
         lib/gamacon/src/components/input_component.c
         lib/gamacon/include/components/input_component.h
-        src/systems/teams_system.c
-        include/systems/teams_system.h
-        include/components/teams_component.h
-        src/components/teams_component.c
         lib/gamacon/src/components/tag_component.c
         lib/gamacon/include/components/tag_component.h
         src/components/game_manager.c
         include/components/game_manager.h
-        include/dpr_errors.h
-        include/components/game_display.h
-        src/components/game_display.c
-        src/systems/game_display_system.c
-        src/isometry/tile_collision_manager.c
+        include/errors_str.h
         lib/gamacon/include/tile_collision_manager.h
         lib/gamacon/src/engine/event_manager.c
         lib/gamacon/include/event_manager.h
-        src/teams/absent.c
-        src/teams/forgot.c include/teams.h
         src/systems/game_manager_system.c
         include/systems/game_manager_system.h
         lib/gamacon/include/keybindings.h
-        src/isometry/map_interactions.c
-        include/map_interactions.h
         lib/gamacon/include/keybindings.h
         lib/gamacon/src/ui/tooltip.c
         lib/gamacon/src/components/tooltip_component.c
         lib/gamacon/include/components/tooltip_component.h
         lib/gamacon/src/systems/tooltip_system.c
-        src/components/map_manager_component.c
-        include/components/isometry/map_manager_component.h
         lib/gamacon/src/isometry/vertex_data_loader.c
+        lib/gamacon/src/isometry/map_utils.c
+        lib/gamacon/src/isometry/tile_collisions.c
         lib/gamacon/include/vertex_data_loader.h
-        src/toolbar.c
-        lib/gamacon/include/callbacks.h src/selectors.c
+        lib/gamacon/include/callbacks.h
         src/framerate.c
         lib/gamacon/src/isometry/isometry.c
         lib/gamacon/include/isometry.h
-)
+        lib/gamacon/src/components/renderers/anim_utils.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 
-target_link_libraries(My3D
+target_link_libraries(my_rpg
         csfml-system
         csfml-graphics
         csfml-audio

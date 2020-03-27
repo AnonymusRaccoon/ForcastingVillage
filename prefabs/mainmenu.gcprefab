@@ -7,7 +7,7 @@
     <gc_entities>
         <camera x="0" y="0" />
         <panel src="panel" x="50%" y="45%" width="300" height="69%"/>
-        <text text="Forcast Village" x="50%" y="25%" resize="false"/>
+        <text text="Forecasting Village" x="50%" y="25%" resize="false"/>
         <button text="Start Game" x="50%" y="50%" click="start_button" color="black" width="200" resize="false" />
         <button text="Options" x="50%" y="61%" click="options" color="black" width="200" resize="false" />
         <button text="Quit game" x="50%" y="72%" click="quit" color="black" width="200" resize="false" />

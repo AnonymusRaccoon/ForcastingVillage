@@ -1,6 +1,0 @@
-<gc_entities>
-    <panel src="front_panel" x="89%" y="80%" width="20%" height="8%" tag="teams" />
-    <text text="I was absent today at the talk.\nCould you set my status as present?" x="89%" y="82%" color="black" size="9" tag="teams" />
-    <button sprite="check" x="85%" y="85%" width="3%" height="%" click="absent_check" tag="teams" />
-    <button sprite="cross" x="93%" y="85%" width="3%" height="%" click="absent_cross" tag="teams" />
-</gc_entities>
