@@ -17,7 +17,6 @@ float dtime)
 {
     struct controllable_component *ctl = GETCMP(entity, controllable_component);
     struct transform_component *tra = GETCMP(entity, transform_component);
-    struct vertext_component *map = GETSYS(engine, vertext_component);
     gc_vector2 move = gc_vector2_from_coords(ctl->movement_x, ctl->movement_y, 0);
 
     if (ctl->move_callback <= 0) {
