@@ -244,7 +244,7 @@ add_executable(my_rpg
         src/framerate.c
         lib/gamacon/src/isometry/isometry.c
         lib/gamacon/include/isometry.h
-        lib/gamacon/src/components/renderers/anim_utils.c)
+        lib/gamacon/src/components/renderers/anim_utils.c lib/gamacon/src/isometry/map_utilities.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 
