@@ -15,10 +15,12 @@ include_directories(lib/xmlparser/include)
 add_executable(my_rpg
         include/my.h
         include/setup.h
-        lib/gamacon/include/components/controllers/keyboard_controller.h
+        include/components/controllers/keyboard_controller.h
         lib/gamacon/include/components/camerafollow_component.h
         lib/gamacon/include/components/collision_component.h
-        lib/gamacon/include/components/controllable_component.h
+        include/components/controllable_component.h
+        include/systems/map_movement_system.h
+        include/systems/game_manager_system.h
         lib/gamacon/include/components/fixed_to_cam_component.h
         lib/gamacon/include/components/friction_component.h
         lib/gamacon/include/components/friction_giver.h
@@ -27,7 +29,7 @@ add_executable(my_rpg
         lib/gamacon/include/components/renderer.h
         lib/gamacon/include/components/transform_component.h
         lib/gamacon/include/components/vertex_component.h
-        lib/gamacon/include/systems/controllers/keyboard_controller_system.h
+        include/systems/controllers/keyboard_controller_system.h
         lib/gamacon/include/systems/camerafollow_system.h
         lib/gamacon/include/systems/collision_system.h
         lib/gamacon/include/systems/friction_system.h
@@ -54,14 +56,14 @@ add_executable(my_rpg
         lib/gamacon/include/utility.h
         lib/gamacon/include/vector2.h
         lib/gamacon/include/xml.h
-        lib/gamacon/src/components/controllers/keyboard_controller.c
+        src/components/controllers/keyboard_controller.c
         lib/gamacon/src/components/renderers/anim_renderer.c
         lib/gamacon/src/components/renderers/map_renderer.c
         lib/gamacon/src/components/renderers/sprite_renderer.c
         lib/gamacon/src/components/renderers/text_renderer.c
         lib/gamacon/src/components/camera_follow.c
         lib/gamacon/src/components/collision_component.c
-        lib/gamacon/src/components/controllable_component.c
+        src/components/controllable_component.c
         lib/gamacon/src/components/fixed_to_cam.c
         lib/gamacon/src/components/friction_component.c
         lib/gamacon/src/components/friction_giver.c
@@ -89,7 +91,7 @@ add_executable(my_rpg
         lib/gamacon/src/sfml_renderer/sfml_music_player.c
         lib/gamacon/src/sfml_renderer/sfml_vertex.c
         lib/gamacon/src/sfml_renderer/texture_utility.c
-        lib/gamacon/src/systems/controllers/keyboard_controller_system.c
+        src/systems/controllers/keyboard_controller_system.c
         lib/gamacon/src/systems/camera_follow_system.c
         lib/gamacon/src/systems/collision_system.c
         lib/gamacon/src/systems/fixed_to_cam_pseudosystem.c
@@ -244,7 +246,13 @@ add_executable(my_rpg
         src/framerate.c
         lib/gamacon/src/isometry/isometry.c
         lib/gamacon/include/isometry.h
-        lib/gamacon/src/components/renderers/anim_utils.c lib/gamacon/src/isometry/map_utilities.c)
+        lib/gamacon/src/components/renderers/anim_utils.c
+        src/components/map_movement.c
+        include/components/map_movement.h
+        src/systems/map_movement_system.c
+        lib/gamacon/src/components/renderers/anim_utils.c
+        lib/gamacon/src/isometry/map_utilities.c
+)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 

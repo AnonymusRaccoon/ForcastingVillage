@@ -5,8 +5,7 @@
 ** runner
 */
 
-#ifndef _TEAMS_COMPONENT_C_
-#define _TEAMS_COMPONENT_H_
+#pragma once
 
 #include "component.h"
 
@@ -16,5 +15,3 @@ struct game_manager
 };
 
 const struct game_manager game_manager;
-
-#endif //_TEAMS_COMPONENT_C_
