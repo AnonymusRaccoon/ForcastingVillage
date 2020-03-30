@@ -11,7 +11,9 @@ SRC = 	src/main.c \
 	src/main_menu.c \
 	src/options.c \
 	src/systems/game_manager_system.c \
-	src/components/game_manager.c
+	src/components/game_manager.c \
+	src/components/map_movement.c \
+	src/systems/map_movement_system.c
 
 OBJ = $(SRC:%.c=%.o)
 

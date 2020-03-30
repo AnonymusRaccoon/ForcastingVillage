@@ -13,6 +13,7 @@
         <sprite name="crafting_table" src="assets/sprites/crafting_table_top.png" />
         <sprite name="grass_top" src="assets/sprites/grass_top.png" />
         <sprite name="grass_side" src="assets/sprites/grass_side.png" />
+        <sprite name="player" src="assets/sprites/grass_side.png" />
         <music src="assets/musics/music.ogg"/>
         <font src="assets/fonts/roboto.ttf" />
 
@@ -25,7 +26,6 @@
         </tiles>
     </data>
     <gc_entities>
-        <camera x="0" y="0" />
         <gc_entity>
             <transform_component>
                 <Position x="0" y="300" />
@@ -38,7 +38,21 @@
         </gc_entity>
 
         <gc_entity>
-            <game_manager happiness="50%" stupidity="0%" />
+            <game_manager />
+        </gc_entity>
+
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="50" y="50" />
+           </transform_component>
+           <renderer src="player">
+                <Rect height="auto" width="auto" top="0" left="0" />
+           </renderer>
+           <camerafollow_component/>
+           <controllable_component />
+           <keyboard_controller left="16" right="3" up="25" down="18" />
+           <map_movement />
         </gc_entity>
     </gc_entities>
 </gc_scene>
