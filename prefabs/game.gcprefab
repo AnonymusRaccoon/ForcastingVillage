@@ -54,8 +54,10 @@
            <controllable_component />
            <keyboard_controller left="16" right="3" up="25" down="18" />
            <map_movement />
-           <map_linker x="9" y="9" />
+           <map_linker x="9" y="9" solid="false" />
         </gc_entity>
+
+
         <gc_entity>
            <transform_component>
                <Position x="0" y="0" />
