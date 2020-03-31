@@ -14,6 +14,7 @@
         <sprite name="grass_top" src="assets/sprites/grass_top.png" />
         <sprite name="grass_side" src="assets/sprites/grass_side.png" />
         <sprite name="player" src="assets/sprites/grass_side.png" />
+        <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
         <music src="assets/musics/music.ogg"/>
         <font src="assets/fonts/roboto.ttf" />
 
@@ -54,6 +55,16 @@
            <keyboard_controller left="16" right="3" up="25" down="18" />
            <map_movement />
            <map_linker x="9" y="9" />
+        </gc_entity>
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="200" y="200" />
+           </transform_component>
+           <renderer src="tree">
+                <Rect height="auto" width="auto" top="0" left="0" />
+           </renderer>
+           <map_linker x="5" y="2" />
         </gc_entity>
     </gc_entities>
 </gc_scene>
