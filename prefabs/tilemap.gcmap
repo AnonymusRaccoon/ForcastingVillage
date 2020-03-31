@@ -20,23 +20,9 @@
             <row height="0" />
             <row height="0" />
             <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-        </line>
-        <line>
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
+            <row height="100" />
+            <row height="100" />
+            <row height="100" />
             <row height="0" />
             <row height="0" />
             <row height="0" />
@@ -105,6 +91,20 @@
             <row height="0" />
             <row height="0" />
             <row height="0" />
+            <row height="50" />
+            <row height="0" />
+            <row height="0" />
+            <row height="0" />
+            <row height="0" />
+            <row height="0" />
+        </line>
+        <line>
+            <row height="0" />
+            <row height="0" />
+            <row height="0" />
+            <row height="0" />
+            <row height="0" />
+            <row height="0" />
             <row height="0" />
             <row height="0" />
             <row height="0" />
@@ -146,9 +146,9 @@
             <row height="0" />
             <row height="0" />
             <row height="0" />
-            <row height="0" />
-            <row height="0" />
-            <row height="0" />
+            <row height="50" />
+            <row height="50" />
+            <row height="50" />
             <row height="0" />
             <row height="0" />
             <row height="0" />
@@ -158,16 +158,16 @@
     </vertex_data>
     <tiles_data>
         <tile x="0" y="0" texture="cobblestone" solid="true" />
-        <tile x="0" y="1" texture="grass_top" />
-        <tile x="0" y="2" texture="grass_top" />
-        <tile x="0" y="3" texture="grass_top" />
-        <tile x="0" y="4" texture="grass_top" />
-        <tile x="0" y="5" texture="grass_top" />
-        <tile x="0" y="6" texture="grass_top" />
-        <tile x="0" y="7" texture="grass_top" />
-        <tile x="0" y="8" texture="grass_top" />
-        <tile x="0" y="9" texture="grass_top" />
-        <tile x="0" y="10" texture="grass_top" />
+        <tile x="0" y="1" texture="cobblestone" />
+        <tile x="0" y="2" texture="cobblestone" />
+        <tile x="0" y="3" texture="cobblestone" />
+        <tile x="0" y="4" texture="cobblestone" />
+        <tile x="0" y="5" texture="cobblestone" />
+        <tile x="0" y="6" texture="cobblestone" />
+        <tile x="0" y="7" texture="cobblestone" />
+        <tile x="0" y="8" texture="cobblestone" />
+        <tile x="0" y="9" texture="cobblestone" />
+        <tile x="0" y="10" texture="cobblestone" />
 
         <tile x="1" y="0" texture="cobblestone" solid="true" />
         <tile x="1" y="1" texture="grass_top" />
