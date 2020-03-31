@@ -252,7 +252,7 @@ add_executable(my_rpg
         src/systems/map_movement_system.c
         lib/gamacon/src/components/renderers/anim_utils.c
         lib/gamacon/src/isometry/map_utilities.c
-        lib/gamacon/src/sfml_renderer/sfml_utilities.c lib/gamacon/src/components/map_linker.c lib/gamacon/include/components/map_linker.h)
+        lib/gamacon/src/sfml_renderer/sfml_utilities.c lib/gamacon/src/components/map_linker.c lib/gamacon/include/components/map_linker.h lib/gamacon/src/systems/map_linker_system.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 
