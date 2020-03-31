@@ -22,7 +22,7 @@ float dtime)
     struct vertex_component *map;
     gc_vector2i map_pos = (gc_vector2i){
         link->tile->corners[0]->x + ctl->movement_x,
-        link->tile->corners[0]->y + ctl->movement_y
+        link->tile->corners[0]->y - ctl->movement_y
     };
     struct tile *new_tile;
 
