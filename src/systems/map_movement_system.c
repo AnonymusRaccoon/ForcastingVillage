@@ -46,6 +46,7 @@ float dtime)
     if (new_tile && !new_tile->solid && ctl->move_callback <= 0) {
         link->tile->entity = NULL;
         new_tile->entity = entity;
+        engine->trigger_event(engine, "entity_moved", entity, link->tile);
         ctl->move_callback = 10;
     }
     ctl->move_callback--;
