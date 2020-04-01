@@ -10,7 +10,23 @@
 #include "components/map_linker.h"
 #include "map_utils.h"
 #include "system.h"
+#include <math.h>
+#include <utility.h>
 
+static gc_vector2i get_new_map_pos(struct map_linker *link, \
+struct controllable_component *ctl)
+{
+    gc_vector2i pos = (gc_vector2i) {
+        link->tile->corners[0]->x,
+        link->tile->corners[0]->y
+    };
+    gc_vector2i move = (gc_vector2i){
+        round(cos(-45) * -ctl->movement_x - sin(-45) * ctl->movement_y),
+        round(sin(-45) * -ctl->movement_x + cos(-45) * ctl->movement_y),
+    };
+
+    return (gc_vector2i_add(pos, move));
+}
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
 float dtime)
@@ -20,10 +36,7 @@ float dtime)
     gc_scene *scene = engine->scene;
     gc_list *maps = scene->get_entity_by_cmp(scene, "vertex_component");
     struct vertex_component *map;
-    gc_vector2i map_pos = (gc_vector2i){
-        link->tile->corners[0]->x + ctl->movement_x,
-        link->tile->corners[0]->y - ctl->movement_y
-    };
+    gc_vector2i map_pos = get_new_map_pos(link, ctl);
     struct tile *new_tile;
 
     if (!maps)
