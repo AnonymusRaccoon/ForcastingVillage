@@ -15,6 +15,7 @@ SRC = 	src/main.c \
 	src/components/map_movement.c \
 	src/components/controllable_component.c \
 	src/components/controllers/keyboard_controller.c \
+	src/components/dialog_holder.c \
 	src/systems/map_movement_system.c \
 	src/systems/controllers/keyboard_controller_system.c
 

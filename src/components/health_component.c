@@ -14,9 +14,6 @@ static void health_ctr(void *component, va_list args)
     struct controllable_component *cmp = (struct controllable_component *)\
 component;
 
-    cmp->movement_x = 0;
-    cmp->movement_y = 0;
-    cmp->move_callback = 0;
     (void)args;
 }
 
@@ -26,9 +23,6 @@ void *component, node *n)
     struct controllable_component *cmp = (struct controllable_component *)\
 component;
 
-    cmp->movement_x = 0;
-    cmp->movement_y = 0;
-    cmp->move_callback = 0;
     (void)scene;
     (void)entity;
     (void)n;
