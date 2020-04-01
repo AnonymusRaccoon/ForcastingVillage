@@ -17,6 +17,7 @@ SRC = 	src/main.c \
 	src/components/controllers/keyboard_controller.c \
 	src/components/dialog_holder.c \
 	src/systems/map_movement_system.c \
+	src/systems/dialog_manager.c \
 	src/systems/controllers/keyboard_controller_system.c
 
 OBJ = $(SRC:%.c=%.o)

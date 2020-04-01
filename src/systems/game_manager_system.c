@@ -51,12 +51,17 @@ static void ctr(void *system, va_list list)
     engine->add_event_listener(engine, "key_pressed", &key_pressed);
 }
 
+static void dtr(void *system, gc_engine *engine)
+{
+    engine->remove_event_listener(engine, "key_pressed", &key_pressed);
+}
+
 const gc_system game_manager_system = {
     name: "game_cycle",
     component_name: "game_manager",
     size: sizeof(gc_system),
-    ctr: ctr,
-    dtr: NULL,
+    ctr: &ctr,
+    dtr: &dtr,
     check_dependencies: &system_check_dependencies,
     update_entity: &update_entity,
     destroy: &system_destroy

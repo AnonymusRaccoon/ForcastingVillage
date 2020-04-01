@@ -22,4 +22,11 @@ struct dialog_holder {
 
 const struct dialog_holder dialog_holder;
 
+struct dialog_manager {
+    gc_system base;
+    bool is_dialog_open;
+};
+
+const struct dialog_manager dialog_manager;
+
 #endif //MY_RPG_DIALOG_HOLDER_H

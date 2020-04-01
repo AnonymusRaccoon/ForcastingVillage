@@ -43,7 +43,8 @@ float dtime)
         return;
     map = GETCMP(maps->data, vertex_component);
     new_tile = get_tile_at(map, map_pos);
-    if (new_tile && !new_tile->solid && ctl->move_callback <= 0) {
+    if (new_tile && !new_tile->solid && ctl->move_callback <= 0 \
+&& new_tile != link->tile) {
         link->tile->entity = NULL;
         new_tile->entity = entity;
         engine->trigger_event(engine, "entity_moved", entity, link->tile);
@@ -56,7 +57,7 @@ static void ctr(void *system, va_list list)
 {
 }
 
-static void destroy(void *system)
+static void destroy(void *system, gc_engine *engine)
 {
 }
 
