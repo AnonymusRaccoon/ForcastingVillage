@@ -44,7 +44,7 @@
             <game_manager />
         </gc_entity>
 
-        <gc_entity>
+        <gc_entity id="50">
            <transform_component>
                <Position x="0" y="0" />
                <Size x="50" y="50" />
