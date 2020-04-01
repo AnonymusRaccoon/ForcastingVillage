@@ -15,6 +15,7 @@
         <sprite name="grass_side" src="assets/sprites/grass_side.png" />
         <sprite name="player" src="assets/sprites/grass_side.png" />
         <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
+        <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/music.ogg"/>
         <font src="assets/fonts/roboto.ttf" />
 
@@ -26,6 +27,7 @@
             <tile name="mossy_cobblestone" />
         </tiles>
     </data>
+
     <gc_entities>
         <gc_entity>
             <transform_component>
@@ -56,8 +58,6 @@
            <map_movement />
            <map_linker x="9" y="9" solid="false" />
         </gc_entity>
-
-
         <gc_entity>
            <transform_component>
                <Position x="0" y="0" />
@@ -68,5 +68,8 @@
            </renderer>
            <map_linker x="5" y="2" />
         </gc_entity>
+        <panel src="main_ui_game" x="3%" y="2%" width="30%" height="15%" centered="false"/>
+        <text text="20/20" x="10%" y="6%" centered="false"/>
+        <text text="0/100" x="10%" y="14%" centered="false"/>
     </gc_entities>
 </gc_scene>
