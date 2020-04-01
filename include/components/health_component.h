@@ -9,7 +9,6 @@
 #define MY_RPG_HEALTH_COMPONENT_H
 
 #include "component.h"
-#include <stdbool.h>
 
 struct health_component
 {
