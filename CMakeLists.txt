@@ -263,6 +263,7 @@ add_executable(my_rpg
         lib/gamacon/src/systems/map_linker_system.c
         src/components/health_component.c
         include/components/health_component.h
+        src/components/health_methods.c
         lib/gamacon/src/sfml_renderer/sfml_utilities.c
         lib/gamacon/src/components/map_linker.c
         lib/gamacon/include/components/map_linker.h
