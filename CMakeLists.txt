@@ -263,7 +263,7 @@ add_executable(my_rpg
         lib/gamacon/src/systems/map_linker_system.c
         src/components/health_component.c
         include/components/health_component.h
-)
+        src/components/health_methods.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 

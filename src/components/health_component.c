@@ -11,16 +11,16 @@
 
 static void health_ctr(void *component, va_list args)
 {
-    struct controllable_component *cmp = (struct controllable_component *)\
+    struct health_component *cmp = (struct health_component *)\
 component;
-
-    (void)args;
+    cmp->health = va_arg(args, int);
+    cmp->dead = false;
 }
 
 static void health_fdctr(gc_entity *entity, gc_scene *scene, \
 void *component, node *n)
 {
-    struct controllable_component *cmp = (struct controllable_component *)\
+    struct health_component *cmp = (struct health_component *)\
 component;
 
     (void)scene;
