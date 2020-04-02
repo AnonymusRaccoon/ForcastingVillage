@@ -15,7 +15,7 @@ struct controllable_component
     gc_component base;
     int movement_x;
     int movement_y;
-    int move_callback;
+    float move_callback;
 };
 
 extern const struct controllable_component controllable_component;
