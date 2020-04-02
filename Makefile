@@ -18,7 +18,10 @@ SRC = 	src/main.c \
 	src/components/dialog_holder.c \
 	src/systems/map_movement_system.c \
 	src/systems/dialog_manager.c \
-	src/systems/controllers/keyboard_controller_system.c
+	src/systems/controllers/keyboard_controller_system.c \
+	src/components/ui_display_component.c \
+	src/components/health_component.c \
+	src/components/health_methods.c
 
 OBJ = $(SRC:%.c=%.o)
 

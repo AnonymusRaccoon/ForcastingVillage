@@ -272,7 +272,7 @@ add_executable(my_rpg
         src/components/dialog_holder.c
         include/components/dialog_holder.h
         src/systems/dialog_manager.c
-)
+        src/components/ui_display_component.c include/components/ui_display_component.h)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 
