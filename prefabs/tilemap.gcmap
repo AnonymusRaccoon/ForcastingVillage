@@ -186,7 +186,7 @@
         <tile x="2" y="2" texture="grass_top" />
         <tile x="2" y="3" texture="grass_top" />
         <tile x="2" y="4" texture="grass_top" />
-        <tile x="2" y="5" texture="cobblestone" type="dialog" />
+        <tile x="2" y="5" texture="grass_top" />
         <tile x="2" y="6" texture="grass_top" />
         <tile x="2" y="7" texture="grass_top" />
         <tile x="2" y="8" texture="grass_top" />
