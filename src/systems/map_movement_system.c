@@ -48,9 +48,9 @@ float dtime)
         link->tile->entity = NULL;
         new_tile->entity = entity;
         engine->trigger_event(engine, "entity_moved", entity, link->tile);
-        ctl->move_callback = 10;
+        ctl->move_callback = .2f;
     }
-    ctl->move_callback--;
+    ctl->move_callback -= dtime;
 }
 
 static void ctr(void *system, va_list list)
