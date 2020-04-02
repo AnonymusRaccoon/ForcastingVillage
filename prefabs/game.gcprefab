@@ -68,6 +68,23 @@
            </renderer>
            <map_linker x="5" y="2" />
         </gc_entity>
+
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="50" y="50" />
+           </transform_component>
+           <renderer src="cobblestone">
+                <Rect height="auto" width="auto" top="0" left="0" />
+           </renderer>
+           <map_linker x="2" y="6" />
+           <dialog_holder x="2" y="5" tile_texture="cobblestone">
+                <test_dialog line="Hello dirt block, I am the mighty cobble block." />
+                <test_dialog line="Can I do something for you?" />
+           </dialog_holder>
+        </gc_entity>
+
+
         <panel src="main_ui_game" x="3%" y="2%" width="30%" height="15%" centered="false"/>
         <text text="20/20" x="10%" y="6%" centered="false"/>
         <text text="0/100" x="10%" y="14%" centered="false"/>

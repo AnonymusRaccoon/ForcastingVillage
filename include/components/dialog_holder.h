@@ -15,16 +15,17 @@ struct dialog_holder {
     char **text;
     bool single_usage;
     bool has_seen;
-
-    int current_line;
-    char *current_text;
+    struct tile *tile;
 };
 
 const struct dialog_holder dialog_holder;
 
 struct dialog_manager {
     gc_system base;
-    bool is_dialog_open;
+    int dialog_id;
+    int current_line;
+    char *current_text;
+    struct dialog_holder *current_dialog;
 };
 
 const struct dialog_manager dialog_manager;
