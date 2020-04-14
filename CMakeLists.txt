@@ -272,6 +272,9 @@ add_executable(my_rpg
         src/components/dialog_holder.c
         include/components/dialog_holder.h
         src/systems/dialog_manager.c
+        src/map_editor/map_interactions.c
+        src/map_editor/brush_component.c
+        include/map_editor.h
 )
 
 add_compile_options(-W -Wall -Wextra -Wshadow)

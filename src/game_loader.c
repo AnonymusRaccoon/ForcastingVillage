@@ -18,6 +18,7 @@
 #include "callbacks.h"
 #include "components/game_manager.h"
 #include "my.h"
+#include "map_editor.h"
 
 const struct callback callbacks[] = {
     {"start_button", &start_button},
@@ -35,7 +36,7 @@ const struct callback callbacks[] = {
     {NULL, NULL}
 };
 
-int register_customcmps(gc_engine *engine)
+int register_customcmps(gc_engine *engine, bool map_editor)
 {
     engine->add_component(engine, &controllable_component);
     engine->add_component(engine, &keyboard_controller);
@@ -50,14 +51,16 @@ int register_customcmps(gc_engine *engine)
     for (int i = 0; callbacks[i].func; i++)
         engine->add_callback(engine, my_strdup(callbacks[i].name), \
 callbacks[i].func);
+    if (map_editor)
+        engine->add_callback(engine, my_strdup("map_manage_click"), &map_onclick);
     return (0);
 }
 
-int create_game_scene(gc_engine *engine)
+int create_game_scene(gc_engine *engine, bool map_editor)
 {
     gc_scene *scene;
 
-    register_customcmps(engine);
+    register_customcmps(engine, map_editor);
     scene = scene_create(engine, "prefabs/mainmenu.gcprefab");
     if (!scene)
         return (-1);
@@ -65,14 +68,14 @@ int create_game_scene(gc_engine *engine)
     return (0);
 }
 
-int start_game(void)
+int start_game(bool map_editor)
 {
     gc_engine *engine = engine_create();
     sfClock *clock = sfClock_create();
 
     if (!engine || engine_use_sfml(engine, "Forecasting village", 60) < 0)
         return (ERROR);
-    if (create_game_scene(engine) < 0)
+    if (create_game_scene(engine, map_editor) < 0)
         return (ERROR);
     while (engine->is_open(engine))
         engine->game_loop(engine, sfTime_asSeconds(sfClock_restart(clock)));

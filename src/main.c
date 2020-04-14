@@ -15,7 +15,11 @@ int usage(char *bin)
 
 int main(int argc, char **argv)
 {
+    bool map_editor = false;
+
     if (argc != 1 && !my_strcmp(argv[1], "-h"))
         return (usage(argv[0]));
-    return (start_game());
+    if (argc > 1 && (!my_strcmp(argv[1], "-e") || !my_strcmp(argv[1], "--editor")))
+        map_editor = true;
+    return (start_game(map_editor));
 }
