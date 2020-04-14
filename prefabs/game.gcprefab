@@ -88,7 +88,6 @@
         <sprite name="grass_left_0" src="assets/tiles/generic-rpg-tile34.png" />
         <sprite name="dirt_top_10" src="assets/tiles/generic-rpg-tile35.png" />
         <sprite name="dirt_top_11" src="assets/tiles/generic-rpg-tile37.png" />
-        <!--<sprite name="cancer" src="assets/tiles/generic-rpg-tile38.png" /> />
         <sprite name="dirt_bottom_8" src="assets/tiles/generic-rpg-tile39.png" />
         <sprite name="grass_top_0" src="assets/tiles/generic-rpg-tile40.png" />
         <sprite name="dirt_bottom_9" src="assets/tiles/generic-rpg-tile41.png" />
@@ -103,8 +102,8 @@
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
 
         <tiles>
-            <tile name="water_top_right_left" />
-            <tile name="dirt_bottom_4" />
+            <tile name="grass_top" />
+            <tile name="dirt_bottom_0" />
         </tiles>
     </data>
 
