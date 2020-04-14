@@ -12,6 +12,7 @@
 #include "system.h"
 #include <math.h>
 #include <utility.h>
+#include <components/renderer.h>
 
 static gc_vector2i get_new_map_pos(struct map_linker *link, \
 struct controllable_component *ctl)
@@ -26,6 +27,31 @@ struct controllable_component *ctl)
     };
 
     return (gc_vector2i_add(pos, move));
+}
+
+void set_animation(gc_entity *entity, struct controllable_component *ctl)
+{
+    char *w_ams[8] = {"walk_down", "walk_up", "walk_up_left", "walk_up_right"\
+, "walk_right", "walk_down_left", "walk_down_right", "walk_left"};
+    struct renderer *renderer = GETCMP(entity, renderer);
+    int ind = 0;
+    char *anim;
+
+    if (!renderer)
+        return;
+    if (!ctl->movement_x && !ctl->movement_y) {
+        rend_set_anim(renderer, "none");
+        return;
+    }
+    anim = (ctl->movement_y > 0) ? w_ams[1] : w_ams[0];
+    if (ctl->movement_x) {
+        ind = (ctl->movement_x >= 0) ? 1 : 0;
+        if (!ctl->movement_y)
+            anim = (ctl->movement_x > 0) ? w_ams[4] : w_ams[7];
+        else
+            anim = (ctl->movement_y > 0) ? w_ams[ind + 2] : w_ams[ind + 5];
+    }
+    rend_set_anim(renderer, anim);
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
@@ -50,6 +76,7 @@ float dtime)
         engine->trigger_event(engine, "entity_moved", entity, link->tile);
         ctl->move_callback = .2f;
     }
+    set_animation(entity, ctl);
     ctl->move_callback -= dtime;
 }
 

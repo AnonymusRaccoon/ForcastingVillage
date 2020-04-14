@@ -7,6 +7,7 @@
 
 #include <systems/sfml_renderer_system.h>
 #include "engine.h"
+#include "prefab.h"
 #include "scene.h"
 #include "setup.h"
 #include "my.h"
@@ -21,6 +22,10 @@ enum gc_mousekeys __)
         return (true);
     }
     engine->change_scene(engine, scene);
+    if (prefab_load(engine, "prefabs/player.gcprefab") < 0) {
+        printf("efefeff\n");
+        return (true);
+    }
     return (true);
 }
 
