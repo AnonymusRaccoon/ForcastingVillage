@@ -10,7 +10,7 @@
 #define ERROR 84
 #include "scene.h"
 
-int start_game(void);
+int start_game(bool map_editor);
 
 bool start_button(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __);

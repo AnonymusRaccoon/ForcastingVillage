@@ -19,7 +19,11 @@ SRC = 	src/main.c \
 	src/systems/map_movement_system.c \
 	src/systems/dialog_manager.c \
 	src/systems/controllers/keyboard_controller_system.c \
-	src/components/ui_display_component.c \
+	src/map_editor/map_interactions.c \
+	src/map_editor/tile_collision_manager.c \
+	src/map_editor/brush_component.c \
+	src/map_editor/selectors.c \
+	src/map_editor/toolbar.c
 	src/components/health_component.c \
 	src/components/health_methods.c
 
