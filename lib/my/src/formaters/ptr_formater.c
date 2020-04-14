@@ -10,6 +10,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+void print_ptr(void *var);
+
 int ptr_formater(va_list ap, char mod[MODIFIERS_SIZE])
 {
     void *var = va_arg(ap, void *);

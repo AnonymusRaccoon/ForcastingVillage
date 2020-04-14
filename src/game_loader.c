@@ -17,6 +17,7 @@
 #include "components/controllable_component.h"
 #include "callbacks.h"
 #include "components/game_manager.h"
+#include "components/game_display.h"
 #include "my.h"
 #include "map_editor.h"
 
@@ -36,6 +37,18 @@ const struct callback callbacks[] = {
     {NULL, NULL}
 };
 
+const struct callback map_editor_callbacks[] = {
+    {"map_manage_click", &map_onclick},
+    {"tile_select", &tile_select},
+    {"vertex_select", &vertex_select},
+    {"up_down", &up_down},
+    {"reset", &reset},
+    {"rotate", &rotate},
+    {"texture", &texture},
+    {"switch_texture", &switch_texture},
+    {NULL, NULL}
+};
+
 int register_customcmps(gc_engine *engine, bool map_editor)
 {
     engine->add_component(engine, &controllable_component);
@@ -47,12 +60,17 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_system(engine, new_system(&keyboard_controller_system, engine));
     engine->add_component(engine, &game_manager);
     engine->add_system(engine, new_system(&game_manager_system, engine));
+    engine->add_component(engine, &map_manager_component);
+    engine->add_component(engine, &game_display);
+    engine->add_system(engine, &game_display_system);
     engine->finish_physics(engine);
     for (int i = 0; callbacks[i].func; i++)
         engine->add_callback(engine, my_strdup(callbacks[i].name), \
 callbacks[i].func);
     if (map_editor)
-        engine->add_callback(engine, my_strdup("map_manage_click"), &map_onclick);
+        for (int i = 0; map_editor_callbacks[i].func; i++)
+            engine->add_callback(engine, \
+my_strdup(map_editor_callbacks[i].name), map_editor_callbacks[i].func);
     return (0);
 }
 

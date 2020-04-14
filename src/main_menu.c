@@ -10,6 +10,7 @@
 #include "scene.h"
 #include "setup.h"
 #include "my.h"
+#include "prefab.h"
 
 bool start_button(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __)
@@ -21,6 +22,10 @@ enum gc_mousekeys __)
         return (true);
     }
     engine->change_scene(engine, scene);
+
+    if (engine->get_callback(engine, "map_manage_click"))
+        if (prefab_load(engine, "prefabs/editor_ui.gcprefab") < 0)
+            my_printf("Couldn't load the map editor's ui.\n");
     return (true);
 }
 

@@ -274,6 +274,10 @@ add_executable(my_rpg
         src/systems/dialog_manager.c
         src/map_editor/map_interactions.c
         src/map_editor/brush_component.c
+        src/map_editor/selectors.c
+        src/map_editor/toolbar.c
+        src/components/game_display.c
+        src/systems/game_display_system.c
         include/map_editor.h
 )
 

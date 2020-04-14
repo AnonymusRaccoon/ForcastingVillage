@@ -19,6 +19,13 @@
         <music src="assets/musics/music.ogg"/>
         <font src="assets/fonts/roboto.ttf" />
 
+        <sprite name="tile_select" src="assets/ui/tile_select.png" />
+        <sprite name="vertex_select" src="assets/ui/vertex_select.png" />
+        <sprite name="up_down" src="assets/ui/up_down.png" />
+        <sprite name="reset" src="assets/ui/reset.png" />
+        <sprite name="rotate" src="assets/ui/rotate.png" />
+        <sprite name="texture" src="assets/ui/texture.png" />
+
         <tiles>
             <tile name="grass_top" />
             <tile name="cobblestone" />
@@ -34,6 +41,8 @@
                 <Position x="0" y="300" />
                 <Size x="100000000" y="100000000" />
             </transform_component>
+            <clickable_component click="map_manage_click"/>
+            <map_manager_component />
             <vertex_component tilemap="prefabs/tilemap.gcmap" />
             <renderer vertex="tilemap">
                 <Rect height="auto" width="auto" top="0" left="0" />
