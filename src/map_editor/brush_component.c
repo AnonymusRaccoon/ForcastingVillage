@@ -26,8 +26,7 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *comp, node *n)
 
     cmp->tile_mode = true;
     cmp->brush = MOVE;
-    if (data)
-        cmp->selected_texture = data[0];
+    cmp->selected_texture = data ? data[0] : NULL;
 }
 
 static void dtr(void *component)

@@ -6,6 +6,7 @@
         <sprite name="front_panel" src="assets/ui/front_panel.png" />
         <sprite name="button_background" src="assets/ui/button_background.png" />
         <sprite name="black_background" src="assets/ui/black_background.png" />
+        <sprite name="text_box" src="assets/ui/text_box.png" />
         <sprite name="player" src="assets/sprites/player_spritesheet.png" />
         <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
@@ -146,8 +147,8 @@
            </renderer>
            <map_linker x="2" y="6" />
            <dialog_holder x="2" y="5" tile_texture="cobblestone">
-                <test_dialog line="Hello dirt block, I am the mighty cobble block." />
-                <test_dialog line="Can I do something for you?" />
+                <test_dialog line="Hello dirt block,\nI am the mighty cobble block." />
+                <test_dialog line="Can I do something\n for you?" />
            </dialog_holder>
         </gc_entity>
 
