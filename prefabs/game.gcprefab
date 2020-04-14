@@ -5,14 +5,7 @@
         <sprite name="cross" src="assets/ui/cross.png" />
         <sprite name="front_panel" src="assets/ui/front_panel.png" />
         <sprite name="button_background" src="assets/ui/button_background.png" />
-        <sprite name="cobblestone" src="assets/sprites/cobblestone.png" />
-        <sprite name="comparator_on" src="assets/sprites/comparator_on.png" />
-        <sprite name="mossy_cobblestone" src="assets/sprites/cobblestone_mossy.png" />
-        <sprite name="command_block" src="assets/sprites/command_block.png" />
         <sprite name="black_background" src="assets/ui/black_background.png" />
-        <sprite name="crafting_table" src="assets/sprites/crafting_table_top.png" />
-        <sprite name="grass_top" src="assets/sprites/grass_top.png" />
-        <sprite name="grass_side" src="assets/sprites/grass_side.png" />
         <sprite name="player" src="assets/sprites/player_spritesheet.png" />
         <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
@@ -27,12 +20,88 @@
         <sprite name="texture" src="assets/ui/texture.png" />
         <sprite name="save" src="assets/ui/save.png" />
 
+
+        <sprite name="grass_top" src="assets/tiles/generic-rpg-Slice.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile01.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile02.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile03.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile04.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile05.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile06.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile07.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile08.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile09.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile10.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile11.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile12.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile13.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile14.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile15.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile16.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile17.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile18.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile19.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile20.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile21.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile22.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile23.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile24.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile25.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile26.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile27.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile28.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile29.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile30.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile31.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile32.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile33.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile34.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile35.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile37.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile38.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile39.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile40.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile41.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile42.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile43.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile44.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile45.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile46.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile47.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile48.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile49.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile50.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile51.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile52.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile53.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile54.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile55.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile56.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile57.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile58.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile59.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile60.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile61.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile62.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile63.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile64.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile65.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile66.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile67.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile68.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile69.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile70.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile71.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile-waterfall01.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile-waterfall02.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile-waterfall03.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile-waterfall04.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile-waterfall05.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
+        <sprite name="cancer" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
+
         <tiles>
             <tile name="grass_top" />
-            <tile name="cobblestone" />
-            <tile name="comparator_on" />
-            <tile name="crafting_table" />
-            <tile name="mossy_cobblestone" />
         </tiles>
     </data>
 
