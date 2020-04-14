@@ -54,7 +54,7 @@
         <sprite name="grass_0" src="assets/tiles/generic-rpg-Slice.png" />
         <sprite name="grass_bottom_0" src="assets/tiles/generic-rpg-tile01.png" />
         <sprite name="dirt_top_0" src="assets/tiles/generic-rpg-tile02.png" />
-        <sprite name="grass_bottom_left_0 src="assets/tiles/generic-rpg-tile03.png" />
+        <sprite name="grass_bottom_left_0" src="assets/tiles/generic-rpg-tile03.png" />
         <sprite name="dirt_top_1" src="assets/tiles/generic-rpg-tile04.png" />
         <sprite name="grass_bottom_1" src="assets/tiles/generic-rpg-tile05.png" />
         <sprite name="dirt_top_2" src="assets/tiles/generic-rpg-tile06.png" />
