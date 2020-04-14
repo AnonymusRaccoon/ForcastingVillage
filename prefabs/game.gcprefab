@@ -142,11 +142,11 @@
                <Position x="0" y="0" />
                <Size x="50" y="50" />
            </transform_component>
-           <renderer src="cobblestone">
+           <renderer src="dirt_top_1">
                 <Rect height="auto" width="auto" top="0" left="0" />
            </renderer>
            <map_linker x="2" y="6" />
-           <dialog_holder x="2" y="5" tile_texture="cobblestone">
+           <dialog_holder x="2" y="5" tile_texture="dirt_top_1">
                 <test_dialog line="Hello dirt block,\nI am the mighty cobble block." />
                 <test_dialog line="Can I do something\n for you?" />
            </dialog_holder>
