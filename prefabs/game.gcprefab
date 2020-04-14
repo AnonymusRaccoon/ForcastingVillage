@@ -10,7 +10,7 @@
         <sprite name="player" src="assets/sprites/player_spritesheet.png" />
         <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
-        <music src="assets/musics/music.ogg"/>
+        <music src="assets/musics/windless_slopes.ogg"/>
         <font src="assets/fonts/roboto.ttf" />
 
         <sprite name="tile_select" src="assets/ui/tile_select.png" />
@@ -101,10 +101,13 @@
         <sprite name="water_top_right" src="assets/tiles/generic-rpg-tile-waterfall05.png" />
         <sprite name="water_top" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
+        <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
 
         <tiles>
+            <tile name="water_grass_right_0" />
+            <tile name="water_grass_right_1" />
+            <tile name="water_grass_right_2" />
             <tile name="grass_top" />
-            <tile name="dirt_bottom_0" />
         </tiles>
     </data>
 
