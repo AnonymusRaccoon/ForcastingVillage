@@ -1,14 +1,15 @@
 <gc_entities>
-    <panel src="panel" x="7%" y="3%" width="37%" height="6%"/>
-    <button sprite="tile_select" x="3%" y="3%" width="%" height="3%" tooltip="Select a tile." tooltip_x="5" tooltip_y="-5" size="15" click="tile_select" />
-    <button sprite="vertex_select" x="7%" y="3%" width="%" height="3%" tooltip="Select a Vertex." tooltip_y="-5" size="15" click="vertex_select" />
-    <button sprite="up_down" x="12%" y="3%" width="%" height="3%" tooltip="Move a tiles.\n - Up with left click.\n - Down with right click" tooltip_y="-15" size="15" click="up_down" />
-    <button sprite="reset" x="15%" y="3%" width="%" height="3%" tooltip="Reset the height of a tile." tooltip_y="-5" size="15" click="reset" />
-    <button sprite="rotate" x="19%" y="3%" width="%" height="3%" tooltip="Rotate a texture" tooltip_y="-5" size="15" click="rotate" />
-    <button sprite="texture" x="23%" y="3%" width="%" height="3%" tooltip="Change the texture of a tile" tooltip_y="-5" size="15" click="texture" />
+    <panel src="panel" x="10%" y="3%" width="42%" height="6%"/>
+    <button sprite="save" x="3%" y="3%" width="%" height="3%" tooltip="Save the map to a file" tooltip_x="10" tooltip_y="-5" size="15" click="save" />
+    <button sprite="tile_select" x="8%" y="3%" width="%" height="3%" tooltip="Select a tile." tooltip_y="-5" size="15" click="tile_select" />
+    <button sprite="vertex_select" x="12%" y="3%" width="%" height="3%" tooltip="Select a Vertex." tooltip_y="-5" size="15" click="vertex_select" />
+    <button sprite="up_down" x="17%" y="3%" width="%" height="3%" tooltip="Move a tiles.\n - Up with left click.\n - Down with right click" tooltip_y="-15" size="15" click="up_down" />
+    <button sprite="reset" x="20%" y="3%" width="%" height="3%" tooltip="Reset the height of a tile." tooltip_y="-5" size="15" click="reset" />
+    <button sprite="rotate" x="24%" y="3%" width="%" height="3%" tooltip="Rotate a texture" tooltip_y="-5" size="15" click="rotate" />
+    <button sprite="texture" x="27%" y="3%" width="%" height="3%" tooltip="Change the texture of a tile" tooltip_y="-5" size="15" click="texture" />
 
-    <panel src="panel" x="30%" y="3%" width="%" height="6%"/>
-    <button sprite="texture" x="30%" y="3%" width="%" height="3%" tooltip="Select the texture to draw." tooltip_y="-5" size="15" click="switch_texture">
+    <panel src="panel" x="35%" y="3%" width="%" height="6%"/>
+    <button sprite="texture" x="35%" y="3%" width="%" height="3%" tooltip="Select the texture to draw." tooltip_y="-5" size="15" click="switch_texture">
         <game_display stats="selected_tile" />
     </button>
 </gc_entities>

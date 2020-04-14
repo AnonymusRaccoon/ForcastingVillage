@@ -40,6 +40,8 @@ bool texture(gc_engine *engine, gc_entity *entity, gc_vector2 _,
 enum gc_mousekeys __);
 bool switch_texture(gc_engine *engine, gc_entity *entity, gc_vector2 _,
 enum gc_mousekeys __);
+bool save_map(gc_engine *engine, gc_entity *entity, gc_vector2 _,
+enum gc_mousekeys __);
 
 enum brush
 {

@@ -36,7 +36,6 @@ struct tile *ret, bool is_left)
 bool map_onclick(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
 enum gc_mousekeys key)
 {
-    printf("Map clicked\n");
     struct vertex_component *map = GETCMP(entity, vertex_component);
     struct map_manager_component *m = GETCMP(entity, map_manager_component);
     struct transform_component *tc = GETCMP(entity, transform_component);

@@ -46,6 +46,7 @@ const struct callback map_editor_callbacks[] = {
     {"rotate", &rotate},
     {"texture", &texture},
     {"switch_texture", &switch_texture},
+    {"save", &save_map},
     {NULL, NULL}
 };
 

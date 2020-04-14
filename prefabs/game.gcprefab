@@ -25,6 +25,7 @@
         <sprite name="reset" src="assets/ui/reset.png" />
         <sprite name="rotate" src="assets/ui/rotate.png" />
         <sprite name="texture" src="assets/ui/texture.png" />
+        <sprite name="save" src="assets/ui/save.png" />
 
         <tiles>
             <tile name="grass_top" />
