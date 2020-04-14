@@ -13,10 +13,13 @@
 #include <math.h>
 #include <utility.h>
 #include <components/renderer.h>
+#include <stddef.h>
 
 static gc_vector2i get_new_map_pos(struct map_linker *link, \
 struct controllable_component *ctl)
 {
+    if (!link->tile)
+        return ((gc_vector2i){0, 0});
     gc_vector2i pos = (gc_vector2i) {
         link->tile->corners[0]->x,
         link->tile->corners[0]->y
@@ -31,8 +34,8 @@ struct controllable_component *ctl)
 
 void set_animation(gc_entity *entity, struct controllable_component *ctl)
 {
-    char *w_ams[8] = {"walk_down", "walk_up", "walk_up_left", "walk_up_right"\
-, "walk_right", "walk_down_left", "walk_down_right", "walk_left"};
+    char *w_ams[8] = {"walk_down", "walk_up", "walk_up_left", "walk_up_right", \
+"walk_right", "walk_down_left", "walk_down_right", "walk_left"};
     struct renderer *renderer = GETCMP(entity, renderer);
     int ind = 0;
     char *anim;
