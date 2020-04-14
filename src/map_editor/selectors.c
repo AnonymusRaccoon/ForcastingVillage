@@ -53,7 +53,7 @@ enum gc_mousekeys __)
     time(&t);
     tm = localtime(&t);
     my_strcpy(save_file, "map-");
-    strftime(save_file + 4, sizeof(save_file) - 4, "%d-%m-%Y %H:%M:%S", tm);
+    strftime(save_file + 4, sizeof(save_file) - 4, "%d-%m-%Y-%H:%M:%S", tm);
     my_strcat(save_file, ".gcmap");
     if (!list)
         return (false);
