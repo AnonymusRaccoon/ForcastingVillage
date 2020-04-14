@@ -83,7 +83,7 @@
         <sprite name="dirt_top_9" src="assets/tiles/generic-rpg-tile29.png" />
         <sprite name="grass_bottom_8" src="assets/tiles/generic-rpg-tile30.png" />
         <sprite name="dirt_top_right_1" src="assets/tiles/generic-rpg-tile31.png" />
-        <sprite name="grass_bottom_left_0" src="assets/tiles/generic-rpg-tile32.png" />
+        <sprite name="grass_bottom_left_1" src="assets/tiles/generic-rpg-tile32.png" />
         <sprite name="dirt_top_right_2" src="assets/tiles/generic-rpg-tile33.png" />
         <sprite name="grass_left_0" src="assets/tiles/generic-rpg-tile34.png" />
         <sprite name="dirt_top_10" src="assets/tiles/generic-rpg-tile35.png" />
@@ -103,7 +103,8 @@
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
 
         <tiles>
-            <tile name="grass_top" />
+            <tile name="water_top_right_left" />
+            <tile name="dirt_bottom_4" />
         </tiles>
     </data>
 
