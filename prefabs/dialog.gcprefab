@@ -1,4 +1,4 @@
 <gc_entities>
     <panel src="text_box" x="50%" y="87%" width="60%" height="15%" />
-    <text text="Fatal error:\nNo dialog found." x="27%" y="87%" centered="false" text_id="1337" y_top="true" />
+    <text text="Fatal error:\nNo dialog found." x="27%" y="80%" centered="false" text_id="1337" y_top="true" />
 </gc_entities>
