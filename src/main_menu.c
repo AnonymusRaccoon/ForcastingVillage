@@ -15,7 +15,11 @@
 bool start_button(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __)
 {
-    gc_scene *scene = scene_create(engine, "prefabs/game.gcprefab");
+    gc_scene *scene;
+
+    prefab_load(engine, "prefabs/loading.gcprefab");
+    engine->game_loop(engine, 0);
+    scene = scene_create(engine, "prefabs/game.gcprefab");
     if (!scene) {
         engine->should_close = true;
         my_printf("The game scene couldn't be loaded.\n");
