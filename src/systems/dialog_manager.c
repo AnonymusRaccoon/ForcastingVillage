@@ -6,6 +6,7 @@
 */
 
 #include <malloc.h>
+#include <components/controllable_component.h>
 #include "components/map_linker.h"
 #include "text.h"
 #include "my.h"
@@ -78,6 +79,7 @@ static void check_for_dialog(gc_engine *engine, va_list args)
         return;
     if (this->dialog_id == -1)
         load_dialog(this, engine, entity);
+    controllable_set_can_move(scene, false);
     holder_name = scene->get_entity(scene, 1336);
     entity = scene->get_entity(scene, 1337);
     if (!update_dialog(this, entity, holder_name, scene))
@@ -87,6 +89,7 @@ static void check_for_dialog(gc_engine *engine, va_list args)
             ((gc_entity *) li->data)->destroy(li->data, scene);
     }
     this->dialog_id = -1;
+    controllable_set_can_move(scene, true);
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \

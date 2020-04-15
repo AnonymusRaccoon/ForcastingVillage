@@ -68,7 +68,7 @@ float dtime)
     gc_vector2i map_pos = get_new_map_pos(link, ctl);
     struct tile *new_tile;
 
-    if (!maps)
+    if (!maps || !ctl->can_move)
         return;
     map = GETCMP(maps->data, vertex_component);
     new_tile = get_tile_at(map, map_pos);
