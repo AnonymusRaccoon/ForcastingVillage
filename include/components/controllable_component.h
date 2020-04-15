@@ -16,6 +16,9 @@ struct controllable_component
     int movement_x;
     int movement_y;
     float move_callback;
+    bool can_move;
 };
+
+void controllable_set_can_move(gc_scene *scene, bool value);
 
 extern const struct controllable_component controllable_component;

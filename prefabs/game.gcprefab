@@ -148,8 +148,8 @@
            </renderer>
            <map_linker x="2" y="6" />
            <dialog_holder x="2" y="5" tile_texture="dirt_top_1">
-                <test_dialog line="Hello dirt block,\nI am the mighty cobble block." />
-                <test_dialog line="Can I do something\n for you?" />
+                <??? line="Hello dirt block,\nI am the mighty cobble block." />
+                <Cobble_block line="Can I do something\n for you?" />
            </dialog_holder>
         </gc_entity>
 

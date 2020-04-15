@@ -64,12 +64,15 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     char *texture = xml_gettmpstring(n, "tile_texture", NULL);
 
     cmp->single_usage = xml_getbool(n, "single_usage", false);
-    cmp->text = malloc(sizeof(char *) * (count + 1));
+    cmp->text = malloc(sizeof(struct dialog_line *) * (count + 1));
     if (!cmp->text)
         return;
     n = n->child;
-    for (int i = 0; n; n = n->next, i++)
-        cmp->text[i] = xml_getproperty(n, "line");
+    for (int i = 0; n; n = n->next, i++) {
+        cmp->text[i] = malloc(sizeof(struct dialog_line));
+        cmp->text[i]->name = my_strdup(n->name);
+        cmp->text[i]->text = xml_getproperty(n, "line");
+    }
     cmp->text[count] = NULL;
     setup_tile_interactions(cmp, scene, (gc_vector2i){x, y}, texture);
 }

@@ -19,6 +19,7 @@ component;
     cmp->movement_x = 0;
     cmp->movement_y = 0;
     cmp->move_callback = 0;
+    cmp->can_move = true;
     (void)args;
 }
 
@@ -45,6 +46,17 @@ static char *controllable_serialize(void *component)
 {
     (void)component;
     return (NULL);
+}
+
+void controllable_set_can_move(gc_scene *scene, bool value)
+{
+    gc_list *list = scene->get_entity_by_cmp(scene, "controllable_component");
+    struct controllable_component *ctl;
+
+    for (; list; list = list->next) {
+        ctl = GETCMP(list->data, controllable_component);
+        ctl->can_move = value;
+    }
 }
 
 const struct controllable_component controllable_component = {

@@ -43,8 +43,7 @@ const struct health_component health_component = {
         name: "health_component",
         size: sizeof(struct health_component),
         dependencies: (char *[]){
-                "event_component",
-                NULL
+            NULL
         },
         ctr: &ctr,
         fdctr: &fdctr,
