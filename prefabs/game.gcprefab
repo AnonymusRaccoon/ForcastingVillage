@@ -80,15 +80,14 @@
         <sprite name="water_top" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
         <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
+        <sprite name="panel" src="assets/ui/panel.png" />
 
         <tiles>
-            <tile name="water_grass_right_0" />
-            <tile name="water_grass_right_1" />
-            <tile name="water_grass_right_2" />
-            <tile name="grass_top" />
+            <tile name="panel" />
+            <tile name="grass" />
+            <tile name="dirt" />
         </tiles>
 
-        <sprite name="panel" src="assets/ui/panel.png" />
         <sprite name="check" src="assets/ui/check.png" />
         <sprite name="cross" src="assets/ui/cross.png" />
         <sprite name="front_panel" src="assets/ui/front_panel.png" />
