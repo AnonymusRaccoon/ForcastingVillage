@@ -4,6 +4,36 @@
         <Position x="0" y="0" />
         <Size x="150" y="200" />
     </transform_component>
+    <renderer src="house">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="34" y="30" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="170" y="220" />
+    </transform_component>
+    <renderer src="barn">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="30" y="35" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="75" y="100" />
+    </transform_component>
+    <renderer src="well">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="29" y="30" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="150" y="200" />
+    </transform_component>
     <renderer src="red_tree">
         <Rect height="auto" width="auto" top="0" left="0" />
     </renderer>
@@ -3029,16 +3059,7 @@
     </renderer>
     <map_linker x="61" y="9" />
 </gc_entity>
-<gc_entity>
-    <transform_component>
-        <Position x="0" y="0" />
-        <Size x="150" y="200" />
-    </transform_component>
-    <renderer src="blue_tree">
-        <Rect height="auto" width="auto" top="0" left="0" />
-    </renderer>
-    <map_linker x="61" y="12" />
-</gc_entity>
+
 <gc_entity>
     <transform_component>
         <Position x="0" y="0" />

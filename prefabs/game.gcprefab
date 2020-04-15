@@ -99,6 +99,9 @@
         <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
         <sprite name="blue_tree" src="assets/sprites/items/generic-rpg-tree01.png" />
         <sprite name="red_tree" src="assets/sprites/items/generic-rpg-tree02.png" />
+        <sprite name="house" src="assets/sprites/houses/generic-rpg-house-inn.png" />
+        <sprite name="barn" src="assets/sprites/houses/Deluxe_Barn.png" />
+        <sprite name="well" src="assets/sprites/houses/Well.png" />
 
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>
