@@ -9,7 +9,7 @@
 #include "component.h"
 #include "components/health_component.h"
 
-static void health_ctr(void *component, va_list args)
+static void ctr(void *component, va_list args)
 {
     struct health_component *cmp = (struct health_component *)\
 component;
@@ -17,40 +17,39 @@ component;
     cmp->dead = false;
 }
 
-static void health_fdctr(gc_entity *entity, gc_scene *scene, \
+static void fdctr(gc_entity *entity, gc_scene *scene, \
 void *component, node *n)
 {
     struct health_component *cmp = (struct health_component *)\
 component;
 
-    (void)scene;
-    (void)entity;
-    (void)n;
+    cmp->health = xml_getintprop(n, "health");
+    cmp->dead = false;
 }
 
-static void health_dtr(void *component)
+static void dtr(void *component)
 {
     (void)component;
 }
 
-static char *health_serialize(void *component)
+static char *serialize(void *component)
 {
     (void)component;
     return (NULL);
 }
 
 const struct health_component health_component = {
-        base: {
-                name: "health_component",
-                size: sizeof(struct health_component),
-                dependencies: (char *[]){
-                        "event_component",
-                        NULL
-                },
-                ctr: &health_ctr,
-                fdctr: &health_fdctr,
-                dtr: &health_dtr,
-                serialize: &health_serialize,
-                destroy: &component_destroy
-        }
+    base: {
+        name: "health_component",
+        size: sizeof(struct health_component),
+        dependencies: (char *[]){
+                "event_component",
+                NULL
+        },
+        ctr: &ctr,
+        fdctr: &fdctr,
+        dtr: &dtr,
+        serialize: &serialize,
+        destroy: &component_destroy
+    }
 };

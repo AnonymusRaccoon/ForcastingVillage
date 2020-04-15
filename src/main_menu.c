@@ -23,7 +23,7 @@ enum gc_mousekeys __)
     }
     engine->change_scene(engine, scene);
     if (prefab_load(engine, "prefabs/player.gcprefab") < 0) {
-        printf("Coudl not load the player.\n");
+        my_printf("Could not load the player.\n");
         return (true);
     }
     if (engine->get_callback(engine, "map_manage_click"))

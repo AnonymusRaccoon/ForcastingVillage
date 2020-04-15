@@ -32,13 +32,8 @@ float dtime)
 {
     struct game_display *disp = GETCMP(entity, game_display);
     struct renderer *rend = GETCMP(entity, renderer);
-    struct game_manager *manager;
     gc_scene *scene = engine->scene;
-    gc_list *entities = scene->get_entity_by_cmp(scene, "game_manager");
 
-    if (!entities)
-        return;
-    manager = GETCMP(entities->data, game_manager);
     if (disp->type == SELECT_TILE_DISPLAY && rend->type == GC_TEXTUREREND){
         display_current_texture(scene, rend);
         return;

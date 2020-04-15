@@ -12,18 +12,19 @@ SRC = 	src/main.c \
 	src/options.c \
 	src/systems/game_manager_system.c \
 	src/components/game_manager.c \
+	src/components/game_display.c \
 	src/components/map_movement.c \
 	src/components/controllable_component.c \
 	src/components/controllers/keyboard_controller.c \
 	src/components/dialog_holder.c \
 	src/systems/map_movement_system.c \
+	src/systems/game_display_system.c \
 	src/systems/dialog_manager.c \
 	src/systems/controllers/keyboard_controller_system.c \
 	src/map_editor/map_interactions.c \
-	src/map_editor/tile_collision_manager.c \
 	src/map_editor/brush_component.c \
 	src/map_editor/selectors.c \
-	src/map_editor/toolbar.c
+	src/map_editor/toolbar.c \
 	src/components/health_component.c \
 	src/components/health_methods.c
 
