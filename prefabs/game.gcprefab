@@ -1,27 +1,5 @@
 <gc_scene>
     <data>
-        <sprite name="panel" src="assets/ui/panel.png" />
-        <sprite name="check" src="assets/ui/check.png" />
-        <sprite name="cross" src="assets/ui/cross.png" />
-        <sprite name="front_panel" src="assets/ui/front_panel.png" />
-        <sprite name="button_background" src="assets/ui/button_background.png" />
-        <sprite name="black_background" src="assets/ui/black_background.png" />
-        <sprite name="text_box" src="assets/ui/text_box.png" />
-        <sprite name="player" src="assets/sprites/player_spritesheet.png" />
-        <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
-        <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
-        <music src="assets/musics/windless_slopes.ogg"/>
-        <font src="assets/fonts/roboto.ttf" />
-
-        <sprite name="tile_select" src="assets/ui/tile_select.png" />
-        <sprite name="vertex_select" src="assets/ui/vertex_select.png" />
-        <sprite name="up_down" src="assets/ui/up_down.png" />
-        <sprite name="reset" src="assets/ui/reset.png" />
-        <sprite name="rotate" src="assets/ui/rotate.png" />
-        <sprite name="texture" src="assets/ui/texture.png" />
-        <sprite name="save" src="assets/ui/save.png" />
-
-
         <sprite name="grass_top" src="assets/tiles/generic-rpg-Slice.png" />
         <sprite name="dirt_bottom_0" src="assets/tiles/generic-rpg-tile43.png" />
         <sprite name="dirt_bottom_1" src="assets/tiles/generic-rpg-tile44.png" />
@@ -109,6 +87,27 @@
             <tile name="water_grass_right_2" />
             <tile name="grass_top" />
         </tiles>
+
+        <sprite name="panel" src="assets/ui/panel.png" />
+        <sprite name="check" src="assets/ui/check.png" />
+        <sprite name="cross" src="assets/ui/cross.png" />
+        <sprite name="front_panel" src="assets/ui/front_panel.png" />
+        <sprite name="button_background" src="assets/ui/button_background.png" />
+        <sprite name="black_background" src="assets/ui/black_background.png" />
+        <sprite name="text_box" src="assets/ui/text_box.png" />
+        <sprite name="player" src="assets/sprites/player_spritesheet.png" />
+        <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
+        <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
+        <music src="assets/musics/windless_slopes.ogg"/>
+        <font src="assets/fonts/roboto.ttf" />
+
+        <sprite name="tile_select" src="assets/ui/tile_select.png" />
+        <sprite name="vertex_select" src="assets/ui/vertex_select.png" />
+        <sprite name="up_down" src="assets/ui/up_down.png" />
+        <sprite name="reset" src="assets/ui/reset.png" />
+        <sprite name="rotate" src="assets/ui/rotate.png" />
+        <sprite name="texture" src="assets/ui/texture.png" />
+        <sprite name="save" src="assets/ui/save.png" />
     </data>
 
     <gc_entities>
@@ -117,7 +116,7 @@
                 <Position x="0" y="300" />
                 <Size x="100000000" y="100000000" />
             </transform_component>
-            <clickable_component click="map_manage_click"/>
+            <clickable_component click="map_manage_click" nullable="true"/>
             <map_manager_component />
             <vertex_component tilemap="prefabs/tilemap.gcmap" />
             <renderer vertex="tilemap">
