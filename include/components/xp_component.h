@@ -18,9 +18,9 @@ struct xp_component
     bool full;
 };
 
-void add_xp(struct xp_component *this, gc_engine *engine, \
+void xp_add(struct xp_component *this, gc_engine *engine, \
 unsigned int amount);
-void rem_xp(struct xp_component *this, gc_engine *engine, \
+void xp_rem(struct xp_component *this, gc_engine *engine, \
 unsigned int amount);
 
 extern const struct xp_component xp_component;
