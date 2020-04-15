@@ -59,6 +59,6 @@ enum gc_mousekeys __)
         return (false);
     map = GETCMP(list->data, vertex_component);
     my_printf("Saving the map to the file: %s\n", save_file);
-    vertex_serialize(map, engine->scene, save_file);
+    vertex_serialize(map, engine->scene, "tilemap.gcmap");
     return (true);
 }
