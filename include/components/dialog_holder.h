@@ -10,9 +10,16 @@
 
 #include "component.h"
 
+struct dialog_input {
+    char *text;
+    callback_t callback;
+};
+
 struct dialog_line {
     char *name;
     char *text;
+    int input_count;
+    struct dialog_input *inputs;
 };
 
 struct dialog_holder {
@@ -31,6 +38,7 @@ struct dialog_manager {
     int current_line;
     struct dialog_line *current_text;
     struct dialog_holder *current_dialog;
+    struct dialog_input *current_input;
 };
 
 const struct dialog_manager dialog_manager;

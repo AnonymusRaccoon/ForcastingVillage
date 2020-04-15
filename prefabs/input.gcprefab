@@ -1,0 +1,6 @@
+<gc_entities>
+    <button text="Action 0" x="80%" y="61%" click="action0" color="black" width="20%" height="7%" size="26" />
+    <button text="Action 1" x="80%" y="69%" click="action1" color="black" width="20%" height="7%" size="26" />
+    <button text="Action 2" x="80%" y="77%" click="action2" color="black" width="20%" height="7%" size="26" />
+    <button text="Action 3" x="80%" y="85%" click="action3" color="black" width="20%" height="7%" size="26" />
+</gc_entities>

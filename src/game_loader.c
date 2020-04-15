@@ -9,6 +9,7 @@
 #include "setup.h"
 #include <SFML/System.h>
 #include <components/dialog_holder.h>
+#include <components/health_component.h>
 #include "systems/map_movement_system.h"
 #include "systems/game_manager_system.h"
 #include "systems/controllers/keyboard_controller_system.h"
@@ -63,6 +64,7 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_system(engine, new_system(&game_manager_system, engine));
     engine->add_component(engine, &map_manager_component);
     engine->add_component(engine, &game_display);
+    engine->add_component(engine, &health_component);
     engine->add_system(engine, &game_display_system);
     engine->finish_physics(engine);
     for (int i = 0; callbacks[i].func; i++)

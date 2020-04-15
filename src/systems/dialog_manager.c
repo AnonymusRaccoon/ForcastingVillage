@@ -42,7 +42,7 @@ my_strcmp(link->tile->type, "dialog"))
 }
 
 bool update_dialog(struct dialog_manager *this, gc_entity *text, \
-gc_entity *name, gc_scene *scene)
+gc_entity *name)
 {
     struct renderer *rend;
 
@@ -67,6 +67,19 @@ gc_entity *name, gc_scene *scene)
     return (!this->current_text);
 }
 
+static bool handle_input(gc_engine *engine, struct dialog_manager *this)
+{
+    int prefab_id;
+
+    if (!this->current_text->inputs)
+        return (true);
+    if ((prefab_id = prefab_load(engine, "prefabs/input.gcprefab")) < 0) {
+        my_printf("Couldn't load the input prefab.\n");
+        return (false);
+    }
+    return (true);
+}
+
 static void check_for_dialog(gc_engine *engine, va_list args)
 {
     struct dialog_manager *this = GETSYS(engine, dialog_manager);
@@ -82,11 +95,11 @@ static void check_for_dialog(gc_engine *engine, va_list args)
     controllable_set_can_move(scene, false);
     holder_name = scene->get_entity(scene, 1336);
     entity = scene->get_entity(scene, 1337);
-    if (!update_dialog(this, entity, holder_name, scene))
+    if (!update_dialog(this, entity, holder_name) && handle_input(engine, this))
         return;
     for (gc_list *li = scene->entities; li; li = li->next) {
-        if (((gc_entity *) li->data)->prefab_id == this->dialog_id)
-            ((gc_entity *) li->data)->destroy(li->data, scene);
+        if (((gc_entity *)li->data)->prefab_id == this->dialog_id)
+            ((gc_entity *)li->data)->destroy(li->data, scene);
     }
     this->dialog_id = -1;
     controllable_set_can_move(scene, true);
