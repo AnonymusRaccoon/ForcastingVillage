@@ -1,5 +1,5 @@
 <gc_entities>
     <panel src="text_box" x="50%" y="87%" width="60%" height="15%" />
-    <text text="Gamacon" x="25%" y="80%" centered="false" y_top="true" text_id="1336" />
-    <text text="Fatal error:\nNo dialog found." x="32%" y="85%" centered="false" text_id="1337" y_top="true" />
+    <text text="Gamacon" x="25%" y="80%" centered="false" y_top="true" text_id="1336" size="17" />
+    <text text="Fatal error:\nNo dialog found." x="29%" y="84%" centered="false" text_id="1337" y_top="true" size="25" />
 </gc_entities>

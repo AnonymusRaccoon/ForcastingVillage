@@ -10,9 +10,14 @@
 
 #include "component.h"
 
+struct dialog_line {
+    char *name;
+    char *text;
+};
+
 struct dialog_holder {
     gc_component base;
-    char **text;
+    struct dialog_line **text;
     bool single_usage;
     bool has_seen;
     struct tile *tile;
@@ -24,7 +29,7 @@ struct dialog_manager {
     gc_system base;
     int dialog_id;
     int current_line;
-    char *current_text;
+    struct dialog_line *current_text;
     struct dialog_holder *current_dialog;
 };
 

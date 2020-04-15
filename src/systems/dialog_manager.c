@@ -41,20 +41,25 @@ my_strcmp(link->tile->type, "dialog"))
 }
 
 bool update_dialog(struct dialog_manager *this, gc_entity *text, \
-gc_scene *scene)
+gc_entity *name, gc_scene *scene)
 {
     struct renderer *rend;
 
-    if (!text)
+    if (!text || !name)
         return (true);
+    this->current_text = this->current_dialog->text[this->current_line];
+    rend = GETCMP(name, renderer);
+    if (!rend || rend->type != GC_TXTREND || !rend->data)
+        return (true);
+    if (this->current_text)
+        ((gc_text *)rend->data)->text = this->current_text->name;
+    else
+        ((gc_text *)rend->data)->text = NULL;
     rend = GETCMP(text, renderer);
     if (!rend || rend->type != GC_TXTREND || !rend->data)
         return (true);
-    if (((gc_text *)rend->data)->text)
-        free(((gc_text *)rend->data)->text);
-    this->current_text = this->current_dialog->text[this->current_line];
     if (this->current_text)
-        ((gc_text *)rend->data)->text = my_strdup(this->current_text);
+        ((gc_text *)rend->data)->text = this->current_text->text;
     else
         ((gc_text *)rend->data)->text = NULL;
     this->current_line++;
@@ -67,13 +72,15 @@ static void check_for_dialog(gc_engine *engine, va_list args)
     gc_keybindings key = va_arg(args, gc_keybindings);
     gc_scene *scene = engine->scene;
     gc_entity *entity = scene->get_entity(scene, 50);
+    gc_entity *holder_name;
 
     if (key != SPACE || !entity)
         return;
     if (this->dialog_id == -1)
         load_dialog(this, engine, entity);
+    holder_name = scene->get_entity(scene, 1336);
     entity = scene->get_entity(scene, 1337);
-    if (!update_dialog(this, entity, scene))
+    if (!update_dialog(this, entity, holder_name, scene))
         return;
     for (gc_list *li = scene->entities; li; li = li->next) {
         if (((gc_entity *) li->data)->prefab_id == this->dialog_id)
