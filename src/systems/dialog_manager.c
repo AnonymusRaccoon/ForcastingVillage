@@ -23,13 +23,12 @@ gc_entity *player)
     gc_list *holders = scene->get_entity_by_cmp(scene, "dialog_holder");
     struct dialog_holder *dialog;
 
-    if (!link || !link->tile->type || my_strcmp(link->tile->type, "dialog"))
+    if (!link || !link->tile || !link->tile->type || \
+my_strcmp(link->tile->type, "dialog"))
         return;
     this->dialog_id = prefab_load(engine, "prefabs/dialog.gcprefab");
     if (this->dialog_id < 0)
         my_printf("Couldn't load the dialog prefab.\n");
-    if (!holders)
-        return;
     for (; holders; holders = holders->next) {
         dialog = GETCMP(holders->data, dialog_holder);
         if (dialog->tile == link->tile)
