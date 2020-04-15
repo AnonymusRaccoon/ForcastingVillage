@@ -80,15 +80,14 @@
         <sprite name="water_top" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
         <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
+        <sprite name="panel" src="assets/ui/panel.png" />
 
         <tiles>
-            <tile name="water_grass_right_0" />
-            <tile name="water_grass_right_1" />
-            <tile name="water_grass_right_2" />
-            <tile name="grass_top" />
+            <tile name="panel" />
+            <tile name="grass" />
+            <tile name="dirt" />
         </tiles>
 
-        <sprite name="panel" src="assets/ui/panel.png" />
         <sprite name="check" src="assets/ui/check.png" />
         <sprite name="cross" src="assets/ui/cross.png" />
         <sprite name="front_panel" src="assets/ui/front_panel.png" />
@@ -96,7 +95,11 @@
         <sprite name="black_background" src="assets/ui/black_background.png" />
         <sprite name="text_box" src="assets/ui/text_box.png" />
         <sprite name="player" src="assets/sprites/player_spritesheet.png" />
+
         <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
+        <sprite name="blue_tree" src="assets/sprites/items/generic-rpg-tree01.png" />
+        <sprite name="red_tree" src="assets/sprites/items/generic-rpg-tree02.png" />
+
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>
         <font src="assets/fonts/roboto.ttf" />
@@ -126,17 +129,6 @@
 
         <gc_entity>
             <game_manager />
-        </gc_entity>
-
-        <gc_entity>
-           <transform_component>
-               <Position x="0" y="0" />
-               <Size x="200" y="200" />
-           </transform_component>
-           <renderer src="tree">
-                <Rect height="auto" width="auto" top="0" left="0" />
-           </renderer>
-           <map_linker x="5" y="2" />
         </gc_entity>
 
         <gc_entity>
