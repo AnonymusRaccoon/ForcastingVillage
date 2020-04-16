@@ -21,6 +21,7 @@
 #include "components/game_display.h"
 #include "my.h"
 #include "map_editor.h"
+#include "components/xp_component.h"
 
 const struct callback callbacks[] = {
     {"start_button", &start_button},
@@ -35,6 +36,10 @@ const struct callback callbacks[] = {
     {"catch", &catch},
     {"toggle_pause", &toggle_pause},
     {"toggle_pause", &toggle_pause},
+    {"action0", &dialog_input0},
+    {"action1", &dialog_input1},
+    {"action2", &dialog_input2},
+    {"action3", &dialog_input3},
     {NULL, NULL}
 };
 
@@ -66,6 +71,7 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &game_display);
     engine->add_component(engine, &health_component);
     engine->add_system(engine, &game_display_system);
+    engine->add_component(engine, &xp_component);
     engine->finish_physics(engine);
     for (int i = 0; callbacks[i].func; i++)
         engine->add_callback(engine, my_strdup(callbacks[i].name), \

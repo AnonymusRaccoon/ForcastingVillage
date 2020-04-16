@@ -1,6 +1,6 @@
 <gc_entities>
-    <button text="Action 0" x="80%" y="61%" click="action0" color="black" width="20%" height="7%" size="26" text_id="35353500" />
-    <button text="Action 1" x="80%" y="69%" click="action1" color="black" width="20%" height="7%" size="26" text_id="35353501" />
-    <button text="Action 2" x="80%" y="77%" click="action2" color="black" width="20%" height="7%" size="26" text_id="35353502" />
-    <button text="Action 3" x="80%" y="85%" click="action3" color="black" width="20%" height="7%" size="26" text_id="35353503" />
+    <button text="ty" x="80%" y="61%" click="action0" color="black" width="20%" height="9%" size="24" text_id="35353500" />
+    <button text="ty 1" x="80%" y="69%" click="action1" color="black" width="20%" height="9%" size="24" text_id="35353501" />
+    <button text="ty 2" x="80%" y="77%" click="action2" color="black" width="20%" height="9%" size="24" text_id="35353502" />
+    <button text="ty 3" x="80%" y="85%" click="action3" color="black" width="20%" height="9%" size="24" text_id="35353503" />
 </gc_entities>

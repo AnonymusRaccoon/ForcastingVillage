@@ -26,7 +26,9 @@ SRC = 	src/main.c \
 	src/map_editor/selectors.c \
 	src/map_editor/toolbar.c \
 	src/components/health_component.c \
-	src/components/health_methods.c
+	src/components/health_methods.c \
+	src/components/xp_component.c \
+	src/components/xp_methods.c
 
 OBJ = $(SRC:%.c=%.o)
 

@@ -99,6 +99,9 @@
         <sprite name="tree" src="assets/sprites/Oak_Tree.png" />
         <sprite name="blue_tree" src="assets/sprites/items/generic-rpg-tree01.png" />
         <sprite name="red_tree" src="assets/sprites/items/generic-rpg-tree02.png" />
+        <sprite name="house" src="assets/sprites/houses/generic-rpg-house-inn.png" />
+        <sprite name="barn" src="assets/sprites/houses/Deluxe_Barn.png" />
+        <sprite name="well" src="assets/sprites/houses/Well.png" />
 
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>
@@ -142,7 +145,10 @@
            <map_linker x="2" y="6" />
            <dialog_holder x="2" y="5" tile_texture="dirt_top_1">
                 <??? line="Hello dirt block,\nI am the mighty cobble block.">
-                    <input name="Yes" click="super" />
+                    <input text="Yes" click="super" />
+                    <input text="No" click="super" />
+                    <input text="Maybe" click="super" />
+                    <input text="Run away" click="super" />
                 </???>
                 <Cobble_block line="Can I do something\n for you?" />
            </dialog_holder>
@@ -150,7 +156,9 @@
 
 
         <panel src="main_ui_game" x="3%" y="2%" width="30%" height="15%" centered="false"/>
-        <text text="20/20" x="10%" y="6%" centered="false"/>
-        <text text="0/100" x="10%" y="14%" centered="false"/>
+        <text text="/20" x="13%" y="6%" centered="false"/>
+        <text text="10/100" x="14%" y="14%" centered="false">
+            <game_display stats="xp"/>
+        </text>
     </gc_entities>
 </gc_scene>

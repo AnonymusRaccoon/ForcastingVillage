@@ -26,8 +26,17 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     struct renderer *rend = GETCMP(entity, renderer);
     char *display_type = xml_gettempprop(n, "stats");
 
+    if (!display_type) {
+        my_printf("Please select properties\n");
+        return;
+    }
     if (!my_strcmp(display_type, "selected_tile")) {
         cmp->type = SELECT_TILE_DISPLAY;
+        return;
+    }
+    if (!my_strcmp(display_type, "xp")) {
+        cmp->type = XP_DISPLAY;
+        rend->destroy = &text_safe_destroy;
         return;
     }
 }

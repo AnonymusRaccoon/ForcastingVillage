@@ -9,7 +9,8 @@
 
 typedef enum display_type
 {
-    SELECT_TILE_DISPLAY
+    SELECT_TILE_DISPLAY,
+    XP_DISPLAY
 } display_type_enum;
 
 struct game_display

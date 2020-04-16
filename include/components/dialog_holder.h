@@ -35,6 +35,7 @@ const struct dialog_holder dialog_holder;
 struct dialog_manager {
     gc_system base;
     int dialog_id;
+    int input_id;
     int current_line;
     struct dialog_line *current_text;
     struct dialog_holder *current_dialog;
@@ -42,5 +43,7 @@ struct dialog_manager {
 };
 
 const struct dialog_manager dialog_manager;
+
+void dialog_next(gc_engine *engine);
 
 #endif //MY_RPG_DIALOG_HOLDER_H

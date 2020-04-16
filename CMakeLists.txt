@@ -280,7 +280,10 @@ add_executable(my_rpg
         src/systems/game_display_system.c
         include/map_editor.h
         lib/gamacon/include/sfml_init.h
-        )
+        src/components/xp_component.c
+        include/components/xp_component.h
+	    src/components/xp_methods.c
+        src/dialog_input.c src/systems/dialog_methods.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 

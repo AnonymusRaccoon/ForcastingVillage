@@ -10,6 +10,7 @@
 #include <stddef.h>
 #include "components/game_display.h"
 #include "components/game_manager.h"
+#include "components/xp_component.h"
 #include "map_editor.h"
 #include "text.h"
 #include "components/renderer.h"
@@ -27,6 +28,21 @@ void display_current_texture(gc_scene *scene, struct renderer *rend)
     ((gc_sprite *)rend->data)->texture = map->selected_texture;
 }
 
+void display_current_xp(gc_scene *scene, struct renderer *rend)
+{
+    gc_entity *player = scene->get_entity(scene, 50);
+    struct xp_component *xp;
+    static char str[10];
+
+    if (!player)
+        return;
+    xp = GETCMP(player, xp_component);
+    if (!xp)
+        return;
+    snprintf(str, 10, "%d/100", xp->xp);
+    ((gc_text *)rend->data)->text = str;
+}
+
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
 float dtime)
 {
@@ -36,6 +52,10 @@ float dtime)
 
     if (disp->type == SELECT_TILE_DISPLAY && rend->type == GC_TEXTUREREND){
         display_current_texture(scene, rend);
+        return;
+    }
+    if (disp->type == XP_DISPLAY && rend->type == GC_TXTREND) {
+        display_current_xp(scene, rend);
         return;
     }
 }
