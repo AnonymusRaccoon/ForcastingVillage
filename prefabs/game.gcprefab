@@ -80,6 +80,7 @@
         <sprite name="water_top" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
         <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
+
         <sprite name="panel" src="assets/ui/panel.png" />
 
         <tiles>

@@ -1,0 +1,14 @@
+<gc_map >
+	<vertex_data>
+		<line>
+			<row height="0" />
+			<row height="0" />
+		</line>
+		<line>
+			<row height="0" />
+			<row height="0" />
+		</line>
+	</vertex_data>
+	<tiles_data>
+	</tiles_data>
+</gc_map>

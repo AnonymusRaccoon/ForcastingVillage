@@ -1,0 +1,36 @@
+<gc_scene>
+    <data>
+        <font src="assets/fonts/roboto.ttf" />
+        <sprite name="text_box" src="assets/ui/text_box.png" />
+        <sprite name="button_background" src="assets/ui/button_background.png" />
+    </data>
+    <gc_entities>
+        <gc_entity>
+            <transform_component>
+                <Position x="0" y="300" />
+                <Size x="100000000" y="100000000" />
+            </transform_component>
+            <vertex_component tilemap="prefabs/combat.gcmap" />
+        </gc_entity>
+
+        <gc_entity>
+            <dialog_holder x="0" y="0" tile_texture="dirt_top_1">
+                <??? line="Hello dirt block,\nI am the mighty cobble block.">
+                    <input text="Yes" click="super" />
+                    <input text="No" click="super" />
+                    <input text="Maybe" click="super" />
+                    <input text="Run away" click="super" />
+                </???>
+                <Cobble_block line="Can I do something\n for you?" />
+            </dialog_holder>
+        </gc_entity>
+
+        <gc_entity id="50">
+            <transform_component>
+                <Position x="0" y="300" />
+            </transform_component>
+            <map_linker x="0" y="0" />
+            <player_component />
+        </gc_entity>
+    </gc_entities>
+</gc_scene>

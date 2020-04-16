@@ -59,9 +59,10 @@ gc_entity *name)
     rend = GETCMP(text, renderer);
     if (!rend || rend->type != GC_TXTREND || !rend->data)
         return (true);
-    if (this->current_text)
-        ((gc_text *)rend->data)->text = this->current_text->text;
-    else
+    if (this->current_text) {
+        ((gc_text *) rend->data)->text = this->current_text->text;
+        this->current_input = &this->current_text->inputs[0];
+    } else
         ((gc_text *)rend->data)->text = NULL;
     this->current_line++;
     return (!this->current_text);
@@ -93,10 +94,10 @@ static bool handle_input(gc_engine *engine, struct dialog_manager *this)
 
 void run_input_func(struct dialog_manager *this, gc_engine *engine)
 {
-    prefab_destroy(engine->scene, this->input_id);
-    this->input_id = -1;
     if (this->current_input->callback)
         this->current_input->callback(engine, NULL, (gc_vector2){0, 0}, 0);
+    prefab_destroy(engine->scene, this->input_id);
+    this->input_id = -1;
 }
 
 void dialog_next(gc_engine *engine)
