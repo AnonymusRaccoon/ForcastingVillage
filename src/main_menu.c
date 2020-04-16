@@ -26,12 +26,12 @@ enum gc_mousekeys __)
         return (true);
     }
     engine->change_scene(engine, scene);
-    if (prefab_load(engine, "prefabs/map_entities.gcprefab") < 0)
-        return (true);
     if (prefab_load(engine, "prefabs/player.gcprefab") < 0) {
         my_printf("Could not load the player.\n");
         return (true);
     }
+    if (prefab_load(engine, "prefabs/map_entities.gcprefab") < 0)
+        return (true);
     if (engine->get_callback(engine, "map_manage_click"))
         if (prefab_load(engine, "prefabs/editor_ui.gcprefab") < 0)
             my_printf("Couldn't load the map editor's ui.\n");
