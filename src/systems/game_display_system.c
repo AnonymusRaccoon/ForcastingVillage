@@ -37,6 +37,8 @@ void display_current_xp(gc_scene *scene, struct renderer *rend)
     if (!player)
         return;
     xp = GETCMP(player, xp_component);
+    if (!xp)
+        return;
     snprintf(str, 10, "%d/100", xp->xp);
     ((gc_text *)rend->data)->text = str;
 }
@@ -52,7 +54,7 @@ float dtime)
         display_current_texture(scene, rend);
         return;
     }
-    if (disp->type == xp_display && rend->type == GC_TXTREND) {
+    if (disp->type == XP_DISPLAY && rend->type == GC_TXTREND) {
         display_current_xp(scene, rend);
         return;
     }

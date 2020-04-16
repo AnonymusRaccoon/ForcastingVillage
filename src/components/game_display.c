@@ -35,7 +35,7 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
         return;
     }
     if (!my_strcmp(display_type, "xp")) {
-        cmp->type = xp_display;
+        cmp->type = XP_DISPLAY;
         return;
     }
 }
