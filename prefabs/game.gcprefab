@@ -157,7 +157,9 @@
 
 
         <panel src="main_ui_game" x="3%" y="2%" width="30%" height="15%" centered="false"/>
-        <text text="20/20" x="10%" y="6%" centered="false"/>
-        <text text="0/100" x="10%" y="14%" centered="false"/>
+        <text text="/20" x="13%" y="6%" centered="false"/>
+        <text text="10/100" x="14%" y="14%" centered="false">
+            <game_display stats="xp"/>
+        </text>
     </gc_entities>
 </gc_scene>
