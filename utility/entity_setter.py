@@ -6,10 +6,10 @@ try:
     min_height = int(sys.argv[2])
     max_width = int(sys.argv[3])
     max_height = int(sys.argv[4])
-    prob = int(sys.argv[5])
+    prob = float(sys.argv[5])
     entities =  sys.argv[6:]
 except IndexError:
-    print(f"Usage: {sys.argv[0]} y x min y x max entities name")
+    print(f"Usage: {sys.argv[0]} y x min y x max prob entities name")
     sys.exit(1)
 print("<gc_entities>")
 for i in range(max_height - min_height + 1):
