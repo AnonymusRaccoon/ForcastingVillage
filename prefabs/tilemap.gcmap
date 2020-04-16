@@ -5112,10 +5112,10 @@
 		<tile x="0" y="67" texture="grass_top" rotation="0" />
 		<tile x="0" y="68" texture="grass_top" rotation="0" />
 		<tile x="1" y="0" texture="grass_top" rotation="0" />
-		<tile x="1" y="1" texture="dirt" rotation="0" />
+		<tile x="1" y="1" texture="grass_top" rotation="0" />
 		<tile x="1" y="2" texture="grass_top" rotation="0" />
 		<tile x="1" y="3" texture="grass_top" rotation="0" />
-		<tile x="1" y="4" texture="water_grass_right_2" rotation="0" />
+		<tile x="1" y="4" texture="grass_top" rotation="0" />
 		<tile x="1" y="5" texture="grass_top" rotation="0" />
 		<tile x="1" y="6" texture="grass_top" rotation="0" />
 		<tile x="1" y="7" texture="grass_top" rotation="0" />
@@ -5182,9 +5182,9 @@
 		<tile x="1" y="68" texture="grass_top" rotation="0" />
 		<tile x="2" y="0" texture="grass_top" rotation="0" />
 		<tile x="2" y="1" texture="grass_top" rotation="0" />
-		<tile x="2" y="2" texture="dirt" rotation="0" />
+		<tile x="2" y="2" texture="grass_top" rotation="0" />
 		<tile x="2" y="3" texture="grass_top" rotation="0" />
-		<tile x="2" y="4" texture="water_grass_right_1" rotation="0" />
+		<tile x="2" y="4" texture="grass_top" rotation="0" />
 		<tile x="2" y="5" texture="dirt_top_1" rotation="0" />
 		<tile x="2" y="6" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="2" y="7" texture="grass_top" rotation="0" />
@@ -5253,7 +5253,7 @@
 		<tile x="3" y="1" texture="grass_top" rotation="0" />
 		<tile x="3" y="2" texture="grass_top" rotation="0" />
 		<tile x="3" y="3" texture="grass_top" rotation="0" />
-		<tile x="3" y="4" texture="water_grass_right_0" rotation="0" />
+		<tile x="3" y="4" texture="grass_top" rotation="0" />
 		<tile x="3" y="5" texture="grass_top" rotation="0" />
 		<tile x="3" y="6" texture="grass_top" rotation="0" />
 		<tile x="3" y="7" texture="grass_top" rotation="0" />
@@ -5322,7 +5322,7 @@
 		<tile x="4" y="1" texture="grass_top" rotation="0" />
 		<tile x="4" y="2" texture="grass_top" rotation="0" />
 		<tile x="4" y="3" texture="grass_top" rotation="0" />
-		<tile x="4" y="4" texture="dirt" rotation="0" />
+		<tile x="4" y="4" texture="grass_top" rotation="0" />
 		<tile x="4" y="5" texture="grass_top" rotation="0" />
 		<tile x="4" y="6" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="4" y="7" texture="grass_top" rotation="0" />
@@ -5392,7 +5392,7 @@
 		<tile x="5" y="2" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="5" y="3" texture="grass_top" rotation="0" />
 		<tile x="5" y="4" texture="grass_top" rotation="0" />
-		<tile x="5" y="5" texture="dirt" rotation="0" solid="true"/>
+		<tile x="5" y="5" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="5" y="6" texture="grass_top" rotation="0" />
 		<tile x="5" y="7" texture="grass_top" rotation="0" />
 		<tile x="5" y="8" texture="grass_top" rotation="0" />
@@ -5462,7 +5462,7 @@
 		<tile x="6" y="3" texture="grass_top" rotation="0" />
 		<tile x="6" y="4" texture="grass_top" rotation="0" />
 		<tile x="6" y="5" texture="grass_top" rotation="0" />
-		<tile x="6" y="6" texture="dirt" rotation="0" />
+		<tile x="6" y="6" texture="grass_top" rotation="0" />
 		<tile x="6" y="7" texture="grass_top" rotation="0" />
 		<tile x="6" y="8" texture="grass_top" rotation="0" />
 		<tile x="6" y="9" texture="grass_top" rotation="0" />
@@ -5672,7 +5672,7 @@
 		<tile x="9" y="6" texture="grass_top" rotation="0" />
 		<tile x="9" y="7" texture="panel" rotation="2" />
 		<tile x="9" y="8" texture="grass_top" rotation="0" />
-		<tile x="9" y="9" texture="dirt" rotation="0" solid="true"/>
+		<tile x="9" y="9" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="9" y="10" texture="grass_top" rotation="0" />
 		<tile x="9" y="11" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="9" y="12" texture="grass_top" rotation="0" />
@@ -5742,7 +5742,7 @@
 		<tile x="10" y="7" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="8" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="9" texture="grass_top" rotation="0" />
-		<tile x="10" y="10" texture="dirt" rotation="0" solid="true"/>
+		<tile x="10" y="10" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="11" texture="grass_top" rotation="0" />
 		<tile x="10" y="12" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="13" texture="grass_top" rotation="0" />
@@ -5953,7 +5953,7 @@
 		<tile x="13" y="11" texture="grass_top" rotation="0" />
 		<tile x="13" y="12" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="13" y="13" texture="dirt" rotation="0" />
-		<tile x="13" y="14" texture="dirt" rotation="0" />
+		<tile x="13" y="14" texture="grass_top" rotation="0" />
 		<tile x="13" y="15" texture="grass_top" rotation="0" />
 		<tile x="13" y="16" texture="grass_top" rotation="0" />
 		<tile x="13" y="17" texture="grass_top" rotation="0" />
@@ -6022,7 +6022,7 @@
 		<tile x="14" y="11" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="14" y="12" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="14" y="13" texture="dirt" rotation="0" />
-		<tile x="14" y="14" texture="dirt" rotation="0" />
+		<tile x="14" y="14" texture="grass_top" rotation="0" />
 		<tile x="14" y="15" texture="dirt" rotation="0" />
 		<tile x="14" y="16" texture="grass_top" rotation="0" />
 		<tile x="14" y="17" texture="grass_top" rotation="0" />
@@ -6093,9 +6093,9 @@
 		<tile x="15" y="13" texture="grass_top" rotation="0" />
 		<tile x="15" y="14" texture="dirt" rotation="0" />
 		<tile x="15" y="15" texture="dirt" rotation="0" />
-		<tile x="15" y="16" texture="dirt" rotation="0" />
-		<tile x="15" y="17" texture="dirt" rotation="0" />
-		<tile x="15" y="18" texture="dirt" rotation="0" />
+		<tile x="15" y="16" texture="grass_top" rotation="0" />
+		<tile x="15" y="17" texture="grass_top" rotation="0" />
+		<tile x="15" y="18" texture="grass_top" rotation="0" />
 		<tile x="15" y="19" texture="grass_top" rotation="0" />
 		<tile x="15" y="20" texture="grass_top" rotation="0" />
 		<tile x="15" y="21" texture="grass_top" rotation="0" />
@@ -6162,10 +6162,10 @@
 		<tile x="16" y="13" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="16" y="14" texture="grass_top" rotation="0" />
 		<tile x="16" y="15" texture="grass_top" rotation="0" />
-		<tile x="16" y="16" texture="dirt" rotation="0" />
-		<tile x="16" y="17" texture="dirt" rotation="0" />
-		<tile x="16" y="18" texture="dirt" rotation="0" />
-		<tile x="16" y="19" texture="dirt" rotation="0" />
+		<tile x="16" y="16" texture="grass_top" rotation="0" />
+		<tile x="16" y="17" texture="grass_top" rotation="0" />
+		<tile x="16" y="18" texture="grass_top" rotation="0" />
+		<tile x="16" y="19" texture="grass_top" rotation="0" />
 		<tile x="16" y="20" texture="grass_top" rotation="0" />
 		<tile x="16" y="21" texture="grass_top" rotation="0" />
 		<tile x="16" y="22" texture="grass_top" rotation="0" />
@@ -6235,7 +6235,7 @@
 		<tile x="17" y="17" texture="grass_top" rotation="0" />
 		<tile x="17" y="18" texture="grass_top" rotation="0" />
 		<tile x="17" y="19" texture="grass_top" rotation="0" />
-		<tile x="17" y="20" texture="dirt" rotation="0" />
+		<tile x="17" y="20" texture="grass_top" rotation="0" />
 		<tile x="17" y="21" texture="grass_top" rotation="0" />
 		<tile x="17" y="22" texture="grass_top" rotation="0" />
 		<tile x="17" y="23" texture="grass_top" rotation="0" />
@@ -6304,9 +6304,9 @@
 		<tile x="18" y="17" texture="grass_top" rotation="0" />
 		<tile x="18" y="18" texture="grass_top" rotation="0" />
 		<tile x="18" y="19" texture="grass_top" rotation="0" />
-		<tile x="18" y="20" texture="dirt" rotation="0" />
-		<tile x="18" y="21" texture="dirt" rotation="0" />
-		<tile x="18" y="22" texture="dirt" rotation="0" />
+		<tile x="18" y="20" texture="grass_top" rotation="0" />
+		<tile x="18" y="21" texture="grass_top" rotation="0" />
+		<tile x="18" y="22" texture="grass_top" rotation="0" />
 		<tile x="18" y="23" texture="grass_top" rotation="0" />
 		<tile x="18" y="24" texture="grass_top" rotation="0" />
 		<tile x="18" y="25" texture="grass_top" rotation="0" />
@@ -6374,9 +6374,9 @@
 		<tile x="19" y="18" texture="grass_top" rotation="0" />
 		<tile x="19" y="19" texture="grass_top" rotation="0" />
 		<tile x="19" y="20" texture="grass_top" rotation="0" />
-		<tile x="19" y="21" texture="dirt" rotation="0" />
-		<tile x="19" y="22" texture="dirt" rotation="0" />
-		<tile x="19" y="23" texture="dirt" rotation="0" />
+		<tile x="19" y="21" texture="grass_top" rotation="0" />
+		<tile x="19" y="22" texture="grass_top" rotation="0" />
+		<tile x="19" y="23" texture="grass_top" rotation="0" />
 		<tile x="19" y="24" texture="grass_top" rotation="0" />
 		<tile x="19" y="25" texture="grass_top" rotation="0" />
 		<tile x="19" y="26" texture="grass_top" rotation="0" />
@@ -6445,7 +6445,7 @@
 		<tile x="20" y="20" texture="grass_top" rotation="0" />
 		<tile x="20" y="21" texture="grass_top" rotation="0" />
 		<tile x="20" y="22" texture="grass_top" rotation="0" />
-		<tile x="20" y="23" texture="dirt_top_2" rotation="1" />
+		<tile x="20" y="23" texture="dirt_top_right_1" rotation="1" />
 		<tile x="20" y="24" texture="dirt_top_0" rotation="0" />
 		<tile x="20" y="25" texture="dirt_top_1" rotation="0" />
 		<tile x="20" y="26" texture="dirt_top_right_0" rotation="3" />
