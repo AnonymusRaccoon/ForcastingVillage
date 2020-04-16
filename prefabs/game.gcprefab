@@ -84,8 +84,8 @@
         <sprite name="panel" src="assets/ui/panel.png" />
 
         <tiles>
-            <tile name="panel" />
-            <tile name="grass" />
+            <tile name="dirt_top_right_1" />
+            <tile name="grass_top" />
             <tile name="dirt" />
         </tiles>
 
@@ -109,6 +109,7 @@
         <sprite name="stone_cabin" src="assets/sprites/houses/Stone_Cabin_Stage_1.png" />
         <sprite name="shed" src="assets/sprites/houses/Shed.png" />
         <sprite name="coop" src="assets/sprites/houses/Coop.png" />
+        <sprite name="town_hall" src="assets/sprites/houses/Community_Center.png" />
 
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>
