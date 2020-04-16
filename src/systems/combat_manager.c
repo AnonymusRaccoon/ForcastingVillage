@@ -37,7 +37,7 @@ void entity_moved(gc_engine *engine, va_list args)
         return;
     if (tile->type && my_strcmp(tile->type, "combat"))
         combat_start(engine);
-    if (random() % 100 <= cmp->fight_rate)
+    if (random() % 100 < cmp->fight_rate)
         combat_start(engine);
 }
 
