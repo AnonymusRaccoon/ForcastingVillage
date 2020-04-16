@@ -102,6 +102,12 @@
         <sprite name="house" src="assets/sprites/houses/generic-rpg-house-inn.png" />
         <sprite name="barn" src="assets/sprites/houses/Deluxe_Barn.png" />
         <sprite name="well" src="assets/sprites/houses/Well.png" />
+        <sprite name="silo" src="assets/sprites/houses/Silo.png" />
+        <sprite name="log_cabin" src="assets/sprites/houses/Log_Cabin_Stage_1.png" />
+        <sprite name="plank_cabin" src="assets/sprites/houses/Plank_Cabin_Stage_1.png" />
+        <sprite name="stone_cabin" src="assets/sprites/houses/Stone_Cabin_Stage_1.png" />
+        <sprite name="shed" src="assets/sprites/houses/Shed.png" />
+        <sprite name="coop" src="assets/sprites/houses/Coop.png" />
 
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>
