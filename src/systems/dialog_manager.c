@@ -70,12 +70,22 @@ gc_entity *name)
 static bool handle_input(gc_engine *engine, struct dialog_manager *this)
 {
     int prefab_id;
+    gc_entity *entity;
+    struct renderer *rend;
 
     if (!this->current_text->inputs)
         return (true);
     if ((prefab_id = prefab_load(engine, "prefabs/input.gcprefab")) < 0) {
         my_printf("Couldn't load the input prefab.\n");
         return (false);
+    }
+    for (int i = 0; i < this->current_text->input_count; i++) {
+        entity = engine->scene->get_entity(engine->scene, 35353500 + i);
+        if (!entity)
+            return (false);
+        if (!(rend = GETCMP(entity, renderer)) || rend->type != GC_TXTREND)
+            return (false);
+        ((gc_text *)rend->data)->text = this->current_text->inputs[i].text;
     }
     return (true);
 }
