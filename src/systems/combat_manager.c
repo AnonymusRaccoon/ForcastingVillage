@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include "engine.h"
 #include "my.h"
+#include "components/dialog_holder.h"
 
 void combat_start(gc_engine *engine)
 {
@@ -23,6 +24,7 @@ void combat_start(gc_engine *engine)
     }
     this->game_scene = engine->scene;
     engine->change_scene(engine, scene);
+    dialog_next(engine);
 }
 
 void entity_moved(gc_engine *engine, va_list args)
