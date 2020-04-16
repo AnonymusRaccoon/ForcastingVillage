@@ -3590,4 +3590,14 @@
     </renderer>
     <map_linker x="60" y="26" />
 </gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="230" y="200" />
+    </transform_component>
+    <renderer src="town_hall">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="42" y="30" />
+</gc_entity>
 </gc_entities>
