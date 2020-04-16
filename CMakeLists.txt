@@ -283,7 +283,13 @@ add_executable(my_rpg
         src/components/xp_component.c
         include/components/xp_component.h
 	    src/components/xp_methods.c
-        src/dialog_input.c src/systems/dialog_methods.c)
+        src/dialog_input.c
+        src/systems/dialog_methods.c
+        src/systems/combat_manager.c
+        include/systems/combat_manager.h
+        src/components/player_component.c
+        include/components/player_component.h
+)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 

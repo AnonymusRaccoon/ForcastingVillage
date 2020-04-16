@@ -10,6 +10,8 @@
 #include <SFML/System.h>
 #include <components/dialog_holder.h>
 #include <components/health_component.h>
+#include <components/player_component.h>
+#include <systems/combat_manager.h>
 #include "systems/map_movement_system.h"
 #include "systems/game_manager_system.h"
 #include "systems/controllers/keyboard_controller_system.h"
@@ -72,6 +74,8 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &health_component);
     engine->add_system(engine, &game_display_system);
     engine->add_component(engine, &xp_component);
+    engine->add_component(engine, &player_component);
+    engine->add_system(engine, new_system(&combat_manager, engine));
     engine->finish_physics(engine);
     for (int i = 0; callbacks[i].func; i++)
         engine->add_callback(engine, my_strdup(callbacks[i].name), \

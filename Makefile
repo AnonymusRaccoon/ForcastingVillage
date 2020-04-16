@@ -28,7 +28,11 @@ SRC = 	src/main.c \
 	src/components/health_component.c \
 	src/components/health_methods.c \
 	src/components/xp_component.c \
-	src/components/xp_methods.c
+	src/components/xp_methods.c \
+	src/dialog_input.c \
+	src/systems/dialog_methods.c \
+	src/systems/combat_manager.c \
+	src/components/player_component.c
 
 OBJ = $(SRC:%.c=%.o)
 
