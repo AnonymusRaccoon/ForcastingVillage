@@ -91,6 +91,14 @@ static bool handle_input(gc_engine *engine, struct dialog_manager *this)
     return (true);
 }
 
+void run_input_func(struct dialog_manager *this, gc_engine *engine)
+{
+    prefab_destroy(engine->scene, this->input_id);
+    this->input_id = -1;
+    if (this->current_input->callback)
+        this->current_input->callback(engine, NULL, (gc_vector2){0, 0}, 0);
+}
+
 void dialog_next(gc_engine *engine)
 {
     struct dialog_manager *this = GETSYS(engine, dialog_manager);
@@ -102,10 +110,8 @@ void dialog_next(gc_engine *engine)
         return;
     if (this->dialog_id == -1)
         load_dialog(this, engine, entity);
-    if (this->input_id >= 0) {
-        prefab_destroy(scene, this->input_id);
-        this->input_id = -1;
-    }
+    if (this->input_id >= 0)
+        run_input_func(this, engine);
     controllable_set_can_move(scene, false);
     holder_name = scene->get_entity(scene, 1336);
     entity = scene->get_entity(scene, 1337);

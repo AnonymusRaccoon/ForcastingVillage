@@ -15,8 +15,6 @@ enum gc_mousekeys key)
 
     man->current_input = &man->current_text->inputs[0];
     dialog_next(engine);
-    if (man->current_input->callback)
-        man->current_input->callback(engine, entity, pos, key);
     return (true);
 }
 
@@ -27,8 +25,6 @@ enum gc_mousekeys key)
 
     man->current_input = &man->current_text->inputs[1];
     dialog_next(engine);
-    if (man->current_input->callback)
-        man->current_input->callback(engine, entity, pos, key);
     return (true);
 }
 
@@ -39,8 +35,6 @@ enum gc_mousekeys key)
 
     man->current_input = &man->current_text->inputs[2];
     dialog_next(engine);
-    if (man->current_input->callback)
-        man->current_input->callback(engine, entity, pos, key);
     return (true);
 }
 
@@ -51,7 +45,5 @@ enum gc_mousekeys key)
 
     man->current_input = &man->current_text->inputs[3];
     dialog_next(engine);
-    if (man->current_input->callback)
-        man->current_input->callback(engine, entity, pos, key);
     return (true);
 }
