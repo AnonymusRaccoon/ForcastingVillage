@@ -18,24 +18,24 @@
 		 <animation name="walk_down_right" frame_count="6" frame_rate="10">
 			 <Rect top="1344" left="138" />
 		 </animation>
-
-		 <animation name="walk_down" frame_count="6" frame_rate="10">
-			 <Rect top="0" left="138" />
-		 </animation>
-		 <animation name="walk_up" frame_count="6" frame_rate="10">
-			 <Rect top="768" left="138" />
-		 </animation>
-		 <animation name="walk_right" frame_count="6" frame_rate="10">
-			 <Rect top="1152" left="138" />
-		 </animation>
-		 <animation name="walk_left" frame_count="6" frame_rate="10">
-			 <Rect top="384" left="138" />
-		 </animation>
-	   </renderer>
-	   <camerafollow_component/>
-	   <controllable_component />
-	   <keyboard_controller left="16" right="3" up="25" down="18" />
-	   <map_movement />
-	   <map_linker x="1" y="1" solid="false" />
-	</gc_entity>
-</gc_entities>
+                 <animation name="walk_down" frame_count="6" frame_rate="10">
+                     <Rect top="0" left="138" />
+                 </animation>
+                 <animation name="walk_up" frame_count="6" frame_rate="10">
+                     <Rect top="768" left="138" />
+                 </animation>
+                 <animation name="walk_right" frame_count="6" frame_rate="10">
+                     <Rect top="1152" left="138" />
+                 </animation>
+                 <animation name="walk_left" frame_count="6" frame_rate="10">
+                     <Rect top="384" left="138" />
+                 </animation>
+           </renderer>
+           <camerafollow_component/>
+           <controllable_component />
+           <keyboard_controller left="16" right="3" up="25" down="18" />
+           <map_movement />
+           <map_linker x="1" y="1" solid="false" />
+		   <xp_component xp="20"/>
+   </gc_entity>
+  </gc_entities>
