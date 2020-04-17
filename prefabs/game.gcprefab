@@ -122,6 +122,10 @@
         <sprite name="rotate" src="assets/ui/rotate.png" />
         <sprite name="texture" src="assets/ui/texture.png" />
         <sprite name="save" src="assets/ui/save.png" />
+
+        <enemies>
+            <enemy name="bee" src="prefabs/enemies/bee.gcprefab" />
+        </enemies>
     </data>
 
     <gc_entities>

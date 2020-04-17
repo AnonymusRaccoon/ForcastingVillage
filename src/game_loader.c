@@ -77,6 +77,8 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &player_component);
     engine->add_system(engine, new_system(&combat_manager, engine));
     engine->finish_physics(engine);
+    engine->add_dataloader(engine, "enemies", &enemies_dataloader);
+
     for (int i = 0; callbacks[i].func; i++)
         engine->add_callback(engine, my_strdup(callbacks[i].name), \
 callbacks[i].func);

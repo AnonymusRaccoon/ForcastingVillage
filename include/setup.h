@@ -50,3 +50,5 @@ bool dialog_input2(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
 enum gc_mousekeys key);
 bool dialog_input3(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
 enum gc_mousekeys key);
+
+gc_data *enemies_dataloader(gc_engine *engine, gc_scene *scene, node *n);

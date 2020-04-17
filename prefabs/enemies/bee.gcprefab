@@ -1,0 +1,12 @@
+<gc_entities>
+    <gc_entity>
+        <transform_component>
+            <Position x="0" y="0" />
+            <Size x="100" y="100" />
+        </transform_component>
+        <renderer src="bee">
+            <Rect height="auto" width="auto" top="0" left="0" />
+        </renderer>
+        <fixed_to_cam x="75%" y="20%" />
+    </gc_entity>
+</gc_entities>

@@ -9,22 +9,35 @@
 #include <tile.h>
 #include <components/player_component.h>
 #include <stdlib.h>
+#include <prefab.h>
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
+#include "enemy.h"
 
-void combat_start(gc_engine *engine)
+void combat_start(gc_engine *engine, char *enemy_name)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
+    gc_list *li = engine->scene->get_data(engine->scene, "enemies", NULL);
     gc_scene *scene = scene_create(engine, "prefabs/combat.gcprefab");
+    struct enemy *enemy = NULL;
 
     if (!scene) {
         my_printf("The combat scene couldn't be found.\n");
         return;
     }
     this->game_scene = engine->scene;
+    engine->scene = NULL;
     engine->change_scene(engine, scene);
     dialog_next(engine);
+    for (; li; li = li->next) {
+        enemy = li->data;
+        if ((!enemy_name && random() % 100 < enemy->spawn_rate)
+        || (enemy_name && !my_strcmp(enemy_name, enemy->name)))
+            break;
+    }
+    if (enemy)
+        prefab_load(engine, enemy->prefab_src);
 }
 
 void entity_moved(gc_engine *engine, va_list args)
@@ -36,9 +49,9 @@ void entity_moved(gc_engine *engine, va_list args)
     if (!cmp)
         return;
     if (tile->type && my_strcmp(tile->type, "combat"))
-        combat_start(engine);
+        combat_start(engine, NULL);
     if (random() % 100 < cmp->fight_rate)
-        combat_start(engine);
+        combat_start(engine, NULL);
 }
 
 
@@ -58,6 +71,9 @@ static void ctr(void *system, va_list list)
 
 static void dtr(void *system, gc_engine *engine)
 {
+    struct combat_manager *sys = system;
+    if (sys->game_scene)
+        scene_destroy(sys->game_scene);
 }
 
 const struct combat_manager combat_manager = {
