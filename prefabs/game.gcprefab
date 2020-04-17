@@ -80,11 +80,12 @@
         <sprite name="water_top" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
         <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
+        <sprite name="stone" src="assets/tiles/stone.png" />
         <sprite name="panel" src="assets/ui/panel.png" />
 
         <tiles>
-            <tile name="dirt_top_right_1" />
             <tile name="grass_top" />
+            <tile name="stone" />
             <tile name="dirt" />
         </tiles>
 
@@ -109,6 +110,15 @@
         <sprite name="shed" src="assets/sprites/houses/Shed.png" />
         <sprite name="coop" src="assets/sprites/houses/Coop.png" />
         <sprite name="town_hall" src="assets/sprites/houses/Community_Center.png" />
+
+        <sprite name="item_grass_0" src="assets/sprites/items/generic-rpg-grass01.png" />
+        <sprite name="item_grass_1" src="assets/sprites/items/generic-rpg-grass02.png" />
+        <sprite name="item_flower_0" src="assets/sprites/items/generic-rpg-flower01.png" />
+        <sprite name="item_flower_1" src="assets/sprites/items/generic-rpg-flower02.png" />
+        <sprite name="item_flower_2" src="assets/sprites/items/generic-rpg-flower03.png" />
+        <sprite name="item_rock_0" src="assets/sprites/items/generic-rpg-rock03.png" />
+        <sprite name="item_rock_1" src="assets/sprites/items/generic-rpg-rock04.png" />
+        <sprite name="item_rock_2" src="assets/sprites/items/generic-rpg-rock05.png" />
 
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>

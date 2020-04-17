@@ -22,7 +22,7 @@ for i in range(max_height - min_height + 1):
         print(f"""<gc_entity>
     <transform_component>
         <Position x="0" y="0" />
-        <Size x="150" y="200" />
+        <Size x="30" y="30" />
     </transform_component>
     <renderer src="{entity}">
         <Rect height="auto" width="auto" top="0" left="0" />
