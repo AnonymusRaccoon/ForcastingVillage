@@ -13,6 +13,7 @@
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
+#include "components/combat_holder.h"
 #include "enemy.h"
 
 void combat_start(gc_engine *engine, char *enemy_name)
@@ -58,6 +59,22 @@ void entity_moved(gc_engine *engine, va_list args)
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
 float dtime)
 {
+    struct combat_holder *cmp = GETCMP(entity, combat_holder);
+    gc_scene *scene = engine->scene;
+    gc_list *li = scene->get_entity_by_cmp(scene, "dialog_holder");
+    struct dialog_holder *dialog;
+
+    if (!li)
+        return;
+    dialog = GETCMP(li->data, dialog_holder);
+    switch (cmp->state) {
+    case STARTUP:
+        dialog_add_line(dialog, NULL, "A bee has appeared.", NULL);
+        cmp->state = IDLE;
+        break;
+    case IDLE:
+        break;
+    }
 }
 
 static void ctr(void *system, va_list list)
@@ -79,7 +96,7 @@ static void dtr(void *system, gc_engine *engine)
 const struct combat_manager combat_manager = {
     base: {
         name: "combat_manager",
-        component_name: "player_component",
+        component_name: "combat_holder",
         size: sizeof(struct combat_manager),
         ctr: &ctr,
         dtr: &dtr,

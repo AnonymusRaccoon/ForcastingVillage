@@ -19,13 +19,7 @@
 
         <gc_entity>
             <dialog_holder x="0" y="0" tile_texture="dirt_top_1">
-                <??? line="Hello dirt block,\nI am the mighty cobble block.">
-                    <input text="Yes" click="super" />
-                    <input text="No" click="super" />
-                    <input text="Maybe" click="super" />
-                    <input text="Run away" click="super" />
-                </???>
-                <Cobble_block line="Can I do something\n for you?" />
+                <Fight line="An enemy appeared." />
             </dialog_holder>
         </gc_entity>
 

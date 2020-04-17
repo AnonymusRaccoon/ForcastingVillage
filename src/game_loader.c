@@ -12,6 +12,7 @@
 #include <components/health_component.h>
 #include <components/player_component.h>
 #include <systems/combat_manager.h>
+#include <components/combat_holder.h>
 #include "systems/map_movement_system.h"
 #include "systems/game_manager_system.h"
 #include "systems/controllers/keyboard_controller_system.h"
@@ -75,6 +76,7 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_system(engine, &game_display_system);
     engine->add_component(engine, &xp_component);
     engine->add_component(engine, &player_component);
+    engine->add_component(engine, &combat_holder);
     engine->add_system(engine, new_system(&combat_manager, engine));
     engine->finish_physics(engine);
     engine->add_dataloader(engine, "enemies", &enemies_dataloader);

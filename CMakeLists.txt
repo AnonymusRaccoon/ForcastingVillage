@@ -289,7 +289,7 @@ add_executable(my_rpg
         include/systems/combat_manager.h
         src/components/player_component.c
         include/components/player_component.h
-        src/enemy_dataloader.c include/enemy.h)
+        src/enemy_dataloader.c include/enemy.h src/components/combat_holder.c include/components/combat_holder.h src/components/dialog_methods.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 
