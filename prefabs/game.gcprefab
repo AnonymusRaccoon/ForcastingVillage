@@ -84,8 +84,8 @@
         <sprite name="panel" src="assets/ui/panel.png" />
 
         <tiles>
-            <tile name="grass_top" />
-            <tile name="stone" />
+            <tile name="dirt_inner_top_left" />
+            <tile name="dirt_top_right_0" />
             <tile name="dirt" />
         </tiles>
 

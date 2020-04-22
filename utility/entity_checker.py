@@ -16,7 +16,7 @@ for entity in root.findall("gc_entity"):
     attribs = entity.find('map_linker').attrib
     attribs['name'] = entity.find("renderer").get("src")
     #print(f"x:{attribs['x']} y:{attribs['y']} name:{attribs['name']}")
-    if (not attribs['name'] in elements_to_get_rid_of):
+    if not (attribs['name'] in elements_to_get_rid_of):
         continue
     for tile in rootmap.findall("./tiles_data/tile"):
         tile_info = tile.attrib
