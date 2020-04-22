@@ -12,7 +12,7 @@ static void ctr(void *component, va_list args)
 {
     struct combat_holder *cmp = component;
 
-    cmp->state = STARTUP;
+    cmp->state = ATTACK;
     cmp->name = va_arg(args, char *);
 }
 

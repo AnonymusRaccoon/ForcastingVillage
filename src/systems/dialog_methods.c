@@ -44,14 +44,12 @@ my_strcmp(link->tile->type, "dialog"))
 bool update_dialog(struct dialog_manager *this, gc_entity *text, \
 gc_entity *name)
 {
-    struct renderer *rend;
+    struct renderer *rend = GETCMP(name, renderer);
 
-    if (!text || !name)
-        return (true);
     this->current_text = this->current_dialog->text[this->current_line];
-    rend = GETCMP(name, renderer);
     if (!rend || rend->type != GC_TXTREND || !rend->data)
         return (true);
+    rend->destroy = &text_safe_destroy;
     if (this->current_text)
         ((gc_text *)rend->data)->text = this->current_text->name;
     else
@@ -59,6 +57,7 @@ gc_entity *name)
     rend = GETCMP(text, renderer);
     if (!rend || rend->type != GC_TXTREND || !rend->data)
         return (true);
+    rend->destroy = &text_safe_destroy;
     if (this->current_text) {
         ((gc_text *) rend->data)->text = this->current_text->text;
         this->current_input = &this->current_text->inputs[0];
@@ -95,7 +94,7 @@ static bool handle_input(gc_engine *engine, struct dialog_manager *this)
 void run_input_func(struct dialog_manager *this, gc_engine *engine)
 {
     if (this->current_input->callback)
-        this->current_input->callback(engine, NULL, (gc_vector2){0, 0}, 0);
+        this->current_input->callback(engine, this->input_index);
     prefab_destroy(engine->scene, this->input_id);
     this->input_id = -1;
 }
@@ -116,7 +115,8 @@ void dialog_next(gc_engine *engine)
     controllable_set_can_move(scene, false);
     holder_name = scene->get_entity(scene, 1336);
     entity = scene->get_entity(scene, 1337);
-    if (!update_dialog(this, entity, holder_name) && handle_input(engine, this))
+    if (!entity || !holder_name
+    ||!update_dialog(this, entity, holder_name) && handle_input(engine, this))
         return;
     prefab_destroy(scene, this->dialog_id);
     this->dialog_id = -1;

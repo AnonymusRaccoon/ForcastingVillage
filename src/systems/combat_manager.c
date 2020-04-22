@@ -10,36 +10,12 @@
 #include <components/player_component.h>
 #include <stdlib.h>
 #include <prefab.h>
+#include <components/attack_component.h>
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
 #include "components/combat_holder.h"
 #include "enemy.h"
-
-void combat_start(gc_engine *engine, char *enemy_name)
-{
-    struct combat_manager *this = GETSYS(engine, combat_manager);
-    gc_list *li = engine->scene->get_data(engine->scene, "enemies", NULL);
-    gc_scene *scene = scene_create(engine, "prefabs/combat.gcprefab");
-    struct enemy *enemy = NULL;
-
-    if (!scene) {
-        my_printf("The combat scene couldn't be found.\n");
-        return;
-    }
-    this->game_scene = engine->scene;
-    engine->scene = NULL;
-    engine->change_scene(engine, scene);
-    dialog_next(engine);
-    for (; li; li = li->next) {
-        enemy = li->data;
-        if ((!enemy_name && random() % 100 < enemy->spawn_rate)
-        || (enemy_name && !my_strcmp(enemy_name, enemy->name)))
-            break;
-    }
-    if ((this->current_enemy = enemy))
-        prefab_load(engine, enemy->prefab_src);
-}
 
 void entity_moved(gc_engine *engine, va_list args)
 {
@@ -79,10 +55,8 @@ float dtime)
         return;
     dialog = GETCMP(li->data, dialog_holder);
     switch (cmp->state) {
-    case STARTUP:
-        dialog_add_line(dialog, NULL, "A bee has appeared.", NULL);
-        cmp->state = IDLE;
-        break;
+    case ATTACK:
+        return (show_attacks(cmp, dialog, scene));
     case IDLE:
         break;
     }

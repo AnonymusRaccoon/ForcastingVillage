@@ -29,6 +29,8 @@
             </transform_component>
             <map_linker x="0" y="0" />
             <player_component />
+            <attack_component>
+            </attack_component>
         </gc_entity>
 
         <panel src="enemy_holder" x="75%" y="20%" width="30%" height="%" />

@@ -20,7 +20,7 @@ struct dialog_input *inputs)
     line->name = name;
     line->text = text;
     if (inputs)
-        for (count = 0; &inputs[count]; count++);
+        for (count = 0; inputs[count].text; count++);
     line->input_count = count;
     line->inputs = inputs;
     for (count = 0; this->text[count]; count++);

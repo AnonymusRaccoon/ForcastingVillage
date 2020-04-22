@@ -14,6 +14,7 @@ enum gc_mousekeys key)
     struct dialog_manager *man = GETSYS(engine, dialog_manager);
 
     man->current_input = &man->current_text->inputs[0];
+    man->input_index = 0;
     dialog_next(engine);
     return (true);
 }
@@ -24,6 +25,7 @@ enum gc_mousekeys key)
     struct dialog_manager *man = GETSYS(engine, dialog_manager);
 
     man->current_input = &man->current_text->inputs[1];
+    man->input_index = 1;
     dialog_next(engine);
     return (true);
 }
@@ -34,6 +36,7 @@ enum gc_mousekeys key)
     struct dialog_manager *man = GETSYS(engine, dialog_manager);
 
     man->current_input = &man->current_text->inputs[2];
+    man->input_index = 2;
     dialog_next(engine);
     return (true);
 }
@@ -44,6 +47,7 @@ enum gc_mousekeys key)
     struct dialog_manager *man = GETSYS(engine, dialog_manager);
 
     man->current_input = &man->current_text->inputs[3];
+    man->input_index = 3;
     dialog_next(engine);
     return (true);
 }

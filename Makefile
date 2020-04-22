@@ -32,7 +32,8 @@ SRC = 	src/main.c \
 	src/dialog_input.c \
 	src/systems/dialog_methods.c \
 	src/systems/combat_manager.c \
-	src/components/player_component.c
+	src/components/player_component.c \
+	src/components/attack_component.c
 
 OBJ = $(SRC:%.c=%.o)
 

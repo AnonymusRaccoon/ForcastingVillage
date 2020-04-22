@@ -73,7 +73,8 @@ struct dialog_line *dialog_parse_text(gc_scene *scene, node *n)
     for (n = n->child; n; n = n->next) {
         txt->inputs[i].text = xml_getproperty(n, "text");
         click = xml_gettempprop(n, "click");
-        if (!(txt->inputs[i++].callback = scene->get_callback(scene, click)))
+        txt->inputs[i++].callback = scene->get_data(scene, "input", click);
+        if (!txt->inputs)
             my_printf("Couldn't find a callback with the name: %s.\n", click);
     }
     return (txt);

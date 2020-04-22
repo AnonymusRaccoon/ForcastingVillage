@@ -12,7 +12,7 @@
 
 struct dialog_input {
     char *text;
-    callback_t callback;
+    void (*callback)(gc_engine *engine, int input_index);
 };
 
 struct dialog_line {
@@ -37,6 +37,7 @@ struct dialog_manager {
     int dialog_id;
     int input_id;
     int current_line;
+    int input_index;
     struct dialog_line *current_text;
     struct dialog_holder *current_dialog;
     struct dialog_input *current_input;

@@ -13,7 +13,9 @@
 
 enum combat_state
 {
-    STARTUP,
+    ATTACK,
+    ATTACKING,
+    DEFENDING,
     IDLE
 };
 
