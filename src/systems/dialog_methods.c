@@ -121,4 +121,5 @@ void dialog_next(gc_engine *engine)
     prefab_destroy(scene, this->dialog_id);
     this->dialog_id = -1;
     controllable_set_can_move(scene, true);
+    engine->trigger_event(engine, "dialog_ended");
 }

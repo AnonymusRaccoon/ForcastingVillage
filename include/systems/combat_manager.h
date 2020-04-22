@@ -14,6 +14,7 @@
 struct combat_manager {
     gc_system base;
     gc_scene *game_scene;
+    struct enemy *current_enemy;
 };
 
 extern const struct combat_manager combat_manager;

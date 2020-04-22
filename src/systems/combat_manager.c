@@ -37,7 +37,7 @@ void combat_start(gc_engine *engine, char *enemy_name)
         || (enemy_name && !my_strcmp(enemy_name, enemy->name)))
             break;
     }
-    if (enemy)
+    if ((this->current_enemy = enemy))
         prefab_load(engine, enemy->prefab_src);
 }
 
@@ -55,6 +55,17 @@ void entity_moved(gc_engine *engine, va_list args)
         combat_start(engine, NULL);
 }
 
+void dialog_ended(gc_engine *engine, va_list args)
+{
+    struct combat_manager *this = GETSYS(engine, combat_manager);
+
+    if (!this->current_enemy)
+        return;
+    engine->trigger_event(engine, "combat_ended", this->current_enemy);
+    this->current_enemy = NULL;
+    engine->change_scene(engine, this->game_scene);
+    this->game_scene = NULL;
+}
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
 float dtime)
@@ -84,13 +95,17 @@ static void ctr(void *system, va_list list)
 
     this->game_scene = NULL;
     engine->add_event_listener(engine, "entity_moved", &entity_moved);
+    engine->add_event_listener(engine, "dialog_ended", &dialog_ended);
 }
 
 static void dtr(void *system, gc_engine *engine)
 {
-    struct combat_manager *sys = system;
-    if (sys->game_scene)
-        scene_destroy(sys->game_scene);
+    struct combat_manager *this = system;
+
+    engine->remove_event_listener(engine, "entity_moved", &entity_moved);
+    engine->remove_event_listener(engine, "dialog_ended", &dialog_ended);
+    if (this->game_scene)
+        scene_destroy(this->game_scene);
 }
 
 const struct combat_manager combat_manager = {
