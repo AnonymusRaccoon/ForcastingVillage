@@ -7,19 +7,31 @@
 
 #include "engine.h"
 #include "components/attack_component.h"
+#include <malloc.h>
 
 static void ctr(void *component, va_list args)
 {
     struct attack_component *cmp = (struct attack_component *)component;
 
-    cmp->attacks = va_arg(args, gc_data *);
+    cmp->attacks = va_arg(args, attack_holder *);
 }
 
 static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
 {
     struct attack_component *cmp = (struct attack_component *)component;
+    int i = 0;
+    char *name;
 
-    // SET ATTACKS FROM the xml.
+    cmp->attacks = malloc(sizeof(attack_holder) * xml_getchildcount(n));
+    if (!cmp->attacks)
+        return;
+    for (n = n->child; n; n = n->next) {
+        name = xml_getproperty(n, "name");
+        cmp->attacks[i].name = name;
+        cmp->attacks[i].run = scene->get_data(scene, "attack", name);
+        i++;
+    }
+    cmp->attacks[i].name = NULL;
 }
 
 static void dtr(void *component)

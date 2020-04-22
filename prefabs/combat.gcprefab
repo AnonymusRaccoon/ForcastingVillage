@@ -30,6 +30,10 @@
             <map_linker x="0" y="0" />
             <player_component />
             <attack_component>
+                <attack name="Wind Slash" />
+                <attack name="Blizzard" />
+                <attack name="Fireball" />
+                <attack name="Water jet" />
             </attack_component>
         </gc_entity>
 

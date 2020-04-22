@@ -88,6 +88,7 @@ static bool handle_input(gc_engine *engine, struct dialog_manager *this)
         ((gc_text *)rend->data)->text = this->current_text->inputs[i].text;
         rend->destroy = &text_safe_destroy;
     }
+    this->input_index = 0;
     return (true);
 }
 

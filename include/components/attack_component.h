@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2020
 ** my_rpg	
 ** File description:
-** attack_component.h
+** attack_component.hMdr
 */
 
 
@@ -13,9 +13,14 @@
 
 typedef void (*attack)(gc_entity *from, gc_entity *enemy);
 
+typedef struct attack_holder {
+    char *name;
+    attack run;
+} attack_holder;
+
 struct attack_component {
     gc_component base;
-    gc_data *attacks;
+    attack_holder *attacks;
 };
 
 extern const struct attack_component attack_component;
