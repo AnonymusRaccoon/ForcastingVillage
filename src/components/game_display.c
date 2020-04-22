@@ -32,11 +32,15 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     }
     if (!my_strcmp(display_type, "selected_tile")) {
         cmp->type = SELECT_TILE_DISPLAY;
-        return;
     }
     if (!my_strcmp(display_type, "xp")) {
         cmp->type = XP_DISPLAY;
-        return;
+    }
+    if (!my_strcmp(display_type, "health")) {
+        cmp->type = HEALTH_DISPLAY;
+    }
+    if (!my_strcmp(display_type, "health_ennemy")) {
+        cmp->type = HEALTH_DISPLAY_ENNEMY;
     }
 }
 

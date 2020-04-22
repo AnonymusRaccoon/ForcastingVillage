@@ -37,5 +37,6 @@
            <map_movement />
            <map_linker x="1" y="1" solid="false" />
 		   <xp_component xp="20"/>
+		   <health_component max_health="420"/>
    </gc_entity>
   </gc_entities>

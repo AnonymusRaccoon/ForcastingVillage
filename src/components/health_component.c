@@ -13,7 +13,8 @@ static void ctr(void *component, va_list args)
 {
     struct health_component *cmp = (struct health_component *)\
 component;
-    cmp->health = va_arg(args, int);
+    cmp->health_max = va_arg(args, int);
+    cmp->health = cmp->health_max;
     cmp->dead = false;
 }
 
@@ -23,7 +24,10 @@ void *component, node *n)
     struct health_component *cmp = (struct health_component *)\
 component;
 
-    cmp->health = xml_getintprop(n, "health");
+    cmp->health_max = xml_getintprop(n, "max_health");
+    if (cmp->health_max <= 0)
+        cmp->health_max = 42;
+    cmp->health = cmp->health_max;
     cmp->dead = false;
 }
 
