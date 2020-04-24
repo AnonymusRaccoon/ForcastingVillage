@@ -116,8 +116,8 @@ void dialog_next(gc_engine *engine)
     controllable_set_can_move(scene, false);
     holder_name = scene->get_entity(scene, 1336);
     entity = scene->get_entity(scene, 1337);
-    if (!entity || !holder_name
-    ||!update_dialog(this, entity, holder_name) && handle_input(engine, this))
+    if (!entity || !holder_name ||
+    (!update_dialog(this, entity, holder_name) && handle_input(engine, this)))
         return;
     prefab_destroy(scene, this->dialog_id);
     this->dialog_id = -1;

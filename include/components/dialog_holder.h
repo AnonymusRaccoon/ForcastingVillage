@@ -48,5 +48,6 @@ const struct dialog_manager dialog_manager;
 void dialog_next(gc_engine *engine);
 void dialog_add_line(struct dialog_holder *this, char *name, char *text, \
 struct dialog_input *inputs);
+void show_dialog_if_hidden(gc_engine *engine);
 
 #endif //MY_RPG_DIALOG_HOLDER_H

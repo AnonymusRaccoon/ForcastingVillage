@@ -10,6 +10,7 @@
         <fixed_to_cam x="75%" y="20%" />
         <combat_holder name="bee" />
         <attack_component>
+            <attack name="Fireball"/>
         </attack_component>
     </gc_entity>
 </gc_entities>

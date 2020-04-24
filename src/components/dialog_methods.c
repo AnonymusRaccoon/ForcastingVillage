@@ -24,7 +24,8 @@ struct dialog_input *inputs)
     line->input_count = count;
     line->inputs = inputs;
     for (count = 0; this->text[count]; count++);
-    this->text = my_realloc(this->text, (count + 1) * sizeof(void *), (count + 2) * sizeof(void *));
+    this->text = my_realloc(this->text, (count + 1) * sizeof(void *), \
+(count + 2) * sizeof(void *));
     if (!this->text)
         return;
     this->text[count] = line;

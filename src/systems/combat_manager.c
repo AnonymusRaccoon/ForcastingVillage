@@ -9,12 +9,9 @@
 #include <tile.h>
 #include <components/player_component.h>
 #include <stdlib.h>
-#include <prefab.h>
-#include <components/attack_component.h>
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
-#include "components/combat_holder.h"
 #include "enemy.h"
 
 void entity_moved(gc_engine *engine, va_list args)
@@ -41,12 +38,13 @@ void dialog_ended(gc_engine *engine, va_list args)
     this->current_enemy = NULL;
     engine->change_scene(engine, this->game_scene);
     this->game_scene = NULL;
+    this->state = ATTACK;
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
 float dtime)
 {
-    struct combat_holder *cmp = GETCMP(entity, combat_holder);
+    struct combat_manager *this = system;
     gc_scene *scene = engine->scene;
     gc_list *li = scene->get_entity_by_cmp(scene, "dialog_holder");
     struct dialog_holder *dialog;
@@ -54,9 +52,13 @@ float dtime)
     if (!li)
         return;
     dialog = GETCMP(li->data, dialog_holder);
-    switch (cmp->state) {
+    switch (this->state) {
     case ATTACK:
-        return (show_attacks(cmp, dialog, scene));
+        return (show_attacks(this, dialog, scene, engine));
+    case DEFEND:
+        return (defend(this, dialog, scene, engine));
+    case ATTACKING:
+    case DEFENDING:
     case IDLE:
         break;
     }
@@ -68,6 +70,7 @@ static void ctr(void *system, va_list list)
     struct combat_manager *this = (struct combat_manager *)system;
 
     this->game_scene = NULL;
+    this->state = ATTACK;
     engine->add_event_listener(engine, "entity_moved", &entity_moved);
     engine->add_event_listener(engine, "dialog_ended", &dialog_ended);
 }

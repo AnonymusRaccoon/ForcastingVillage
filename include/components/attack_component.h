@@ -11,7 +11,7 @@
 
 #include "component.h"
 
-typedef void (*attack)(gc_entity *from, gc_entity *enemy);
+typedef void (*attack)(gc_engine *engine, gc_entity *from, gc_entity *enemy);
 
 typedef struct attack_holder {
     char *name;

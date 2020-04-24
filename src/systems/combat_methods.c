@@ -6,15 +6,14 @@
 */
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "systems/combat_manager.h"
 #include "tile.h"
-#include "components/player_component.h"
 #include "prefab.h"
 #include "components/attack_component.h"
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
-#include "components/combat_holder.h"
 #include "enemy.h"
 
 void combat_start(gc_engine *engine, char *enemy_name)
@@ -44,11 +43,28 @@ void combat_start(gc_engine *engine, char *enemy_name)
 
 void attack_callback(gc_engine *engine, int index)
 {
+    gc_scene *scene = engine->scene;
+    gc_list *li = scene->get_entity_by_cmp(scene, "dialog_holder");
+    struct combat_manager *this = GETSYS(engine, combat_manager);
+    struct dialog_holder *dialog;
+    static char str[150];
+    gc_entity *player_entity = scene->get_entity(scene, 50);
+    struct attack_component *player;
+
+    if (!li || !player_entity)
+        return;
+    player = GETCMP(player_entity, attack_component);
+    if (!player)
+        return;
+    dialog = GETCMP(li->data, dialog_holder);
     printf("Launching attack %d\n", index);
+    snprintf(str, 150, "You used %s.", player->attacks[index].name);
+    dialog_add_line(dialog, NULL, str, NULL);
+    this->state = DEFEND;
 }
 
-void show_attacks(struct combat_holder *cmp, struct dialog_holder *dialog, \
-gc_scene *scene)
+void show_attacks(struct combat_manager *this, struct dialog_holder *dialog, \
+gc_scene *scene, gc_engine *engine)
 {
     gc_entity *player_entity = scene->get_entity(scene, 50);
     struct attack_component *player;
@@ -68,5 +84,48 @@ gc_scene *scene)
     }
     inputs[i].text = NULL;
     dialog_add_line(dialog, NULL, ATTACK_TEXT, inputs);
-    cmp->state = ATTACKING;
+    this->state = ATTACKING;
+}
+
+bool get_player_and_enemy(gc_scene *sce, gc_entity **player, gc_entity **enemy)
+{
+    gc_list *enemies = sce->get_entity_by_cmp(sce, "attack_component");
+
+    if (enemies && enemies->next && ((gc_entity *)enemies->data)->id == 50) {
+        *player = enemies->data;
+        *enemy = enemies->next->data;
+    } else if (enemies && enemies->next) {
+        *enemy = enemies->data;
+        *player = enemies->next->data;
+    }
+    if (!enemy || !player)
+        return (false);
+    return (true);
+}
+
+void defend(struct combat_manager *this, struct dialog_holder *dialog, \
+gc_scene *scene, gc_engine *engine)
+{
+    gc_entity *player = NULL;
+    gc_entity *enemy = NULL;
+    struct attack_component *enemy_attack;
+    static char str[150];
+    struct attack_holder *attack = NULL;
+    int count;
+
+    if (!get_player_and_enemy(scene, &player, &enemy))
+        return;
+    if (!(enemy_attack = GETCMP(enemy, attack_component)))
+        return;
+    for (count = 0; enemy_attack->attacks[count].name; count++);
+    if (count == 0) {
+        my_printf("No attack found for the enemy.\n");
+        return;
+    }
+    attack = &enemy_attack->attacks[random() % count];
+    snprintf(str, 150, "%s uses attack %s.", "The bee", attack->name);
+    if (attack->run)
+        attack->run(engine, enemy, player);
+    dialog_add_line(dialog, NULL, str, NULL);
+    this->state = DEFENDING;
 }

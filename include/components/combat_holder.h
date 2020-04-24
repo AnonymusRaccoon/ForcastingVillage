@@ -11,18 +11,9 @@
 
 #include "component.h"
 
-enum combat_state
-{
-    ATTACK,
-    ATTACKING,
-    DEFENDING,
-    IDLE
-};
-
 struct combat_holder
 {
     gc_component base;
-    enum combat_state state;
     char *name;
 };
 
