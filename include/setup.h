@@ -52,3 +52,7 @@ bool dialog_input3(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
 enum gc_mousekeys key);
 
 gc_data *enemies_dataloader(gc_engine *engine, gc_scene *scene, node *n);
+
+void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy);
+
+void load_attacks(gc_scene *scene);

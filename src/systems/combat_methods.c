@@ -15,6 +15,7 @@
 #include "my.h"
 #include "components/dialog_holder.h"
 #include "enemy.h"
+#include "setup.h"
 
 void combat_start(gc_engine *engine, char *enemy_name)
 {
@@ -30,6 +31,7 @@ void combat_start(gc_engine *engine, char *enemy_name)
     this->game_scene = engine->scene;
     engine->scene = NULL;
     engine->change_scene(engine, scene);
+    load_attacks(scene);
     dialog_next(engine);
     for (; li; li = li->next) {
         enemy = li->data;
@@ -41,6 +43,22 @@ void combat_start(gc_engine *engine, char *enemy_name)
         prefab_load(engine, enemy->prefab_src);
 }
 
+bool get_player_and_enemy(gc_scene *sce, gc_entity **player, gc_entity **enemy)
+{
+    gc_list *enemies = sce->get_entity_by_cmp(sce, "attack_component");
+
+    if (enemies && enemies->next && ((gc_entity *)enemies->data)->id == 50) {
+        *player = enemies->data;
+        *enemy = enemies->next->data;
+    } else if (enemies && enemies->next) {
+        *enemy = enemies->data;
+        *player = enemies->next->data;
+    }
+    if (!enemy || !player)
+        return (false);
+    return (true);
+}
+
 void attack_callback(gc_engine *engine, int index)
 {
     gc_scene *scene = engine->scene;
@@ -48,16 +66,18 @@ void attack_callback(gc_engine *engine, int index)
     struct combat_manager *this = GETSYS(engine, combat_manager);
     struct dialog_holder *dialog;
     static char str[150];
-    gc_entity *player_entity = scene->get_entity(scene, 50);
+    gc_entity *player_entity = NULL;
+    gc_entity *enemy = NULL;
     struct attack_component *player;
 
-    if (!li || !player_entity)
+    if (!li || !get_player_and_enemy(scene, &player_entity, &enemy))
         return;
     player = GETCMP(player_entity, attack_component);
     if (!player)
         return;
+    if (player->attacks[index].run)
+        player->attacks[index].run(engine, player_entity, enemy);
     dialog = GETCMP(li->data, dialog_holder);
-    printf("Launching attack %d\n", index);
     snprintf(str, 150, "You used %s.", player->attacks[index].name);
     dialog_add_line(dialog, NULL, str, NULL);
     this->state = DEFEND;
@@ -85,22 +105,6 @@ gc_scene *scene, gc_engine *engine)
     inputs[i].text = NULL;
     dialog_add_line(dialog, NULL, ATTACK_TEXT, inputs);
     this->state = ATTACKING;
-}
-
-bool get_player_and_enemy(gc_scene *sce, gc_entity **player, gc_entity **enemy)
-{
-    gc_list *enemies = sce->get_entity_by_cmp(sce, "attack_component");
-
-    if (enemies && enemies->next && ((gc_entity *)enemies->data)->id == 50) {
-        *player = enemies->data;
-        *enemy = enemies->next->data;
-    } else if (enemies && enemies->next) {
-        *enemy = enemies->data;
-        *player = enemies->next->data;
-    }
-    if (!enemy || !player)
-        return (false);
-    return (true);
 }
 
 void defend(struct combat_manager *this, struct dialog_holder *dialog, \
