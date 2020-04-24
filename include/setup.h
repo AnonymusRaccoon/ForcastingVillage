@@ -41,3 +41,14 @@ bool framerate_up(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __);
 bool framerate_down(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __);
+
+bool dialog_input0(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
+enum gc_mousekeys key);
+bool dialog_input1(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
+enum gc_mousekeys key);
+bool dialog_input2(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
+enum gc_mousekeys key);
+bool dialog_input3(gc_engine *engine, gc_entity *entity, gc_vector2 pos, \
+enum gc_mousekeys key);
+
+gc_data *enemies_dataloader(gc_engine *engine, gc_scene *scene, node *n);

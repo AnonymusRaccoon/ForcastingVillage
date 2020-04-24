@@ -10,9 +10,16 @@
 
 #include "component.h"
 
+struct dialog_input {
+    char *text;
+    void (*callback)(gc_engine *engine, int input_index);
+};
+
 struct dialog_line {
     char *name;
     char *text;
+    int input_count;
+    struct dialog_input *inputs;
 };
 
 struct dialog_holder {
@@ -28,11 +35,19 @@ const struct dialog_holder dialog_holder;
 struct dialog_manager {
     gc_system base;
     int dialog_id;
+    int input_id;
     int current_line;
+    int input_index;
     struct dialog_line *current_text;
     struct dialog_holder *current_dialog;
+    struct dialog_input *current_input;
 };
 
 const struct dialog_manager dialog_manager;
+
+void dialog_next(gc_engine *engine);
+void dialog_add_line(struct dialog_holder *this, char *name, char *text, \
+struct dialog_input *inputs);
+void show_dialog_if_hidden(gc_engine *engine);
 
 #endif //MY_RPG_DIALOG_HOLDER_H

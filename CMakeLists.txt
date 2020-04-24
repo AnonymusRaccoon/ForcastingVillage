@@ -281,8 +281,22 @@ add_executable(my_rpg
         include/map_editor.h
         lib/gamacon/include/sfml_init.h
         src/components/xp_component.c
-	src/components/xp_methods.c
-)
+        include/components/xp_component.h
+	    src/components/xp_methods.c
+        src/dialog_input.c
+        src/systems/dialog_methods.c
+        src/systems/combat_manager.c
+        include/systems/combat_manager.h
+        src/components/player_component.c
+        include/components/player_component.h
+        src/enemy_dataloader.c
+        include/enemy.h
+        src/components/combat_holder.c
+        include/components/combat_holder.h
+        src/components/dialog_methods.c
+        src/components/attack_component.c
+        include/components/attack_component.h
+        src/systems/combat_methods.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 

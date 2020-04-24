@@ -72,6 +72,7 @@ float dtime)
         return;
     map = GETCMP(maps->data, vertex_component);
     new_tile = get_tile_at(map, map_pos);
+    set_animation(entity, ctl);
     if (new_tile && !new_tile->solid && ctl->move_callback <= 0 \
 && new_tile != link->tile) {
         link->tile->entity = NULL;
@@ -79,7 +80,6 @@ float dtime)
         engine->trigger_event(engine, "entity_moved", entity, link->tile);
         ctl->move_callback = .2f;
     }
-    set_animation(entity, ctl);
     ctl->move_callback -= dtime;
 }
 

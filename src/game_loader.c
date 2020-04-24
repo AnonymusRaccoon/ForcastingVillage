@@ -9,6 +9,11 @@
 #include "setup.h"
 #include <SFML/System.h>
 #include <components/dialog_holder.h>
+#include <components/health_component.h>
+#include <components/player_component.h>
+#include <systems/combat_manager.h>
+#include <components/combat_holder.h>
+#include <components/attack_component.h>
 #include "systems/map_movement_system.h"
 #include "systems/game_manager_system.h"
 #include "systems/controllers/keyboard_controller_system.h"
@@ -35,6 +40,10 @@ const struct callback callbacks[] = {
     {"catch", &catch},
     {"toggle_pause", &toggle_pause},
     {"toggle_pause", &toggle_pause},
+    {"action0", &dialog_input0},
+    {"action1", &dialog_input1},
+    {"action2", &dialog_input2},
+    {"action3", &dialog_input3},
     {NULL, NULL}
 };
 
@@ -64,9 +73,16 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_system(engine, new_system(&game_manager_system, engine));
     engine->add_component(engine, &map_manager_component);
     engine->add_component(engine, &game_display);
+    engine->add_component(engine, &health_component);
     engine->add_system(engine, &game_display_system);
     engine->add_component(engine, &xp_component);
+    engine->add_component(engine, &player_component);
+    engine->add_component(engine, &attack_component);
+    engine->add_component(engine, &combat_holder);
+    engine->add_system(engine, new_system(&combat_manager, engine));
     engine->finish_physics(engine);
+    engine->add_dataloader(engine, "enemies", &enemies_dataloader);
+
     for (int i = 0; callbacks[i].func; i++)
         engine->add_callback(engine, my_strdup(callbacks[i].name), \
 callbacks[i].func);

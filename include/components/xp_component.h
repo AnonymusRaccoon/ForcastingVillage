@@ -5,8 +5,8 @@
 ** xp_component
 */
 
-#ifndef MY_RPG_HEALTH_COMPONENT_H
-#define MY_RPG_HEALTH_COMPONENT_H
+#ifndef MY_RPG_XP_COMPONENT_H
+#define MY_RPG_XP_COMPONENT_H
 
 #include <stdbool.h>
 #include "component.h"

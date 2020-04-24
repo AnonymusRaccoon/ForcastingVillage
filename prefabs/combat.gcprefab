@@ -1,0 +1,43 @@
+<gc_scene>
+    <data>
+        <font src="assets/fonts/roboto.ttf" />
+        <sprite name="text_box" src="assets/ui/text_box.png" />
+        <sprite name="button_background" src="assets/ui/button_background.png" />
+        <sprite name="player_holder" src="assets/ui/player.png" />
+        <sprite name="enemy_holder" src="assets/ui/enemy.png" />
+
+        <sprite name="bee" src="assets/sprites/bee.png" />
+    </data>
+    <gc_entities>
+        <gc_entity>
+            <transform_component>
+                <Position x="0" y="300" />
+                <Size x="100000000" y="100000000" />
+            </transform_component>
+            <vertex_component tilemap="prefabs/combat.gcmap" />
+        </gc_entity>
+
+        <gc_entity>
+            <dialog_holder x="0" y="0" tile_texture="dirt_top_1">
+                <Fight line="An enemy appeared." />
+            </dialog_holder>
+        </gc_entity>
+
+        <gc_entity id="50">
+            <transform_component>
+                <Position x="0" y="300" />
+            </transform_component>
+            <map_linker x="0" y="0" />
+            <player_component />
+            <attack_component>
+                <attack name="Wind Slash" />
+                <attack name="Blizzard" />
+                <attack name="Fireball" />
+                <attack name="Water jet" />
+            </attack_component>
+        </gc_entity>
+
+        <panel src="enemy_holder" x="75%" y="20%" width="30%" height="%" />
+        <panel src="player_holder" x="45%" y="80%" width="45%" height="20%" reverse_y="true" />
+    </gc_entities>
+</gc_scene>

@@ -46,13 +46,38 @@ static void ctr(void *component, va_list args)
 
     if (!scene)
         return;
-    cmp->text = va_arg(args, char **);
+    cmp->text = va_arg(args, struct dialog_line **);
     cmp->single_usage = va_arg(args, int);
     cmp->has_seen = false;
     x = va_arg(args, int);
     y = va_arg(args, int);
     texture = va_arg(args, char *);
     setup_tile_interactions(cmp, scene, (gc_vector2i){x, y}, texture);
+}
+
+struct dialog_line *dialog_parse_text(gc_scene *scene, node *n)
+{
+    struct dialog_line *txt = malloc(sizeof(struct dialog_line));
+    char *click;
+    int i = 0;
+
+    if (!txt)
+        return (NULL);
+    txt->name = my_strdup(n->name);
+    txt->text = xml_getproperty(n, "line");
+    txt->input_count = xml_getchildcount_filtered(n, "input");;
+    txt->inputs = NULL;
+    if (txt->input_count == 0)
+        return (txt);
+    txt->inputs = malloc(sizeof(struct dialog_input) * txt->input_count);
+    for (n = n->child; n; n = n->next) {
+        txt->inputs[i].text = xml_getproperty(n, "text");
+        click = xml_gettempprop(n, "click");
+        txt->inputs[i++].callback = scene->get_data(scene, "input", click);
+        if (!txt->inputs)
+            my_printf("Couldn't find a callback with the name: %s.\n", click);
+    }
+    return (txt);
 }
 
 static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
@@ -68,18 +93,10 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     if (!cmp->text)
         return;
     n = n->child;
-    for (int i = 0; n; n = n->next, i++) {
-        cmp->text[i] = malloc(sizeof(struct dialog_line));
-        cmp->text[i]->name = my_strdup(n->name);
-        cmp->text[i]->text = xml_getproperty(n, "line");
-    }
+    for (int i = 0; n; n = n->next, i++)
+        cmp->text[i] = dialog_parse_text(scene, n);
     cmp->text[count] = NULL;
     setup_tile_interactions(cmp, scene, (gc_vector2i){x, y}, texture);
-}
-
-static void dtr(void *component)
-{
-    (void)component;
 }
 
 static char *serialize(void *component)
@@ -97,7 +114,7 @@ const struct dialog_holder dialog_holder = {
         },
         ctr: &ctr,
         fdctr: &fdctr,
-        dtr: &dtr,
+        dtr: NULL,
         serialize: &serialize,
         destroy: &component_destroy
     }

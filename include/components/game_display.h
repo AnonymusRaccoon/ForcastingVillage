@@ -2,7 +2,7 @@
 // Created by anonymus-raccoon on 3/3/20.
 //
 
-#ifndef _TEAMS_COMPONENT_C_
+#ifndef _TEAMS_COMPONENT_H_
 #define _TEAMS_COMPONENT_H_
 
 #include "component.h"
@@ -22,4 +22,4 @@ struct game_display
 const struct game_display game_display;
 const struct gc_system game_display_system;
 
-#endif //_TEAMS_COMPONENT_C_
+#endif //_TEAMS_COMPONENT_H_

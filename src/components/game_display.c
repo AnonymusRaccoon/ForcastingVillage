@@ -36,6 +36,7 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     }
     if (!my_strcmp(display_type, "xp")) {
         cmp->type = XP_DISPLAY;
+        rend->destroy = &text_safe_destroy;
         return;
     }
 }
