@@ -25,4 +25,4 @@ unsigned int amount);
 
 extern const struct xp_component xp_component;
 
-#endif //MY_RPG_HEALTH_COMPONENT_H
+#endif //MY_RPG_XP_COMPONENT_H

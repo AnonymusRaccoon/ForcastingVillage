@@ -25,5 +25,7 @@ unsigned int amount)
     if (this->dead)
         return;
     this->health += amount;
+    if (this->health > this->health_max)
+        this->health = this->health_max;
     engine->trigger_event(engine, "add_health", this->health, amount);
 }

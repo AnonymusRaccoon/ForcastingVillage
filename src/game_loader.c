@@ -26,6 +26,7 @@
 #include "my.h"
 #include "map_editor.h"
 #include "components/xp_component.h"
+#include "components/health_component.h"
 
 const struct callback callbacks[] = {
     {"start_button", &start_button},
@@ -80,6 +81,7 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &attack_component);
     engine->add_component(engine, &combat_holder);
     engine->add_system(engine, new_system(&combat_manager, engine));
+    engine->add_component(engine, &health_component);
     engine->finish_physics(engine);
     engine->add_dataloader(engine, "enemies", &enemies_dataloader);
 

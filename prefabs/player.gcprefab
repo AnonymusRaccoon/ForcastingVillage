@@ -5,38 +5,39 @@
 			<Size x="100" y="100" />
 		</transform_component>
 	    <renderer src="player">
-	        <Rect height="147" width="138" top="0" left="0" />
-            <animation name="walk_down_left" frame_count="6" frame_rate="10">
-                <Rect top="192" left="138" />
-	    	</animation>
-            <animation name="walk_up_left" frame_count="6" frame_rate="10">
-                <Rect top="576" left="138" />
-            </animation>
-            <animation name="walk_up_right" frame_count="6" frame_rate="10">
-                <Rect top="960" left="138" />
-            </animation>
-            <animation name="walk_down_right" frame_count="6" frame_rate="10">
-                <Rect top="1344" left="138" />
-            </animation>
-            <animation name="walk_down" frame_count="6" frame_rate="10">
-                <Rect top="0" left="138" />
-            </animation>
-            <animation name="walk_up" frame_count="6" frame_rate="10">
-                <Rect top="768" left="138" />
-            </animation>
-            <animation name="walk_right" frame_count="6" frame_rate="10">
-                <Rect top="1152" left="138" />
-            </animation>
-            <animation name="walk_left" frame_count="6" frame_rate="10">
-                <Rect top="384" left="138" />
-            </animation>
-        </renderer>
-        <camerafollow_component/>
-        <controllable_component />
-        <keyboard_controller left="16" right="3" up="25" down="18" />
-        <map_movement />
-        <map_linker x="1" y="1" solid="false" />
-        <xp_component xp="20"/>
-        <player_component fight_rate="100%" />
-    </gc_entity>
+             <Rect height="147" width="138" top="0" left="0" />
+             <animation name="walk_down_left" frame_count="6" frame_rate="10">
+                 <Rect top="192" left="138" />
+             </animation>
+             <animation name="walk_up_left" frame_count="6" frame_rate="10">
+                 <Rect top="576" left="138" />
+             </animation>
+             <animation name="walk_up_right" frame_count="6" frame_rate="10">
+                 <Rect top="960" left="138" />
+             </animation>
+             <animation name="walk_down_right" frame_count="6" frame_rate="10">
+                 <Rect top="1344" left="138" />
+             </animation>
+             <animation name="walk_down" frame_count="6" frame_rate="10">
+                 <Rect top="0" left="138" />
+             </animation>
+             <animation name="walk_up" frame_count="6" frame_rate="10">
+                 <Rect top="768" left="138" />
+             </animation>
+             <animation name="walk_right" frame_count="6" frame_rate="10">
+                 <Rect top="1152" left="138" />
+             </animation>
+             <animation name="walk_left" frame_count="6" frame_rate="10">
+                 <Rect top="384" left="138" />
+             </animation>
+       </renderer>
+       <camerafollow_component/>
+       <controllable_component />
+       <keyboard_controller left="16" right="3" up="25" down="18" />
+       <map_movement />
+       <map_linker x="1" y="1" solid="false"/>
+       <xp_component xp="20"/>
+       <health_component max_health="420"/>
+       <player_component fight_rate="100%" />
+   </gc_entity>
 </gc_entities>

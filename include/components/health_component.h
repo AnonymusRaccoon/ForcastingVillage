@@ -14,6 +14,7 @@
 struct health_component
 {
     gc_component base;
+    int health_max;
     int health;
     bool dead;
 };

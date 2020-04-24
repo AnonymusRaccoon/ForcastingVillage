@@ -15,6 +15,7 @@
 #include "text.h"
 #include "components/renderer.h"
 #include <malloc.h>
+#include "components/health_component.h"
 #include "sprite.h"
 
 void display_current_texture(gc_scene *scene, struct renderer *rend)
@@ -26,6 +27,25 @@ void display_current_texture(gc_scene *scene, struct renderer *rend)
         return;
     map = GETCMP(li->data, map_manager_component);
     ((gc_sprite *)rend->data)->texture = map->selected_texture;
+}
+
+void display_current_health(gc_scene *scene, struct renderer *rend, bool is_player)
+{
+    gc_list *entities = scene->get_entity_by_cmp(scene, "health_component");
+    gc_entity *entity = NULL;
+    struct health_component *health_cmp = NULL;
+    static char str[10];
+
+    if (!entities)
+        return;
+    for (; entities->next || !entity; entities = entities->next ) {
+        entity = entities->data;
+        if ((entity->id == 50 && is_player) || (entity->id != 50 && !is_player))
+            break;
+    }
+    health_cmp = GETCMP(entity, health_component);
+    snprintf(str, 10, "%d/%d", health_cmp->health, health_cmp->health_max);
+    ((gc_text *)rend->data)->text = str;
 }
 
 void display_current_xp(gc_scene *scene, struct renderer *rend)
@@ -50,12 +70,20 @@ float dtime)
     struct renderer *rend = GETCMP(entity, renderer);
     gc_scene *scene = engine->scene;
 
-    if (disp->type == SELECT_TILE_DISPLAY && rend->type == GC_TEXTUREREND){
+    if (disp->type == SELECT_TILE_DISPLAY && rend->type == GC_TEXTUREREND) {
         display_current_texture(scene, rend);
         return;
     }
     if (disp->type == XP_DISPLAY && rend->type == GC_TXTREND) {
         display_current_xp(scene, rend);
+        return;
+    }
+    if (disp->type == HEALTH_DISPLAY && rend->type == GC_TXTREND) {
+        display_current_health(scene, rend, true);
+        return;
+    }
+    if (disp->type == HEALTH_DISPLAY_ENNEMY && rend->type == GC_TXTREND) {
+        display_current_health(scene, rend, false);
         return;
     }
 }
