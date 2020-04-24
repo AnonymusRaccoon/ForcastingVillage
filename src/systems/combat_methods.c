@@ -127,5 +127,5 @@ gc_scene *scene, gc_engine *engine)
     if (attack->run)
         attack->run(engine, enemy, player);
     dialog_add_line(dialog, NULL, str, NULL);
-    this->state = DEFENDING;
+    this->state = ATTACK;
 }
