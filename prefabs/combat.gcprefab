@@ -6,7 +6,6 @@
         <sprite name="player_holder" src="assets/ui/player.png" />
         <sprite name="enemy_holder" src="assets/ui/enemy.png" />
         <sprite name="panel" src="assets/ui/panel.png" />
-        <sprite name="black_background" src="assets/ui/black_background.png" />
 
         <sprite name="bee" src="assets/sprites/bee.png" />
     </data>

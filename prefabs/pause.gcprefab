@@ -1,5 +1,4 @@
 <gc_entities>
-    <button sprite="black_background" x="50%" y="50%" width="100%" height="100%" click="catch" tag="pause" />
     <panel src="panel" x="50%" y="45%" width="300" height="69%" tag="pause" />
     <text text="Pause" x="50%" y="25%" resize="false" tag="pause"/>
     <button text="Resume" x="50%" y="61%" click="toggle_pause" color="black" width="200" resize="false" tag="pause" />

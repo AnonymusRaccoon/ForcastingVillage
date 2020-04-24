@@ -93,7 +93,6 @@
         <sprite name="cross" src="assets/ui/cross.png" />
         <sprite name="front_panel" src="assets/ui/front_panel.png" />
         <sprite name="button_background" src="assets/ui/button_background.png" />
-        <sprite name="black_background" src="assets/ui/black_background.png" />
         <sprite name="text_box" src="assets/ui/text_box.png" />
         <sprite name="player" src="assets/sprites/player_spritesheet.png" />
 
