@@ -17,6 +17,7 @@ SRC = 	src/main.c \
 	src/components/controllable_component.c \
 	src/components/controllers/keyboard_controller.c \
 	src/components/dialog_holder.c \
+	src/components/dialog_methods.c \
 	src/systems/map_movement_system.c \
 	src/systems/game_display_system.c \
 	src/systems/dialog_manager.c \
@@ -33,7 +34,10 @@ SRC = 	src/main.c \
 	src/systems/dialog_methods.c \
 	src/systems/combat_manager.c \
 	src/components/player_component.c \
-	src/components/attack_component.c
+	src/components/attack_component.c \
+	src/systems/combat_methods.c \
+	src/components/combat_holder.c \
+	src/enemy_dataloader.c
 
 OBJ = $(SRC:%.c=%.o)
 
