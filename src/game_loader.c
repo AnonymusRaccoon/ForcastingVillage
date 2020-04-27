@@ -69,6 +69,8 @@ const struct gc_data attacks[] = {
 void load_attacks(gc_scene *scene)
 {
     gc_data *data;
+    gc_list *li = scene->get_entity_by_cmp(scene, "attack_component");
+    struct attack_component *attack;
 
     for (int i = 0; attacks[i].name; i++) {
         data = malloc(sizeof(*data));
@@ -79,6 +81,12 @@ void load_attacks(gc_scene *scene)
         data->custom = attacks[i].custom;
         data->destroy = attacks[i].destroy;
         LISTADD(scene->data, data);
+    }
+    for (; li; li = li->next) {
+        attack = GETCMP(li->data, attack_component);
+        for (int i = 0; attack->attacks && attack->attacks[i].name; i++)
+            attack->attacks[i].run = scene->get_data(scene, "attack", \
+attack->attacks[i].name);
     }
 }
 

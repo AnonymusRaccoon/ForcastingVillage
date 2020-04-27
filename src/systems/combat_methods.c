@@ -125,6 +125,19 @@ gc_scene *scene, gc_engine *engine)
     this->state = ATTACKING;
 }
 
+void defend_callback(gc_engine *engine)
+{
+    struct combat_manager *this = GETSYS(engine, combat_manager);
+    gc_entity *player = NULL;
+    gc_entity *enemy = NULL;
+
+    if (!get_player_and_enemy(engine->scene, &player, &enemy))
+        return;
+    if (this->next_enemy_attack->run)
+        this->next_enemy_attack->run(engine, enemy, player);
+    this->state = ATTACK;
+}
+
 void defend(struct combat_manager *this, struct dialog_holder *dialog, \
 gc_scene *scene, gc_engine *engine)
 {
@@ -132,8 +145,8 @@ gc_scene *scene, gc_engine *engine)
     gc_entity *enemy = NULL;
     struct attack_component *enemy_attack;
     static char str[150];
-    struct attack_holder *attack = NULL;
     int count;
+    struct dialog_line *line;
 
     if (!get_player_and_enemy(scene, &player, &enemy))
         return;
@@ -144,10 +157,10 @@ gc_scene *scene, gc_engine *engine)
         my_printf("No attack found for the enemy.\n");
         return;
     }
-    attack = &enemy_attack->attacks[random() % count];
-    snprintf(str, 150, "%s uses attack %s.", "The bee", attack->name);
-    if (attack->run)
-        attack->run(engine, enemy, player);
-    dialog_add_line(dialog, NULL, str, NULL);
-    this->state = ATTACK;
+    this->next_enemy_attack = &enemy_attack->attacks[random() % count];
+    snprintf(str, 150, "%s uses attack %s.", "The bee", \
+this->next_enemy_attack->name);
+    if ((line = dialog_add_line(dialog, NULL, str, NULL)))
+        line->callback = &defend_callback;
+    this->state = DEFENDING;
 }

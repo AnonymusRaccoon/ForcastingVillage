@@ -9,6 +9,7 @@
 #ifndef MY_RPG_COMBAT_MANAGER_H
 #define MY_RPG_COMBAT_MANAGER_H
 
+#include <components/attack_component.h>
 #include "system.h"
 #include "components/combat_holder.h"
 #include "components/dialog_holder.h"
@@ -26,6 +27,7 @@ struct combat_manager {
     gc_system base;
     gc_scene *game_scene;
     struct enemy *current_enemy;
+    struct attack_holder *next_enemy_attack;
     enum combat_state state;
 };
 
