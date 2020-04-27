@@ -8,12 +8,12 @@
 #include "engine.h"
 #include "setup.h"
 #include <SFML/System.h>
-#include <components/dialog_holder.h>
-#include <components/health_component.h>
-#include <components/player_component.h>
-#include <systems/combat_manager.h>
-#include <components/combat_holder.h>
-#include <components/attack_component.h>
+#include "components/dialog_holder.h"
+#include "components/health_component.h"
+#include "components/player_component.h"
+#include "systems/combat_manager.h"
+#include "components/combat_holder.h"
+#include "components/attack_component.h"
 #include "systems/map_movement_system.h"
 #include "systems/game_manager_system.h"
 #include "systems/controllers/keyboard_controller_system.h"
@@ -26,7 +26,7 @@
 #include "my.h"
 #include "map_editor.h"
 #include "components/xp_component.h"
-#include "components/health_component.h"
+#include <malloc.h>
 
 const struct callback callbacks[] = {
     {"start_button", &start_button},
@@ -61,6 +61,27 @@ const struct callback map_editor_callbacks[] = {
     {NULL, NULL}
 };
 
+const struct gc_data attacks[] = {
+    {"attack", "Fireball", &fireball, NULL},
+    {NULL, NULL, NULL, NULL}
+};
+
+void load_attacks(gc_scene *scene)
+{
+    gc_data *data;
+
+    for (int i = 0; attacks[i].name; i++) {
+        data = malloc(sizeof(*data));
+        if (!data)
+            return;
+        data->name = my_strdup(attacks[i].name);
+        data->type = my_strdup(attacks[i].type);
+        data->custom = attacks[i].custom;
+        data->destroy = attacks[i].destroy;
+        LISTADD(scene->data, data);
+    }
+}
+
 int register_customcmps(gc_engine *engine, bool map_editor)
 {
     engine->add_component(engine, &controllable_component);
@@ -84,7 +105,6 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &health_component);
     engine->finish_physics(engine);
     engine->add_dataloader(engine, "enemies", &enemies_dataloader);
-
     for (int i = 0; callbacks[i].func; i++)
         engine->add_callback(engine, my_strdup(callbacks[i].name), \
 callbacks[i].func);
