@@ -2,7 +2,7 @@
     <data>
         <sprite name="panel" src="assets/ui/panel.png" />
         <sprite name="button_background" src="assets/ui/button_background.png" />
-        <sprite name="loading" src="assets/ui/panel.png" />
+        <sprite name="loading" src="assets/ui/background_rpg.png" />
         <font src="assets/fonts/roboto.ttf" />
     </data>
     <gc_entities>

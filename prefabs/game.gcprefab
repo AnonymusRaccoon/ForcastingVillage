@@ -81,7 +81,8 @@
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
         <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
         <sprite name="stone" src="assets/tiles/stone.png" />
-        <sprite name="panel" src="assets/ui/panel.png" />
+
+         <sprite name="panel" src="assets/ui/sample_background.png" />
 
         <tiles>
             <tile name="dirt_inner_top_left" />
