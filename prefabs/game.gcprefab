@@ -179,7 +179,7 @@
         <text text="Loading" x="13%" y="6%" centered="false">
               <game_display stats="health"/>
          </text>
-        <text text="Loading" x="14%" y="14%" centered="false">
+        <text text="Loading" x="13%" y="14%" centered="false">
             <game_display stats="xp"/>
         </text>
     </gc_entities>

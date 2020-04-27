@@ -12,5 +12,6 @@
         <attack_component>
             <attack name="Fireball"/>
         </attack_component>
+        <health_component max_health="12"/>
     </gc_entity>
 </gc_entities>

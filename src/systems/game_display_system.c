@@ -34,18 +34,21 @@ void display_current_health(gc_scene *scene, struct renderer *rend, bool is_play
     gc_list *entities = scene->get_entity_by_cmp(scene, "health_component");
     gc_entity *entity = NULL;
     struct health_component *health_cmp = NULL;
-    static char str[10];
+    char *ptr = NULL;
+    static char str[50];
+    static char str_ennemy[50];
 
     if (!entities)
         return;
-    for (; entities->next || !entity; entities = entities->next ) {
+    for (; entities; entities = entities->next ) {
         entity = entities->data;
         if ((entity->id == 50 && is_player) || (entity->id != 50 && !is_player))
-            break;
+			break;
     }
+    ptr = (is_player) ? str : str_ennemy;
     health_cmp = GETCMP(entity, health_component);
-    snprintf(str, 10, "%d/%d", health_cmp->health, health_cmp->health_max);
-    ((gc_text *)rend->data)->text = str;
+    snprintf(ptr, 50, "%d/%d", health_cmp->health, health_cmp->health_max);
+    ((gc_text *)rend->data)->text = ptr;
 }
 
 void display_current_xp(gc_scene *scene, struct renderer *rend)
