@@ -20,14 +20,16 @@
 
 void set_combat_player(gc_entity *main_player, gc_entity *combat_player)
 {
-	struct health_component *h_cmp = GETCMP(main_player, health_component);
-	struct health_component *h_cmp_cbt = GETCMP(main_player, health_component);
+	struct health_component *h_cmp_main = \
+GETCMP(main_player, health_component);
+	struct health_component *h_cmp_combat = \
+GETCMP(combat_player, health_component);
 
-	if (!h_cmp || !h_cmp_cbt)
+	if (!h_cmp_main || !h_cmp_combat)
 		return;
-	h_cmp_cbt->health_max = h_cmp->health_max;
-	h_cmp_cbt->health = h_cmp->health;
-	h_cmp_cbt->dead = h_cmp->dead;
+	h_cmp_combat->health_max = h_cmp_main->health_max;
+	h_cmp_combat->health = h_cmp_main->health;
+	h_cmp_combat->dead = h_cmp_main->dead;
 }
 
 void combat_start(gc_engine *engine, char *enemy_name)
@@ -37,7 +39,7 @@ void combat_start(gc_engine *engine, char *enemy_name)
     gc_scene *scene = scene_create(engine, "prefabs/combat.gcprefab");
     struct enemy *enemy = NULL;
     gc_entity *player = engine->scene->get_entity(engine->scene, 50);
-    gc_entity *player_combat = engine->scene->get_entity(engine->scene, 50);
+    gc_entity *player_combat = scene->get_entity(scene, 50);
 
     if (!scene) {
         my_printf("The combat scene couldn't be found.\n");
