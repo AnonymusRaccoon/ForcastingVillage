@@ -1,0 +1,8 @@
+<gc_entities>
+    <panel src="panel" x="50%" y="35%" width="600" height="69%" tag="inventory" />
+    <text text="Inventory" x="50%" y="25%" tag="inventory" />
+    <button text="Resume" x="50%" y="61%" click="toggle_inventory" color="black" width="200" resize="false" tag="inventory" />
+    <button sprite="texture" x="35%" y="35%" width="%" height="3%" tooltip="Object 1" tooltip_y="-5" size="15" tag="inventory">
+        <game_display stats="selected_tile" />
+    </button>
+</gc_entities>

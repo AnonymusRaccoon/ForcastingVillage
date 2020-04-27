@@ -40,7 +40,7 @@ const struct callback callbacks[] = {
     {"framerate_down", &framerate_down},
     {"catch", &catch},
     {"toggle_pause", &toggle_pause},
-    {"toggle_pause", &toggle_pause},
+    {"toggle_inventory", &toggle_inventory},
     {"action0", &dialog_input0},
     {"action1", &dialog_input1},
     {"action2", &dialog_input2},

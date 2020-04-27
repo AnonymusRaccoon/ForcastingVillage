@@ -24,6 +24,8 @@ bool catch(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __);
 bool toggle_pause(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __);
+bool toggle_inventory(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __);
 
 int checkbox_update(gc_scene *s, gc_entity *entity, bool checked);
 void resolution_set_txt(gc_entity *entity, gc_engine *engine, \
