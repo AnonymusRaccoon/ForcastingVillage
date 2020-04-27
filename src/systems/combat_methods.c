@@ -32,6 +32,7 @@ void combat_start(gc_engine *engine, char *enemy_name)
         my_printf("The combat scene couldn't be found.\n");
         return;
     }
+    this->state = ATTACK;
     this->game_scene = engine->scene;
     set_combat_player(player, player_combat);
     engine->scene = NULL;
@@ -77,8 +78,7 @@ void attack_callback(gc_engine *engine, int index)
 
     if (!li || !get_player_and_enemy(scene, &player_entity, &enemy))
         return;
-    player = GETCMP(player_entity, attack_component);
-    if (!player)
+    if (!(player = GETCMP(player_entity, attack_component)))
         return;
     if (player->attacks[index].run)
         player->attacks[index].run(engine, player_entity, enemy);
@@ -86,6 +86,8 @@ void attack_callback(gc_engine *engine, int index)
     snprintf(str, 150, "You used %s.", player->attacks[index].name);
     dialog_add_line(dialog, NULL, str, NULL);
     this->state = DEFEND;
+    if (GETCMP(enemy, health_component)->dead)
+        combat_end(engine, true);
 }
 
 void show_attacks(struct combat_manager *this, struct dialog_holder *dialog, \
@@ -123,6 +125,8 @@ void defend_callback(gc_engine *engine)
     if (this->next_enemy_attack->run)
         this->next_enemy_attack->run(engine, enemy, player);
     this->state = ATTACK;
+    if (GETCMP(player, health_component)->dead)
+        combat_end(engine, false);
 }
 
 void defend(struct combat_manager *this, struct dialog_holder *dialog, \

@@ -36,6 +36,7 @@ extern const struct combat_manager combat_manager;
 #define ATTACK_TEXT "What attack will you do?"
 
 void combat_start(gc_engine *engine, char *enemy_name);
+void combat_end(gc_engine *engine, bool has_won);
 void show_attacks(struct combat_manager *this, struct dialog_holder *dialog, \
 gc_scene *scene, gc_engine *engine);
 void defend(struct combat_manager *this, struct dialog_holder *dialog, \

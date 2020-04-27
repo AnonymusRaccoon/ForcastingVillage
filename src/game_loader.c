@@ -62,7 +62,10 @@ const struct callback map_editor_callbacks[] = {
 };
 
 const struct gc_data attacks[] = {
+    {"attack", "Uppercut", &uppercut, NULL},
     {"attack", "Fireball", &fireball, NULL},
+    {"attack", "Water Jet", &water_jet, NULL},
+    {"attack", "Shield", &shield, NULL},
     {NULL, NULL, NULL, NULL}
 };
 
