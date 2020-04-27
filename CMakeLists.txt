@@ -297,7 +297,7 @@ add_executable(my_rpg
         src/components/attack_component.c
         include/components/attack_component.h
         src/systems/combat_methods.c
-        src/combat/fireball.c
+        src/combat/attacks.c
         src/player_utilities.c include/player_utilities.h)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)

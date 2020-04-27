@@ -42,27 +42,27 @@ my_strcmp(link->tile->type, "dialog"))
 }
 
 bool update_dialog(struct dialog_manager *this, gc_entity *text, \
-gc_entity *name)
+gc_entity *name, gc_engine *engine)
 {
-    struct renderer *rend = GETCMP(name, renderer);
+    struct renderer *name_rend = GETCMP(name, renderer);
+    struct renderer *txt_rend = GETCMP(text, renderer);
 
     this->current_text = this->current_dialog->text[this->current_line];
-    if (!rend || rend->type != GC_TXTREND || !rend->data)
+    if (!name_rend || name_rend->type != GC_TXTREND || !name_rend->data
+    || !txt_rend || txt_rend->type != GC_TXTREND || !txt_rend->data)
         return (true);
-    rend->destroy = &text_safe_destroy;
-    if (this->current_text)
-        ((gc_text *)rend->data)->text = this->current_text->name;
-    else
-        ((gc_text *)rend->data)->text = NULL;
-    rend = GETCMP(text, renderer);
-    if (!rend || rend->type != GC_TXTREND || !rend->data)
-        return (true);
-    rend->destroy = &text_safe_destroy;
+    name_rend->destroy = &text_safe_destroy;
+    txt_rend->destroy = &text_safe_destroy;
     if (this->current_text) {
-        ((gc_text *) rend->data)->text = this->current_text->text;
+        ((gc_text *)name_rend->data)->text = this->current_text->name;
+        ((gc_text *)txt_rend->data)->text = this->current_text->text;
         this->current_input = &this->current_text->inputs[0];
-    } else
-        ((gc_text *)rend->data)->text = NULL;
+        if (this->current_text->callback)
+            this->current_text->callback(engine);
+    } else {
+        ((gc_text *)txt_rend->data)->text = NULL;
+        ((gc_text *)name_rend->data)->text = NULL;
+    }
     this->current_line++;
     return (!this->current_text);
 }
@@ -116,8 +116,8 @@ void dialog_next(gc_engine *engine)
     controllable_set_can_move(scene, false);
     holder_name = scene->get_entity(scene, 1336);
     entity = scene->get_entity(scene, 1337);
-    if (!entity || !holder_name ||
-    (!update_dialog(this, entity, holder_name) && handle_input(engine, this)))
+    if (!entity || !holder_name || (!update_dialog(this, entity, \
+holder_name, engine) && handle_input(engine, this)))
         return;
     prefab_destroy(scene, this->dialog_id);
     this->dialog_id = -1;

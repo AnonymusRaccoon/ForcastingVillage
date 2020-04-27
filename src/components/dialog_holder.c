@@ -65,7 +65,8 @@ struct dialog_line *dialog_parse_text(gc_scene *scene, node *n)
         return (NULL);
     txt->name = my_strdup(n->name);
     txt->text = xml_getproperty(n, "line");
-    txt->input_count = xml_getchildcount_filtered(n, "input");;
+    txt->input_count = xml_getchildcount_filtered(n, "input");
+    txt->callback = NULL;
     txt->inputs = NULL;
     if (txt->input_count == 0)
         return (txt);

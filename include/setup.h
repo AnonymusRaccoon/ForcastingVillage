@@ -56,5 +56,8 @@ enum gc_mousekeys key);
 gc_data *enemies_dataloader(gc_engine *engine, gc_scene *scene, node *n);
 
 void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy);
+void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy);
+void water_jet(gc_engine *engine, gc_entity *from, gc_entity *enemy);
+void shield(gc_engine *engine, gc_entity *from, gc_entity *enemy);
 
 void load_attacks(gc_scene *scene);

@@ -29,20 +29,22 @@ void entity_moved(gc_engine *engine, va_list args)
         combat_start(engine, NULL);
 }
 
-void dialog_ended(gc_engine *engine, va_list args)
+void combat_end(gc_engine *engine, bool has_won)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
     gc_entity *player = engine->scene->get_entity(engine->scene, 50);
     gc_entity *player_combat = this->game_scene->get_entity(this->game_scene, 50);
+    struct dialog_manager *dialog = GETSYS(engine, dialog_manager);
 
-    if (!this->current_enemy || !player || ! player_combat)
+    if (!this->current_enemy || !player || ! player_combat || !dialog)
         return;
 	set_combat_player(player_combat, player);
-    engine->trigger_event(engine, "combat_ended", this->current_enemy);
     this->current_enemy = NULL;
     engine->change_scene(engine, this->game_scene);
+    engine->trigger_event(engine, "combat_ended", this->current_enemy, has_won);
     this->game_scene = NULL;
     this->state = ATTACK;
+    dialog->dialog_id = -1;
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
@@ -76,7 +78,6 @@ static void ctr(void *system, va_list list)
     this->game_scene = NULL;
     this->state = ATTACK;
     engine->add_event_listener(engine, "entity_moved", &entity_moved);
-    engine->add_event_listener(engine, "dialog_ended", &dialog_ended);
 }
 
 static void dtr(void *system, gc_engine *engine)
@@ -84,7 +85,6 @@ static void dtr(void *system, gc_engine *engine)
     struct combat_manager *this = system;
 
     engine->remove_event_listener(engine, "entity_moved", &entity_moved);
-    engine->remove_event_listener(engine, "dialog_ended", &dialog_ended);
     if (this->game_scene)
         scene_destroy(this->game_scene);
 }

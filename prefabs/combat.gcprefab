@@ -32,10 +32,10 @@
             <map_linker x="0" y="0" />
             <player_component />
             <attack_component>
-                <attack name="Wind Slash" />
-                <attack name="Blizzard" />
+                <attack name="Uppercut" />
+                <attack name="Water grenade" />
                 <attack name="Fireball" />
-                <attack name="Water jet" />
+                <attack name="Shield" />
             </attack_component>
             <xp_component xp="3"/>
             <health_component max_health="3"/>
