@@ -10,6 +10,8 @@ int my_strcmp(const char *str1, const char *str2)
     int i;
     int ret;
 
+    if (!str1 || !str2)
+    	return (-1);
     for (i = 0; str1[i] != '\0'; i++) {
         if (str2[i] == '\0')
             return str1[i];

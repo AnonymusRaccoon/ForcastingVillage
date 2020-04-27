@@ -35,7 +35,7 @@
        <controllable_component />
        <keyboard_controller left="16" right="3" up="25" down="18" />
        <map_movement />
-       <map_linker x="1" y="1" solid="false"/>
+       <map_linker x="1" y="1" solid="false" centered="true"/>
        <xp_component xp="20"/>
        <health_component max_health="420"/>
        <player_component fight_rate="100%" />
