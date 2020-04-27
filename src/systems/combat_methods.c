@@ -17,20 +17,7 @@
 #include "components/health_component.h"
 #include "enemy.h"
 #include "setup.h"
-
-void set_combat_player(gc_entity *main_player, gc_entity *combat_player)
-{
-	struct health_component *h_cmp_main = \
-GETCMP(main_player, health_component);
-	struct health_component *h_cmp_combat = \
-GETCMP(combat_player, health_component);
-
-	if (!h_cmp_main || !h_cmp_combat)
-		return;
-	h_cmp_combat->health_max = h_cmp_main->health_max;
-	h_cmp_combat->health = h_cmp_main->health;
-	h_cmp_combat->dead = h_cmp_main->dead;
-}
+#include "player_utilities.h"
 
 void combat_start(gc_engine *engine, char *enemy_name)
 {

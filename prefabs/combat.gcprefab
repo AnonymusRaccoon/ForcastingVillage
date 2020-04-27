@@ -52,8 +52,5 @@
         <text text="Loading" x="80%" y="65%" centered="false">
               <game_display stats="health"/>
          </text>
-        <text text="Loading" x="80%" y="71%" centered="false">
-            <game_display stats="xp"/>
-        </text>
     </gc_entities>
 </gc_scene>

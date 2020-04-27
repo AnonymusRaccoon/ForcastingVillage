@@ -13,6 +13,7 @@
 #include "my.h"
 #include "components/dialog_holder.h"
 #include "enemy.h"
+#include "player_utilities.h"
 
 void entity_moved(gc_engine *engine, va_list args)
 {
@@ -31,9 +32,12 @@ void entity_moved(gc_engine *engine, va_list args)
 void dialog_ended(gc_engine *engine, va_list args)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
+    gc_entity *player = engine->scene->get_entity(engine->scene, 50);
+    gc_entity *player_combat = this->game_scene->get_entity(this->game_scene, 50);
 
-    if (!this->current_enemy)
+    if (!this->current_enemy || !player || ! player_combat)
         return;
+	set_combat_player(player_combat, player);
     engine->trigger_event(engine, "combat_ended", this->current_enemy);
     this->current_enemy = NULL;
     engine->change_scene(engine, this->game_scene);
