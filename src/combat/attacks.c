@@ -11,7 +11,7 @@
 #include <utility.h>
 #include "components/health_component.h"
 #include "engine.h"
-#include "renderer.h"
+#include "components/renderer.h"
 
 void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
