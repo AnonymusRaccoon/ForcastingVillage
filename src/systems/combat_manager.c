@@ -9,6 +9,7 @@
 #include <tile.h>
 #include <components/player_component.h>
 #include <stdlib.h>
+#include <components/controllable_component.h>
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
@@ -23,7 +24,7 @@ void entity_moved(gc_engine *engine, va_list args)
 
     if (!cmp)
         return;
-    if (tile->type && my_strcmp(tile->type, "combat"))
+    if (tile->type && !my_strcmp(tile->type, "combat"))
         combat_start(engine, NULL);
     if (random() % 100 < cmp->fight_rate)
         combat_start(engine, NULL);
@@ -40,11 +41,13 @@ void combat_end(gc_engine *engine, bool has_won)
         return;
 	set_combat_player(engine, player_combat, player);
     this->current_enemy = NULL;
+    controllable_set_can_move(this->game_scene, true);
     engine->change_scene(engine, this->game_scene);
     engine->trigger_event(engine, "combat_ended", this->current_enemy, has_won);
     this->game_scene = NULL;
     this->state = ATTACK;
     dialog->dialog_id = -1;
+    dialog->input_id = -1;
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
