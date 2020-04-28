@@ -11,7 +11,7 @@
 #include "engine.h"
 #include <stdbool.h>
 
-void display_inventory_object(gc_scene *scene, struct renderer *rend, int nb);
+void display_inv_slot(gc_scene *scene, struct renderer *rend, int nb);
 bool toggle_inventory(gc_engine *engine);
 
 #endif //MY_RPG_INVENTORY_H

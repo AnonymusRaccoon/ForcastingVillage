@@ -15,6 +15,7 @@ struct player_component
 {
     gc_component base;
     int fight_rate;
+    bool inventory_upgrades[4];
 };
 
 extern const struct player_component player_component;

@@ -74,26 +74,23 @@ float dtime)
     struct renderer *rend = GETCMP(entity, renderer);
     gc_scene *scene = engine->scene;
 
-    if (disp->type == SELECT_TILE_DISPLAY && rend->type == GC_TEXTUREREND) {
-        display_current_texture(scene, rend);
-        return;
-    }
-	if (disp->type >= INVENTORY_SLOT_1 && disp->type <= INVENTORY_SLOT_4 && rend->type == GC_TEXTUREREND) {
-		display_inventory_object(scene, rend, disp->type - INVENTORY_SLOT_1 + 1);
-		return;
+	switch (rend->type) {
+	case GC_TEXTUREREND:
+		if (disp->type == SELECT_TILE_DISPLAY)
+			display_current_texture(scene, rend);
+		if (disp->type >= INVENTORY_SLOT_1 && disp->type <= INVENTORY_SLOT_4)
+			display_inv_slot(scene, rend, disp->type - INVENTORY_SLOT_1 + 1);
+		break;
+	case GC_TXTREND:
+		if (disp->type == XP_DISPLAY)
+			display_current_xp(scene, rend);
+		if (disp->type == HEALTH_DISPLAY)
+			display_current_health(scene, rend, true);
+		if (disp->type == HEALTH_DISPLAY_ENNEMY)
+			display_current_health(scene, rend, false);
+	default:
+		break;
 	}
-    if (disp->type == XP_DISPLAY && rend->type == GC_TXTREND) {
-        display_current_xp(scene, rend);
-        return;
-    }
-    if (disp->type == HEALTH_DISPLAY && rend->type == GC_TXTREND) {
-        display_current_health(scene, rend, true);
-        return;
-    }
-    if (disp->type == HEALTH_DISPLAY_ENNEMY && rend->type == GC_TXTREND) {
-        display_current_health(scene, rend, false);
-        return;
-    }
 }
 
 static void destroy(void *system, gc_engine *engine)

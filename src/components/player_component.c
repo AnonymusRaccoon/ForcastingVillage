@@ -13,6 +13,8 @@ static void ctr(void *component, va_list args)
     struct player_component *cmp = (struct player_component *)component;
 
     cmp->fight_rate = va_arg(args, int);
+	for (int i = 0; i < 4; i++)
+		cmp->inventory_upgrades[i] = false;
 }
 
 static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
@@ -20,6 +22,8 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     struct player_component *cmp = (struct player_component *)component;
 
     cmp->fight_rate = xml_getintprop(n, "fight_rate");
+    for (int i = 0; i < 4; i++)
+    	cmp->inventory_upgrades[i] = false;
 }
 
 static void dtr(void *component)
