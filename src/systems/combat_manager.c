@@ -38,7 +38,7 @@ void combat_end(gc_engine *engine, bool has_won)
 
     if (!this->current_enemy || !player || ! player_combat || !dialog)
         return;
-	set_combat_player(player_combat, player);
+	set_combat_player(engine, player_combat, player);
     this->current_enemy = NULL;
     engine->change_scene(engine, this->game_scene);
     engine->trigger_event(engine, "combat_ended", this->current_enemy, has_won);

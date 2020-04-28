@@ -5,19 +5,22 @@
 ** game_loader
 */
 
+#include <systems/combat_manager.h>
 #include "components//health_component.h"
 #include "entity.h"
 
-void set_combat_player(gc_entity *main_player, gc_entity *combat_player)
+void set_combat_player(gc_engine *engine, gc_entity *player, gc_entity *cbt)
 {
-	struct health_component *h_cmp_main = \
-GETCMP(main_player, health_component);
-	struct health_component *h_cmp_combat = \
-GETCMP(combat_player, health_component);
+	struct health_component *main = GETCMP(player, health_component);
+	struct health_component *combat = GETCMP(cbt, health_component);
+    struct combat_manager *this = GETSYS(engine, combat_manager);
 
-	if (!h_cmp_main || !h_cmp_combat)
+    this->last_attack = NULL;
+    this->last_damage = 0;
+	if (!main || !combat)
 		return;
-	h_cmp_combat->health_max = h_cmp_main->health_max;
-	h_cmp_combat->health = h_cmp_main->health;
-	h_cmp_combat->dead = h_cmp_main->dead;
+    combat->health_max = main->health_max;
+    combat->health = main->health;
+    combat->dead = main->dead;
+
 }

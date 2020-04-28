@@ -29,6 +29,8 @@ struct combat_manager {
     struct enemy *current_enemy;
     struct attack_holder *next_enemy_attack;
     enum combat_state state;
+    char *last_attack;
+    int last_damage;
 };
 
 extern const struct combat_manager combat_manager;

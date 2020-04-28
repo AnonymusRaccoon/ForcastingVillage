@@ -10,6 +10,7 @@
 
 #include "entity.h"
 
-void set_combat_player(gc_entity *main_player, gc_entity *combat_player);
+void set_combat_player(gc_engine *engine, gc_entity *main_player, \
+gc_entity *combat_player);
 
 #endif //MY_RPG_PLAYER_UTILITIES_H

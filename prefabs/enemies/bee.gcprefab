@@ -10,7 +10,7 @@
         <fixed_to_cam x="75%" y="20%" />
         <combat_holder name="bee" />
         <attack_component>
-            <attack name="Fireball"/>
+            <attack name="Aerial attack"/>
         </attack_component>
         <health_component max_health="12"/>
     </gc_entity>

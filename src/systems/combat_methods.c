@@ -7,6 +7,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <components/renderer.h>
 #include "systems/combat_manager.h"
 #include "tile.h"
 #include "prefab.h"
@@ -34,7 +35,7 @@ void combat_start(gc_engine *engine, char *enemy_name)
     }
     this->state = ATTACK;
     this->game_scene = engine->scene;
-    set_combat_player(player, player_combat);
+    set_combat_player(engine, player, player_combat);
     engine->scene = NULL;
     engine->change_scene(engine, scene);
     load_attacks(scene);
@@ -119,12 +120,16 @@ void defend_callback(gc_engine *engine)
     struct combat_manager *this = GETSYS(engine, combat_manager);
     gc_entity *player = NULL;
     gc_entity *enemy = NULL;
+    struct renderer *rend;
 
     if (!get_player_and_enemy(engine->scene, &player, &enemy))
         return;
+    rend = GETCMP(player, renderer);
+    if (rend)
+        rend_set_anim(rend, "none");
     if (GETCMP(enemy, health_component)->dead)
         combat_end(engine, true);
-    if (this->next_enemy_attack->run)
+    else if (this->next_enemy_attack->run)
         this->next_enemy_attack->run(engine, enemy, player);
     this->state = ATTACK;
 }
