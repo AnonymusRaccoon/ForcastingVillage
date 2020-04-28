@@ -41,6 +41,14 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     } if (!my_strcmp(display_type, "health")) {
 		cmp->type = HEALTH_DISPLAY;
 		rend->destroy = &text_safe_destroy;
+	} if (!my_strcmp(display_type, "inventory_1")) {
+    	cmp->type = INVENTORY_SLOT_1;
+    }if (!my_strcmp(display_type, "inventory_2")) {
+		cmp->type = INVENTORY_SLOT_2;
+	}if (!my_strcmp(display_type, "inventory_3")) {
+		cmp->type = INVENTORY_SLOT_3;
+	}if (!my_strcmp(display_type, "inventory_4")) {
+		cmp->type = INVENTORY_SLOT_4;
 	}
 }
 

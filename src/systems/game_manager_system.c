@@ -13,6 +13,7 @@
 #include "system.h"
 #include "components/game_manager.h"
 #include "systems/game_manager_system.h"
+#include "systems/inventory.h"
 
 bool toggle_pause(gc_engine *engine)
 {
@@ -21,7 +22,7 @@ bool toggle_pause(gc_engine *engine)
 
     scene->is_paused = !scene->is_paused;
     if (scene->is_paused) {
-        prefab_load(engine, "prefabs/pause.gcprefab");
+        prefab_load(engine,"prefabs/pause.gcprefab");
         return (true);
     }
     list = scene->get_entity_by_cmp(scene, "tag_component");
@@ -30,24 +31,6 @@ bool toggle_pause(gc_engine *engine)
             ((gc_entity *)li->data)->destroy(li->data, scene);
     }
     return (true);
-}
-
-bool toggle_inventory(gc_engine *engine)
-{
-	gc_scene *scene = engine->scene;
-	gc_list *list;
-
-	scene->is_paused = !scene->is_paused;
-	if (scene->is_paused) {
-		prefab_load(engine, "prefabs/inventory.gcprefab");
-		return (true);
-	}
-	list = scene->get_entity_by_cmp(scene, "tag_component");
-	for (gc_list *li = list; li; li = li->next) {
-		if (!my_strcmp(GETCMP(li->data, tag_component)->tag, "inventory"))
-			((gc_entity *)li->data)->destroy(li->data, scene);
-	}
-	return (true);
 }
 
 static void key_pressed(gc_engine *engine, va_list args)

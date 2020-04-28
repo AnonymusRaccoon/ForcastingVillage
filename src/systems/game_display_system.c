@@ -17,6 +17,7 @@
 #include <malloc.h>
 #include "components/health_component.h"
 #include "sprite.h"
+#include "systems/inventory.h"
 
 void display_current_texture(gc_scene *scene, struct renderer *rend)
 {
@@ -77,6 +78,10 @@ float dtime)
         display_current_texture(scene, rend);
         return;
     }
+	if (disp->type >= INVENTORY_SLOT_1 && disp->type <= INVENTORY_SLOT_4 && rend->type == GC_TEXTUREREND) {
+		display_inventory_object(scene, rend, disp->type - INVENTORY_SLOT_1 + 1);
+		return;
+	}
     if (disp->type == XP_DISPLAY && rend->type == GC_TXTREND) {
         display_current_xp(scene, rend);
         return;

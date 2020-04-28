@@ -2,16 +2,16 @@
     <panel src="panel" x="50%" y="50%" width="40%" height="60%" tag="inventory" />
     <text text="Inventory" x="50%" y="30%" tag="inventory" />
     <button text="Go back" x="50%" y="71%" click="toggle_inventory" color="black" width="200" resize="false" tag="inventory" />
-    <button sprite="texture" x="40%" y="40%" width="%" height="10%" tooltip="Object 1" tooltip_y="-7" size="15" tag="inventory">
-        <game_display stats="selected_tile" />
+    <button sprite="texture" x="40%" y="40%" width="%" height="10%" tooltip="Fireball upgrade" tooltip_y="-7" size="15" tag="inventory">
+        <game_display stats="inventory_1" />
     </button>
-    <button sprite="texture" x="60%" y="40%" width="%" height="10%" tooltip="Object 2" tooltip_y="-7" size="15" tag="inventory">
-            <game_display stats="selected_tile" />
+    <button sprite="texture" x="60%" y="40%" width="%" height="10%" tooltip="Water Jet upgrade" tooltip_y="-7" size="15" tag="inventory">
+            <game_display stats="inventory_2" />
      </button>
-	<button sprite="texture" x="40%" y="60%" width="%" height="10%" tooltip="Object 3" tooltip_y="-7" size="15" tag="inventory">
-        <game_display stats="selected_tile" />
+	<button sprite="texture" x="40%" y="60%" width="%" height="10%" tooltip="Uppercut upgrade" tooltip_y="-7" size="15" tag="inventory">
+        <game_display stats="inventory_3" />
     </button>
-	<button sprite="texture" x="60%" y="60%" width="%" height="10%" tooltip="Object 4" tooltip_y="-7" size="15" tag="inventory">
-        <game_display stats="selected_tile" />
+	<button sprite="texture" x="60%" y="60%" width="%" height="10%" tooltip="Shield upgrade" tooltip_y="-7" size="15" tag="inventory">
+        <game_display stats="inventory_4" />
     </button>
 </gc_entities>

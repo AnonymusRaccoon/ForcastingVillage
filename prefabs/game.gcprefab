@@ -120,6 +120,13 @@
         <sprite name="item_rock_1" src="assets/sprites/items/generic-rpg-rock04.png" />
         <sprite name="item_rock_2" src="assets/sprites/items/generic-rpg-rock05.png" />
 
+
+        <sprite name="empty_slot" src="assets/sprites/inventory/empty.png" />
+        <sprite name="slot_1" src="assets/sprites/inventory/fireball_upgrade.png" />
+        <sprite name="slot_2" src="assets/sprites/inventory/water_jet_upgrade.png" />
+        <sprite name="slot_3" src="assets/sprites/inventory/uppercut_upgrade.png" />
+        <sprite name="slot_4" src="assets/sprites/inventory/shield_upgrade.png" />
+
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>
         <font src="assets/fonts/roboto.ttf" />
