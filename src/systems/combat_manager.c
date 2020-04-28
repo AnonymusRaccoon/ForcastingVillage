@@ -33,8 +33,8 @@ void entity_moved(gc_engine *engine, va_list args)
 void combat_end(gc_engine *engine, bool has_won)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
-    gc_entity *player = engine->scene->get_entity(engine->scene, 50);
-    gc_entity *player_combat = this->game_scene->get_entity(this->game_scene, 50);
+    gc_entity *player_combat = engine->scene->get_entity(engine->scene, 50);
+    gc_entity *player = this->game_scene->get_entity(this->game_scene, 50);
     struct dialog_manager *dialog = GETSYS(engine, dialog_manager);
 
     if (!this->current_enemy || !player || ! player_combat || !dialog)
