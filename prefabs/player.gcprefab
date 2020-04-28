@@ -38,6 +38,6 @@
        <map_linker x="1" y="1" solid="false" centered="true"/>
        <xp_component xp="20"/>
        <health_component max_health="420"/>
-       <player_component fight_rate="100%" />
+       <player_component fight_rate="5%" />
    </gc_entity>
 </gc_entities>
