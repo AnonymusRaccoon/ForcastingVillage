@@ -8,6 +8,7 @@
         <sprite name="panel" src="assets/ui/panel.png" />
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <sprite name="player" src="assets/sprites/player_spritesheet.png" />
+        <sprite name="fight_background" src="assets/ui/fight_background.png" />
 
         <sprite name="bee" src="assets/sprites/bee.png" />
     </data>
@@ -26,6 +27,7 @@
             </dialog_holder>
         </gc_entity>
 
+        <panel src="fight_background" x="50%" y="50%" width="100%" height="100%" />
         <panel src="enemy_holder" x="75%" y="20%" width="30%" height="%" />
         <panel src="player_holder" x="45%" y="80%" width="45%" height="20%" reverse_y="true" />
         <panel src="main_ui_game" x="3%" y="2%" width="30%" height="15%" centered="false"/>
@@ -33,8 +35,8 @@
               <game_display stats="health_ennemy"/>
          </text>
         <text text=" " x="13%" y="14%" centered="false"/>
-		<panel src="main_ui_game" x="70%" y="60%" width="30%" height="15%" centered="false"/>
-        <text text="Loading" x="80%" y="65%" centered="false">
+		<panel src="main_ui_game" x="3%" y="60%" width="30%" height="15%" centered="false"/>
+        <text text="Loading" x="13%" y="65%" centered="false">
               <game_display stats="health"/>
          </text>
 
