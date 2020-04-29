@@ -18,7 +18,6 @@ component;
 
     cmp->movement_x = 0;
     cmp->movement_y = 0;
-    cmp->move_callback = 0;
     cmp->can_move = true;
     (void)args;
 }
@@ -31,7 +30,6 @@ component;
 
     cmp->movement_x = 0;
     cmp->movement_y = 0;
-    cmp->move_callback = 0;
     (void)scene;
     (void)entity;
     (void)n;
