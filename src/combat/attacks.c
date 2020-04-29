@@ -26,7 +26,7 @@ void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy)
         max = 20 - this->last_damage;
     else
         max = 10;
-    this->last_damage = MIN(random() % max, 10);
+    this->last_damage = MAX(MIN(random() % max, 10), 0);
     this->last_damage *= inv && inv->inventory_upgrades[2] ? 1 : 1.5;
     this->last_attack = "uppercut";
     rem_health(enemy_health, engine, this->last_damage);
@@ -46,7 +46,7 @@ void water_jet(gc_engine *engine, gc_entity *from, gc_entity *enemy)
         max = 20 - this->last_damage;
     else
         max = 10;
-    this->last_damage = MIN(random() % max, 10);
+    this->last_damage = MAX(MIN(random() % max, 10), 0);
     this->last_damage *= inv && inv->inventory_upgrades[1] ? 1 : 1.5;
     this->last_attack = "water_jet";
     rem_health(enemy_health, engine, this->last_damage);
@@ -66,7 +66,7 @@ void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy)
         max = 20 - this->last_damage;
     else
         max = 10;
-    this->last_damage = MIN(random() % max, 10);
+    this->last_damage = MAX(MIN(random() % max, 10), 0);
     this->last_damage *= inv && inv->inventory_upgrades[0] ? 1 : 1.5;
     this->last_attack = "fireball";
     rem_health(enemy_health, engine, this->last_damage);

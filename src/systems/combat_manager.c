@@ -10,6 +10,7 @@
 #include <components/player_component.h>
 #include <stdlib.h>
 #include <components/controllable_component.h>
+#include <prefab.h>
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
@@ -48,6 +49,8 @@ void combat_end(gc_engine *engine, bool has_won)
     this->state = ATTACK;
     dialog->dialog_id = -1;
     dialog->input_id = -1;
+    if (!has_won)
+        prefab_load(engine, "prefabs/game_over.gcprefab");
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
