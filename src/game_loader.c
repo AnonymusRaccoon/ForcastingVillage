@@ -62,12 +62,12 @@ const struct callback map_editor_callbacks[] = {
 };
 
 const struct gc_data attacks[] = {
-    {"attack", "Uppercut", &uppercut, NULL},
-    {"attack", "Fireball", &fireball, NULL},
-    {"attack", "Water jet", &water_jet, NULL},
-    {"attack", "Shield", &shield, NULL},
-    {"attack", "Aerial attack", &ennemie_attack, NULL},
-    {NULL, NULL, NULL, NULL}
+    {"attack", "Uppercut", &uppercut,          NULL},
+    {"attack", "Fireball", &fireball,          NULL},
+    {"attack", "Water jet", &water_jet,        NULL},
+    {"attack", "Shield", &shield,              NULL},
+    {"attack", "Aerial attack", &enemy_attack, NULL},
+    {NULL, NULL, NULL,                         NULL}
 };
 
 void load_attacks(gc_scene *scene)
