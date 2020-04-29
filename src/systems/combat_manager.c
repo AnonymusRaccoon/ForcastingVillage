@@ -83,6 +83,9 @@ static void ctr(void *system, va_list list)
 
     this->game_scene = NULL;
     this->state = ATTACK;
+    this->last_enemy_damage = 0;
+    this->last_damage = 0;
+    this->last_attack = NULL;
     engine->add_event_listener(engine, "entity_moved", &entity_moved);
 }
 

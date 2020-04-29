@@ -92,7 +92,7 @@ void enemy_attack(gc_engine *engine, gc_entity *from, gc_entity *enemy)
     struct combat_manager *this = GETSYS(engine, combat_manager);
     struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
-    int max  = 20 - this->last_enemy_damage;
+    int max  = 10 - this->last_enemy_damage;
 
     this->last_enemy_damage = MAX(MIN(random() % max, 10), 0);
     if (this->last_attack && !my_strcmp(this->last_attack, "shield"))
