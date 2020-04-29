@@ -78,7 +78,6 @@ void shield(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
     struct player_component *inv = GETCMP(from, player_component);
-    struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
 
     this->last_damage = 50;
