@@ -39,7 +39,8 @@ SRC = 	src/main.c \
 	src/components/combat_holder.c \
 	src/enemy_dataloader.c \
 	src/combat/attacks.c \
-	src/player_utilities.c
+	src/player_utilities.c \
+	src/systems/inventory.c
 
 OBJ = $(SRC:%.c=%.o)
 

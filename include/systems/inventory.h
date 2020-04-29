@@ -10,7 +10,6 @@
 
 #include "engine.h"
 #include <stdbool.h>
-#include "renderer.h"
 
 void display_inv_slot(gc_scene *scene, struct renderer *rend, int nb);
 bool toggle_inventory(gc_engine *engine);
