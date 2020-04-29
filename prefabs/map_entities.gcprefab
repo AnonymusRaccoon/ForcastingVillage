@@ -5200,4 +5200,204 @@
     </renderer>
     <map_linker centered="true" name="item_rock_0" x="63" y="42" />
 </gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="47" y="65" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="50" y="65" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="51" y="65" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="45" y="66" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="46" y="66" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="47" y="66" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="48" y="66" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="51" y="66" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="45" y="67" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="46" y="67" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="47" y="67" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="48" y="67" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="49" y="67" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="50" y="67" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="51" y="67" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="46" y="68" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="blue_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="47" y="68" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="48" y="68" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="50" y="68" />
+</gc_entity>
+<gc_entity>
+    <transform_component>
+        <Position x="0" y="0" />
+        <Size x="188" y="250" />
+    </transform_component>
+    <renderer src="red_tree">
+        <Rect height="auto" width="auto" top="0" left="0" />
+    </renderer>
+    <map_linker x="51" y="68" />
+</gc_entity>
 </gc_entities>

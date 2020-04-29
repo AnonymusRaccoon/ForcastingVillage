@@ -16,8 +16,8 @@ for i in range(max_height - min_height + 1):
     for j in range(max_width - min_width + 1):
         if prob < random.randint(0, 101):
             continue
-        x = i + min_width
-        y = j + min_height
+        x = j + min_width
+        y = i + min_height
         entity = random.choice(entities)
         print(f"""<gc_entity>
     <transform_component>
