@@ -26,7 +26,7 @@ void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy)
         max = 20 - this->last_damage;
     else
         max = 10;
-    this->last_damage = MIN(random() % max, 10);
+    this->last_damage = MAX(MIN(random() % max, 10), 0);
     this->last_damage *= inv && inv->inventory_upgrades[2] ? 1 : 1.5;
     this->last_attack = "uppercut";
     rem_health(enemy_health, engine, this->last_damage);
@@ -46,7 +46,7 @@ void water_jet(gc_engine *engine, gc_entity *from, gc_entity *enemy)
         max = 20 - this->last_damage;
     else
         max = 10;
-    this->last_damage = MIN(random() % max, 10);
+    this->last_damage = MAX(MIN(random() % max, 10), 0);
     this->last_damage *= inv && inv->inventory_upgrades[1] ? 1 : 1.5;
     this->last_attack = "water_jet";
     rem_health(enemy_health, engine, this->last_damage);
@@ -66,7 +66,7 @@ void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy)
         max = 20 - this->last_damage;
     else
         max = 10;
-    this->last_damage = MIN(random() % max, 10);
+    this->last_damage = MAX(MIN(random() % max, 10), 0);
     this->last_damage *= inv && inv->inventory_upgrades[0] ? 1 : 1.5;
     this->last_attack = "fireball";
     rem_health(enemy_health, engine, this->last_damage);
@@ -78,7 +78,6 @@ void shield(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
     struct player_component *inv = GETCMP(from, player_component);
-    struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
 
     this->last_damage = 50;
@@ -88,16 +87,17 @@ void shield(gc_engine *engine, gc_entity *from, gc_entity *enemy)
         rend_set_anim(rend, "shield");
 }
 
-void ennemie_attack(gc_engine *engine, gc_entity *from, gc_entity *enemy)
+void enemy_attack(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
     struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
-    float amount = random() % 10;
+    int max  = 10 - this->last_enemy_damage;
 
+    this->last_enemy_damage = MAX(MIN(random() % max, 10), 0);
     if (this->last_attack && !my_strcmp(this->last_attack, "shield"))
-        amount *= (float)this->last_damage / 100;
-    rem_health(enemy_health, engine, (int)amount);
+        add_health(enemy_health, engine, 5);
+    rem_health(enemy_health, engine, this->last_enemy_damage);
     if (rend)
         rend_set_anim(rend, "attack");
 }

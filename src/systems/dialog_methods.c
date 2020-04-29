@@ -16,7 +16,7 @@
 #include "engine.h"
 #include "tile.h"
 
-void load_dialog(struct dialog_manager *this, gc_engine *engine, \
+bool load_dialog(struct dialog_manager *this, gc_engine *engine, \
 gc_entity *player)
 {
     struct map_linker *link = GETCMP(player, map_linker);
@@ -26,7 +26,7 @@ gc_entity *player)
 
     if (!link || !link->tile || !link->tile->type || \
 my_strcmp(link->tile->type, "dialog"))
-        return;
+        return (false);
     this->dialog_id = prefab_load(engine, "prefabs/dialog.gcprefab");
     if (this->dialog_id < 0)
         my_printf("Couldn't load the dialog prefab.\n");
@@ -36,9 +36,10 @@ my_strcmp(link->tile->type, "dialog"))
             this->current_dialog = dialog;
     }
     if (!this->current_dialog)
-        return;
+        return (false);
     this->current_text = this->current_dialog->text[0];
     this->current_line = 0;
+    return (true);
 }
 
 bool update_dialog(struct dialog_manager *this, gc_entity *text, \
@@ -109,8 +110,8 @@ void dialog_next(gc_engine *engine)
 
     if (!entity)
         return;
-    if (this->dialog_id == -1)
-        load_dialog(this, engine, entity);
+    if (this->dialog_id == -1 && !load_dialog(this, engine, entity))
+        return;
     if (this->input_id >= 0)
         run_input_func(this, engine);
     controllable_set_can_move(scene, false);

@@ -59,6 +59,6 @@ void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy);
 void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy);
 void water_jet(gc_engine *engine, gc_entity *from, gc_entity *enemy);
 void shield(gc_engine *engine, gc_entity *from, gc_entity *enemy);
-void ennemie_attack(gc_engine *engine, gc_entity *from, gc_entity *enemy);
+void enemy_attack(gc_engine *engine, gc_entity *from, gc_entity *enemy);
 
 void load_attacks(gc_scene *scene);

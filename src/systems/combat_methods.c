@@ -79,8 +79,6 @@ void attack_callback(gc_engine *engine, int index)
 
     if (!li || !get_player_and_enemy(scene, &player_entity, &enemy))
         return;
-    if (GETCMP(player_entity, health_component)->dead)
-        combat_end(engine, false);
     if (!(player = GETCMP(player_entity, attack_component)))
         return;
     if (player->attacks[index].run)
@@ -101,15 +99,17 @@ gc_scene *scene, gc_engine *engine)
 
     if (!player_entity)
         return;
-    player = GETCMP(player_entity, attack_component);
-    if (!player)
+    if (GETCMP(player_entity, health_component)->dead) {
+        combat_end(engine, false);
         return;
-    if (player->attacks) {
+    }
+    if (!(player = GETCMP(player_entity, attack_component)))
+        return;
+    if (player->attacks)
         for (i = 0; player->attacks[i].name && i < 4; i++) {
             inputs[i].text = player->attacks[i].name;
             inputs[i].callback = &attack_callback;
         }
-    }
     inputs[i].text = NULL;
     dialog_add_line(dialog, NULL, ATTACK_TEXT, inputs);
     this->state = ATTACKING;

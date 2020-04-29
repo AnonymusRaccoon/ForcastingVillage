@@ -31,6 +31,7 @@ struct combat_manager {
     enum combat_state state;
     char *last_attack;
     int last_damage;
+    int last_enemy_damage;
 };
 
 extern const struct combat_manager combat_manager;

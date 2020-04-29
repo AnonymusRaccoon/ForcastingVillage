@@ -10,6 +10,7 @@
 #include <components/player_component.h>
 #include <stdlib.h>
 #include <components/controllable_component.h>
+#include <prefab.h>
 #include "engine.h"
 #include "my.h"
 #include "components/dialog_holder.h"
@@ -39,7 +40,7 @@ void combat_end(gc_engine *engine, bool has_won)
 
     if (!this->current_enemy || !player || ! player_combat || !dialog)
         return;
-	set_combat_player(engine, player_combat, player);
+    set_combat_player(engine, player_combat, player);
     this->current_enemy = NULL;
     controllable_set_can_move(this->game_scene, true);
     engine->change_scene(engine, this->game_scene);
@@ -48,6 +49,8 @@ void combat_end(gc_engine *engine, bool has_won)
     this->state = ATTACK;
     dialog->dialog_id = -1;
     dialog->input_id = -1;
+    if (!has_won)
+        prefab_load(engine, "prefabs/game_over.gcprefab");
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
@@ -80,6 +83,9 @@ static void ctr(void *system, va_list list)
 
     this->game_scene = NULL;
     this->state = ATTACK;
+    this->last_enemy_damage = 0;
+    this->last_damage = 0;
+    this->last_attack = NULL;
     engine->add_event_listener(engine, "entity_moved", &entity_moved);
 }
 
