@@ -9,6 +9,7 @@
 #include <systems/game_manager_system.h>
 #include <stdlib.h>
 #include <utility.h>
+#include <components/player_component.h>
 #include "components/health_component.h"
 #include "engine.h"
 #include "components/renderer.h"
@@ -16,7 +17,7 @@
 void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
-    struct game_manager_system *inv = GETSYS(engine, game_manager_system);
+    struct player_component *inv = GETCMP(from, player_component);
     struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
     int max;
@@ -26,6 +27,7 @@ void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy)
     else
         max = 10;
     this->last_damage = MIN(random() % max, 10);
+    this->last_damage *= inv && inv->inventory_upgrades[2] ? 1 : 1.5;
     this->last_attack = "uppercut";
     rem_health(enemy_health, engine, this->last_damage);
     if (rend)
@@ -35,7 +37,7 @@ void uppercut(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 void water_jet(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
-    struct game_manager_system *inv = GETSYS(engine, game_manager_system);
+    struct player_component *inv = GETCMP(from, player_component);
     struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
     int max;
@@ -45,6 +47,7 @@ void water_jet(gc_engine *engine, gc_entity *from, gc_entity *enemy)
     else
         max = 10;
     this->last_damage = MIN(random() % max, 10);
+    this->last_damage *= inv && inv->inventory_upgrades[1] ? 1 : 1.5;
     this->last_attack = "water_jet";
     rem_health(enemy_health, engine, this->last_damage);
     if (rend)
@@ -54,7 +57,7 @@ void water_jet(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
-    struct game_manager_system *inv = GETSYS(engine, game_manager_system);
+    struct player_component *inv = GETCMP(from, player_component);
     struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
     int max;
@@ -64,6 +67,7 @@ void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy)
     else
         max = 10;
     this->last_damage = MIN(random() % max, 10);
+    this->last_damage *= inv && inv->inventory_upgrades[0] ? 1 : 1.5;
     this->last_attack = "fireball";
     rem_health(enemy_health, engine, this->last_damage);
     if (rend)
@@ -73,11 +77,12 @@ void fireball(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 void shield(gc_engine *engine, gc_entity *from, gc_entity *enemy)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
-    struct game_manager_system *inv = GETSYS(engine, game_manager_system);
+    struct player_component *inv = GETCMP(from, player_component);
     struct health_component *enemy_health = GETCMP(enemy, health_component);
     struct renderer *rend = GETCMP(from, renderer);
 
     this->last_damage = 50;
+    this->last_damage *= inv && inv->inventory_upgrades[3] ? 1 : 1.5;
     this->last_attack = "shield";
     if (rend)
         rend_set_anim(rend, "shield");
