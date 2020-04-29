@@ -72,11 +72,11 @@
         <sprite name="dirt_bottom_9" src="assets/tiles/generic-rpg-tile41.png" />
         <sprite name="grass_top_1" src="assets/tiles/generic-rpg-tile42.png" />
         <sprite name="dirt_bottom_10" src="assets/tiles/generic-rpg-tile43.png" />
+        <sprite name="water_top_right" src="assets/tiles/generic-rpg-tile72.png" />
         <sprite name="waterfall_top_left" src="assets/tiles/generic-rpg-tile-waterfall01.png" />
         <sprite name="waterfall_top_right" src="assets/tiles/generic-rpg-tile-waterfall02.png" />
         <sprite name="waterfall_bottom_left" src="assets/tiles/generic-rpg-tile-waterfall03.png" />
         <sprite name="waterfall_bottom_right" src="assets/tiles/generic-rpg-tile-waterfall04.png" />
-        <sprite name="water_top_right" src="assets/tiles/generic-rpg-tile-waterfall05.png" />
         <sprite name="water_top" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
         <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
         <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
@@ -85,8 +85,8 @@
          <sprite name="panel" src="assets/ui/sample_background.png" />
 
         <tiles>
-            <tile name="dirt_inner_top_left" />
-            <tile name="dirt_top_right_0" />
+            <tile name="water_top_right" />
+            <tile name="stone" />
             <tile name="dirt" />
         </tiles>
 
