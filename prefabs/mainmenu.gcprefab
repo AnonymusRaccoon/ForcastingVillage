@@ -1,16 +1,17 @@
 <gc_scene>
     <data>
-        <sprite name="panel" src="assets/ui/panel.png" />
+        <sprite name="panel" src="assets/ui/sample_background.png" />
         <sprite name="button_background" src="assets/ui/button_background.png" />
         <sprite name="loading" src="assets/ui/background_rpg.png" />
         <font src="assets/fonts/roboto.ttf" />
+        <sprite name="background" src="assets/ui/background_menu.png" />
     </data>
     <gc_entities>
         <camera x="0" y="0" />
-        <panel src="panel" x="50%" y="45%" width="300" height="69%"/>
-        <text text="Forecasting Village" x="50%" y="25%" resize="false"/>
-        <button text="Start Game" x="50%" y="50%" click="start_button" color="black" width="200" resize="false" />
-        <button text="Options" x="50%" y="61%" click="options" color="black" width="200" resize="false" />
-        <button text="Quit game" x="50%" y="72%" click="quit" color="black" width="200" resize="false" />
+        <panel src="background" x="50%" y="50%" width="100%" height="100%"/>
+        <panel src="panel" x="50%" y="60%" width="50%" height="55%"/>
+        <button text="Start Game" x="50%" y="47%" click="start_button" color="black" width="30%" height="20%" resize="false" />
+        <button text="Options" x="50%" y="61%" click="options" color="black" width="30%" height="20%" resize="false" />
+        <button text="Quit game" x="50%" y="75s%" click="quit" color="black" width="30%" height="20%" resize="false" />
     </gc_entities>
 </gc_scene>
