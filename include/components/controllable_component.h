@@ -15,7 +15,6 @@ struct controllable_component
     gc_component base;
     int movement_x;
     int movement_y;
-    float move_callback;
     bool can_move;
 };
 
