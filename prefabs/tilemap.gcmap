@@ -5064,49 +5064,49 @@
 		<tile x="0" y="19" texture="grass_top" rotation="0" />
 		<tile x="0" y="20" texture="grass_top" rotation="0" />
 		<tile x="0" y="21" texture="grass_top" rotation="0" />
-		<tile x="0" y="22" texture="water_grass_right_1" rotation="2" />
-		<tile x="0" y="23" texture="water" rotation="0" />
-		<tile x="0" y="24" texture="water" rotation="0" />
-		<tile x="0" y="25" texture="water" rotation="0" />
-		<tile x="0" y="26" texture="water" rotation="0" />
-		<tile x="0" y="27" texture="water" rotation="0" />
-		<tile x="0" y="28" texture="water" rotation="0" />
-		<tile x="0" y="29" texture="water" rotation="0" />
-		<tile x="0" y="30" texture="water" rotation="0" />
-		<tile x="0" y="31" texture="water" rotation="0" />
-		<tile x="0" y="32" texture="water" rotation="0" />
-		<tile x="0" y="33" texture="water" rotation="0" />
-		<tile x="0" y="34" texture="water" rotation="0" />
-		<tile x="0" y="35" texture="water" rotation="0" />
-		<tile x="0" y="36" texture="water" rotation="0" />
-		<tile x="0" y="37" texture="water" rotation="0" />
-		<tile x="0" y="38" texture="water" rotation="0" />
-		<tile x="0" y="39" texture="water" rotation="0" />
-		<tile x="0" y="40" texture="water" rotation="0" />
-		<tile x="0" y="41" texture="water" rotation="0" />
-		<tile x="0" y="42" texture="water" rotation="0" />
-		<tile x="0" y="43" texture="water" rotation="0" />
-		<tile x="0" y="44" texture="water" rotation="0" />
-		<tile x="0" y="45" texture="water" rotation="0" />
-		<tile x="0" y="46" texture="water" rotation="0" />
-		<tile x="0" y="47" texture="water" rotation="0" />
-		<tile x="0" y="48" texture="water" rotation="0" />
-		<tile x="0" y="49" texture="water" rotation="0" />
-		<tile x="0" y="50" texture="water" rotation="0" />
-		<tile x="0" y="51" texture="water" rotation="0" />
-		<tile x="0" y="52" texture="water" rotation="0" />
-		<tile x="0" y="53" texture="water" rotation="0" />
-		<tile x="0" y="54" texture="water" rotation="0" />
-		<tile x="0" y="55" texture="water" rotation="0" />
-		<tile x="0" y="56" texture="water" rotation="0" />
-		<tile x="0" y="57" texture="water" rotation="0" />
-		<tile x="0" y="58" texture="water" rotation="0" />
-		<tile x="0" y="59" texture="water" rotation="0" />
-		<tile x="0" y="60" texture="water" rotation="0" />
-		<tile x="0" y="61" texture="water" rotation="0" />
-		<tile x="0" y="62" texture="water" rotation="0" />
-		<tile x="0" y="63" texture="water" rotation="0" />
-		<tile x="0" y="64" texture="water_grass_right_1" rotation="0" />
+		<tile x="0" y="22" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="0" y="23" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="24" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="25" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="26" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="27" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="63" texture="water" rotation="0"  solid="true"/ >
+		<tile x="0" y="64" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="0" y="65" texture="grass_top" rotation="0" />
 		<tile x="0" y="66" texture="grass_top" rotation="0" />
 		<tile x="0" y="67" texture="grass_top" rotation="0" />
@@ -5133,48 +5133,48 @@
 		<tile x="1" y="19" texture="grass_top" rotation="0" />
 		<tile x="1" y="20" texture="grass_top" rotation="0" />
 		<tile x="1" y="21" texture="grass_top" rotation="0" />
-		<tile x="1" y="22" texture="water_grass_right_1" rotation="2" />
-		<tile x="1" y="23" texture="water" rotation="0" />
-		<tile x="1" y="24" texture="water" rotation="0" />
-		<tile x="1" y="25" texture="water" rotation="0" />
-		<tile x="1" y="26" texture="water" rotation="0" />
-		<tile x="1" y="27" texture="water" rotation="0" />
-		<tile x="1" y="28" texture="water" rotation="0" />
-		<tile x="1" y="29" texture="water" rotation="0" />
-		<tile x="1" y="30" texture="water" rotation="0" />
-		<tile x="1" y="31" texture="water" rotation="0" />
-		<tile x="1" y="32" texture="water" rotation="0" />
-		<tile x="1" y="33" texture="water" rotation="0" />
-		<tile x="1" y="34" texture="water" rotation="0" />
-		<tile x="1" y="35" texture="water" rotation="0" />
-		<tile x="1" y="36" texture="water" rotation="0" />
-		<tile x="1" y="37" texture="water" rotation="0" />
-		<tile x="1" y="38" texture="water" rotation="0" />
-		<tile x="1" y="39" texture="water" rotation="0" />
-		<tile x="1" y="40" texture="water" rotation="0" />
-		<tile x="1" y="41" texture="water" rotation="0" />
-		<tile x="1" y="42" texture="water" rotation="0" />
-		<tile x="1" y="43" texture="water" rotation="0" />
-		<tile x="1" y="44" texture="water" rotation="0" />
-		<tile x="1" y="45" texture="water" rotation="0" />
-		<tile x="1" y="46" texture="water" rotation="0" />
-		<tile x="1" y="47" texture="water" rotation="0" />
-		<tile x="1" y="48" texture="water" rotation="0" />
-		<tile x="1" y="49" texture="water" rotation="0" />
-		<tile x="1" y="50" texture="water" rotation="0" />
-		<tile x="1" y="51" texture="water" rotation="0" />
-		<tile x="1" y="52" texture="water" rotation="0" />
-		<tile x="1" y="53" texture="water" rotation="0" />
-		<tile x="1" y="54" texture="water" rotation="0" />
-		<tile x="1" y="55" texture="water" rotation="0" />
-		<tile x="1" y="56" texture="water" rotation="0" />
-		<tile x="1" y="57" texture="water" rotation="0" />
-		<tile x="1" y="58" texture="water" rotation="0" />
-		<tile x="1" y="59" texture="water" rotation="0" />
-		<tile x="1" y="60" texture="water" rotation="0" />
-		<tile x="1" y="61" texture="water" rotation="0" />
-		<tile x="1" y="62" texture="water" rotation="0" />
-		<tile x="1" y="63" texture="water_grass_right_1" rotation="0" />
+		<tile x="1" y="22" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="1" y="23" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="24" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="25" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="26" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="27" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="1" y="63" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="1" y="64" texture="grass_top" rotation="0" />
 		<tile x="1" y="65" texture="grass_top" rotation="0" />
 		<tile x="1" y="66" texture="grass_top" rotation="0" />
@@ -5203,47 +5203,47 @@
 		<tile x="2" y="20" texture="grass_top" rotation="0" />
 		<tile x="2" y="21" texture="grass_top" rotation="0" />
 		<tile x="2" y="22" texture="grass_top" rotation="0" />
-		<tile x="2" y="23" texture="water_grass_right_1" rotation="2" />
-		<tile x="2" y="24" texture="water" rotation="0" />
-		<tile x="2" y="25" texture="water" rotation="0" />
-		<tile x="2" y="26" texture="water" rotation="0" />
-		<tile x="2" y="27" texture="water" rotation="0" />
-		<tile x="2" y="28" texture="water" rotation="0" />
-		<tile x="2" y="29" texture="water" rotation="0" />
-		<tile x="2" y="30" texture="water" rotation="0" />
-		<tile x="2" y="31" texture="water" rotation="0" />
-		<tile x="2" y="32" texture="water" rotation="0" />
-		<tile x="2" y="33" texture="water" rotation="0" />
-		<tile x="2" y="34" texture="water" rotation="0" />
-		<tile x="2" y="35" texture="water" rotation="0" />
-		<tile x="2" y="36" texture="water" rotation="0" />
-		<tile x="2" y="37" texture="water" rotation="0" />
-		<tile x="2" y="38" texture="water" rotation="0" />
-		<tile x="2" y="39" texture="water" rotation="0" />
-		<tile x="2" y="40" texture="water" rotation="0" />
-		<tile x="2" y="41" texture="water" rotation="0" />
-		<tile x="2" y="42" texture="water" rotation="0" />
-		<tile x="2" y="43" texture="water" rotation="0" />
-		<tile x="2" y="44" texture="water" rotation="0" />
-		<tile x="2" y="45" texture="water" rotation="0" />
-		<tile x="2" y="46" texture="water" rotation="0" />
-		<tile x="2" y="47" texture="water" rotation="0" />
-		<tile x="2" y="48" texture="water" rotation="0" />
-		<tile x="2" y="49" texture="water" rotation="0" />
-		<tile x="2" y="50" texture="water" rotation="0" />
-		<tile x="2" y="51" texture="water" rotation="0" />
-		<tile x="2" y="52" texture="water" rotation="0" />
-		<tile x="2" y="53" texture="water" rotation="0" />
-		<tile x="2" y="54" texture="water" rotation="0" />
-		<tile x="2" y="55" texture="water" rotation="0" />
-		<tile x="2" y="56" texture="water" rotation="0" />
-		<tile x="2" y="57" texture="water" rotation="0" />
-		<tile x="2" y="58" texture="water" rotation="0" />
-		<tile x="2" y="59" texture="water" rotation="0" />
-		<tile x="2" y="60" texture="water" rotation="0" />
-		<tile x="2" y="61" texture="water" rotation="0" />
-		<tile x="2" y="62" texture="water" rotation="0" />
-		<tile x="2" y="63" texture="water_grass_right_1" rotation="0" />
+		<tile x="2" y="23" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="2" y="24" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="25" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="26" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="27" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="2" y="63" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="2" y="64" texture="grass_top" rotation="0" />
 		<tile x="2" y="65" texture="grass_top" rotation="0" />
 		<tile x="2" y="66" texture="grass_top" rotation="0" />
@@ -5273,46 +5273,46 @@
 		<tile x="3" y="21" texture="grass_top" rotation="0" />
 		<tile x="3" y="22" texture="grass_top" rotation="0" />
 		<tile x="3" y="23" texture="grass_top" rotation="0" />
-		<tile x="3" y="24" texture="water_grass_right_1" rotation="2" />
-		<tile x="3" y="25" texture="water" rotation="0" />
-		<tile x="3" y="26" texture="water" rotation="0" />
-		<tile x="3" y="27" texture="water" rotation="0" />
-		<tile x="3" y="28" texture="water" rotation="0" />
-		<tile x="3" y="29" texture="water" rotation="0" />
-		<tile x="3" y="30" texture="water" rotation="0" />
-		<tile x="3" y="31" texture="water" rotation="0" />
-		<tile x="3" y="32" texture="water" rotation="0" />
-		<tile x="3" y="33" texture="water" rotation="0" />
-		<tile x="3" y="34" texture="water" rotation="0" />
-		<tile x="3" y="35" texture="water" rotation="0" />
-		<tile x="3" y="36" texture="water" rotation="0" />
-		<tile x="3" y="37" texture="water" rotation="0" />
-		<tile x="3" y="38" texture="water" rotation="0" />
-		<tile x="3" y="39" texture="water" rotation="0" />
-		<tile x="3" y="40" texture="water" rotation="0" />
-		<tile x="3" y="41" texture="water" rotation="0" />
-		<tile x="3" y="42" texture="water" rotation="0" />
-		<tile x="3" y="43" texture="water" rotation="0" />
-		<tile x="3" y="44" texture="water" rotation="0" />
-		<tile x="3" y="45" texture="water" rotation="0" />
-		<tile x="3" y="46" texture="water" rotation="0" />
-		<tile x="3" y="47" texture="water" rotation="0" />
-		<tile x="3" y="48" texture="water" rotation="0" />
-		<tile x="3" y="49" texture="water" rotation="0" />
-		<tile x="3" y="50" texture="water" rotation="0" />
-		<tile x="3" y="51" texture="water" rotation="0" />
-		<tile x="3" y="52" texture="water" rotation="0" />
-		<tile x="3" y="53" texture="water" rotation="0" />
-		<tile x="3" y="54" texture="water" rotation="0" />
-		<tile x="3" y="55" texture="water" rotation="0" />
-		<tile x="3" y="56" texture="water" rotation="0" />
-		<tile x="3" y="57" texture="water" rotation="0" />
-		<tile x="3" y="58" texture="water" rotation="0" />
-		<tile x="3" y="59" texture="water" rotation="0" />
-		<tile x="3" y="60" texture="water" rotation="0" />
-		<tile x="3" y="61" texture="water" rotation="0" />
+		<tile x="3" y="24" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="3" y="25" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="26" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="27" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="3" y="61" texture="water" rotation="0"  solid="true"/ >
 		<tile x="3" y="62" texture="grass_top" rotation="0" />
-		<tile x="3" y="63" texture="water_grass_right_1" rotation="0" />
+		<tile x="3" y="63" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="3" y="64" texture="grass_top" rotation="0" />
 		<tile x="3" y="65" texture="grass_top" rotation="0" />
 		<tile x="3" y="66" texture="grass_top" rotation="0" />
@@ -5342,46 +5342,46 @@
 		<tile x="4" y="21" texture="grass_top" rotation="0" />
 		<tile x="4" y="22" texture="grass_top" rotation="0" />
 		<tile x="4" y="23" texture="grass_top" rotation="0" />
-		<tile x="4" y="24" texture="water_grass_right_1" rotation="2" />
-		<tile x="4" y="25" texture="water" rotation="0" />
-		<tile x="4" y="26" texture="water" rotation="0" />
-		<tile x="4" y="27" texture="water" rotation="0" />
-		<tile x="4" y="28" texture="water" rotation="0" />
-		<tile x="4" y="29" texture="water" rotation="0" />
-		<tile x="4" y="30" texture="water" rotation="0" />
-		<tile x="4" y="31" texture="water" rotation="0" />
-		<tile x="4" y="32" texture="water" rotation="0" />
-		<tile x="4" y="33" texture="water" rotation="0" />
-		<tile x="4" y="34" texture="water" rotation="0" />
-		<tile x="4" y="35" texture="water" rotation="0" />
-		<tile x="4" y="36" texture="water" rotation="0" />
-		<tile x="4" y="37" texture="water" rotation="0" />
-		<tile x="4" y="38" texture="water" rotation="0" />
-		<tile x="4" y="39" texture="water" rotation="0" />
-		<tile x="4" y="40" texture="water" rotation="0" />
-		<tile x="4" y="41" texture="water" rotation="0" />
-		<tile x="4" y="42" texture="water" rotation="0" />
-		<tile x="4" y="43" texture="water" rotation="0" />
-		<tile x="4" y="44" texture="water" rotation="0" />
-		<tile x="4" y="45" texture="water" rotation="0" />
-		<tile x="4" y="46" texture="water" rotation="0" />
-		<tile x="4" y="47" texture="water" rotation="0" />
-		<tile x="4" y="48" texture="water" rotation="0" />
-		<tile x="4" y="49" texture="water" rotation="0" />
-		<tile x="4" y="50" texture="water" rotation="0" />
-		<tile x="4" y="51" texture="water" rotation="0" />
-		<tile x="4" y="52" texture="water" rotation="0" />
-		<tile x="4" y="53" texture="water" rotation="0" />
-		<tile x="4" y="54" texture="water" rotation="0" />
-		<tile x="4" y="55" texture="water" rotation="0" />
-		<tile x="4" y="56" texture="water" rotation="0" />
-		<tile x="4" y="57" texture="water" rotation="0" />
-		<tile x="4" y="58" texture="water" rotation="0" />
-		<tile x="4" y="59" texture="water" rotation="0" />
-		<tile x="4" y="60" texture="water" rotation="0" />
-		<tile x="4" y="61" texture="water" rotation="0" />
-		<tile x="4" y="62" texture="water" rotation="0" />
-		<tile x="4" y="63" texture="water_grass_right_1" rotation="0" />
+		<tile x="4" y="24" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="4" y="25" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="26" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="27" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="4" y="63" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="4" y="64" texture="grass_top" rotation="0" />
 		<tile x="4" y="65" texture="grass_top" rotation="0" />
 		<tile x="4" y="66" texture="grass_top" rotation="0" />
@@ -5412,45 +5412,45 @@
 		<tile x="5" y="22" texture="grass_top" rotation="0" />
 		<tile x="5" y="23" texture="grass_top" rotation="0" />
 		<tile x="5" y="24" texture="grass_top" rotation="0" />
-		<tile x="5" y="25" texture="water_grass_right_1" rotation="2" />
-		<tile x="5" y="26" texture="water" rotation="0" />
-		<tile x="5" y="27" texture="water" rotation="0" />
-		<tile x="5" y="28" texture="water" rotation="0" />
-		<tile x="5" y="29" texture="water" rotation="0" />
-		<tile x="5" y="30" texture="water" rotation="0" />
-		<tile x="5" y="31" texture="water" rotation="0" />
-		<tile x="5" y="32" texture="water" rotation="0" />
-		<tile x="5" y="33" texture="water" rotation="0" />
-		<tile x="5" y="34" texture="water" rotation="0" />
-		<tile x="5" y="35" texture="water" rotation="0" />
-		<tile x="5" y="36" texture="water" rotation="0" />
-		<tile x="5" y="37" texture="water" rotation="0" />
-		<tile x="5" y="38" texture="water" rotation="0" />
-		<tile x="5" y="39" texture="water" rotation="0" />
-		<tile x="5" y="40" texture="water" rotation="0" />
-		<tile x="5" y="41" texture="water" rotation="0" />
-		<tile x="5" y="42" texture="water" rotation="0" />
-		<tile x="5" y="43" texture="water" rotation="0" />
-		<tile x="5" y="44" texture="water" rotation="0" />
-		<tile x="5" y="45" texture="water" rotation="0" />
-		<tile x="5" y="46" texture="water" rotation="0" />
-		<tile x="5" y="47" texture="water" rotation="0" />
-		<tile x="5" y="48" texture="water" rotation="0" />
-		<tile x="5" y="49" texture="water" rotation="0" />
-		<tile x="5" y="50" texture="water" rotation="0" />
-		<tile x="5" y="51" texture="water" rotation="0" />
-		<tile x="5" y="52" texture="water" rotation="0" />
-		<tile x="5" y="53" texture="water" rotation="0" />
-		<tile x="5" y="54" texture="water" rotation="0" />
-		<tile x="5" y="55" texture="water" rotation="0" />
-		<tile x="5" y="56" texture="water" rotation="0" />
-		<tile x="5" y="57" texture="water" rotation="0" />
-		<tile x="5" y="58" texture="water" rotation="0" />
-		<tile x="5" y="59" texture="water" rotation="0" />
-		<tile x="5" y="60" texture="water" rotation="0" />
-		<tile x="5" y="61" texture="water" rotation="0" />
-		<tile x="5" y="62" texture="water" rotation="0" />
-		<tile x="5" y="63" texture="water_grass_right_1" rotation="0" />
+		<tile x="5" y="25" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="5" y="26" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="27" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="5" y="63" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="5" y="64" texture="grass_top" rotation="0" />
 		<tile x="5" y="65" texture="grass_top" rotation="0" />
 		<tile x="5" y="66" texture="grass_top" rotation="0" />
@@ -5481,45 +5481,45 @@
 		<tile x="6" y="22" texture="grass_top" rotation="0" />
 		<tile x="6" y="23" texture="grass_top" rotation="0" />
 		<tile x="6" y="24" texture="grass_top" rotation="0" />
-		<tile x="6" y="25" texture="water_grass_right_1" rotation="2" />
-		<tile x="6" y="26" texture="water" rotation="0" />
-		<tile x="6" y="27" texture="water" rotation="0" />
-		<tile x="6" y="28" texture="water" rotation="0" />
-		<tile x="6" y="29" texture="water" rotation="0" />
-		<tile x="6" y="30" texture="water" rotation="0" />
-		<tile x="6" y="31" texture="water" rotation="0" />
-		<tile x="6" y="32" texture="water" rotation="0" />
-		<tile x="6" y="33" texture="water" rotation="0" />
-		<tile x="6" y="34" texture="water" rotation="0" />
-		<tile x="6" y="35" texture="water" rotation="0" />
-		<tile x="6" y="36" texture="water" rotation="0" />
-		<tile x="6" y="37" texture="water" rotation="0" />
-		<tile x="6" y="38" texture="water" rotation="0" />
-		<tile x="6" y="39" texture="water" rotation="0" />
-		<tile x="6" y="40" texture="water" rotation="0" />
-		<tile x="6" y="41" texture="water" rotation="0" />
-		<tile x="6" y="42" texture="water" rotation="0" />
-		<tile x="6" y="43" texture="water" rotation="0" />
-		<tile x="6" y="44" texture="water" rotation="0" />
-		<tile x="6" y="45" texture="water" rotation="0" />
-		<tile x="6" y="46" texture="water" rotation="0" />
-		<tile x="6" y="47" texture="water" rotation="0" />
-		<tile x="6" y="48" texture="water" rotation="0" />
-		<tile x="6" y="49" texture="water" rotation="0" />
-		<tile x="6" y="50" texture="water" rotation="0" />
-		<tile x="6" y="51" texture="water" rotation="0" />
-		<tile x="6" y="52" texture="water" rotation="0" />
-		<tile x="6" y="53" texture="water" rotation="0" />
-		<tile x="6" y="54" texture="water" rotation="0" />
-		<tile x="6" y="55" texture="water" rotation="0" />
-		<tile x="6" y="56" texture="water" rotation="0" />
-		<tile x="6" y="57" texture="water" rotation="0" />
-		<tile x="6" y="58" texture="water" rotation="0" />
-		<tile x="6" y="59" texture="water" rotation="0" />
-		<tile x="6" y="60" texture="water" rotation="0" />
-		<tile x="6" y="61" texture="water" rotation="0" />
-		<tile x="6" y="62" texture="water" rotation="0" />
-		<tile x="6" y="63" texture="water_grass_right_1" rotation="0" />
+		<tile x="6" y="25" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="6" y="26" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="27" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="6" y="63" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="6" y="64" texture="grass_top" rotation="0" />
 		<tile x="6" y="65" texture="grass_top" rotation="0" />
 		<tile x="6" y="66" texture="grass_top" rotation="0" />
@@ -5551,44 +5551,44 @@
 		<tile x="7" y="23" texture="grass_top" rotation="0" />
 		<tile x="7" y="24" texture="grass_top" rotation="0" />
 		<tile x="7" y="25" texture="grass_top" rotation="0" />
-		<tile x="7" y="26" texture="water_grass_right_1" rotation="3" />
-		<tile x="7" y="27" texture="water_grass_right_1" rotation="3" />
-		<tile x="7" y="28" texture="water" rotation="0" />
-		<tile x="7" y="29" texture="water" rotation="0" />
-		<tile x="7" y="30" texture="water" rotation="0" />
-		<tile x="7" y="31" texture="water" rotation="0" />
-		<tile x="7" y="32" texture="water" rotation="0" />
-		<tile x="7" y="33" texture="water" rotation="0" />
-		<tile x="7" y="34" texture="water" rotation="0" />
-		<tile x="7" y="35" texture="water" rotation="0" />
-		<tile x="7" y="36" texture="water" rotation="0" />
-		<tile x="7" y="37" texture="water" rotation="0" />
-		<tile x="7" y="38" texture="water" rotation="0" />
-		<tile x="7" y="39" texture="water" rotation="0" />
-		<tile x="7" y="40" texture="water" rotation="0" />
-		<tile x="7" y="41" texture="water" rotation="0" />
-		<tile x="7" y="42" texture="water" rotation="0" />
-		<tile x="7" y="43" texture="water" rotation="0" />
-		<tile x="7" y="44" texture="water" rotation="0" />
-		<tile x="7" y="45" texture="water" rotation="0" />
-		<tile x="7" y="46" texture="water" rotation="0" />
-		<tile x="7" y="47" texture="water" rotation="0" />
-		<tile x="7" y="48" texture="water" rotation="0" />
-		<tile x="7" y="49" texture="water" rotation="0" />
-		<tile x="7" y="50" texture="water" rotation="0" />
-		<tile x="7" y="51" texture="water" rotation="0" />
-		<tile x="7" y="52" texture="water" rotation="0" />
-		<tile x="7" y="53" texture="water" rotation="0" />
-		<tile x="7" y="54" texture="water" rotation="0" />
-		<tile x="7" y="55" texture="water" rotation="0" />
-		<tile x="7" y="56" texture="water" rotation="0" />
-		<tile x="7" y="57" texture="water" rotation="0" />
-		<tile x="7" y="58" texture="water" rotation="0" />
-		<tile x="7" y="59" texture="water" rotation="0" />
-		<tile x="7" y="60" texture="water" rotation="0" />
-		<tile x="7" y="61" texture="water" rotation="0" />
-		<tile x="7" y="62" texture="water" rotation="0" />
-		<tile x="7" y="63" texture="water_grass_right_1" rotation="0" />
+		<tile x="7" y="26" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="7" y="27" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="7" y="28" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="7" y="63" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="7" y="64" texture="grass_top" rotation="0" />
 		<tile x="7" y="65" texture="grass_top" rotation="0" />
 		<tile x="7" y="66" texture="grass_top" rotation="0" />
@@ -5622,41 +5622,41 @@
 		<tile x="8" y="25" texture="grass_top" rotation="0" />
 		<tile x="8" y="26" texture="grass_top" rotation="0" />
 		<tile x="8" y="27" texture="grass_top" rotation="0" />
-		<tile x="8" y="28" texture="water_grass_right_1" rotation="3" />
-		<tile x="8" y="29" texture="water" rotation="0" />
-		<tile x="8" y="30" texture="water" rotation="0" />
-		<tile x="8" y="31" texture="water" rotation="0" />
-		<tile x="8" y="32" texture="water" rotation="0" />
-		<tile x="8" y="33" texture="water" rotation="0" />
-		<tile x="8" y="34" texture="water" rotation="0" />
-		<tile x="8" y="35" texture="water" rotation="0" />
-		<tile x="8" y="36" texture="water" rotation="0" />
-		<tile x="8" y="37" texture="water" rotation="0" />
-		<tile x="8" y="38" texture="water" rotation="0" />
-		<tile x="8" y="39" texture="water" rotation="0" />
-		<tile x="8" y="40" texture="water" rotation="0" />
-		<tile x="8" y="41" texture="water" rotation="0" />
-		<tile x="8" y="42" texture="water" rotation="0" />
-		<tile x="8" y="43" texture="water" rotation="0" />
-		<tile x="8" y="44" texture="water" rotation="0" />
-		<tile x="8" y="45" texture="water" rotation="0" />
-		<tile x="8" y="46" texture="water" rotation="0" />
-		<tile x="8" y="47" texture="water" rotation="0" />
-		<tile x="8" y="48" texture="water" rotation="0" />
-		<tile x="8" y="49" texture="water" rotation="0" />
-		<tile x="8" y="50" texture="water" rotation="0" />
-		<tile x="8" y="51" texture="water" rotation="0" />
-		<tile x="8" y="52" texture="water" rotation="0" />
-		<tile x="8" y="53" texture="water" rotation="0" />
-		<tile x="8" y="54" texture="water" rotation="0" />
-		<tile x="8" y="55" texture="water" rotation="0" />
-		<tile x="8" y="56" texture="water" rotation="0" />
-		<tile x="8" y="57" texture="water" rotation="0" />
-		<tile x="8" y="58" texture="water" rotation="0" />
-		<tile x="8" y="59" texture="water" rotation="0" />
-		<tile x="8" y="60" texture="water" rotation="0" />
-		<tile x="8" y="61" texture="water" rotation="0" />
-		<tile x="8" y="62" texture="water_grass_right_1" rotation="0" />
+		<tile x="8" y="28" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="8" y="29" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="30" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="61" texture="water" rotation="0"  solid="true"/ >
+		<tile x="8" y="62" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="8" y="63" texture="grass_top" rotation="0" />
 		<tile x="8" y="64" texture="grass_top" rotation="0" />
 		<tile x="8" y="65" texture="grass_top" rotation="0" />
@@ -5692,39 +5692,39 @@
 		<tile x="9" y="26" texture="grass_top" rotation="0" />
 		<tile x="9" y="27" texture="grass_top" rotation="0" />
 		<tile x="9" y="28" texture="grass_top" rotation="0" />
-		<tile x="9" y="29" texture="water_grass_right_1" rotation="3" />
-		<tile x="9" y="30" texture="water_grass_right_1" rotation="3" />
-		<tile x="9" y="31" texture="water" rotation="0" />
-		<tile x="9" y="32" texture="water" rotation="0" />
-		<tile x="9" y="33" texture="water" rotation="0" />
-		<tile x="9" y="34" texture="water" rotation="0" />
-		<tile x="9" y="35" texture="water" rotation="0" />
-		<tile x="9" y="36" texture="water" rotation="0" />
-		<tile x="9" y="37" texture="water" rotation="0" />
-		<tile x="9" y="38" texture="water" rotation="0" />
-		<tile x="9" y="39" texture="water" rotation="0" />
-		<tile x="9" y="40" texture="water" rotation="0" />
-		<tile x="9" y="41" texture="water" rotation="0" />
-		<tile x="9" y="42" texture="water" rotation="0" />
-		<tile x="9" y="43" texture="water" rotation="0" />
-		<tile x="9" y="44" texture="water" rotation="0" />
-		<tile x="9" y="45" texture="water" rotation="0" />
-		<tile x="9" y="46" texture="water" rotation="0" />
-		<tile x="9" y="47" texture="water" rotation="0" />
-		<tile x="9" y="48" texture="water" rotation="0" />
-		<tile x="9" y="49" texture="water" rotation="0" />
-		<tile x="9" y="50" texture="water" rotation="0" />
-		<tile x="9" y="51" texture="water" rotation="0" />
-		<tile x="9" y="52" texture="water" rotation="0" />
-		<tile x="9" y="53" texture="water" rotation="0" />
-		<tile x="9" y="54" texture="water" rotation="0" />
-		<tile x="9" y="55" texture="water" rotation="0" />
-		<tile x="9" y="56" texture="water" rotation="0" />
-		<tile x="9" y="57" texture="water" rotation="0" />
-		<tile x="9" y="58" texture="water" rotation="0" />
-		<tile x="9" y="59" texture="water" rotation="0" />
-		<tile x="9" y="60" texture="water" rotation="0" />
-		<tile x="9" y="61" texture="water_grass_right_1" rotation="0" />
+		<tile x="9" y="29" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="9" y="30" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="9" y="31" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="32" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="33" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="34" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="9" y="61" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="9" y="62" texture="grass_top" rotation="0" />
 		<tile x="9" y="63" texture="grass_top" rotation="0" />
 		<tile x="9" y="64" texture="grass_top" rotation="0" />
@@ -5763,37 +5763,37 @@
 		<tile x="10" y="28" texture="grass_top" rotation="0" />
 		<tile x="10" y="29" texture="grass_top" rotation="0" />
 		<tile x="10" y="30" texture="grass_top" rotation="0" />
-		<tile x="10" y="31" texture="water_grass_right_1" rotation="3" />
-		<tile x="10" y="32" texture="water_grass_right_1" rotation="3" />
-		<tile x="10" y="33" texture="water_grass_right_1" rotation="3" />
-		<tile x="10" y="34" texture="water_grass_right_1" rotation="3" />
-		<tile x="10" y="35" texture="water" rotation="0" />
-		<tile x="10" y="36" texture="water" rotation="0" />
-		<tile x="10" y="37" texture="water" rotation="0" />
-		<tile x="10" y="38" texture="water" rotation="0" />
-		<tile x="10" y="39" texture="water" rotation="0" />
-		<tile x="10" y="40" texture="water" rotation="0" />
-		<tile x="10" y="41" texture="water" rotation="0" />
-		<tile x="10" y="42" texture="water" rotation="0" />
-		<tile x="10" y="43" texture="water" rotation="0" />
-		<tile x="10" y="44" texture="water" rotation="0" />
-		<tile x="10" y="45" texture="water" rotation="0" />
-		<tile x="10" y="46" texture="water" rotation="0" />
-		<tile x="10" y="47" texture="water" rotation="0" />
-		<tile x="10" y="48" texture="water" rotation="0" />
-		<tile x="10" y="49" texture="water" rotation="0" />
-		<tile x="10" y="50" texture="water" rotation="0" />
-		<tile x="10" y="51" texture="water" rotation="0" />
-		<tile x="10" y="52" texture="water" rotation="0" />
-		<tile x="10" y="53" texture="water" rotation="0" />
-		<tile x="10" y="54" texture="water" rotation="0" />
-		<tile x="10" y="55" texture="water" rotation="0" />
-		<tile x="10" y="56" texture="water" rotation="0" />
-		<tile x="10" y="57" texture="water" rotation="0" />
-		<tile x="10" y="58" texture="water" rotation="0" />
-		<tile x="10" y="59" texture="water" rotation="0" />
-		<tile x="10" y="60" texture="water" rotation="0" />
-		<tile x="10" y="61" texture="water_grass_right_1" rotation="0" />
+		<tile x="10" y="31" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="10" y="32" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="10" y="33" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="10" y="34" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="10" y="35" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="10" y="61" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="10" y="62" texture="grass_top" rotation="0" />
 		<tile x="10" y="63" texture="grass_top" rotation="0" />
 		<tile x="10" y="64" texture="grass_top" rotation="0" />
@@ -5836,32 +5836,32 @@
 		<tile x="11" y="32" texture="grass_top" rotation="0" />
 		<tile x="11" y="33" texture="grass_top" rotation="0" />
 		<tile x="11" y="34" texture="grass_top" rotation="0" />
-		<tile x="11" y="35" texture="water_grass_right_1" rotation="3" />
-		<tile x="11" y="36" texture="water" rotation="0" />
-		<tile x="11" y="37" texture="water" rotation="0" />
-		<tile x="11" y="38" texture="water" rotation="0" />
-		<tile x="11" y="39" texture="water" rotation="0" />
-		<tile x="11" y="40" texture="water" rotation="0" />
-		<tile x="11" y="41" texture="water" rotation="0" />
-		<tile x="11" y="42" texture="water" rotation="0" />
-		<tile x="11" y="43" texture="water" rotation="0" />
-		<tile x="11" y="44" texture="water" rotation="0" />
-		<tile x="11" y="45" texture="water" rotation="0" />
-		<tile x="11" y="46" texture="water" rotation="0" />
-		<tile x="11" y="47" texture="water" rotation="0" />
-		<tile x="11" y="48" texture="water" rotation="0" />
-		<tile x="11" y="49" texture="water" rotation="0" />
-		<tile x="11" y="50" texture="water" rotation="0" />
-		<tile x="11" y="51" texture="water" rotation="0" />
-		<tile x="11" y="52" texture="water" rotation="0" />
-		<tile x="11" y="53" texture="water" rotation="0" />
-		<tile x="11" y="54" texture="water" rotation="0" />
-		<tile x="11" y="55" texture="water" rotation="0" />
-		<tile x="11" y="56" texture="water" rotation="0" />
-		<tile x="11" y="57" texture="water" rotation="0" />
-		<tile x="11" y="58" texture="water" rotation="0" />
-		<tile x="11" y="59" texture="water" rotation="0" />
-		<tile x="11" y="60" texture="water_grass_right_1" rotation="0" />
+		<tile x="11" y="35" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="11" y="36" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="37" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="11" y="60" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="11" y="61" texture="grass_top" rotation="0" />
 		<tile x="11" y="62" texture="grass_top" rotation="0" />
 		<tile x="11" y="63" texture="grass_top" rotation="0" />
@@ -5906,31 +5906,31 @@
 		<tile x="12" y="33" texture="grass_top" rotation="0" />
 		<tile x="12" y="34" texture="grass_top" rotation="0" />
 		<tile x="12" y="35" texture="grass_top" rotation="0" />
-		<tile x="12" y="36" texture="water_grass_right_1" rotation="3" />
-		<tile x="12" y="37" texture="water_grass_right_1" rotation="3" />
-		<tile x="12" y="38" texture="water" rotation="0" />
-		<tile x="12" y="39" texture="water" rotation="0" />
-		<tile x="12" y="40" texture="water" rotation="0" />
-		<tile x="12" y="41" texture="water" rotation="0" />
-		<tile x="12" y="42" texture="water" rotation="0" />
-		<tile x="12" y="43" texture="water" rotation="0" />
-		<tile x="12" y="44" texture="water" rotation="0" />
-		<tile x="12" y="45" texture="water" rotation="0" />
-		<tile x="12" y="46" texture="water" rotation="0" />
-		<tile x="12" y="47" texture="water" rotation="0" />
-		<tile x="12" y="48" texture="water" rotation="0" />
-		<tile x="12" y="49" texture="water" rotation="0" />
-		<tile x="12" y="50" texture="water" rotation="0" />
-		<tile x="12" y="51" texture="water" rotation="0" />
-		<tile x="12" y="52" texture="water" rotation="0" />
-		<tile x="12" y="53" texture="water" rotation="0" />
-		<tile x="12" y="54" texture="water" rotation="0" />
-		<tile x="12" y="55" texture="water" rotation="0" />
-		<tile x="12" y="56" texture="water" rotation="0" />
-		<tile x="12" y="57" texture="water" rotation="0" />
-		<tile x="12" y="58" texture="water" rotation="0" />
-		<tile x="12" y="59" texture="water" rotation="0" />
-		<tile x="12" y="60" texture="water_grass_right_1" rotation="0" />
+		<tile x="12" y="36" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="12" y="37" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="12" y="38" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="39" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="12" y="60" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="12" y="61" texture="grass_top" rotation="0" />
 		<tile x="12" y="62" texture="grass_top" rotation="0" />
 		<tile x="12" y="63" texture="grass_top" rotation="0" />
@@ -5977,29 +5977,29 @@
 		<tile x="13" y="35" texture="grass_top" rotation="0" />
 		<tile x="13" y="36" texture="grass_top" rotation="0" />
 		<tile x="13" y="37" texture="grass_top" rotation="0" />
-		<tile x="13" y="38" texture="water_grass_right_1" rotation="3" />
-		<tile x="13" y="39" texture="water_grass_right_1" rotation="3" />
-		<tile x="13" y="40" texture="water" rotation="0" />
-		<tile x="13" y="41" texture="water" rotation="0" />
-		<tile x="13" y="42" texture="water" rotation="0" />
-		<tile x="13" y="43" texture="water" rotation="0" />
-		<tile x="13" y="44" texture="water" rotation="0" />
-		<tile x="13" y="45" texture="water" rotation="0" />
-		<tile x="13" y="46" texture="water" rotation="0" />
-		<tile x="13" y="47" texture="water" rotation="0" />
-		<tile x="13" y="48" texture="water" rotation="0" />
-		<tile x="13" y="49" texture="water" rotation="0" />
-		<tile x="13" y="50" texture="water" rotation="0" />
-		<tile x="13" y="51" texture="water" rotation="0" />
-		<tile x="13" y="52" texture="water" rotation="0" />
-		<tile x="13" y="53" texture="water" rotation="0" />
-		<tile x="13" y="54" texture="water" rotation="0" />
-		<tile x="13" y="55" texture="water" rotation="0" />
-		<tile x="13" y="56" texture="water" rotation="0" />
-		<tile x="13" y="57" texture="water" rotation="0" />
-		<tile x="13" y="58" texture="water" rotation="0" />
-		<tile x="13" y="59" texture="water" rotation="0" />
-		<tile x="13" y="60" texture="water_grass_right_1" rotation="0" />
+		<tile x="13" y="38" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="13" y="39" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="13" y="40" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="13" y="60" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="13" y="61" texture="grass_top" rotation="0" />
 		<tile x="13" y="62" texture="grass_top" rotation="0" />
 		<tile x="13" y="63" texture="grass_top" rotation="0" />
@@ -6048,27 +6048,27 @@
 		<tile x="14" y="37" texture="grass_top" rotation="0" />
 		<tile x="14" y="38" texture="grass_top" rotation="0" />
 		<tile x="14" y="39" texture="grass_top" rotation="0" />
-		<tile x="14" y="40" texture="water_grass_right_1" rotation="2" />
-		<tile x="14" y="41" texture="water" rotation="0" />
-		<tile x="14" y="42" texture="water" rotation="0" />
-		<tile x="14" y="43" texture="water" rotation="0" />
-		<tile x="14" y="44" texture="water" rotation="0" />
-		<tile x="14" y="45" texture="water" rotation="0" />
-		<tile x="14" y="46" texture="water" rotation="0" />
-		<tile x="14" y="47" texture="water" rotation="0" />
-		<tile x="14" y="48" texture="water" rotation="0" />
-		<tile x="14" y="49" texture="water" rotation="0" />
-		<tile x="14" y="50" texture="water" rotation="0" />
-		<tile x="14" y="51" texture="water" rotation="0" />
-		<tile x="14" y="52" texture="water" rotation="0" />
-		<tile x="14" y="53" texture="water" rotation="0" />
-		<tile x="14" y="54" texture="water" rotation="0" />
-		<tile x="14" y="55" texture="water" rotation="0" />
-		<tile x="14" y="56" texture="water" rotation="0" />
-		<tile x="14" y="57" texture="water" rotation="0" />
-		<tile x="14" y="58" texture="water" rotation="0" />
-		<tile x="14" y="59" texture="water" rotation="0" />
-		<tile x="14" y="60" texture="water_grass_right_1" rotation="0" />
+		<tile x="14" y="40" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="14" y="41" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="14" y="60" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="14" y="61" texture="grass_top" rotation="0" />
 		<tile x="14" y="62" texture="grass_top" rotation="0" />
 		<tile x="14" y="63" texture="grass_top" rotation="0" />
@@ -6117,25 +6117,25 @@
 		<tile x="15" y="37" texture="grass_top" rotation="0" />
 		<tile x="15" y="38" texture="grass_top" rotation="0" />
 		<tile x="15" y="39" texture="grass_top" rotation="0" />
-		<tile x="15" y="40" texture="water_grass_right_1" rotation="3" />
-		<tile x="15" y="41" texture="water_grass_right_1" rotation="3" />
-		<tile x="15" y="42" texture="water" rotation="0" />
-		<tile x="15" y="43" texture="water" rotation="0" />
-		<tile x="15" y="44" texture="water" rotation="0" />
-		<tile x="15" y="45" texture="water" rotation="0" />
-		<tile x="15" y="46" texture="water" rotation="0" />
-		<tile x="15" y="47" texture="water" rotation="0" />
-		<tile x="15" y="48" texture="water" rotation="0" />
-		<tile x="15" y="49" texture="water" rotation="0" />
-		<tile x="15" y="50" texture="water" rotation="0" />
-		<tile x="15" y="51" texture="water" rotation="0" />
-		<tile x="15" y="52" texture="water" rotation="0" />
-		<tile x="15" y="53" texture="water" rotation="0" />
-		<tile x="15" y="54" texture="water" rotation="0" />
-		<tile x="15" y="55" texture="water" rotation="0" />
-		<tile x="15" y="56" texture="water" rotation="0" />
-		<tile x="15" y="57" texture="water" rotation="0" />
-		<tile x="15" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="15" y="40" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="15" y="41" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="15" y="42" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="43" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="44" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="15" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="15" y="59" texture="grass_top" rotation="0" />
 		<tile x="15" y="60" texture="grass_top" rotation="0" />
 		<tile x="15" y="61" texture="grass_top" rotation="0" />
@@ -6188,23 +6188,23 @@
 		<tile x="16" y="39" texture="grass_top" rotation="0" />
 		<tile x="16" y="40" texture="grass_top" rotation="0" />
 		<tile x="16" y="41" texture="grass_top" rotation="0" />
-		<tile x="16" y="42" texture="water_grass_right_1" rotation="3" />
-		<tile x="16" y="43" texture="water_grass_right_1" rotation="3" />
-		<tile x="16" y="44" texture="water_grass_right_1" rotation="3" />
-		<tile x="16" y="45" texture="water" rotation="0" />
-		<tile x="16" y="46" texture="water" rotation="0" />
-		<tile x="16" y="47" texture="water" rotation="0" />
-		<tile x="16" y="48" texture="water" rotation="0" />
-		<tile x="16" y="49" texture="water" rotation="0" />
-		<tile x="16" y="50" texture="water" rotation="0" />
-		<tile x="16" y="51" texture="water" rotation="0" />
-		<tile x="16" y="52" texture="water" rotation="0" />
-		<tile x="16" y="53" texture="water" rotation="0" />
-		<tile x="16" y="54" texture="water" rotation="0" />
-		<tile x="16" y="55" texture="water" rotation="0" />
-		<tile x="16" y="56" texture="water" rotation="0" />
-		<tile x="16" y="57" texture="water" rotation="0" />
-		<tile x="16" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="16" y="42" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="16" y="43" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="16" y="44" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="16" y="45" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="47" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="48" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="49" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="16" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="16" y="59" texture="grass_top" rotation="0" />
 		<tile x="16" y="60" texture="grass_top" rotation="0" />
 		<tile x="16" y="61" texture="grass_top" rotation="0" />
@@ -6260,18 +6260,18 @@
 		<tile x="17" y="42" texture="grass_top" rotation="0" />
 		<tile x="17" y="43" texture="grass_top" rotation="0" />
 		<tile x="17" y="44" texture="grass_top" rotation="0" />
-		<tile x="17" y="45" texture="water_grass_right_1" rotation="3" />
-		<tile x="17" y="46" texture="water" rotation="0" />
-		<tile x="17" y="47" texture="water" rotation="0" />
+		<tile x="17" y="45" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="17" y="46" texture="water" rotation="0"  solid="true"/ >
+		<tile x="17" y="47" texture="water" rotation="0"  solid="true"/ >
 		<tile x="17" y="48" texture="dirt" rotation="0" />
 		<tile x="17" y="49" texture="dirt" rotation="0" />
-		<tile x="17" y="50" texture="water" rotation="0" />
-		<tile x="17" y="51" texture="water" rotation="0" />
-		<tile x="17" y="52" texture="water" rotation="0" />
-		<tile x="17" y="53" texture="water" rotation="0" />
-		<tile x="17" y="54" texture="water" rotation="0" />
-		<tile x="17" y="55" texture="water" rotation="0" />
-		<tile x="17" y="56" texture="water_grass_right_1" rotation="0" />
+		<tile x="17" y="50" texture="water" rotation="0"  solid="true"/ >
+		<tile x="17" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="17" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="17" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="17" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="17" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="17" y="56" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="17" y="57" texture="grass_top" rotation="0" />
 		<tile x="17" y="58" texture="grass_top" rotation="0" />
 		<tile x="17" y="59" texture="grass_top" rotation="0" />
@@ -6330,16 +6330,16 @@
 		<tile x="18" y="43" texture="grass_top" rotation="0" />
 		<tile x="18" y="44" texture="grass_top" rotation="0" />
 		<tile x="18" y="45" texture="grass_top" rotation="0" />
-		<tile x="18" y="46" texture="water_grass_right_1" rotation="3" />
-		<tile x="18" y="47" texture="water_grass_right_1" rotation="3" />
+		<tile x="18" y="46" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="18" y="47" texture="water_grass_right_1" rotation="3"  solid="true"/ >
 		<tile x="18" y="48" texture="dirt" rotation="0" />
 		<tile x="18" y="49" texture="dirt" rotation="0" />
-		<tile x="18" y="50" texture="water_grass_right_1" rotation="3" />
-		<tile x="18" y="51" texture="water" rotation="0" />
-		<tile x="18" y="52" texture="water" rotation="0" />
-		<tile x="18" y="53" texture="water" rotation="0" />
-		<tile x="18" y="54" texture="water" rotation="0" />
-		<tile x="18" y="55" texture="water_grass_right_1" rotation="0" />
+		<tile x="18" y="50" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="18" y="51" texture="water" rotation="0"  solid="true"/ >
+		<tile x="18" y="52" texture="water" rotation="0"  solid="true"/ >
+		<tile x="18" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="18" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="18" y="55" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="18" y="56" texture="grass_top" rotation="0" />
 		<tile x="18" y="57" texture="grass_top" rotation="0" />
 		<tile x="18" y="58" texture="grass_top" rotation="0" />
@@ -6404,11 +6404,11 @@
 		<tile x="19" y="48" texture="dirt_top_1" rotation="1" />
 		<tile x="19" y="49" texture="dirt_top_5" rotation="3" />
 		<tile x="19" y="50" texture="grass_top" rotation="0" />
-		<tile x="19" y="51" texture="water_grass_right_1" rotation="3" />
-		<tile x="19" y="52" texture="water_grass_right_1" rotation="3" />
-		<tile x="19" y="53" texture="water" rotation="0" />
-		<tile x="19" y="54" texture="water" rotation="0" />
-		<tile x="19" y="55" texture="water_grass_right_1" rotation="0" />
+		<tile x="19" y="51" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="19" y="52" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="19" y="53" texture="water" rotation="0"  solid="true"/ >
+		<tile x="19" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="19" y="55" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="19" y="56" texture="grass_top" rotation="0" />
 		<tile x="19" y="57" texture="grass_top" rotation="0" />
 		<tile x="19" y="58" texture="grass_top" rotation="0" />
@@ -6475,9 +6475,9 @@
 		<tile x="20" y="50" texture="grass_top" rotation="0" />
 		<tile x="20" y="51" texture="grass_top" rotation="0" />
 		<tile x="20" y="52" texture="grass_top" rotation="0" />
-		<tile x="20" y="53" texture="water_grass_right_1" rotation="2" />
-		<tile x="20" y="54" texture="water" rotation="0" />
-		<tile x="20" y="55" texture="water_grass_right_1" rotation="0" />
+		<tile x="20" y="53" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="20" y="54" texture="water" rotation="0"  solid="true"/ >
+		<tile x="20" y="55" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="20" y="56" texture="grass_top" rotation="0" />
 		<tile x="20" y="57" texture="grass_top" rotation="0" />
 		<tile x="20" y="58" texture="grass_top" rotation="0" />
@@ -6545,9 +6545,9 @@
 		<tile x="21" y="51" texture="grass_top" rotation="0" />
 		<tile x="21" y="52" texture="grass_top" rotation="0" />
 		<tile x="21" y="53" texture="grass_top" rotation="0" />
-		<tile x="21" y="54" texture="water_grass_right_1" rotation="2" />
-		<tile x="21" y="55" texture="water" rotation="0" />
-		<tile x="21" y="56" texture="water_grass_right_1" rotation="0" />
+		<tile x="21" y="54" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="21" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="21" y="56" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="21" y="57" texture="grass_top" rotation="0" />
 		<tile x="21" y="58" texture="grass_top" rotation="0" />
 		<tile x="21" y="59" texture="grass_top" rotation="0" />
@@ -6615,8 +6615,8 @@
 		<tile x="22" y="52" texture="grass_top" rotation="0" />
 		<tile x="22" y="53" texture="grass_top" rotation="0" />
 		<tile x="22" y="54" texture="grass_top" rotation="0" />
-		<tile x="22" y="55" texture="water_grass_right_1" rotation="2" />
-		<tile x="22" y="56" texture="water_grass_right_1" rotation="0" />
+		<tile x="22" y="55" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="22" y="56" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="22" y="57" texture="grass_top" rotation="0" />
 		<tile x="22" y="58" texture="grass_top" rotation="0" />
 		<tile x="22" y="59" texture="grass_top" rotation="0" />
@@ -6684,9 +6684,9 @@
 		<tile x="23" y="52" texture="dirt_top_1" rotation="0" />
 		<tile x="23" y="53" texture="dirt_top_0" rotation="0" />
 		<tile x="23" y="54" texture="dirt_top_1" rotation="0" />
-		<tile x="23" y="55" texture="water" rotation="0" />
-		<tile x="23" y="56" texture="water" rotation="0" />
-		<tile x="23" y="57" texture="water_grass_right_1" rotation="0" />
+		<tile x="23" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="23" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="23" y="57" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="23" y="58" texture="grass_top" rotation="0" />
 		<tile x="23" y="59" texture="grass_top" rotation="0" />
 		<tile x="23" y="60" texture="grass_top" rotation="0" />
@@ -6753,10 +6753,10 @@
 		<tile x="24" y="52" texture="dirt" rotation="0" />
 		<tile x="24" y="53" texture="dirt" rotation="0" />
 		<tile x="24" y="54" texture="dirt" rotation="0" />
-		<tile x="24" y="55" texture="water" rotation="0" />
-		<tile x="24" y="56" texture="water" rotation="0" />
-		<tile x="24" y="57" texture="water" rotation="0" />
-		<tile x="24" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="24" y="55" texture="water" rotation="0"  solid="true"/ >
+		<tile x="24" y="56" texture="water" rotation="0"  solid="true"/ >
+		<tile x="24" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="24" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="24" y="59" texture="grass_top" rotation="0" />
 		<tile x="24" y="60" texture="grass_top" rotation="0" />
 		<tile x="24" y="61" texture="grass_top" rotation="0" />
@@ -6823,9 +6823,9 @@
 		<tile x="25" y="53" texture="dirt_top_1" rotation="2" />
 		<tile x="25" y="54" texture="dirt_top_0" rotation="2" />
 		<tile x="25" y="55" texture="grass_top" rotation="0" />
-		<tile x="25" y="56" texture="water_grass_right_1" rotation="3" />
-		<tile x="25" y="57" texture="water" rotation="0" />
-		<tile x="25" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="25" y="56" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="25" y="57" texture="water" rotation="0"  solid="true"/ >
+		<tile x="25" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="25" y="59" texture="grass_top" rotation="0" />
 		<tile x="25" y="60" texture="grass_top" rotation="0" />
 		<tile x="25" y="61" texture="grass_top" rotation="0" />
@@ -6893,8 +6893,8 @@
 		<tile x="26" y="54" texture="grass_top" rotation="0" />
 		<tile x="26" y="55" texture="grass_top" rotation="0" />
 		<tile x="26" y="56" texture="grass_top" rotation="0" />
-		<tile x="26" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="26" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="26" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="26" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="26" y="59" texture="grass_top" rotation="0" />
 		<tile x="26" y="60" texture="grass_top" rotation="0" />
 		<tile x="26" y="61" texture="grass_top" rotation="0" />
@@ -6962,8 +6962,8 @@
 		<tile x="27" y="54" texture="grass_top" rotation="0" />
 		<tile x="27" y="55" texture="grass_top" rotation="0" />
 		<tile x="27" y="56" texture="grass_top" rotation="0" />
-		<tile x="27" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="27" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="27" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="27" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="27" y="59" texture="grass_top" rotation="0" />
 		<tile x="27" y="60" texture="grass_top" rotation="0" />
 		<tile x="27" y="61" texture="grass_top" rotation="0" />
@@ -7031,8 +7031,8 @@
 		<tile x="28" y="54" texture="grass_top" rotation="0" />
 		<tile x="28" y="55" texture="grass_top" rotation="0" />
 		<tile x="28" y="56" texture="grass_top" rotation="0" />
-		<tile x="28" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="28" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="28" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="28" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="28" y="59" texture="grass_top" rotation="0" />
 		<tile x="28" y="60" texture="grass_top" rotation="0" />
 		<tile x="28" y="61" texture="grass_top" rotation="0" />
@@ -7100,8 +7100,8 @@
 		<tile x="29" y="54" texture="grass_top" rotation="0" />
 		<tile x="29" y="55" texture="grass_top" rotation="0" />
 		<tile x="29" y="56" texture="grass_top" rotation="0" />
-		<tile x="29" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="29" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="29" y="57" texture="water_grass_right_2" rotation="2"  solid="true"/ >
+		<tile x="29" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="29" y="59" texture="grass_top" rotation="0" />
 		<tile x="29" y="60" texture="grass_top" rotation="0" />
 		<tile x="29" y="61" texture="grass_top" rotation="0" />
@@ -7169,8 +7169,8 @@
 		<tile x="30" y="54" texture="grass_top" rotation="0" />
 		<tile x="30" y="55" texture="grass_top" rotation="0" />
 		<tile x="30" y="56" texture="grass_top" rotation="0" />
-		<tile x="30" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="30" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="30" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="30" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="30" y="59" texture="grass_top" rotation="0" />
 		<tile x="30" y="60" texture="grass_top" rotation="0" />
 		<tile x="30" y="61" texture="grass_top" rotation="0" />
@@ -7238,8 +7238,8 @@
 		<tile x="31" y="54" texture="grass_top" rotation="0" />
 		<tile x="31" y="55" texture="grass_top" rotation="0" />
 		<tile x="31" y="56" texture="grass_top" rotation="0" />
-		<tile x="31" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="31" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="31" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="31" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="31" y="59" texture="grass_top" rotation="0" />
 		<tile x="31" y="60" texture="grass_top" rotation="0" />
 		<tile x="31" y="61" texture="grass_top" rotation="0" />
@@ -7307,8 +7307,8 @@
 		<tile x="32" y="54" texture="grass_top" rotation="0" />
 		<tile x="32" y="55" texture="grass_top" rotation="0" />
 		<tile x="32" y="56" texture="grass_top" rotation="0" />
-		<tile x="32" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="32" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="32" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="32" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="32" y="59" texture="grass_top" rotation="0" />
 		<tile x="32" y="60" texture="grass_top" rotation="0" />
 		<tile x="32" y="61" texture="grass_top" rotation="0" />
@@ -7376,8 +7376,8 @@
 		<tile x="33" y="54" texture="grass_top" rotation="0" />
 		<tile x="33" y="55" texture="grass_top" rotation="0" />
 		<tile x="33" y="56" texture="grass_top" rotation="0" />
-		<tile x="33" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="33" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="33" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="33" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="33" y="59" texture="grass_top" rotation="0" />
 		<tile x="33" y="60" texture="grass_top" rotation="0" />
 		<tile x="33" y="61" texture="grass_top" rotation="0" />
@@ -7445,8 +7445,8 @@
 		<tile x="34" y="54" texture="grass_top" rotation="0" />
 		<tile x="34" y="55" texture="grass_top" rotation="0" />
 		<tile x="34" y="56" texture="grass_top" rotation="0" />
-		<tile x="34" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="34" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="34" y="57" texture="water_grass_right_2" rotation="2"  solid="true"/ >
+		<tile x="34" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="34" y="59" texture="grass_top" rotation="0" />
 		<tile x="34" y="60" texture="grass_top" rotation="0" />
 		<tile x="34" y="61" texture="grass_top" rotation="0" />
@@ -7514,8 +7514,8 @@
 		<tile x="35" y="54" texture="grass_top" rotation="0" />
 		<tile x="35" y="55" texture="grass_top" rotation="0" />
 		<tile x="35" y="56" texture="grass_top" rotation="0" />
-		<tile x="35" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="35" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="35" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="35" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="35" y="59" texture="grass_top" rotation="0" />
 		<tile x="35" y="60" texture="grass_top" rotation="0" />
 		<tile x="35" y="61" texture="grass_top" rotation="0" />
@@ -7583,8 +7583,8 @@
 		<tile x="36" y="54" texture="grass_top" rotation="0" />
 		<tile x="36" y="55" texture="grass_top" rotation="0" />
 		<tile x="36" y="56" texture="grass_top" rotation="0" />
-		<tile x="36" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="36" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="36" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="36" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="36" y="59" texture="grass_top" rotation="0" />
 		<tile x="36" y="60" texture="grass_top" rotation="0" />
 		<tile x="36" y="61" texture="grass_top" rotation="0" />
@@ -7652,8 +7652,8 @@
 		<tile x="37" y="54" texture="grass_top" rotation="0" />
 		<tile x="37" y="55" texture="grass_top" rotation="0" />
 		<tile x="37" y="56" texture="grass_top" rotation="0" />
-		<tile x="37" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="37" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="37" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="37" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="37" y="59" texture="grass_top" rotation="0" />
 		<tile x="37" y="60" texture="grass_top" rotation="0" />
 		<tile x="37" y="61" texture="grass_top" rotation="0" />
@@ -7721,8 +7721,8 @@
 		<tile x="38" y="54" texture="grass_top" rotation="0" />
 		<tile x="38" y="55" texture="grass_top" rotation="0" />
 		<tile x="38" y="56" texture="grass_top" rotation="0" />
-		<tile x="38" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="38" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="38" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="38" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="38" y="59" texture="grass_top" rotation="0" />
 		<tile x="38" y="60" texture="grass_top" rotation="0" />
 		<tile x="38" y="61" texture="grass_top" rotation="0" />
@@ -7790,8 +7790,8 @@
 		<tile x="39" y="54" texture="grass" rotation="0" />
 		<tile x="39" y="55" texture="grass_top" rotation="0" />
 		<tile x="39" y="56" texture="grass_top" rotation="0" />
-		<tile x="39" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="39" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="39" y="57" texture="water_grass_right_2" rotation="2"  solid="true"/ >
+		<tile x="39" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="39" y="59" texture="grass_top" rotation="0" />
 		<tile x="39" y="60" texture="grass_top" rotation="0" />
 		<tile x="39" y="61" texture="grass_top" rotation="0" />
@@ -7859,8 +7859,8 @@
 		<tile x="40" y="54" texture="grass_top" rotation="0" />
 		<tile x="40" y="55" texture="grass_top" rotation="0" />
 		<tile x="40" y="56" texture="grass_top" rotation="0" />
-		<tile x="40" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="40" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="40" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="40" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="40" y="59" texture="grass_top" rotation="0" />
 		<tile x="40" y="60" texture="grass_top" rotation="0" />
 		<tile x="40" y="61" texture="grass_top" rotation="0" />
@@ -7928,8 +7928,8 @@
 		<tile x="41" y="54" texture="grass_top" rotation="0" />
 		<tile x="41" y="55" texture="grass_top" rotation="0" />
 		<tile x="41" y="56" texture="grass_top" rotation="0" />
-		<tile x="41" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="41" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="41" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="41" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="41" y="59" texture="grass_top" rotation="0" />
 		<tile x="41" y="60" texture="grass_top" rotation="0" />
 		<tile x="41" y="61" texture="grass_top" rotation="0" />
@@ -7997,8 +7997,8 @@
 		<tile x="42" y="54" texture="grass_top" rotation="0" />
 		<tile x="42" y="55" texture="grass_top" rotation="0" />
 		<tile x="42" y="56" texture="grass_top" rotation="0" />
-		<tile x="42" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="42" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="42" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="42" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="42" y="59" texture="grass_top" rotation="0" />
 		<tile x="42" y="60" texture="grass_top" rotation="0" />
 		<tile x="42" y="61" texture="grass_top" rotation="0" />
@@ -8066,8 +8066,8 @@
 		<tile x="43" y="54" texture="grass_top" rotation="0" />
 		<tile x="43" y="55" texture="grass_top" rotation="0" />
 		<tile x="43" y="56" texture="grass_top" rotation="0" />
-		<tile x="43" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="43" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="43" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="43" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="43" y="59" texture="grass_top" rotation="0" />
 		<tile x="43" y="60" texture="grass_top" rotation="0" />
 		<tile x="43" y="61" texture="grass_top" rotation="0" />
@@ -8135,8 +8135,8 @@
 		<tile x="44" y="54" texture="grass_top" rotation="0" />
 		<tile x="44" y="55" texture="grass" rotation="0" />
 		<tile x="44" y="56" texture="grass_top" rotation="0" />
-		<tile x="44" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="44" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="44" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="44" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="44" y="59" texture="grass_top" rotation="0" />
 		<tile x="44" y="60" texture="grass_top" rotation="0" />
 		<tile x="44" y="61" texture="grass_top" rotation="0" />
@@ -8204,8 +8204,8 @@
 		<tile x="45" y="54" texture="grass_top" rotation="0" />
 		<tile x="45" y="55" texture="grass_top" rotation="0" />
 		<tile x="45" y="56" texture="grass_top" rotation="0" />
-		<tile x="45" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="45" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="45" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="45" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="45" y="59" texture="grass_top" rotation="0" />
 		<tile x="45" y="60" texture="grass_top" rotation="0" />
 		<tile x="45" y="61" texture="grass_top" rotation="0" />
@@ -8273,8 +8273,8 @@
 		<tile x="46" y="54" texture="grass_top" rotation="0" />
 		<tile x="46" y="55" texture="grass_top" rotation="0" />
 		<tile x="46" y="56" texture="grass_top" rotation="0" />
-		<tile x="46" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="46" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="46" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="46" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="46" y="59" texture="grass_top" rotation="0" />
 		<tile x="46" y="60" texture="grass_top" rotation="0" />
 		<tile x="46" y="61" texture="grass_top" rotation="0" />
@@ -8342,8 +8342,8 @@
 		<tile x="47" y="54" texture="grass_top" rotation="0" />
 		<tile x="47" y="55" texture="grass_top" rotation="0" />
 		<tile x="47" y="56" texture="grass_top" rotation="0" />
-		<tile x="47" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="47" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="47" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="47" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="47" y="59" texture="grass_top" rotation="0" />
 		<tile x="47" y="60" texture="grass_top" rotation="0" />
 		<tile x="47" y="61" texture="grass_top" rotation="0" />
@@ -8411,8 +8411,8 @@
 		<tile x="48" y="54" texture="grass_top" rotation="0" />
 		<tile x="48" y="55" texture="grass_top" rotation="0" />
 		<tile x="48" y="56" texture="grass_top" rotation="0" />
-		<tile x="48" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="48" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="48" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="48" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="48" y="59" texture="grass_top" rotation="0" />
 		<tile x="48" y="60" texture="grass_top" rotation="0" />
 		<tile x="48" y="61" texture="grass_top" rotation="0" />
@@ -8480,8 +8480,8 @@
 		<tile x="49" y="54" texture="grass_top" rotation="0" />
 		<tile x="49" y="55" texture="grass_top" rotation="0" />
 		<tile x="49" y="56" texture="grass_top" rotation="0" />
-		<tile x="49" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="49" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="49" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="49" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="49" y="59" texture="grass_top" rotation="0" />
 		<tile x="49" y="60" texture="grass_top" rotation="0" />
 		<tile x="49" y="61" texture="grass_top" rotation="0" />
@@ -8549,8 +8549,8 @@
 		<tile x="50" y="54" texture="grass_top" rotation="0" />
 		<tile x="50" y="55" texture="grass_top" rotation="0" />
 		<tile x="50" y="56" texture="grass_top" rotation="0" />
-		<tile x="50" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="50" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="50" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="50" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="50" y="59" texture="grass_top" rotation="0" />
 		<tile x="50" y="60" texture="grass_top" rotation="0" />
 		<tile x="50" y="61" texture="grass_top" rotation="0" />
@@ -8618,8 +8618,8 @@
 		<tile x="51" y="54" texture="grass_top" rotation="0" />
 		<tile x="51" y="55" texture="grass_top" rotation="0" />
 		<tile x="51" y="56" texture="grass_top" rotation="0" />
-		<tile x="51" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="51" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="51" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="51" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="51" y="59" texture="grass_top" rotation="0" />
 		<tile x="51" y="60" texture="grass_top" rotation="0" />
 		<tile x="51" y="61" texture="grass_top" rotation="0" />
@@ -8687,9 +8687,9 @@
 		<tile x="52" y="54" texture="grass_top" rotation="0" />
 		<tile x="52" y="55" texture="grass_top" rotation="0" />
 		<tile x="52" y="56" texture="grass_top" rotation="0" />
-		<tile x="52" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="52" y="58" texture="water" rotation="0" />
-		<tile x="52" y="59" texture="water_grass_right_1" rotation="1" />
+		<tile x="52" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="52" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="52" y="59" texture="water_grass_right_1" rotation="1"  solid="true"/ >
 		<tile x="52" y="60" texture="grass_top" rotation="0" />
 		<tile x="52" y="61" texture="grass_top" rotation="0" />
 		<tile x="52" y="62" texture="grass_top" rotation="0" />
@@ -8756,10 +8756,10 @@
 		<tile x="53" y="54" texture="grass_top" rotation="0" />
 		<tile x="53" y="55" texture="grass_top" rotation="0" />
 		<tile x="53" y="56" texture="grass_top" rotation="0" />
-		<tile x="53" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="53" y="58" texture="water" rotation="0" />
-		<tile x="53" y="59" texture="water" rotation="0" />
-		<tile x="53" y="60" texture="water_grass_right_2" rotation="1" />
+		<tile x="53" y="57" texture="water_grass_right_2" rotation="2"  solid="true"/ >
+		<tile x="53" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="53" y="59" texture="water" rotation="0"  solid="true"/ >
+		<tile x="53" y="60" texture="water_grass_right_2" rotation="1"  solid="true"/ >
 		<tile x="53" y="61" texture="grass_top" rotation="0" />
 		<tile x="53" y="62" texture="grass_top" rotation="0" />
 		<tile x="53" y="63" texture="grass_top" rotation="0" />
@@ -8825,12 +8825,12 @@
 		<tile x="54" y="54" texture="grass_top" rotation="0" />
 		<tile x="54" y="55" texture="grass_top" rotation="0" />
 		<tile x="54" y="56" texture="grass_top" rotation="0" />
-		<tile x="54" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="54" y="58" texture="water" rotation="0" />
-		<tile x="54" y="59" texture="water_grass_right_2" rotation="3" />
-		<tile x="54" y="60" texture="water" rotation="0" />
-		<tile x="54" y="61" texture="water_grass_right_1" rotation="1" />
-		<tile x="54" y="62" texture="water_grass_right_2" rotation="1" />
+		<tile x="54" y="57" texture="water_grass_right_2" rotation="2"  solid="true"/ >
+		<tile x="54" y="58" texture="water" rotation="0"  solid="true"/ >
+		<tile x="54" y="59" texture="water_grass_right_2" rotation="3"  solid="true"/ >
+		<tile x="54" y="60" texture="water" rotation="0"  solid="true"/ >
+		<tile x="54" y="61" texture="water_grass_right_1" rotation="1"  solid="true"/ >
+		<tile x="54" y="62" texture="water_grass_right_2" rotation="1"  solid="true"/ >
 		<tile x="54" y="63" texture="grass_top" rotation="0" />
 		<tile x="54" y="64" texture="stone" rotation="0" />
 		<tile x="54" y="65" texture="stone" rotation="0" />
@@ -8894,13 +8894,13 @@
 		<tile x="55" y="54" texture="grass_top" rotation="0" />
 		<tile x="55" y="55" texture="grass_top" rotation="0" />
 		<tile x="55" y="56" texture="grass_top" rotation="0" />
-		<tile x="55" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="55" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="55" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="55" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="55" y="59" texture="grass_top" rotation="0" />
-		<tile x="55" y="60" texture="water_grass_right_1" rotation="3" />
-		<tile x="55" y="61" texture="water_grass_right_0" rotation="3" />
-		<tile x="55" y="62" texture="water" rotation="0" />
-		<tile x="55" y="63" texture="water_grass_right_1" rotation="1" />
+		<tile x="55" y="60" texture="water_grass_right_1" rotation="3"  solid="true"/ >
+		<tile x="55" y="61" texture="water_grass_right_0" rotation="3"  solid="true"/ >
+		<tile x="55" y="62" texture="water" rotation="0"  solid="true"/ >
+		<tile x="55" y="63" texture="water_grass_right_1" rotation="1"  solid="true"/ >
 		<tile x="55" y="64" texture="stone" rotation="0" />
 		<tile x="55" y="65" texture="stone" rotation="0" />
 		<tile x="55" y="66" texture="stone" rotation="0" />
@@ -8963,15 +8963,15 @@
 		<tile x="56" y="54" texture="grass_top" rotation="0" />
 		<tile x="56" y="55" texture="grass_top" rotation="0" />
 		<tile x="56" y="56" texture="grass_top" rotation="0" />
-		<tile x="56" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="56" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="56" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="56" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="56" y="59" texture="grass_top" rotation="0" />
 		<tile x="56" y="60" texture="grass_top" rotation="0" />
 		<tile x="56" y="61" texture="grass_top" rotation="0" />
-		<tile x="56" y="62" texture="water_grass_right_0" rotation="3" />
-		<tile x="56" y="63" texture="water" rotation="0" />
-		<tile x="56" y="64" texture="waterfall_bottom_left" rotation="3" />
-		<tile x="56" y="65" texture="water" rotation="0" />
+		<tile x="56" y="62" texture="water_grass_right_0" rotation="3"  solid="true"/ >
+		<tile x="56" y="63" texture="water" rotation="0"  solid="true"/ >
+		<tile x="56" y="64" texture="waterfall_bottom_left" rotation="3"  solid="true"/ >
+		<tile x="56" y="65" texture="water" rotation="0"  solid="true"/ >
 		<tile x="56" y="66" texture="stone" rotation="0" />
 		<tile x="56" y="67" texture="stone" rotation="0" />
 		<tile x="56" y="68" texture="stone" rotation="0" />
@@ -9032,16 +9032,16 @@
 		<tile x="57" y="54" texture="grass_top" rotation="0" />
 		<tile x="57" y="55" texture="grass_top" rotation="0" />
 		<tile x="57" y="56" texture="grass_top" rotation="0" />
-		<tile x="57" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="57" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="57" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="57" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="57" y="59" texture="grass_top" rotation="0" />
 		<tile x="57" y="60" texture="grass_top" rotation="0" />
 		<tile x="57" y="61" texture="grass_top" rotation="0" />
 		<tile x="57" y="62" texture="grass_top" rotation="0" />
-		<tile x="57" y="63" texture="water_grass_right_2" rotation="3" />
-		<tile x="57" y="64" texture="waterfall_bottom_right" rotation="3" />
-		<tile x="57" y="65" texture="water" rotation="0" />
-		<tile x="57" y="66" texture="waterfall_bottom_left" rotation="3" />
+		<tile x="57" y="63" texture="water_grass_right_2" rotation="3"  solid="true"/ >
+		<tile x="57" y="64" texture="waterfall_bottom_right" rotation="3"  solid="true"/ >
+		<tile x="57" y="65" texture="water" rotation="0"  solid="true"/ >
+		<tile x="57" y="66" texture="waterfall_bottom_left" rotation="3"  solid="true"/ >
 		<tile x="57" y="67" texture="stone" rotation="0" />
 		<tile x="57" y="68" texture="stone" rotation="0" />
 		<tile x="58" y="0" texture="grass_top" rotation="0" />
@@ -9101,17 +9101,17 @@
 		<tile x="58" y="54" texture="grass_top" rotation="0" />
 		<tile x="58" y="55" texture="grass_top" rotation="0" />
 		<tile x="58" y="56" texture="grass_top" rotation="0" />
-		<tile x="58" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="58" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="58" y="57" texture="water_grass_right_2" rotation="2"  solid="true"/ >
+		<tile x="58" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="58" y="59" texture="grass_top" rotation="0" />
 		<tile x="58" y="60" texture="grass_top" rotation="0" />
 		<tile x="58" y="61" texture="grass_top" rotation="0" />
 		<tile x="58" y="62" texture="grass_top" rotation="0" />
 		<tile x="58" y="63" texture="stone" rotation="0" />
 		<tile x="58" y="64" texture="stone" rotation="0" />
-		<tile x="58" y="65" texture="water" rotation="0" />
-		<tile x="58" y="66" texture="waterfall_bottom_left" rotation="3" />
-		<tile x="58" y="67" texture="water" rotation="0" />
+		<tile x="58" y="65" texture="water" rotation="0"  solid="true"/ >
+		<tile x="58" y="66" texture="waterfall_bottom_left" rotation="3"  solid="true"/ >
+		<tile x="58" y="67" texture="water" rotation="0"  solid="true"/ >
 		<tile x="58" y="68" texture="stone" rotation="0" />
 		<tile x="59" y="0" texture="grass_top" rotation="0" />
 		<tile x="59" y="1" texture="grass_top" rotation="0" />
@@ -9170,8 +9170,8 @@
 		<tile x="59" y="54" texture="grass_top" rotation="0" />
 		<tile x="59" y="55" texture="grass_top" rotation="0" />
 		<tile x="59" y="56" texture="grass_top" rotation="0" />
-		<tile x="59" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="59" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="59" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="59" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="59" y="59" texture="grass_top" rotation="0" />
 		<tile x="59" y="60" texture="grass_top" rotation="0" />
 		<tile x="59" y="61" texture="grass_top" rotation="0" />
@@ -9179,9 +9179,9 @@
 		<tile x="59" y="63" texture="stone" rotation="0" />
 		<tile x="59" y="64" texture="stone" rotation="0" />
 		<tile x="59" y="65" texture="stone" rotation="0" />
-		<tile x="59" y="66" texture="waterfall_bottom_right" rotation="3" />
-		<tile x="59" y="67" texture="water" rotation="0" />
-		<tile x="59" y="68" texture="water" rotation="0" />
+		<tile x="59" y="66" texture="waterfall_bottom_right" rotation="3"  solid="true"/ >
+		<tile x="59" y="67" texture="water" rotation="0"  solid="true"/ >
+		<tile x="59" y="68" texture="water" rotation="0"  solid="true"/ >
 		<tile x="60" y="0" texture="grass_top" rotation="0" />
 		<tile x="60" y="1" texture="grass_top" rotation="0" />
 		<tile x="60" y="2" texture="grass_top" rotation="0" />
@@ -9239,8 +9239,8 @@
 		<tile x="60" y="54" texture="grass_top" rotation="0" />
 		<tile x="60" y="55" texture="grass_top" rotation="0" />
 		<tile x="60" y="56" texture="grass_top" rotation="0" />
-		<tile x="60" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="60" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="60" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="60" y="58" texture="water_grass_right_2" rotation="0"  solid="true"/ >
 		<tile x="60" y="59" texture="grass_top" rotation="0" />
 		<tile x="60" y="60" texture="grass_top" rotation="0" />
 		<tile x="60" y="61" texture="grass_top" rotation="0" />
@@ -9249,8 +9249,8 @@
 		<tile x="60" y="64" texture="stone" rotation="0" />
 		<tile x="60" y="65" texture="stone" rotation="0" />
 		<tile x="60" y="66" texture="stone" rotation="0" />
-		<tile x="60" y="67" texture="water" rotation="0" />
-		<tile x="60" y="68" texture="water" rotation="0" />
+		<tile x="60" y="67" texture="water" rotation="0"  solid="true"/ >
+		<tile x="60" y="68" texture="water" rotation="0"  solid="true"/ >
 		<tile x="61" y="0" texture="grass_top" rotation="0" />
 		<tile x="61" y="1" texture="grass_top" rotation="0" />
 		<tile x="61" y="2" texture="grass_top" rotation="0" />
@@ -9308,8 +9308,8 @@
 		<tile x="61" y="54" texture="grass_top" rotation="0" />
 		<tile x="61" y="55" texture="grass_top" rotation="0" />
 		<tile x="61" y="56" texture="grass_top" rotation="0" />
-		<tile x="61" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="61" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="61" y="57" texture="water_grass_right_2" rotation="2"  solid="true"/ >
+		<tile x="61" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="61" y="59" texture="grass_top" rotation="0" />
 		<tile x="61" y="60" texture="grass_top" rotation="0" />
 		<tile x="61" y="61" texture="grass_top" rotation="0" />
@@ -9377,8 +9377,8 @@
 		<tile x="62" y="54" texture="grass_top" rotation="0" />
 		<tile x="62" y="55" texture="grass_top" rotation="0" />
 		<tile x="62" y="56" texture="grass_top" rotation="0" />
-		<tile x="62" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="62" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="62" y="57" texture="water_grass_right_1" rotation="2" solid="true"  solid="true"/ >
+		<tile x="62" y="58" texture="water_grass_right_0" rotation="0" solid="true"  solid="true"/ >
 		<tile x="62" y="59" texture="grass_top" rotation="0" />
 		<tile x="62" y="60" texture="grass_top" rotation="0" />
 		<tile x="62" y="61" texture="grass_top" rotation="0" />
@@ -9446,8 +9446,8 @@
 		<tile x="63" y="54" texture="stone" rotation="0" />
 		<tile x="63" y="55" texture="stone" rotation="0" />
 		<tile x="63" y="56" texture="stone" rotation="0" />
-		<tile x="63" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="63" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="63" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="63" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="63" y="59" texture="grass_top" rotation="0" />
 		<tile x="63" y="60" texture="grass_top" rotation="0" />
 		<tile x="63" y="61" texture="grass_top" rotation="0" />
@@ -9515,8 +9515,8 @@
 		<tile x="64" y="54" texture="grass_top" rotation="0" />
 		<tile x="64" y="55" texture="stone" rotation="0" />
 		<tile x="64" y="56" texture="grass_top" rotation="0" />
-		<tile x="64" y="57" texture="water_grass_right_2" rotation="2" />
-		<tile x="64" y="58" texture="water_grass_right_2" rotation="0" />
+		<tile x="64" y="57" texture="water_grass_right_2" rotation="2" solid="true"  solid="true"/ >
+		<tile x="64" y="58" texture="water_grass_right_2" rotation="0"  solid="true" solid="true"/ >
 		<tile x="64" y="59" texture="grass_top" rotation="0" />
 		<tile x="64" y="60" texture="grass_top" rotation="0" />
 		<tile x="64" y="61" texture="grass_top" rotation="0" />
@@ -9584,8 +9584,8 @@
 		<tile x="65" y="54" texture="stone" rotation="0" />
 		<tile x="65" y="55" texture="stone" rotation="0" />
 		<tile x="65" y="56" texture="grass_top" rotation="0" />
-		<tile x="65" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="65" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="65" y="57" texture="water_grass_right_0" rotation="2" solid="true"  solid="true"/ >
+		<tile x="65" y="58" texture="water_grass_right_0" rotation="0" solid="true"  solid="true"/ >
 		<tile x="65" y="59" texture="grass_top" rotation="0" />
 		<tile x="65" y="60" texture="grass_top" rotation="0" />
 		<tile x="65" y="61" texture="grass_top" rotation="0" />
@@ -9653,8 +9653,8 @@
 		<tile x="66" y="54" texture="grass_top" rotation="0" />
 		<tile x="66" y="55" texture="stone" rotation="0" />
 		<tile x="66" y="56" texture="grass_top" rotation="0" />
-		<tile x="66" y="57" texture="water_grass_right_1" rotation="2" />
-		<tile x="66" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="66" y="57" texture="water_grass_right_1" rotation="2"  solid="true"/ >
+		<tile x="66" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="66" y="59" texture="grass_top" rotation="0" />
 		<tile x="66" y="60" texture="grass_top" rotation="0" />
 		<tile x="66" y="61" texture="grass_top" rotation="0" />
@@ -9722,8 +9722,8 @@
 		<tile x="67" y="54" texture="stone" rotation="0" />
 		<tile x="67" y="55" texture="stone" rotation="0" />
 		<tile x="67" y="56" texture="grass_top" rotation="0" />
-		<tile x="67" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="67" y="58" texture="water_grass_right_1" rotation="0" />
+		<tile x="67" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="67" y="58" texture="water_grass_right_1" rotation="0"  solid="true"/ >
 		<tile x="67" y="59" texture="grass_top" rotation="0" />
 		<tile x="67" y="60" texture="grass_top" rotation="0" />
 		<tile x="67" y="61" texture="grass_top" rotation="0" />
@@ -9791,8 +9791,8 @@
 		<tile x="68" y="54" texture="grass_top" rotation="0" />
 		<tile x="68" y="55" texture="stone" rotation="0" />
 		<tile x="68" y="56" texture="grass_top" rotation="0" />
-		<tile x="68" y="57" texture="water_grass_right_0" rotation="2" />
-		<tile x="68" y="58" texture="water_grass_right_0" rotation="0" />
+		<tile x="68" y="57" texture="water_grass_right_0" rotation="2"  solid="true"/ >
+		<tile x="68" y="58" texture="water_grass_right_0" rotation="0"  solid="true"/ >
 		<tile x="68" y="59" texture="grass_top" rotation="0" />
 		<tile x="68" y="60" texture="grass_top" rotation="0" />
 		<tile x="68" y="61" texture="grass_top" rotation="0" />
