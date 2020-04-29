@@ -1,0 +1,13 @@
+<gc_scene>
+    <data>
+        <sprite name="panel" src="assets/ui/sample_background.png" />
+        <font src="assets/fonts/roboto.ttf" />
+    </data>
+    <gc_entities>
+        <camera x="0" y="0" />
+        <panel src="panel" x="50%" y="45%" width="300" height="69%"/>
+        <text text="GAME OVER" x="50%" y="25%" resize="false"/>
+        <button text="Restart Game" x="50%" y="50%" click="start_button" color="black" width="200" resize="false" />
+        <button text="Quit game" x="50%" y="61%" click="quit" color="black" width="200" resize="false" />
+    </gc_entities>
+</gc_scene>
