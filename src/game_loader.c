@@ -26,6 +26,7 @@
 #include "my.h"
 #include "map_editor.h"
 #include "components/xp_component.h"
+#include "systems/game_over.h"
 #include <malloc.h>
 
 const struct callback callbacks[] = {
@@ -45,6 +46,7 @@ const struct callback callbacks[] = {
     {"action1", &dialog_input1},
     {"action2", &dialog_input2},
     {"action3", &dialog_input3},
+    {"hide_game_over", &hide_game_over},
     {NULL, NULL}
 };
 
