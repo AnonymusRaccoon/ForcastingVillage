@@ -140,6 +140,8 @@
         <sprite name="save" src="assets/ui/save.png" />
         <sprite name="rain" src="assets/ui/rain.png" />
 
+         <sprite name="loading" src="assets/ui/background_rpg.png" />
+
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" />
         </enemies>
