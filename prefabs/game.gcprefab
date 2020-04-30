@@ -86,7 +86,7 @@
 
         <tiles>
             <tile name="dirt_top_right_0" />
-            <tile name="dirt_top_5" />
+            <tile name="stone" />
             <tile name="dirt" />
         </tiles>
 
@@ -138,6 +138,7 @@
         <sprite name="rotate" src="assets/ui/rotate.png" />
         <sprite name="texture" src="assets/ui/texture.png" />
         <sprite name="save" src="assets/ui/save.png" />
+        <sprite name="rain" src="assets/ui/rain.png" />
 
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" />
@@ -182,6 +183,18 @@
            </dialog_holder>
         </gc_entity>
 
+        <gc_entity>
+            <transform_component>
+               <Position x="0" y="0" />
+               <Size x="4800" y="1200" />
+            </transform_component>
+            <renderer src="rain">
+                <Rect height="1200" width="1600" top="0" left="0" />
+                <animation name="none" frame_count="3" frame_rate="10">
+                </animation>
+            </renderer>
+            <fixed_to_cam x="50%" y="50%" width="100%" height="100%" />
+        </gc_entity>
 
         <panel src="main_ui_game" x="3%" y="2%" width="30%" height="15%" centered="false"/>
         <text text="Loading" x="13%" y="6%" centered="false">
