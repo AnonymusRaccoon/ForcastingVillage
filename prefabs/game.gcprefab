@@ -86,7 +86,7 @@
 
         <tiles>
             <tile name="dirt_top_right_0" />
-            <tile name="dirt_top_5" />
+            <tile name="stone" />
             <tile name="dirt" />
         </tiles>
 
