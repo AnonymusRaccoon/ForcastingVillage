@@ -8,14 +8,12 @@ except IndexError:
     sys.exit(1)
 tree = ET.parse(file_entity)
 root = tree.getroot()
-do_it = False
 for entity in root.findall("./tiles_data/tile"):
     attribs = entity.attrib
     #print(f"check for x:{attribs['x']} y:{attribs['y']}")
-    if ((attribs['texture'] != "" and not do_it) or not do_it):
+    if (attribs['texture'] != ""):
         continue
-    do_it = not do_it
-    print(f"x:{attribs['x']} y:{attribs['y']}")
+    #print(f"x:{attribs['x']} y:{attribs['y']}")
     attribs['solid'] = "true"
 
-#tree.write(file_entity)
+tree.write(file_entity)
