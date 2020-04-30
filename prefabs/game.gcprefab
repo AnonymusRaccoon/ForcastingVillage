@@ -85,8 +85,8 @@
          <sprite name="panel" src="assets/ui/sample_background.png" />
 
         <tiles>
-            <tile name="dirt_left_5" />
-            <tile name="stone" />
+            <tile name="dirt_top_right_0" />
+            <tile name="dirt_top_5" />
             <tile name="dirt" />
         </tiles>
 
