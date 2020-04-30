@@ -138,9 +138,12 @@
         <sprite name="rotate" src="assets/ui/rotate.png" />
         <sprite name="texture" src="assets/ui/texture.png" />
         <sprite name="save" src="assets/ui/save.png" />
-        <sprite name="rain" src="assets/ui/rain.png" />
 
-         <sprite name="loading" src="assets/ui/background_rpg.png" />
+        <sprite name="rain" src="assets/ui/rain.png" />
+        <sprite name="loading" src="assets/ui/background_rpg.png" />
+
+        <sprite name="farmer1" src="assets/sprites/npc/farmer1.png" />
+        <sprite name="mayor" src="assets/sprites/npc/mayor.png" />
 
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" />
@@ -168,22 +171,45 @@
         <gc_entity>
            <transform_component>
                <Position x="0" y="0" />
-               <Size x="50" y="50" />
+               <Size x="48" y="96" />
            </transform_component>
-           <renderer src="dirt_top_1">
-                <Rect height="auto" width="auto" top="0" left="0" />
+           <renderer src="farmer1">
+                <Rect height="32" width="24" top="64" left="24" />
            </renderer>
-           <map_linker x="2" y="6" />
-           <dialog_holder x="2" y="5" tile_texture="dirt_top_1">
-                <??? line="Hello dirt block,\nI am the mighty cobble block.">
-                    <input text="Yes" click="super" />
-                    <input text="No" click="super" />
-                    <input text="Maybe" click="super" />
-                    <input text="Run away" click="super" />
-                </???>
-                <Cobble_block line="Can I do something\n for you?" />
+           <map_linker x="60" y="20" />
+           <dialog_holder x="60" y="19" tile_texture="npc_interact">
+                <Farmer line="We are in trouble, our dear village is\nunder constant rain! Please help us."/>
+                <Farmer line="Furthermore, monsters keep \ncoming to the village."/>
+                <Farmer line="We have been cursed by \na mysterious creature." />
+                <Farmer line="If you want to help us, please go to \nthe city hall and talk to the mayor." />
            </dialog_holder>
         </gc_entity>
+
+         <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="48" y="96" />
+           </transform_component>
+           <renderer src="mayor">
+                <Rect height="32" width="24" top="64" left="24" />
+           </renderer>
+           <map_linker x="41" y="30" />
+           <dialog_holder x="41" y="29" tile_texture="npc_interact">
+                <Mayor line="A HERO! Are you here to\nsave us?">
+                    <input text="Yes" />
+                    <input text="Of course" />
+                    <input text="Tell me more" />
+                    <input text="What else?" />
+                </Mayor>
+                <Mayor line="It's quite unusual to see heroes\nlike you in our day and age." />
+                <Mayor line="Our village may help you\nin your quest." />
+                <Mayor line="Please talk to our citizens, \nyou could find valuable items that..." />
+                <Mayor line="will allow you to cure \nthe village from the curse." />
+                <Mayor line="If foes hurt you, please go\ntalk to Mia." />
+                <Mayor line="She will take care of\nyour wounds for you." />
+           </dialog_holder>
+        </gc_entity>
+
 
         <gc_entity>
             <transform_component>
