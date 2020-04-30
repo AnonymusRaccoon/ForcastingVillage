@@ -129,7 +129,7 @@
 
         <sprite name="main_ui_game" src="assets/ui/health_and_xp.png" />
         <music src="assets/musics/windless_slopes.ogg"/>
-        <font src="assets/fonts/roboto.ttf" />
+        <font src="assets/fonts/Pixellari.ttf" />
 
         <sprite name="tile_select" src="assets/ui/tile_select.png" />
         <sprite name="vertex_select" src="assets/ui/vertex_select.png" />

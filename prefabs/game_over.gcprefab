@@ -1,6 +1,6 @@
 <gc_scene>
     <data>
-        <font src="assets/fonts/roboto.ttf" />
+        <font src="assets/fonts/Pixellari.ttf" />
     </data>
     <gc_entities>
             <camera x="0" y="0" />

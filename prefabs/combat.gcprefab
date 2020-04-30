@@ -1,6 +1,6 @@
 <gc_scene>
     <data>
-        <font src="assets/fonts/roboto.ttf" />
+        <font src="assets/fonts/Pixellari.ttf" />
         <sprite name="text_box" src="assets/ui/text_box.png" />
         <sprite name="button_background" src="assets/ui/button_background.png" />
         <sprite name="player_holder" src="assets/ui/player.png" />

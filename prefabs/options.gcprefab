@@ -7,7 +7,7 @@
         <sprite name="left" src="assets/ui/left.png" />
         <sprite name="right" src="assets/ui/right.png" />
         <sprite name="background" src="assets/ui/background_option.png" />
-        <font src="assets/fonts/roboto.ttf" />
+        <font src="assets/fonts/Pixellari.ttf" />
     </data>
     <gc_entities>
         <panel src="background" x="50%" y="50%" width="100%" height="100%"/>
