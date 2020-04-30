@@ -171,7 +171,7 @@
         <gc_entity>
            <transform_component>
                <Position x="0" y="0" />
-               <Size x="48" y="96" />
+               <Size x="70" y="90" />
            </transform_component>
            <renderer src="farmer1">
                 <Rect height="32" width="24" top="64" left="24" />
@@ -188,7 +188,7 @@
          <gc_entity>
            <transform_component>
                <Position x="0" y="0" />
-               <Size x="48" y="96" />
+               <Size x="70" y="90" />
            </transform_component>
            <renderer src="mayor">
                 <Rect height="32" width="24" top="64" left="24" />
