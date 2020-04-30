@@ -14,6 +14,8 @@ unsigned int amount)
     if (this->dead)
         return;
     this->health -= amount;
+	if (this->health < 0)
+		this->health = 0;
     engine->trigger_event(engine, "rem_health", this->health, amount);
     if (this->health <= 0)
         this->dead = true;

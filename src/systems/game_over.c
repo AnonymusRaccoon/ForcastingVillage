@@ -25,7 +25,7 @@ enum gc_mousekeys key)
 	if (!hc)
 		return (true);
 	hc->dead = false;
-	hc->health = hc->health_max;
+	hc->health = hc->health_max * 0.4;
 	for (gc_list *li = list; li; li = li->next) {
 		if (!my_strcmp(GETCMP(li->data, tag_component)->tag, "game_over"))
 			((gc_entity *)li->data)->destroy(li->data, scene);
