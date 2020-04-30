@@ -743,9 +743,9 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="30" />
+			<row height="20" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -814,11 +814,11 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="30" />
+			<row height="60" />
+			<row height="100" />
+			<row height="60" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -886,13 +886,13 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="70" />
+			<row height="90" />
+			<row height="110" />
+			<row height="90" />
+			<row height="20" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -959,6 +959,12 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
+			<row height="70" />
+			<row height="90" />
+			<row height="90" />
+			<row height="100" />
+			<row height="80" />
+			<row height="50" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -966,6 +972,72 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+		</line>
+		<line>
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="10" />
+			<row height="10" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="0" />
+			<row height="20" />
+			<row height="30" />
+			<row height="70" />
+			<row height="80" />
+			<row height="70" />
+			<row height="60" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -1033,83 +1105,11 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-		</line>
-		<line>
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
 			<row height="10" />
 			<row height="10" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="20" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -2740,16 +2740,16 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
+			<row height="30" />
+			<row height="40" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="20" />
+			<row height="30" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -2810,18 +2810,18 @@
 		</line>
 		<line>
 			<row height="0" />
+			<row height="10" />
+			<row height="30" />
+			<row height="70" />
+			<row height="60" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="30" />
+			<row height="30" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -2882,19 +2882,19 @@
 		</line>
 		<line>
 			<row height="0" />
+			<row height="20" />
+			<row height="70" />
+			<row height="80" />
+			<row height="60" />
+			<row height="80" />
+			<row height="120" />
+			<row height="80" />
+			<row height="60" />
+			<row height="60" />
+			<row height="10" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -2953,21 +2953,21 @@
 			<row height="330" />
 		</line>
 		<line>
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="30" />
+			<row height="50" />
+			<row height="110" />
+			<row height="110" />
+			<row height="80" />
+			<row height="130" />
+			<row height="170" />
+			<row height="160" />
+			<row height="180" />
+			<row height="130" />
+			<row height="20" />
+			<row height="10" />
+			<row height="10" />
+			<row height="20" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3025,21 +3025,21 @@
 			<row height="350" />
 		</line>
 		<line>
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="30" />
+			<row height="40" />
+			<row height="90" />
+			<row height="120" />
+			<row height="90" />
+			<row height="80" />
+			<row height="60" />
+			<row height="90" />
+			<row height="210" />
+			<row height="180" />
+			<row height="70" />
+			<row height="50" />
+			<row height="10" />
+			<row height="30" />
+			<row height="30" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3099,19 +3099,19 @@
 		<line>
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="40" />
+			<row height="120" />
+			<row height="130" />
+			<row height="100" />
+			<row height="50" />
+			<row height="40" />
+			<row height="160" />
+			<row height="200" />
+			<row height="150" />
+			<row height="100" />
+			<row height="80" />
+			<row height="90" />
+			<row height="40" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3171,19 +3171,19 @@
 		<line>
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="20" />
+			<row height="70" />
+			<row height="90" />
+			<row height="110" />
+			<row height="90" />
+			<row height="50" />
+			<row height="80" />
+			<row height="160" />
+			<row height="170" />
+			<row height="110" />
+			<row height="100" />
+			<row height="70" />
+			<row height="20" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3245,17 +3245,17 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="40" />
+			<row height="100" />
+			<row height="100" />
+			<row height="50" />
+			<row height="60" />
+			<row height="150" />
+			<row height="140" />
+			<row height="80" />
+			<row height="40" />
+			<row height="20" />
+			<row height="20" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3317,17 +3317,17 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="70" />
+			<row height="120" />
+			<row height="80" />
+			<row height="70" />
+			<row height="150" />
+			<row height="210" />
+			<row height="140" />
+			<row height="70" />
+			<row height="50" />
+			<row height="40" />
+			<row height="20" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3388,17 +3388,17 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="70" />
+			<row height="80" />
+			<row height="40" />
+			<row height="70" />
+			<row height="150" />
+			<row height="150" />
+			<row height="80" />
+			<row height="70" />
+			<row height="60" />
+			<row height="20" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3460,17 +3460,17 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="30" />
+			<row height="20" />
+			<row height="10" />
+			<row height="80" />
+			<row height="120" />
+			<row height="50" />
+			<row height="20" />
+			<row height="70" />
+			<row height="60" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3536,13 +3536,13 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="50" />
+			<row height="70" />
+			<row height="50" />
+			<row height="90" />
+			<row height="130" />
+			<row height="90" />
+			<row height="20" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3610,11 +3610,11 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="30" />
+			<row height="90" />
+			<row height="120" />
+			<row height="80" />
+			<row height="20" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3683,10 +3683,10 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="30" />
+			<row height="90" />
+			<row height="70" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3757,8 +3757,8 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="60" />
+			<row height="60" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -3970,8 +3970,8 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -4042,8 +4042,8 @@
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
-			<row height="0" />
+			<row height="10" />
+			<row height="10" />
 			<row height="0" />
 			<row height="0" />
 			<row height="0" />
@@ -4699,8 +4699,8 @@
 			<row height="30" />
 			<row height="0" />
 			<row height="0" />
-			<row height="0" />
 			<row height="10" />
+			<row height="20" />
 			<row height="10" />
 			<row height="0" />
 			<row height="10" />
@@ -4769,18 +4769,18 @@
 			<row height="130" />
 			<row height="40" />
 			<row height="50" />
-			<row height="20" />
-			<row height="80" />
-			<row height="200" />
-			<row height="250" />
-			<row height="170" />
-			<row height="140" />
-			<row height="150" />
+			<row height="130" />
 			<row height="280" />
-			<row height="250" />
-			<row height="180" />
-			<row height="170" />
+			<row height="370" />
+			<row height="340" />
+			<row height="200" />
 			<row height="210" />
+			<row height="190" />
+			<row height="370" />
+			<row height="340" />
+			<row height="350" />
+			<row height="250" />
+			<row height="260" />
 			<row height="270" />
 			<row height="330" />
 			<row height="290" />
@@ -4841,20 +4841,20 @@
 			<row height="200" />
 			<row height="170" />
 			<row height="150" />
-			<row height="70" />
-			<row height="120" />
-			<row height="210" />
-			<row height="240" />
-			<row height="220" />
-			<row height="240" />
-			<row height="260" />
+			<row height="180" />
+			<row height="320" />
+			<row height="370" />
+			<row height="420" />
+			<row height="410" />
+			<row height="420" />
+			<row height="420" />
+			<row height="460" />
+			<row height="460" />
+			<row height="440" />
+			<row height="360" />
+			<row height="310" />
+			<row height="370" />
 			<row height="300" />
-			<row height="250" />
-			<row height="200" />
-			<row height="170" />
-			<row height="220" />
-			<row height="240" />
-			<row height="280" />
 			<row height="320" />
 			<row height="290" />
 			<row height="250" />
@@ -4912,22 +4912,22 @@
 			<row height="70" />
 			<row height="100" />
 			<row height="200" />
-			<row height="220" />
-			<row height="250" />
-			<row height="340" />
-			<row height="310" />
-			<row height="340" />
-			<row height="320" />
 			<row height="280" />
-			<row height="320" />
-			<row height="300" />
-			<row height="310" />
-			<row height="360" />
-			<row height="330" />
-			<row height="340" />
-			<row height="320" />
-			<row height="390" />
-			<row height="380" />
+			<row height="470" />
+			<row height="500" />
+			<row height="510" />
+			<row height="540" />
+			<row height="570" />
+			<row height="570" />
+			<row height="450" />
+			<row height="500" />
+			<row height="510" />
+			<row height="710" />
+			<row height="550" />
+			<row height="480" />
+			<row height="440" />
+			<row height="470" />
+			<row height="510" />
 			<row height="460" />
 			<row height="530" />
 			<row height="500" />
@@ -4984,22 +4984,22 @@
 			<row height="0" />
 			<row height="10" />
 			<row height="50" />
-			<row height="100" />
-			<row height="300" />
-			<row height="330" />
-			<row height="390" />
-			<row height="340" />
-			<row height="380" />
-			<row height="350" />
-			<row height="370" />
-			<row height="360" />
-			<row height="340" />
-			<row height="320" />
-			<row height="330" />
-			<row height="320" />
-			<row height="340" />
-			<row height="310" />
-			<row height="320" />
+			<row height="160" />
+			<row height="520" />
+			<row height="560" />
+			<row height="590" />
+			<row height="590" />
+			<row height="630" />
+			<row height="550" />
+			<row height="500" />
+			<row height="550" />
+			<row height="560" />
+			<row height="550" />
+			<row height="500" />
+			<row height="460" />
+			<row height="430" />
+			<row height="440" />
+			<row height="450" />
 			<row height="460" />
 			<row height="570" />
 			<row height="660" />
@@ -5755,7 +5755,7 @@
 		<tile x="10" y="20" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="21" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="22" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="10" y="23" texture="dirt_top_5" rotation="0" solid="true"/>
+		<tile x="10" y="23" texture="stone" rotation="0" solid="true"/>
 		<tile x="10" y="24" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="25" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="10" y="26" texture="grass_top" rotation="0" solid="true"/>
@@ -5824,8 +5824,8 @@
 		<tile x="11" y="20" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="11" y="21" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="11" y="22" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="11" y="23" texture="dirt_inner_top_left" rotation="0" solid="true"/>
-		<tile x="11" y="24" texture="water_top_right" rotation="0" solid="true"/>
+		<tile x="11" y="23" texture="stone" rotation="0" solid="true"/>
+		<tile x="11" y="24" texture="stone" rotation="0" solid="true"/>
 		<tile x="11" y="25" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="11" y="26" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="11" y="27" texture="grass_top" rotation="0" solid="true"/>
@@ -5892,9 +5892,9 @@
 		<tile x="12" y="19" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="12" y="20" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="12" y="21" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="12" y="22" texture="dirt_top_right_1" rotation="0" solid="true"/>
-		<tile x="12" y="23" texture="dirt_top_0" rotation="3" solid="true"/>
-		<tile x="12" y="24" texture="dirt_top_3" rotation="0" solid="true"/>
+		<tile x="12" y="22" texture="stone" rotation="0" solid="true"/>
+		<tile x="12" y="23" texture="stone" rotation="3" solid="true"/>
+		<tile x="12" y="24" texture="stone" rotation="0" solid="true"/>
 		<tile x="12" y="25" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="12" y="26" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="12" y="27" texture="grass_top" rotation="0" solid="true"/>
@@ -5961,9 +5961,9 @@
 		<tile x="13" y="19" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="13" y="20" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="13" y="21" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="13" y="22" texture="dirt_top_right_0" rotation="0" solid="true"/>
-		<tile x="13" y="23" texture="dirt_top_1" rotation="3" solid="true"/>
-		<tile x="13" y="24" texture="dirt_top_2" rotation="0" solid="true"/>
+		<tile x="13" y="22" texture="stone" rotation="0" solid="true"/>
+		<tile x="13" y="23" texture="stone" rotation="3" solid="true"/>
+		<tile x="13" y="24" texture="stone" rotation="0" solid="true"/>
 		<tile x="13" y="25" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="13" y="26" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="13" y="27" texture="grass_top" rotation="0" solid="true"/>
@@ -9419,16 +9419,16 @@
 		<tile x="63" y="27" texture="grass_top" rotation="0" />
 		<tile x="63" y="28" texture="grass_top" rotation="0" />
 		<tile x="63" y="29" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="63" y="30" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="63" y="31" texture="grass_top" rotation="0" solid="true"/>
+		<tile x="63" y="30" texture="stone" rotation="0" solid="true"/>
+		<tile x="63" y="31" texture="stone" rotation="0" solid="true"/>
 		<tile x="63" y="32" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="63" y="33" texture="stone" rotation="0" solid="true"/>
 		<tile x="63" y="34" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="63" y="35" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="63" y="36" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="63" y="37" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="63" y="38" texture="grass_top" rotation="0" solid="true"/>
-		<tile x="63" y="39" texture="grass_top" rotation="0" solid="true"/>
+		<tile x="63" y="38" texture="stone" rotation="0" solid="true"/>
+		<tile x="63" y="39" texture="stone" rotation="0" solid="true"/>
 		<tile x="63" y="40" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="63" y="41" texture="stone" rotation="0" solid="true"/>
 		<tile x="63" y="42" texture="stone" rotation="0" solid="true"/>
@@ -9487,7 +9487,7 @@
 		<tile x="64" y="26" texture="stone" rotation="0" />
 		<tile x="64" y="27" texture="stone" rotation="0" />
 		<tile x="64" y="28" texture="grass_top" rotation="0" />
-		<tile x="64" y="29" texture="grass_top" rotation="0" solid="true"/>
+		<tile x="64" y="29" texture="stone" rotation="0" solid="true"/>
 		<tile x="64" y="30" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="64" y="31" texture="grass_top" rotation="0" solid="true"/>
 		<tile x="64" y="32" texture="grass_top" rotation="0" solid="true"/>
