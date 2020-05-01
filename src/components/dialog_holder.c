@@ -55,29 +55,42 @@ static void ctr(void *component, va_list args)
     setup_tile_interactions(cmp, scene, (gc_vector2i){x, y}, texture);
 }
 
+bool dialog_parse_inputs(struct dialog_line *txt, gc_scene *scene, node *n)
+{
+    char *click;
+    int i = 0;
+
+    txt->inputs = malloc(sizeof(struct dialog_input) * txt->input_count);
+    if (!txt->inputs)
+        return (false);
+    for (n = n->child; n; n = n->next) {
+        txt->inputs[i].text = xml_getproperty(n, "text");
+        click = xml_gettempprop(n, "click");
+        txt->inputs[i].callback = scene->get_data(scene, "input", click);
+        if (!txt->inputs[i++].callback && click)
+            my_printf("Couldn't find an input with the name: %s.\n", click);
+    }
+    return (false);
+}
+
 struct dialog_line *dialog_parse_text(gc_scene *scene, node *n)
 {
     struct dialog_line *txt = malloc(sizeof(struct dialog_line));
-    char *click;
-    int i = 0;
+    char *callback;
 
     if (!txt)
         return (NULL);
     txt->name = my_strdup(n->name);
     txt->text = xml_getproperty(n, "line");
     txt->input_count = xml_getchildcount_filtered(n, "input");
-    txt->callback = NULL;
+    callback = xml_gettempprop(n, "callback");
+    txt->callback = scene->get_data(scene, "dialog_callback", callback);
+    if (callback && !txt->callback)
+        my_printf("Couldn't find an callback with the name: %s.\n", callback);
     txt->inputs = NULL;
     if (txt->input_count == 0)
         return (txt);
-    txt->inputs = malloc(sizeof(struct dialog_input) * txt->input_count);
-    for (n = n->child; n; n = n->next) {
-        txt->inputs[i].text = xml_getproperty(n, "text");
-        click = xml_gettempprop(n, "click");
-        txt->inputs[i++].callback = scene->get_data(scene, "input", click);
-        if (!txt->inputs)
-            my_printf("Couldn't find a callback with the name: %s.\n", click);
-    }
+    dialog_parse_inputs(txt, scene, n);
     return (txt);
 }
 

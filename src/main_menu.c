@@ -19,18 +19,18 @@ enum gc_mousekeys __)
 
     prefab_load(engine, "prefabs/loading.gcprefab");
     engine->game_loop(engine, 0);
-    scene = scene_create(engine, "prefabs/game.gcprefab");
+    scene = scene_new(engine);
+    load_data(scene, game_data);
+    scene = scene_parse_xml(scene, engine, "prefabs/game.gcprefab");
     if (!scene) {
         engine->should_close = true;
         my_printf("The game scene couldn't be loaded.\n");
         return (true);
     }
     engine->change_scene(engine, scene);
-    if (prefab_load(engine, "prefabs/player.gcprefab") < 0) {
+    if (prefab_load(engine, "prefabs/player.gcprefab") < 0)
         my_printf("Could not load the player.\n");
-        return (true);
-    }
-    if (prefab_load(engine, "prefabs/map_entities.gcprefab") < 0)
+    else if (prefab_load(engine, "prefabs/map_entities.gcprefab") < 0)
         return (true);
     if (engine->get_callback(engine, "map_manage_click"))
         if (prefab_load(engine, "prefabs/editor_ui.gcprefab") < 0)

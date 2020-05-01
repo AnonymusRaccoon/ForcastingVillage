@@ -144,6 +144,7 @@
 
         <sprite name="farmer1" src="assets/sprites/npc/farmer1.png" />
         <sprite name="mayor" src="assets/sprites/npc/mayor.png" />
+        <sprite name="mia" src="assets/sprites/npc/mia.png" />
 
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" spawn_rate="17%" />
@@ -215,6 +216,25 @@
            </dialog_holder>
         </gc_entity>
 
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="70" y="90" />
+           </transform_component>
+           <renderer src="mia">
+                <Rect height="32" width="24" top="64" left="24" />
+           </renderer>
+           <map_linker x="23" y="37" />
+           <dialog_holder x="23" y="36" tile_texture="npc_interact">
+                <Mia line="Oh, Hero! I'm grateful \nfor your visit." callback="mia_setup" />
+                <Mia line="Do you want something?" >
+                    <input text="Heal me" click="mia_heal" />
+                    <input text="Save game" click="mia_save" />
+                    <input text="Fisherman" click="mia_fisherman" />
+                    <input text="Bye" />
+                </Mia>
+           </dialog_holder>
+        </gc_entity>
 
         <gc_entity>
             <transform_component>
