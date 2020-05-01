@@ -28,6 +28,8 @@
 #include "components/xp_component.h"
 #include "systems/game_over.h"
 #include <malloc.h>
+#include <time.h>
+#include <stdlib.h>
 
 const struct callback callbacks[] = {
     {"start_button", &start_button},
@@ -166,6 +168,7 @@ int start_game(bool map_editor)
     gc_engine *engine = engine_create();
     sfClock *clock = sfClock_create();
 
+    srand((unsigned int)time(NULL));
     if (!engine || engine_use_sfml(engine, "Forecasting village", 60) < 0)
         return (ERROR);
     if (create_game_scene(engine, map_editor) < 0)
