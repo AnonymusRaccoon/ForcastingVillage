@@ -145,6 +145,7 @@
         <sprite name="farmer1" src="assets/sprites/npc/farmer1.png" />
         <sprite name="farmer2" src="assets/sprites/npc/farmer2.png" />
         <sprite name="farmer3" src="assets/sprites/npc/farmer3.png" />
+        <sprite name="farmer4" src="assets/sprites/npc/farmer4.png" />
         <sprite name="mayor" src="assets/sprites/npc/mayor.png" />
         <sprite name="mia" src="assets/sprites/npc/mia.png" />
         <sprite name="sage" src="assets/sprites/npc/sage.png" />
@@ -343,6 +344,20 @@
                 <Rect height="32" width="24" top="96" left="0" />
             </renderer>
             <map_linker x="41" y="25" centered="true" />
+        </gc_entity>
+
+		<gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="70" y="90" />
+           </transform_component>
+           <renderer src="farmer4">
+                <Rect height="32" width="24" top="64" left="24" />
+           </renderer>
+           <map_linker x="43" y="48" centered="true" />
+           <dialog_holder x="42" y="48" tile_texture="npc_interact">
+                <Paul line="Still and always that \nshitty weather !" />
+           </dialog_holder>
         </gc_entity>
 
         <gc_entity>
