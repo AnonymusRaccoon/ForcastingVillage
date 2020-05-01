@@ -17,6 +17,11 @@
         <sprite name="slot_4" src="assets/sprites/inventory/shield_upgrade.png" />
 
         <sprite name="bee" src="assets/sprites/bee.png" />
+        <sprite name="mushroom_ennemy" src="assets/sprites/mushroom_ennemy.png" />
+        <sprite name="turnipor" src="assets/sprites/Turnipor.png" />
+        <sprite name="shrump" src="assets/sprites/Shrump.png" />
+        <sprite name="evil_seed" src="assets/sprites/Evil_seed.png" />
+        <sprite name="flower_ennemy" src="assets/sprites/Flower_ennemy.png" />
     </data>
     <gc_entities>
         <gc_entity>

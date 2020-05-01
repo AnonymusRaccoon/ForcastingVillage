@@ -69,6 +69,11 @@ const struct gc_data attacks[] = {
     {"attack", "Water jet", &water_jet,        NULL},
     {"attack", "Shield", &shield,              NULL},
     {"attack", "Aerial attack", &enemy_attack, NULL},
+    {"attack", "Spore attack", &enemy_attack, NULL},
+    {"attack", "Sharp leaves", &enemy_attack, NULL},
+    {"attack", "Spinning roots", &enemy_attack, NULL},
+    {"attack", "Hypnosis", &enemy_attack, NULL},
+    {"attack", "Water gun", &enemy_attack, NULL},
     {NULL, NULL, NULL,                         NULL}
 };
 

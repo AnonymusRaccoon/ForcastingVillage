@@ -147,6 +147,11 @@
 
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" />
+            <enemy name="mushroom" src="prefabs/enemies/mushroom.gcprefab" />
+            <enemy name="turnipor" src="prefabs/enemies/turnipor.gcprefab" />
+            <enemy name="shrump" src="prefabs/enemies/shrump.gcprefab" />
+            <enemy name="evil seed" src="prefabs/enemies/evil_seed.gcprefab" />
+            <enemy name="flower" src="prefabs/enemies/flower.gcprefab" />
         </enemies>
     </data>
 
