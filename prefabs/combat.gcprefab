@@ -53,7 +53,7 @@
 
         <gc_entity id="50">
             <transform_component>
-                <Size x="100" y="100 />
+                <Size x="100" y="100" />
             </transform_component>
             <map_linker x="0" y="0" />
             <player_component />
