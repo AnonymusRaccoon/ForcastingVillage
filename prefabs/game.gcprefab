@@ -335,15 +335,15 @@
         </gc_entity>
 
         <gc_entity>
-                   <transform_component>
-                       <Position x="0" y="0" />
-                       <Size x="70" y="90" />
-                   </transform_component>
-                   <renderer src="farmer3">
-                        <Rect height="32" width="24" top="96" left="0" />
-                   </renderer>
-                   <map_linker x="41" y="25" centered="true" />
-                </gc_entity>
+            <transform_component>
+                <Position x="0" y="0" />
+                <Size x="70" y="90" />
+            </transform_component>
+            <renderer src="farmer3">
+                <Rect height="32" width="24" top="96" left="0" />
+            </renderer>
+            <map_linker x="41" y="25" centered="true" />
+        </gc_entity>
 
         <gc_entity>
             <transform_component>
