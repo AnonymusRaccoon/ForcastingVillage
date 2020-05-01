@@ -147,7 +147,12 @@
         <sprite name="mia" src="assets/sprites/npc/mia.png" />
 
         <enemies>
-            <enemy name="bee" src="prefabs/enemies/bee.gcprefab" />
+            <enemy name="bee" src="prefabs/enemies/bee.gcprefab" spawn_rate="17%" />
+            <enemy name="mushroom" src="prefabs/enemies/mushroom.gcprefab" spawn_rate="17%" />
+            <enemy name="turnipor" src="prefabs/enemies/turnipor.gcprefab" spawn_rate="17%"/>
+            <enemy name="shrump" src="prefabs/enemies/shrump.gcprefab" spawn_rate="17%"/>
+            <enemy name="evil seed" src="prefabs/enemies/evil_seed.gcprefab" spawn_rate="17%"/>
+            <enemy name="flower" src="prefabs/enemies/flower.gcprefab" spawn_rate="17%"/>
         </enemies>
     </data>
 
@@ -214,7 +219,7 @@
         <gc_entity>
            <transform_component>
                <Position x="0" y="0" />
-               <Size x="48" y="96" />
+               <Size x="70" y="90" />
            </transform_component>
            <renderer src="mia">
                 <Rect height="32" width="24" top="64" left="24" />

@@ -26,13 +26,15 @@ void combat_start(gc_engine *engine, char *enemy_name)
     gc_list *li = engine->scene->get_data(engine->scene, "enemies", NULL);
     gc_scene *scene = scene_create(engine, "prefabs/combat.gcprefab");
     struct enemy *enemy = NULL;
-    gc_entity *player = engine->scene->get_entity(engine->scene, 50);
-    gc_entity *player_combat = scene->get_entity(scene, 50);
+    gc_entity *player;
+    gc_entity *player_combat;
 
     if (!scene) {
         my_printf("The combat scene couldn't be found.\n");
         return;
     }
+    player = engine->scene->get_entity(engine->scene, 50);
+	player_combat = scene->get_entity(scene, 50);
     this->state = ATTACK;
     this->game_scene = engine->scene;
     set_combat_player(engine, player, player_combat);
