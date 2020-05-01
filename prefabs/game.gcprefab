@@ -146,12 +146,12 @@
         <sprite name="mayor" src="assets/sprites/npc/mayor.png" />
 
         <enemies>
-            <enemy name="bee" src="prefabs/enemies/bee.gcprefab" />
-            <enemy name="mushroom" src="prefabs/enemies/mushroom.gcprefab" />
-            <enemy name="turnipor" src="prefabs/enemies/turnipor.gcprefab" />
-            <enemy name="shrump" src="prefabs/enemies/shrump.gcprefab" />
-            <enemy name="evil seed" src="prefabs/enemies/evil_seed.gcprefab" />
-            <enemy name="flower" src="prefabs/enemies/flower.gcprefab" />
+            <enemy name="bee" src="prefabs/enemies/bee.gcprefab" spawn_rate="17%" />
+            <enemy name="mushroom" src="prefabs/enemies/mushroom.gcprefab" spawn_rate="17%" />
+            <enemy name="turnipor" src="prefabs/enemies/turnipor.gcprefab" spawn_rate="17%"/>
+            <enemy name="shrump" src="prefabs/enemies/shrump.gcprefab" spawn_rate="17%"/>
+            <enemy name="evil seed" src="prefabs/enemies/evil_seed.gcprefab" spawn_rate="17%"/>
+            <enemy name="flower" src="prefabs/enemies/flower.gcprefab" spawn_rate="17%"/>
         </enemies>
     </data>
 
