@@ -10,12 +10,6 @@
 #include <systems/game_manager_system.h>
 #include "engine.h"
 
-struct dialog_holder *dialog_get_current(gc_engine *engine)
-{
-    struct dialog_manager *manager = GETSYS(engine, dialog_manager);
-
-    return (manager->current_dialog);
-}
 
 void mia_setup(gc_engine *engine)
 {
