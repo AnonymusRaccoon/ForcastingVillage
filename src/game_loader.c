@@ -47,7 +47,14 @@ const struct callback callbacks[] = {
     {"action2", &dialog_input2},
     {"action3", &dialog_input3},
     {"hide_game_over", &hide_game_over},
+    {"mia_heal", &mia_heal},
     {NULL, NULL}
+};
+
+const struct gc_data game_data[] = {
+    {"input", "mia_heal", &mia_heal, NULL},
+    {"dialog_callback", "mia_setup", &mia_setup, NULL},
+    {NULL, NULL, NULL, NULL}
 };
 
 const struct callback map_editor_callbacks[] = {
@@ -64,30 +71,36 @@ const struct callback map_editor_callbacks[] = {
 };
 
 const struct gc_data attacks[] = {
-    {"attack", "Uppercut", &uppercut,          NULL},
-    {"attack", "Fireball", &fireball,          NULL},
-    {"attack", "Water jet", &water_jet,        NULL},
-    {"attack", "Shield", &shield,              NULL},
+    {"attack", "Uppercut", &uppercut, NULL},
+    {"attack", "Fireball", &fireball, NULL},
+    {"attack", "Water jet", &water_jet, NULL},
+    {"attack", "Shield", &shield, NULL},
     {"attack", "Aerial attack", &enemy_attack, NULL},
-    {NULL, NULL, NULL,                         NULL}
+    {NULL, NULL, NULL, NULL}
 };
 
-void load_attacks(gc_scene *scene)
+void load_data(gc_scene *scene, const gc_data *datas)
 {
     gc_data *data;
-    gc_list *li = scene->get_entity_by_cmp(scene, "attack_component");
-    struct attack_component *att;
 
-    for (int i = 0; attacks[i].name; i++) {
+    for (int i = 0; datas[i].name; i++) {
         data = malloc(sizeof(*data));
         if (!data)
             return;
-        data->name = my_strdup(attacks[i].name);
-        data->type = my_strdup(attacks[i].type);
-        data->custom = attacks[i].custom;
-        data->destroy = attacks[i].destroy;
+        data->name = my_strdup(datas[i].name);
+        data->type = my_strdup(datas[i].type);
+        data->custom = datas[i].custom;
+        data->destroy = datas[i].destroy;
         LISTADD(scene->data, data);
     }
+}
+
+void load_attacks(gc_scene *scene)
+{
+    gc_list *li = scene->get_entity_by_cmp(scene, "attack_component");
+    struct attack_component *att;
+
+    load_data(scene, attacks);
     for (; li; li = li->next) {
         att = GETCMP(li->data, attack_component);
         for (int i = 0; att->attacks && att->attacks[i].name; i++)
