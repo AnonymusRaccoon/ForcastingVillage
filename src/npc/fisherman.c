@@ -29,8 +29,9 @@ fishes with\na strange ability:", NULL);
     dialog_add_line(dialog, "Fisherman", "they can throw a powerful Water\n\
 Jet at their enemies.", NULL);
     dialog_add_line(dialog, "Fisherman", "This kind of fish seems \
-to come from the\nsource of the river, something must be there.", NULL);
-    dialog_add_line(dialog, "Fisherman", "You should check it out!", NULL);
+to come\nfrom thesource of the river.", NULL);
+    dialog_add_line(dialog, "Fisherman", "Something must be there.\n\
+You should check it out!", NULL);
     dialog_add_line(dialog, "Fisherman", "If you pass nearby Mia, tell her\n\
 that I will show up at...", NULL);
     dialog_add_line(dialog, "Fisherman", "her house for dinner tonight.", NULL);
