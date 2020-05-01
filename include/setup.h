@@ -64,9 +64,13 @@ void enemy_attack(gc_engine *engine, gc_entity *from, gc_entity *enemy);
 void load_attacks(gc_scene *scene);
 
 
+void mia_setup(gc_engine *engine);
 bool mia_heal(gc_engine *engine, gc_entity *entity, \
 gc_vector2 pos, enum gc_mousekeys key);
-void mia_setup(gc_engine *engine);
+bool mia_save(gc_engine *engine, gc_entity *entity, \
+gc_vector2 pos, enum gc_mousekeys key);
+bool mia_fish(gc_engine *engine, gc_entity *entity, \
+gc_vector2 pos, enum gc_mousekeys key);
 
-    void load_data(gc_scene *scene, const gc_data *datas);
+void load_data(gc_scene *scene, const gc_data *datas);
 extern const struct gc_data game_data[];

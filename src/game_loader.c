@@ -53,6 +53,8 @@ const struct callback callbacks[] = {
 
 const struct gc_data game_data[] = {
     {"input", "mia_heal", &mia_heal, NULL},
+    {"input", "mia_save", &mia_save, NULL},
+    {"input", "mia_fish", &mia_fish, NULL},
     {"dialog_callback", "mia_setup", &mia_setup, NULL},
     {NULL, NULL, NULL, NULL}
 };
