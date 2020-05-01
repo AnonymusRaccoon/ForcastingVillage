@@ -79,17 +79,20 @@ bool dialog_parse_inputs(struct dialog_line *txt, gc_scene *scene, node *n)
 struct dialog_line *dialog_parse_text(gc_scene *scene, node *n)
 {
     struct dialog_line *txt = malloc(sizeof(struct dialog_line));
-    char *callback;
+    char *clb;
 
     if (!txt)
         return (NULL);
     txt->name = my_strdup(n->name);
     txt->text = xml_getproperty(n, "line");
     txt->input_count = xml_getchildcount_filtered(n, "input");
-    callback = xml_gettempprop(n, "callback");
-    txt->callback = scene->get_data(scene, "dialog_callback", callback);
-    if (callback && !txt->callback)
-        my_printf("Couldn't find an callback with the name: %s.\n", callback);
+    clb = xml_gettempprop(n, "clb");
+    if (clb) {
+        txt->callback = scene->get_data(scene, "dialog_callback", clb);
+        if (!txt->callback)
+            my_printf("Couldn't find an clb with the name: %s.\n", clb);
+    } else
+        txt->callback = NULL;
     txt->inputs = NULL;
     if (txt->input_count == 0)
         return (txt);

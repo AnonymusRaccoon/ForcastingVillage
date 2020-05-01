@@ -42,7 +42,8 @@ SRC = 	src/main.c \
 	src/player_utilities.c \
 	src/systems/inventory.c \
 	src/systems/game_over.c \
-	src/npc/mia.c
+	src/npc/mia.c \
+	src/npc/fisherman.c
 
 OBJ = $(SRC:%.c=%.o)
 

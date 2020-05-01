@@ -33,3 +33,10 @@ struct dialog_input *inputs)
     this->text[count + 1] = NULL;
     return (line);
 }
+
+struct dialog_holder *dialog_get_current(gc_engine *engine)
+{
+    struct dialog_manager *manager = GETSYS(engine, dialog_manager);
+
+    return (manager->current_dialog);
+}
