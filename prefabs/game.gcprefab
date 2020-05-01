@@ -151,6 +151,7 @@
         <sprite name="sage" src="assets/sprites/npc/sage.png" />
         <sprite name="fisherman" src="assets/sprites/npc/fisherman.png" />
         <sprite name="smith" src="assets/sprites/npc/smith.png" />
+        <sprite name="lumberjack" src="assets/sprites/npc/lumberjack.png" />
 
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" spawn_rate="17%" />
@@ -357,6 +358,28 @@
            <map_linker x="43" y="48" centered="true" />
            <dialog_holder x="42" y="48" tile_texture="npc_interact">
                 <Paul line="Still and always that \nshitty weather !" />
+           </dialog_holder>
+        </gc_entity>
+
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="70" y="90" />
+           </transform_component>
+           <renderer src="lumberjack">
+                <Rect height="32" width="24" top="64" left="24" />
+           </renderer>
+           <map_linker x="28" y="29" centered="true" />
+           <dialog_holder x="28" y="28" tile_texture="npc_interact">
+                <Lumberjack line="Hello my friend,\nyou must be thinking:" />
+                <Lumberjack line="'How can one man chop\nthat much wood?'" />
+                <Lumberjack line="Well, you're looking at the best\nlumberjack in the whole world." />
+                <Lumberjack line="You want me to teach you\neverything I know ?">
+                    <input text="Yes" click="lumberjack_yes" />
+                    <input text="Of course" click="lumberjack_yes" />
+                    <input text="No" />
+                    <input text="Bye" />
+                </Lumberjack>
            </dialog_holder>
         </gc_entity>
 
