@@ -231,7 +231,7 @@
                 <Mia line="Do you want something?" >
                     <input text="Heal me" click="mia_heal" />
                     <input text="Save game" click="mia_save" />
-                    <input text="Fisherman" click="mia_fisherman" />
+                    <input text="Message" click="mia_fish" />
                     <input text="Bye" />
                 </Mia>
            </dialog_holder>

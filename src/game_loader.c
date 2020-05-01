@@ -28,6 +28,8 @@
 #include "components/xp_component.h"
 #include "systems/game_over.h"
 #include <malloc.h>
+#include <time.h>
+#include <stdlib.h>
 
 const struct callback callbacks[] = {
     {"start_button", &start_button},
@@ -53,6 +55,8 @@ const struct callback callbacks[] = {
 
 const struct gc_data game_data[] = {
     {"input", "mia_heal", &mia_heal, NULL},
+    {"input", "mia_save", &mia_save, NULL},
+    {"input", "mia_fish", &mia_fish, NULL},
     {"dialog_callback", "mia_setup", &mia_setup, NULL},
     {NULL, NULL, NULL, NULL}
 };
@@ -164,6 +168,7 @@ int start_game(bool map_editor)
     gc_engine *engine = engine_create();
     sfClock *clock = sfClock_create();
 
+    srand((unsigned int)time(NULL));
     if (!engine || engine_use_sfml(engine, "Forecasting village", 60) < 0)
         return (ERROR);
     if (create_game_scene(engine, map_editor) < 0)

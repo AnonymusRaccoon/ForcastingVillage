@@ -51,9 +51,11 @@ float dtime)
 static void ctr(void *system, va_list list)
 {
     gc_engine *engine = va_arg(list, gc_engine *);
-
+    struct game_manager_system *this = system;
 
     engine->add_event_listener(engine, "key_pressed", &key_pressed);
+    this->has_message = false;
+    this->is_inventory = false;
 }
 
 static void dtr(void *system, gc_engine *engine)
@@ -63,7 +65,7 @@ static void dtr(void *system, gc_engine *engine)
 
 const struct game_manager_system game_manager_system = {
 	base : {
-		name: "game_cycle",
+		name: "game_manager_system",
 		component_name: "game_manager",
 		size: sizeof(struct game_manager_system),
 		ctr: &ctr,

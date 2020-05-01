@@ -66,7 +66,10 @@ bool dialog_parse_inputs(struct dialog_line *txt, gc_scene *scene, node *n)
     for (n = n->child; n; n = n->next) {
         txt->inputs[i].text = xml_getproperty(n, "text");
         click = xml_gettempprop(n, "click");
-        txt->inputs[i].callback = scene->get_data(scene, "input", click);
+        if (click)
+            txt->inputs[i].callback = scene->get_data(scene, "input", click);
+        else
+            txt->inputs[i].callback = NULL;
         if (!txt->inputs[i++].callback && click)
             my_printf("Couldn't find an input with the name: %s.\n", click);
     }

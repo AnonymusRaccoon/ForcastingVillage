@@ -13,6 +13,7 @@
 struct game_manager_system {
 	gc_system base;
 	bool is_inventory;
+	bool has_message;
 };
 
 const struct game_manager_system game_manager_system;
