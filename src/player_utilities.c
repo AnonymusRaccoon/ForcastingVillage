@@ -11,10 +11,15 @@
 
 void set_combat_player(gc_engine *engine, gc_entity *player, gc_entity *cbt)
 {
-	struct health_component *main = GETCMP(player, health_component);
-	struct health_component *combat = GETCMP(cbt, health_component);
-    struct combat_manager *this = GETSYS(engine, combat_manager);
+	struct health_component *main;
+	struct health_component *combat;
+    struct combat_manager *this;
 
+    if (!engine || !player || !cbt)
+		return;
+	main = GETCMP(player, health_component);
+	combat = GETCMP(cbt, health_component);
+	this = GETSYS(engine, combat_manager);
     this->last_attack = NULL;
     this->last_damage = 0;
 	if (!main || !combat)
