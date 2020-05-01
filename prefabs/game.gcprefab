@@ -146,6 +146,7 @@
         <sprite name="mayor" src="assets/sprites/npc/mayor.png" />
         <sprite name="mia" src="assets/sprites/npc/mia.png" />
         <sprite name="fisherman" src="assets/sprites/npc/fisherman.png" />
+        <sprite name="smith" src="assets/sprites/npc/smith.png" />
 
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" spawn_rate="17%" />
@@ -254,6 +255,27 @@
                     <input text="No" />
                     <input text="Bye" />
                 </Fisherman>
+           </dialog_holder>
+        </gc_entity>
+
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="70" y="90" />
+           </transform_component>
+           <renderer src="smith">
+                <Rect height="32" width="24" top="64" left="24" />
+           </renderer>
+           <map_linker x="56" y="35" centered="true" />
+           <dialog_holder x="56" y="34" tile_texture="npc_interact">
+                <Smith line="Hello there, yeah even with this\nweather I must craft shields." />
+                <Smith line="Powerful foes might appear more\noften with this rude weather."/>
+                <Smith line="I heard that you are here\nto help us. That's nice of you."/>
+                <Smith line="I'll tell you a secret that might\nhelp you. A long time ago..."/>
+                <Smith line="I created a perfect shield that \nallowed the user to regain life."/>
+                <Smith line="I placed it in a chest at the top\nof the mountain since I am..."/>
+                <Smith line="the only one to go here." />
+                <Smith line="I give this shield to you,\nI feel like you are worthy."/>
            </dialog_holder>
         </gc_entity>
 
