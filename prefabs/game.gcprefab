@@ -184,7 +184,7 @@
            <renderer src="farmer1">
                 <Rect height="32" width="24" top="64" left="24" />
            </renderer>
-           <map_linker x="60" y="20" />
+           <map_linker x="60" y="20" centered="true" />
            <dialog_holder x="60" y="19" tile_texture="npc_interact">
                 <Farmer line="We are in trouble, our dear village is\nunder constant rain! Please help us."/>
                 <Farmer line="Furthermore, monsters keep \ncoming to the village."/>
@@ -201,7 +201,7 @@
            <renderer src="mayor">
                 <Rect height="32" width="24" top="64" left="24" />
            </renderer>
-           <map_linker x="41" y="30" />
+           <map_linker x="41" y="30" centered="true" />
            <dialog_holder x="41" y="29" tile_texture="npc_interact">
                 <Mayor line="A HERO! Are you here to\nsave us?">
                     <input text="Yes" />
@@ -226,7 +226,7 @@
            <renderer src="mia">
                 <Rect height="32" width="24" top="64" left="24" />
            </renderer>
-           <map_linker x="23" y="37" />
+           <map_linker x="23" y="37" centered="true" />
            <dialog_holder x="23" y="36" tile_texture="npc_interact">
                 <Mia line="Oh, Hero! I'm grateful \nfor your visit." callback="mia_setup" />
                 <Mia line="Do you want something?" >
@@ -246,8 +246,8 @@
            <renderer src="fisherman">
                 <Rect height="32" width="24" top="64" left="24" />
            </renderer>
-           <map_linker x="15" y="51" />
-           <dialog_holder x="15" y="50" tile_texture="npc_interact">
+           <map_linker x="17" y="49" centered="true" />
+           <dialog_holder x="17" y="48" tile_texture="npc_interact">
                 <Fisherman line="Hello dear hero!\nI caught some fish for you." />
                 <Fisherman line="Do you want some?" callback="fisherman_setup" >
                     <input text="Yes" click="fisherman_next" />
