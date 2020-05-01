@@ -266,8 +266,8 @@
            <renderer src="sage">
                 <Rect height="32" width="24" top="64" left="24" />
            </renderer>
-           <map_linker x="39" y="30" centered="true" />
-           <dialog_holder x="39" y="29" tile_texture="npc_interact">
+           <map_linker x="46" y="42" centered="true" />
+           <dialog_holder x="46" y="41" tile_texture="npc_interact">
                 <Sage line="Nice to meet you !" />
                 <Sage line="I will explain to you the legends\n and secrets of this village" />
                 <Sage line="There are 4 legendary items, \n one for each attack" />
