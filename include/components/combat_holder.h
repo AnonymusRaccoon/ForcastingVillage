@@ -14,7 +14,6 @@
 struct combat_holder
 {
     gc_component base;
-    char *name;
 };
 
 extern const struct combat_holder combat_holder;

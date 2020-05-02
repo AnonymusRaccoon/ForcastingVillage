@@ -10,17 +10,11 @@
 
 static void ctr(void *component, va_list args)
 {
-    struct combat_holder *cmp = component;
-
-    cmp->name = va_arg(args, char *);
 }
 
 static void fdctr(gc_entity *entity, gc_scene *scene, \
 void *component, node *n)
 {
-    struct combat_holder *cmp = component;
-
-    cmp->name = xml_getproperty(n, "name");
 }
 
 static void dtr(void *component)

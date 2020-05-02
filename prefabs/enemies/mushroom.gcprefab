@@ -8,8 +8,7 @@
             <Rect height="auto" width="auto" top="0" left="0" />
         </renderer>
         <fixed_to_cam x="75%" y="20%" />
-        <combat_holder name="mushroom" />
-        <attack_component>
+        <attack_component name="The Mushroom">
             <attack name="Spore attack"/>
         </attack_component>
         <health_component max_health="13"/>

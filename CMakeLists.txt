@@ -291,14 +291,40 @@ add_executable(my_rpg
         include/components/player_component.h
         src/enemy_dataloader.c
         include/enemy.h
-        src/components/combat_holder.c
         include/components/combat_holder.h
         src/components/dialog_methods.c
         src/components/attack_component.c
         include/components/attack_component.h
         src/systems/combat_methods.c
         src/combat/attacks.c
-        src/player_utilities.c include/player_utilities.h src/systems/inventory.c include/systems/inventory.h src/systems/game_over.c include/systems/game_over.h src/npc/mia.c lib/gamacon/src/scene/scene_constructor.c src/npc/fisherman.c src/npc/lumberjack.c src/npc/smith.c src/components/particule_component.c include/components/particule_component.h src/systems/particule_system.c include/systems/particule_system.h)
+        src/player_utilities.c
+        include/player_utilities.h
+        include/systems/inventory.h
+        include/systems/game_over.h
+        src/npc/mia.c
+        lib/gamacon/src/scene/scene_constructor.c
+        src/npc/fisherman.c
+        src/npc/lumberjack.c
+        src/npc/smith.c
+        src/components/particule_component.c
+        include/components/particule_component.h
+        src/systems/particule_system.c
+        include/systems/particule_system.h
+        src/player_utilities.c
+        include/player_utilities.h
+        src/inventory.c
+        include/systems/inventory.h
+        src/game_over.c
+        include/systems/game_over.h
+        src/npc/mia.c
+        lib/gamacon/src/scene/scene_constructor.c
+        src/npc/fisherman.c
+        src/npc/lumberjack.c
+        src/npc/smith.c
+        src/npc/mage.c
+        src/combat/boss.c
+        src/components/combat_holder.c
+)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 

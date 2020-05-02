@@ -21,6 +21,7 @@ typedef struct attack_holder {
 struct attack_component {
     gc_component base;
     attack_holder *attacks;
+    char *name;
 };
 
 extern const struct attack_component attack_component;

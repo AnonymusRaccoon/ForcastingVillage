@@ -65,6 +65,8 @@ const struct gc_data game_data[] = {
     {"dialog_callback", "fisherman_chest", &fisherman_chest, NULL},
     {"input", "lumberjack_yes", &lumberjack_yes, NULL},
     {"dialog_callback", "smith_chest", &smith_chest, NULL},
+    {"dialog_callback", "mage_give", &mage_give, NULL},
+    {"close_callback", "boss_start", &boss_start, NULL},
     {NULL, NULL, NULL, NULL}
 };
 
@@ -92,7 +94,8 @@ const struct gc_data attacks[] = {
     {"attack", "Spinning roots", &enemy_attack, NULL},
     {"attack", "Hypnosis", &enemy_attack, NULL},
     {"attack", "Water gun", &enemy_attack, NULL},
-    {NULL, NULL, NULL,                         NULL}
+    {"attack", "Charge", &enemy_attack, NULL},
+    {NULL, NULL, NULL, NULL}
 };
 
 void load_data(gc_scene *scene, const gc_data *datas)

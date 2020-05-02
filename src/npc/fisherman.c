@@ -9,7 +9,7 @@
 #include "systems/game_manager_system.h"
 #include "components/player_component.h"
 #include "engine.h"
-
+#include "setup.h"
 
 void fisherman_setup(gc_engine *engine)
 {
@@ -58,5 +58,6 @@ gc_vector2 pos, enum gc_mousekeys key)
     else
         dialog_add_line(dialog, "", "You found the water jet upgrade!", NULL);
     inv->inventory_upgrades[1] = true;
+    check_for_boss(engine);
     return (true);
 }

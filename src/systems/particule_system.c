@@ -11,6 +11,7 @@
 #include "systems/sfml_renderer_system.h"
 #include "sfml_renderer.h"
 #include "components/particule_component.h"
+#include "map_linker.h"
 #include "system.h"
 
 void create_particule(struct particule *particule, int lifetime, \
@@ -48,6 +49,7 @@ float dtime)
 
 	if (!ml || !tc || !cmp)
 		return;
+	cmp->texture = ml->tile->texture;
 	for (int i = 0; i < cmp->nb_max_particules; i++)
 		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
 	for (int i = 0; i < cmp->nb_max_particules; i++) {

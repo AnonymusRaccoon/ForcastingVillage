@@ -6,6 +6,7 @@
 */
 
 #include <stdbool.h>
+#include <components/controllable_component.h>
 #include "engine.h"
 #include "components/health_component.h"
 #include "my.h"
@@ -19,6 +20,7 @@ enum gc_mousekeys key)
 	gc_entity *player = scene->get_entity(scene, 50);
 	struct health_component *hc;
 
+	controllable_set_can_move(scene, true);
 	if (!player)
 		return (true);
 	hc = GETCMP(player, health_component);
