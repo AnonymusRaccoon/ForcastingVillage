@@ -61,6 +61,7 @@ const struct gc_data game_data[] = {
     {"input", "fisherman_next", &fisherman_next, NULL},
     {"dialog_callback", "fisherman_setup", &fisherman_setup, NULL},
     {"input", "lumberjack_yes", &lumberjack_yes, NULL},
+    {"dialog_callback", "smith_chest", &smith_chest, NULL},
     {NULL, NULL, NULL, NULL}
 };
 
