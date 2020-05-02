@@ -39,5 +39,6 @@
        <xp_component xp="20"/>
        <health_component max_health="25"/>
        <player_component fight_rate="5%" />
+       <particule_component type="1" nb_particules_max="5" lifetime="60" />
    </gc_entity>
 </gc_entities>

@@ -16,6 +16,6 @@ struct game_manager_system {
 	bool has_message;
 };
 
-const struct game_manager_system game_manager_system;
+extern const struct game_manager_system game_manager_system;
 
 #endif //_MAP_MOVEMENT_SYSTEM_H__
