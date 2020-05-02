@@ -101,7 +101,7 @@ static void dtr(void *system, gc_engine *engine)
 const struct combat_manager combat_manager = {
     base: {
         name: "combat_manager",
-        component_name: "combat_holder",
+        component_name: "attack_component",
         size: sizeof(struct combat_manager),
         ctr: &ctr,
         dtr: &dtr,

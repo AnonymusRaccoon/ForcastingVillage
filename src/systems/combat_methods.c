@@ -156,7 +156,7 @@ gc_scene *scene, gc_engine *engine)
         return;
     }
     this->next_enemy_attack = &enemy_attack->attacks[random() % count];
-    snprintf(str, 150, "%s uses attack %s.", "The bee", \
+    snprintf(str, 150, "%s uses %s.", enemy_attack->name, \
 this->next_enemy_attack->name);
     if ((line = dialog_add_line(dialog, NULL, str, NULL)))
         line->callback = &defend_callback;

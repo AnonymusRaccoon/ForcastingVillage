@@ -2,14 +2,13 @@
     <gc_entity>
         <transform_component>
             <Position x="0" y="0" />
-            <Size x="100" y="100" />
+            <Size x="300" y="300" />
         </transform_component>
         <renderer src="t-rex">
             <Rect height="77" width="94" top="0" left="0" />
         </renderer>
         <fixed_to_cam x="75%" y="20%" />
-        <combat_holder name="T-Rex" />
-        <attack_component>
+        <attack_component name="The T-Rex">
             <attack name="Charge"/>
         </attack_component>
         <health_component max_health="50"/>

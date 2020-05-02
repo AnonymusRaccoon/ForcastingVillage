@@ -14,6 +14,7 @@ static void ctr(void *component, va_list args)
     struct attack_component *cmp = (struct attack_component *)component;
 
     cmp->attacks = va_arg(args, attack_holder *);
+    cmp->name = va_arg(args, char *);
 }
 
 static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
@@ -22,6 +23,7 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     int i = 0;
     char *name;
 
+    cmp->name = xml_getproperty(n, "name");
     cmp->attacks = malloc(sizeof(attack_holder) * xml_getchildcount(n));
     if (!cmp->attacks)
         return;

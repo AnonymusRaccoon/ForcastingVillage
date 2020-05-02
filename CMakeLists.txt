@@ -291,7 +291,6 @@ add_executable(my_rpg
         include/components/player_component.h
         src/enemy_dataloader.c
         include/enemy.h
-        src/components/combat_holder.c
         include/components/combat_holder.h
         src/components/dialog_methods.c
         src/components/attack_component.c
