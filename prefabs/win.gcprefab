@@ -1,0 +1,6 @@
+<gc_entities>
+    <panel src="panel" x="50%" y="55%" width="50%" height="70%" tag="win" />
+    <text text="VICTORY" x="50%" y="30%" resize="false" tag="win"/>
+    <text text="You got all upgrades\nand saved the village!\nCongratulation" x="50%" y="47%" width="30%" />
+    <button text="Back to menu" x="50%" y="75s%" click="goto_main_menu" color="black" width="30%" height="20%" resize="false" tag="win" />
+</gc_entities>

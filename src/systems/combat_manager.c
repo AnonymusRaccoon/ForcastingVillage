@@ -41,16 +41,19 @@ void combat_end(gc_engine *engine, bool has_won)
     if (!this->current_enemy || !player || ! player_combat || !dialog)
         return;
     set_combat_player(engine, player_combat, player);
-    this->current_enemy = NULL;
-    controllable_set_can_move(this->game_scene, true);
     engine->change_scene(engine, this->game_scene);
-    engine->trigger_event(engine, "combat_ended", this->current_enemy, has_won);
     this->game_scene = NULL;
     this->state = ATTACK;
     dialog->dialog_id = -1;
     dialog->input_id = -1;
-    if (!has_won)
+    if (!has_won) {
+        controllable_set_can_move(engine->scene, false);
         prefab_load(engine, "prefabs/game_over.gcprefab");
+    } else if (!my_strcmp(this->current_enemy->name, "t-rex")) {
+        controllable_set_can_move(engine->scene, false);
+        prefab_load(engine, "prefabs/win.gcprefab");
+    }
+    this->current_enemy = NULL;
 }
 
 static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \

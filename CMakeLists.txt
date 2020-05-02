@@ -299,9 +299,9 @@ add_executable(my_rpg
         src/combat/attacks.c
         src/player_utilities.c
         include/player_utilities.h
-        src/systems/inventory.c
+        src/inventory.c
         include/systems/inventory.h
-        src/systems/game_over.c
+        src/game_over.c
         include/systems/game_over.h
         src/npc/mia.c
         lib/gamacon/src/scene/scene_constructor.c
