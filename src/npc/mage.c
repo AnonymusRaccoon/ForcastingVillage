@@ -8,6 +8,7 @@
 #include "components/dialog_holder.h"
 #include "components/player_component.h"
 #include "engine.h"
+#include "setup.h"
 
 void mage_give(gc_engine *engine)
 {
@@ -22,6 +23,7 @@ void mage_give(gc_engine *engine)
         return;
     if (!inv->inventory_upgrades[1])
         dialog_add_line(dialog, "", "You got the fireball upgrade!", NULL);
+    inv->inventory_upgrades[0] = true;
+    check_for_boss(engine);
     dialog->text[4] = NULL;
-    inv->inventory_upgrades[1] = true;
 }

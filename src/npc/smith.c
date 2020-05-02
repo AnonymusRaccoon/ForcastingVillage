@@ -8,6 +8,7 @@
 #include "components/player_component.h"
 #include "components/dialog_holder.h"
 #include "engine.h"
+#include "setup.h"
 
 bool smith_chest(gc_engine *engine, gc_entity *entity, \
 gc_vector2 pos, enum gc_mousekeys key)
@@ -27,5 +28,6 @@ gc_vector2 pos, enum gc_mousekeys key)
     else
         dialog_add_line(dialog, NULL, "You found the shield upgrade!", NULL);
     inv->inventory_upgrades[3] = true;
+    check_for_boss(engine);
     return (true);
 }

@@ -29,6 +29,7 @@ struct dialog_holder {
     bool single_usage;
     bool has_seen;
     struct tile *tile;
+    void (*close_callback)(gc_engine *engine);
 };
 
 const struct dialog_holder dialog_holder;

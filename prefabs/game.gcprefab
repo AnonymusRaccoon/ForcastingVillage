@@ -156,8 +156,10 @@
         <sprite name="smith" src="assets/sprites/npc/smith.png" />
         <sprite name="lumberjack" src="assets/sprites/npc/lumberjack.png" />
         <sprite name="mage" src="assets/sprites/npc/mage.png" />
+        <sprite name="t-rex" src="assets/sprites/t-rex.png" />
 
         <enemies>
+            <enemy name="t-rex" src="prefabs/enemies/t-rex.gcprefab" spawn_rate="0%"/>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" spawn_rate="17%" />
             <enemy name="mushroom" src="prefabs/enemies/mushroom.gcprefab" spawn_rate="17%" />
             <enemy name="turnipor" src="prefabs/enemies/turnipor.gcprefab" spawn_rate="17%"/>

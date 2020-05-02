@@ -108,9 +108,7 @@ void dialog_next(gc_engine *engine)
     gc_entity *entity = scene->get_entity(scene, 50);
     gc_entity *holder_name;
 
-    if (!entity)
-        return;
-    if (this->dialog_id == -1 && !load_dialog(this, engine, entity))
+    if (!entity || this->dialog_id == -1 && !load_dialog(this, engine, entity))
         return;
     if (this->input_id >= 0)
         run_input_func(this, engine);
@@ -124,4 +122,6 @@ holder_name, engine) && handle_input(engine, this)))
     this->dialog_id = -1;
     controllable_set_can_move(scene, true);
     engine->trigger_event(engine, "dialog_ended");
+    if (this->current_dialog->close_callback)
+        this->current_dialog->close_callback(engine);
 }
