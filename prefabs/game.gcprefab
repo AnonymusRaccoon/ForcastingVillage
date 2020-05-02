@@ -121,6 +121,8 @@
         <sprite name="item_rock_2" src="assets/sprites/items/generic-rpg-rock05.png" />
         <sprite name="chest" src="assets/sprites/items/generic-rpg-treasure-closed.png" />
 
+        <sprite name="npc_interact" src="assets/tiles/interaction_tile.png" />
+
 
         <sprite name="empty_slot" src="assets/sprites/inventory/empty_48x48.png" />
         <sprite name="slot_1" src="assets/sprites/inventory/fireball_upgrade.png" />
@@ -305,7 +307,7 @@
                 <Sage line="This weapon makes your \nUppercut attack stronger" />
 
                 <Sage line="The fourth and final item \nis the HERO shield" />
-                <Sage line="he's the twin shield of \nthe well konwn hylian shield" />
+                <Sage line="he's the twin shield of \nthe well known hylian shield" />
                 <Sage line="This weapon makes your \nShield defence stronger" />
            </dialog_holder>
         </gc_entity>
