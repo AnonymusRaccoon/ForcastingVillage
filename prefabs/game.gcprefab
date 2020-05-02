@@ -264,6 +264,18 @@
            </dialog_holder>
         </gc_entity>
 
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="50" y="50" />
+           </transform_component>
+           <renderer src="chest"/>
+           <map_linker x="49" y="56" centered="true" />
+           <dialog_holder x="48" y="56" tile_texture="npc_interact">
+                <Chest line="You found a chest." callback="fisherman_chest" />
+           </dialog_holder>
+        </gc_entity>
+
 		<gc_entity>
            <transform_component>
                <Position x="0" y="0" />

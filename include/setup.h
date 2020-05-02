@@ -75,6 +75,8 @@ gc_vector2 pos, enum gc_mousekeys key);
 void fisherman_setup(gc_engine *engine);
 bool fisherman_next(gc_engine *engine, gc_entity *entity, \
 gc_vector2 pos, enum gc_mousekeys key);
+bool fisherman_chest(gc_engine *engine, gc_entity *entity, \
+gc_vector2 pos, enum gc_mousekeys key);
 
 bool lumberjack_yes(gc_engine *engine, gc_entity *entity, \
 gc_vector2 pos, enum gc_mousekeys key);

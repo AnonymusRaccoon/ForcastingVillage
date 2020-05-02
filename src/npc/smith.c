@@ -5,8 +5,8 @@
 ** smith.c
 */
 
-#include <components/player_component.h>
-#include <components/dialog_holder.h>
+#include "components/player_component.h"
+#include "components/dialog_holder.h"
 #include "engine.h"
 
 bool smith_chest(gc_engine *engine, gc_entity *entity, \
