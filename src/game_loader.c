@@ -92,6 +92,7 @@ const struct gc_data attacks[] = {
     {"attack", "Spinning roots", &enemy_attack, NULL},
     {"attack", "Hypnosis", &enemy_attack, NULL},
     {"attack", "Water gun", &enemy_attack, NULL},
+    {"attack", "Charge", &enemy_attack, NULL},
     {NULL, NULL, NULL, NULL}
 };
 
@@ -143,6 +144,7 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &xp_component);
     engine->add_component(engine, &player_component);
     engine->add_component(engine, &attack_component);
+    engine->add_component(engine, &combat_holder);
     engine->add_system(engine, new_system(&combat_manager, engine));
     engine->add_component(engine, &health_component);
     engine->finish_physics(engine);

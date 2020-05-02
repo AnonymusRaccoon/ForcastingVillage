@@ -58,6 +58,7 @@
             </transform_component>
             <map_linker x="0" y="0" />
             <player_component />
+            <combat_holder />
             <attack_component>
                 <attack name="Uppercut" />
                 <attack name="Water jet" />

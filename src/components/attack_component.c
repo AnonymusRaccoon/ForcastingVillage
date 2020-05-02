@@ -24,7 +24,7 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     char *name;
 
     cmp->name = xml_getproperty(n, "name");
-    cmp->attacks = malloc(sizeof(attack_holder) * xml_getchildcount(n));
+    cmp->attacks = malloc(sizeof(attack_holder) * (xml_getchildcount(n) + 1));
     if (!cmp->attacks)
         return;
     for (n = n->child; n; n = n->next) {

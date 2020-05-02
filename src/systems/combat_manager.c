@@ -94,14 +94,16 @@ static void dtr(void *system, gc_engine *engine)
     struct combat_manager *this = system;
 
     engine->remove_event_listener(engine, "entity_moved", &entity_moved);
-    if (this->game_scene)
+    if (this->game_scene) {
         scene_destroy(this->game_scene);
+        this->game_scene = NULL;
+    }
 }
 
 const struct combat_manager combat_manager = {
     base: {
         name: "combat_manager",
-        component_name: "attack_component",
+        component_name: "combat_holder",
         size: sizeof(struct combat_manager),
         ctr: &ctr,
         dtr: &dtr,
