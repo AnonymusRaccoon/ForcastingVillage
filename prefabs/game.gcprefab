@@ -119,6 +119,7 @@
         <sprite name="item_rock_0" src="assets/sprites/items/generic-rpg-rock03.png" />
         <sprite name="item_rock_1" src="assets/sprites/items/generic-rpg-rock04.png" />
         <sprite name="item_rock_2" src="assets/sprites/items/generic-rpg-rock05.png" />
+        <sprite name="chest" src="assets/sprites/items/generic-rpg-treasure-closed.png" />
 
         <sprite name="npc_interact" src="assets/tiles/interaction_tile.png" />
 
@@ -265,6 +266,18 @@
            </dialog_holder>
         </gc_entity>
 
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="50" y="50" />
+           </transform_component>
+           <renderer src="chest"/>
+           <map_linker x="49" y="56" centered="true" />
+           <dialog_holder x="48" y="56" tile_texture="npc_interact">
+                <Chest line="You found a chest." callback="fisherman_chest" />
+           </dialog_holder>
+        </gc_entity>
+
 		<gc_entity>
            <transform_component>
                <Position x="0" y="0" />
@@ -316,6 +329,18 @@
                 <Smith line="I placed it in a chest at the top\nof the mountain since I am..."/>
                 <Smith line="the only one to go here." />
                 <Smith line="I give this shield to you,\nI feel like you are worthy."/>
+           </dialog_holder>
+        </gc_entity>
+
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="50" y="50" />
+           </transform_component>
+           <renderer src="chest" />
+           <map_linker x="63" y="40" centered="true" />
+           <dialog_holder x="62" y="40" tile_texture="npc_interact">
+                <Chest line="You found a chest." callback="smith_chest" />
            </dialog_holder>
         </gc_entity>
 
