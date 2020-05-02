@@ -8479,7 +8479,7 @@
 		<tile x="49" y="53" texture="dirt_top_right_1" rotation="3" />
 		<tile x="49" y="54" texture="grass_top" rotation="0" />
 		<tile x="49" y="55" texture="grass_top" rotation="0" />
-		<tile x="49" y="56" texture="grass_top" rotation="0" solid="true"/>
+		<tile x="49" y="56" texture="grass_top" rotation="0"/>
 		<tile x="49" y="57" texture="water_grass_right_1" rotation="2" solid="true"/>
 		<tile x="49" y="58" texture="water_grass_right_1" rotation="0" solid="true"/>
 		<tile x="49" y="59" texture="grass_top" rotation="0" solid="true"/>
