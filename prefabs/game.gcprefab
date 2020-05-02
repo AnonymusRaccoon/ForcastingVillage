@@ -153,6 +153,7 @@
         <sprite name="fisherman" src="assets/sprites/npc/fisherman.png" />
         <sprite name="smith" src="assets/sprites/npc/smith.png" />
         <sprite name="lumberjack" src="assets/sprites/npc/lumberjack.png" />
+        <sprite name="mage" src="assets/sprites/npc/mage.png" />
 
         <enemies>
             <enemy name="bee" src="prefabs/enemies/bee.gcprefab" spawn_rate="17%" />
@@ -358,6 +359,24 @@
                 <Isabella line="I planned to cook a cake \nto convince him to save us" />
                 <Flora line="Great idea ! I'll bake him \nsome bread he wont resist to it" />
                 <Isabella line="Oh !, I think he's coming \ntoward us let's start our plans" />
+           </dialog_holder>
+        </gc_entity>
+
+        <gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="70" y="90" />
+           </transform_component>
+           <renderer src="mage">
+                <Rect height="32" width="24" top="32" left="48" />
+           </renderer>
+           <map_linker x="43" y="18" centered="true" />
+           <dialog_holder x="42" y="18" tile_texture="npc_interact">
+                <Mage line="I was told that you can\nthrow fireballs." />
+                <Mage line="That's amazing, I love FIREBALLS"/>
+                <Mage line="Do you like fireballs too?"/>
+                <Mage line="Of course you do, every\nrespectable mage like fireballs"/>
+                <Mage line="To help you throw more fireball,\nI'll give you a special item" callback="mage_give" />
            </dialog_holder>
         </gc_entity>
 
