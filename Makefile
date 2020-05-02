@@ -40,8 +40,8 @@ SRC = 	src/main.c \
 	src/enemy_dataloader.c \
 	src/combat/attacks.c \
 	src/player_utilities.c \
-	src/systems/inventory.c \
-	src/systems/game_over.c \
+	src/inventory.c \
+	src/game_over.c \
 	src/npc/mia.c \
 	src/npc/fisherman.c \
 	src/npc/lumberjack.c \

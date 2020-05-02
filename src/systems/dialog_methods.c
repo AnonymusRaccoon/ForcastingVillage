@@ -105,17 +105,17 @@ void dialog_next(gc_engine *engine)
 {
     struct dialog_manager *this = GETSYS(engine, dialog_manager);
     gc_scene *scene = engine->scene;
-    gc_entity *entity = scene->get_entity(scene, 50);
+    gc_entity *ent = scene->get_entity(scene, 50);
     gc_entity *holder_name;
 
-    if (!entity || this->dialog_id == -1 && !load_dialog(this, engine, entity))
+    if (!ent || (this->dialog_id == -1 && !load_dialog(this, engine, ent)))
         return;
     if (this->input_id >= 0)
         run_input_func(this, engine);
     controllable_set_can_move(scene, false);
     holder_name = scene->get_entity(scene, 1336);
-    entity = scene->get_entity(scene, 1337);
-    if (!entity || !holder_name || (!update_dialog(this, entity, \
+    ent = scene->get_entity(scene, 1337);
+    if (!ent || !holder_name || (!update_dialog(this, ent, \
 holder_name, engine) && handle_input(engine, this)))
         return;
     prefab_destroy(scene, this->dialog_id);
