@@ -32,7 +32,7 @@ void resolution_set_txt(gc_entity *entity, gc_engine *engine, \
 enum gc_mousekeys __);
 void framerate_set_text(gc_entity *entity, gc_engine *engine, \
 enum gc_mousekeys __);
-void sound_set_text(gc_entity *entity, gc_engine *engine);
+void sound_set_text(gc_entity *entity, gc_engine *engine, float vol);
 
 bool fullscreen(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __);

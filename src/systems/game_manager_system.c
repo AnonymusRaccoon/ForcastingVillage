@@ -70,6 +70,7 @@ static void ctr(void *system, va_list list)
     engine->add_event_listener(engine, "combat_ended", &combat_ended);
     this->has_message = false;
     this->is_inventory = false;
+    this->game_scene = NULL;
 }
 
 static void dtr(void *system, gc_engine *engine)
