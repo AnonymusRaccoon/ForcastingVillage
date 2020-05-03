@@ -51,7 +51,8 @@ SRC = 	src/main.c \
 	src/components/particule_component.c \
 	src/systems/particule_system.c \
 	src/systems/combat_utility.c \
-	src/systems/particule_methods.c
+	src/systems/particule_methods.c \
+	src/sound.c
 
 OBJ = $(SRC:%.c=%.o)
 

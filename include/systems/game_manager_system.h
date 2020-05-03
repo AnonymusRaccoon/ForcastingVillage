@@ -14,6 +14,7 @@ struct game_manager_system {
 	gc_system base;
 	bool is_inventory;
 	bool has_message;
+	gc_scene *game_scene;
 };
 
 extern const struct game_manager_system game_manager_system;

@@ -11,7 +11,7 @@
     </data>
     <gc_entities>
         <panel src="background" x="50%" y="50%" width="100%" height="100%"/>
-        <panel src="panel" x="50%" y="55%" width="50%" height="50%" />
+        <panel src="panel" x="50%" y="55%" width="50%" height="80%" />
         <text text="Framerate" x="41%" y="40%"/>
         <button x="53%" y="40%" click="framerate_down" sprite="left" width="2%" height="4%" />
         <text x="59%" y="40%" size="18" text_id="52" />
@@ -22,6 +22,10 @@
         <button x="53%" y="60%" click="resolution_down" sprite="left" width="2%" height="4%" />
         <text x="59%" y="60%" size="18" text_id="51" />
         <button x="65%" y="60%" click="resolution_up" sprite="right" width="2%" height="4%" />
-        <button text="Back" x="50%" y="71%" click="goto_main_menu" color="black" width="20%" height="15%"resize="false" />
+        <text text="Volume" x="41%" y="70%"/>
+        <button x="53%" y="70%" click="sound_down" sprite="left" width="2%" height="4%" />
+        <text x="59%" y="70%" size="18" text_id="53" />
+        <button x="65%" y="70%" click="sound_up" sprite="right" width="2%" height="4%" />
+        <button text="Back" x="50%" y="84%" click="goto_main_menu" color="black" width="20%" height="15%"resize="false" />
     </gc_entities>
 </gc_scene>

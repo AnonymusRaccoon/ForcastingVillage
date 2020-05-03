@@ -5,6 +5,8 @@
 ** main_menu
 */
 
+#include <systems/combat_manager.h>
+#include <systems/game_manager_system.h>
 #include "systems/sfml_renderer_system.h"
 #include "components/dialog_holder.h"
 #include "components/dialog_holder.h"
@@ -53,6 +55,8 @@ enum gc_mousekeys __)
         my_printf("The option scene couldn't be loaded.\n");
         return (true);
     }
+    GETSYS(engine, game_manager_system)->game_scene = engine->scene;
+    engine->scene = NULL;
     engine->change_scene(engine, scene);
     entity = engine->scene->get_entity(engine->scene, 50);
     if (rend)
@@ -61,13 +65,18 @@ enum gc_mousekeys __)
     resolution_set_txt(entity, engine, 0);
     entity = engine->scene->get_entity(engine->scene, 52);
     framerate_set_text(entity, engine, 0);
+    entity = engine->scene->get_entity(engine->scene, 53);
+    sound_set_text(entity, engine, -1);
     return (true);
 }
 
 bool goto_main_menu(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __)
 {
-    gc_scene *scene = scene_create(engine, "prefabs/mainmenu.gcprefab");
+    gc_scene *scene = GETSYS(engine, game_manager_system)->game_scene;
+
+    if (!scene)
+        scene = scene_create(engine, "prefabs/mainmenu.gcprefab");
     if (!scene) {
         engine->should_close = true;
         my_printf("The option scene couldn't be loaded.\n");
