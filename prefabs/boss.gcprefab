@@ -7,7 +7,7 @@
 	    <renderer src="t-rex">
              <Rect height="77" width="94" top="0" left="0" />
         </renderer>
-        <map_linker x="36" y="27" solid="false" centered="true"/>
+        <map_linker x="36" y="27" solid="true" centered="true"/>
         <dialog_holder x="37" y="26" tile_texture="npc_interact" close_callback="boss_start">
             <T-Rex line="The time has come 'HERO'." />
         </dialog_holder>
