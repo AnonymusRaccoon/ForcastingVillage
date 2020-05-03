@@ -1,0 +1,89 @@
+/*
+** EPITECH PROJECT, 2020
+** Myrpg
+** File description:
+** sound
+*/
+
+#include "entity.h"
+#include "engine.h"
+#include <malloc.h>
+#include "utility.h"
+#include "components/renderer.h"
+#include "systems/sfml_renderer_system.h"
+#include "limits.h"
+
+static const float sound[] = {
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95,
+    100,
+    INT_MAX
+};
+
+void sound_set_text(gc_entity *entity, gc_engine *engine)
+{
+    struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
+    struct renderer *renderer;
+    char *volume;
+
+    if (!entity)
+        return;
+    renderer = GETCMP(entity, renderer);
+    if (!rend || !renderer || renderer->type != GC_TXTREND)
+        return;
+    volume = tostr(rend->sound);
+    free(((gc_text *)renderer->data)->text);
+    ((gc_text *)renderer->data)->text = volume;
+}
+
+bool sound_down(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __)
+{
+    struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
+    int i = 2;
+
+    if (!rend || rend->is_fullscreen)
+        return (false);
+    while (i > 0 && sound[i] >= rend->sound)
+        i--;
+    sfListener_setGlobalVolume(sound[i]);
+    rend->sound = sound[i];
+    sound_set_text(engine->scene->get_entity(engine->scene, 53), engine);
+    return (true);
+}
+
+bool sound_up(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
+enum gc_mousekeys __)
+{
+    struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
+    int i = 0;
+
+    if (!rend || rend->is_fullscreen)
+        return (false);
+    while (sound[i] <= rend->sound)
+        i++;
+    if (sound[i] == INT_MAX)
+        return (true);
+    sfListener_setGlobalVolume(sound[i]);
+    rend->sound = sound[i];
+    sound_set_text(engine->scene->get_entity(engine->scene, 53), engine);
+    return (true);
+}

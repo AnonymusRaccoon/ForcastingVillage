@@ -41,6 +41,8 @@ const struct callback callbacks[] = {
     {"resolution_up", &resolution_up},
     {"framerate_up", &framerate_up},
     {"framerate_down", &framerate_down},
+    {"sound_down", &sound_down},
+    {"sound_up", &sound_up},
     {"catch", &catch},
     {"toggle_pause", &toggle_pause},
     {"toggle_inventory", &toggle_inventory},
