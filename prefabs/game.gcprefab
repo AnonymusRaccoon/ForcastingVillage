@@ -1,84 +1,24 @@
 <gc_scene>
     <data>
         <sprite name="grass_top" src="assets/tiles/generic-rpg-Slice.png" />
-        <sprite name="dirt_bottom_0" src="assets/tiles/generic-rpg-tile43.png" />
-        <sprite name="dirt_bottom_1" src="assets/tiles/generic-rpg-tile44.png" />
-        <sprite name="dirt_bottom_2" src="assets/tiles/generic-rpg-tile45.png" />
-        <sprite name="dirt_bottom_right_3" src="assets/tiles/generic-rpg-tile46.png" />
-        <sprite name="dirt_left_0" src="assets/tiles/generic-rpg-tile47.png" />
-        <sprite name="dirt_left_1" src="assets/tiles/generic-rpg-tile48.png" />
-        <sprite name="dirt_left_2" src="assets/tiles/generic-rpg-tile49.png" />
-        <sprite name="dirt_left_3" src="assets/tiles/generic-rpg-tile50.png" />
-        <sprite name="dirt_inner_bottom_left" src="assets/tiles/generic-rpg-tile51.png" />
-        <sprite name="dirt_bottom_3" src="assets/tiles/generic-rpg-tile52.png" />
-        <sprite name="dirt_bottom_4" src="assets/tiles/generic-rpg-tile53.png" />
-        <sprite name="dirt_bottom_5" src="assets/tiles/generic-rpg-tile54.png" />
-        <sprite name="dirt_bottom_6" src="assets/tiles/generic-rpg-tile55.png" />
-        <sprite name="dirt_inner_bottom_right_top_left_0" src="assets/tiles/generic-rpg-tile56.png" />
-        <sprite name="dirt_bottom_right_0" src="assets/tiles/generic-rpg-tile57.png" />
-        <sprite name="dirt_inner_bottom_right_top_left_1" src="assets/tiles/generic-rpg-tile58.png" />
-        <sprite name="dirt_top_left_0" src="assets/tiles/generic-rpg-tile59.png" />
-        <sprite name="dirt_top_right_3" src="assets/tiles/generic-rpg-tile60.png" />
-        <sprite name="dirt_bottom_right_1" src="assets/tiles/generic-rpg-tile61.png" />
-        <sprite name="dirt_bottom_right_2" src="assets/tiles/generic-rpg-tile62.png" />
-        <sprite name="dirt_top_12" src="assets/tiles/generic-rpg-tile63.png" />
-        <sprite name="dirt_bottom_7" src="assets/tiles/generic-rpg-tile64.png" />
         <sprite name="water_grass_right_0" src="assets/tiles/generic-rpg-tile65.png" />
         <sprite name="water_grass_right_1" src="assets/tiles/generic-rpg-tile66.png" />
-        <sprite name="water_dirt_right_0" src="assets/tiles/generic-rpg-tile67.png" />
-        <sprite name="water_dirt_right_1" src="assets/tiles/generic-rpg-tile68.png" />
         <sprite name="water_grass_right_2" src="assets/tiles/generic-rpg-tile69.png" />
         <sprite name="grass" src="assets/tiles/generic-rpg-tile70.png" />
         <sprite name="dirt" src="assets/tiles/generic-rpg-tile71.png" />
-        <sprite name="grass_0" src="assets/tiles/generic-rpg-Slice.png" />
-        <sprite name="grass_bottom_0" src="assets/tiles/generic-rpg-tile01.png" />
         <sprite name="dirt_top_0" src="assets/tiles/generic-rpg-tile02.png" />
-        <sprite name="grass_bottom_left_0" src="assets/tiles/generic-rpg-tile03.png" />
         <sprite name="dirt_top_1" src="assets/tiles/generic-rpg-tile04.png" />
-        <sprite name="grass_bottom_1" src="assets/tiles/generic-rpg-tile05.png" />
         <sprite name="dirt_top_2" src="assets/tiles/generic-rpg-tile06.png" />
-        <sprite name="grass_bottom_right_0" src="assets/tiles/generic-rpg-tile07.png" />
-        <sprite name="dirt_top_3" src="assets/tiles/generic-rpg-tile08.png" />
         <sprite name="dirt_inner_top_left" src="assets/tiles/generic-rpg-tile09.png" />
         <sprite name="dirt_left_4" src="assets/tiles/generic-rpg-tile10.png" />
         <sprite name="grass_right_0" src="assets/tiles/generic-rpg-tile11.png" />
-        <sprite name="dirt_left_5" src="assets/tiles/generic-rpg-tile12.png" />
         <sprite name="grass_right_1" src="assets/tiles/generic-rpg-tile13.png" />
-        <sprite name="dirt_left_6" src="assets/tiles/generic-rpg-tile14.png" />
-        <sprite name="grass_right_2" src="assets/tiles/generic-rpg-tile15.png" />
-        <sprite name="dirt_left_7" src="assets/tiles/generic-rpg-tile16.png" />
-        <sprite name="grass_right_3" src="assets/tiles/generic-rpg-tile17.png" />
-        <sprite name="grass_bottom_2" src="assets/tiles/generic-rpg-tile18.png" />
         <sprite name="dirt_top_right_0" src="assets/tiles/generic-rpg-tile19.png" />
-        <sprite name="grass_bottom_3" src="assets/tiles/generic-rpg-tile20.png" />
         <sprite name="dirt_top_5" src="assets/tiles/generic-rpg-tile21.png" />
-        <sprite name="grass_bottom_4" src="assets/tiles/generic-rpg-tile22.png" />
-        <sprite name="dirt_top_6" src="assets/tiles/generic-rpg-tile23.png" />
-        <sprite name="grass_bottom_5" src="assets/tiles/generic-rpg-tile24.png" />
-        <sprite name="dirt_top_7" src="assets/tiles/generic-rpg-tile25.png" />
-        <sprite name="grass_bottom_6" src="assets/tiles/generic-rpg-tile26.png" />
-        <sprite name="dirt_top_8" src="assets/tiles/generic-rpg-tile27.png" />
-        <sprite name="grass_bottom_7" src="assets/tiles/generic-rpg-tile28.png" />
-        <sprite name="dirt_top_9" src="assets/tiles/generic-rpg-tile29.png" />
-        <sprite name="grass_bottom_8" src="assets/tiles/generic-rpg-tile30.png" />
         <sprite name="dirt_top_right_1" src="assets/tiles/generic-rpg-tile31.png" />
-        <sprite name="grass_bottom_left_1" src="assets/tiles/generic-rpg-tile32.png" />
-        <sprite name="dirt_top_right_2" src="assets/tiles/generic-rpg-tile33.png" />
-        <sprite name="grass_left_0" src="assets/tiles/generic-rpg-tile34.png" />
-        <sprite name="dirt_top_10" src="assets/tiles/generic-rpg-tile35.png" />
-        <sprite name="dirt_top_11" src="assets/tiles/generic-rpg-tile37.png" />
-        <sprite name="dirt_bottom_8" src="assets/tiles/generic-rpg-tile39.png" />
-        <sprite name="grass_top_0" src="assets/tiles/generic-rpg-tile40.png" />
-        <sprite name="dirt_bottom_9" src="assets/tiles/generic-rpg-tile41.png" />
-        <sprite name="grass_top_1" src="assets/tiles/generic-rpg-tile42.png" />
-        <sprite name="dirt_bottom_10" src="assets/tiles/generic-rpg-tile43.png" />
         <sprite name="water_top_right" src="assets/tiles/generic-rpg-tile72.png" />
-        <sprite name="waterfall_top_left" src="assets/tiles/generic-rpg-tile-waterfall01.png" />
-        <sprite name="waterfall_top_right" src="assets/tiles/generic-rpg-tile-waterfall02.png" />
         <sprite name="waterfall_bottom_left" src="assets/tiles/generic-rpg-tile-waterfall03.png" />
         <sprite name="waterfall_bottom_right" src="assets/tiles/generic-rpg-tile-waterfall04.png" />
-        <sprite name="water_top" src="assets/tiles/generic-rpg-tile-waterfall06.png" />
-        <sprite name="water_top_right_left" src="assets/tiles/generic-rpg-tile-waterfall07.png" />
         <sprite name="water" src="assets/tiles/generic-rpg-plain-water.png" />
         <sprite name="stone" src="assets/tiles/stone.png" />
 
