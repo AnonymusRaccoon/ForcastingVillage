@@ -7,6 +7,8 @@
 
 #include <components/tag_component.h>
 #include <systems/sfml_renderer_system.h>
+#include <enemy.h>
+#include <components/xp_component.h>
 #include "my.h"
 #include "prefab.h"
 #include "keybindings.h"
@@ -43,9 +45,19 @@ static void key_pressed(gc_engine *engine, va_list args)
     	toggle_inventory(engine);
 }
 
-static void update_entity(gc_engine *engine, void *system, gc_entity *entity, \
-float dtime)
+static void combat_ended(gc_engine *engine, va_list args)
 {
+    struct enemy *enemy = va_arg(args, struct enemy *);
+    bool has_won = va_arg(args, int);
+    gc_entity *player = engine->scene->get_entity(engine->scene, 50);
+    struct xp_component *xp;
+
+    if (!player || !has_won)
+        return;
+    xp = GETCMP(player, xp_component);
+    if (!xp)
+        return;
+    xp_add(xp, engine, 10);
 }
 
 static void ctr(void *system, va_list list)
@@ -54,6 +66,7 @@ static void ctr(void *system, va_list list)
     struct game_manager_system *this = system;
 
     engine->add_event_listener(engine, "key_pressed", &key_pressed);
+    engine->add_event_listener(engine, "combat_ended", &combat_ended);
     this->has_message = false;
     this->is_inventory = false;
 }
@@ -61,6 +74,7 @@ static void ctr(void *system, va_list list)
 static void dtr(void *system, gc_engine *engine)
 {
     engine->remove_event_listener(engine, "key_pressed", &key_pressed);
+    engine->remove_event_listener(engine, "combat_ended", &combat_ended);
 }
 
 const struct game_manager_system game_manager_system = {
@@ -71,7 +85,7 @@ const struct game_manager_system game_manager_system = {
 		ctr: &ctr,
 		dtr: &dtr,
 		check_dependencies: &system_check_dependencies,
-		update_entity: &update_entity,
+		update_entity: NULL,
 		destroy: &system_destroy
 	},
     is_inventory: false

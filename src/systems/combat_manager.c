@@ -38,8 +38,6 @@ void combat_end(gc_engine *engine, bool has_won)
     gc_entity *player = this->game_scene->get_entity(this->game_scene, 50);
     struct dialog_manager *dialog = GETSYS(engine, dialog_manager);
 
-    if (!this->current_enemy || !player || ! player_combat || !dialog)
-        return;
     set_combat_player(engine, player_combat, player);
     engine->change_scene(engine, this->game_scene);
     this->game_scene = NULL;
@@ -53,6 +51,7 @@ void combat_end(gc_engine *engine, bool has_won)
         controllable_set_can_move(engine->scene, false);
         prefab_load(engine, "prefabs/win.gcprefab");
     }
+    engine->trigger_event(engine, "combat_ended", this->current_enemy, has_won);
     this->current_enemy = NULL;
 }
 
