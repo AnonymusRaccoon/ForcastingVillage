@@ -240,7 +240,7 @@
                 <Rect height="auto" left="0" top="0" width="auto" />
            </renderer>
            <map_linker x="48" y="40" centered="true" />
-           <particule_component type="2" nb_particules_max="10" lifetime="30" texture="smoke_particule" />
+           <particule_component type="2" nb_particules_max="10" lifetime="30" src="smoke_particule" />
         </gc_entity>
 
         <gc_entity>
