@@ -36,8 +36,7 @@ void combat_start(gc_engine *engine, char *enemy_name)
     this->state = ATTACK;
     this->game_scene = engine->scene;
     set_combat_player(engine, player, player_combat);
-    engine->scene = NULL;
-    engine->change_scene(engine, scene);
+    engine->change_scene(engine, scene, false);
     load_attacks(scene);
     dialog_next(engine);
     combat_create_enemy(this, engine, enemy_name);

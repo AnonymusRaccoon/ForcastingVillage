@@ -39,7 +39,7 @@ void combat_end(gc_engine *engine, bool has_won)
     struct dialog_manager *dialog = GETSYS(engine, dialog_manager);
 
     set_combat_player(engine, player_combat, player);
-    engine->change_scene(engine, this->game_scene);
+    engine->change_scene(engine, this->game_scene, true);
     this->game_scene = NULL;
     this->state = ATTACK;
     dialog->dialog_id = -1;

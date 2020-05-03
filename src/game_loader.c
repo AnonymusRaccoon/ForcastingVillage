@@ -173,7 +173,7 @@ int create_game_scene(gc_engine *engine, bool map_editor)
     scene = scene_create(engine, "prefabs/mainmenu.gcprefab");
     if (!scene)
         return (-1);
-    engine->change_scene(engine, scene);
+    engine->change_scene(engine, scene, true);
     return (0);
 }
 

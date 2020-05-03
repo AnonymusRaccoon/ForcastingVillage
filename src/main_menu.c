@@ -32,7 +32,7 @@ enum gc_mousekeys __)
         my_printf("The game scene couldn't be loaded.\n");
         return (true);
     }
-    engine->change_scene(engine, scene);
+    engine->change_scene(engine, scene, true);
     if (prefab_load(engine, "prefabs/player.gcprefab") < 0
     || prefab_load(engine, "prefabs/map_entities.gcprefab") < 0)
         my_printf("Could not load entites.\n");
@@ -56,8 +56,7 @@ enum gc_mousekeys __)
         return (true);
     }
     GETSYS(engine, game_manager_system)->game_scene = engine->scene;
-    engine->scene = NULL;
-    engine->change_scene(engine, scene);
+    engine->change_scene(engine, scene, false);
     entity = engine->scene->get_entity(engine->scene, 50);
     if (rend)
         checkbox_update(engine->scene, entity, rend->is_fullscreen);
@@ -83,7 +82,7 @@ enum gc_mousekeys __)
         my_printf("The option scene couldn't be loaded.\n");
         return (true);
     }
-    engine->change_scene(engine, scene);
+    engine->change_scene(engine, scene, true);
     return (true);
 }
 
