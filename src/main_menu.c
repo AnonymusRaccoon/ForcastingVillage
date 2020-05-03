@@ -25,6 +25,7 @@ enum gc_mousekeys __)
 
     prefab_load(engine, "prefabs/loading.gcprefab");
     engine->game_loop(engine, 0);
+    entity_next_id = 0;
     scene = scene_new(engine);
     load_data(scene, game_data);
     if (!(scene = scene_parse_xml(scene, engine, "prefabs/game.gcprefab"))) {
@@ -40,7 +41,6 @@ enum gc_mousekeys __)
         if (prefab_load(engine, "prefabs/editor_ui.gcprefab") < 0)
             my_printf("Couldn't load the map editor's ui.\n");
     GETSYS(engine, dialog_manager)->dialog_id = -1;
-    entity_next_id = 0;
     return (true);
 }
 
