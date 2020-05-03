@@ -32,16 +32,11 @@ void sound_set_text(gc_entity *entity, gc_engine *engine, float vol)
 bool sound_down(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __)
 {
-    struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
-    int i = 2;
-
-    if (!rend || rend->is_fullscreen)
-        return (false);
-    while (i > 0 && sound[i] >= rend->sound)
-        i--;
-    sfListener_setGlobalVolume(sound[i]);
-    rend->sound = sound[i];
-    sound_set_text(engine->scene->get_entity(engine->scene, 53), engine);
+    float vol = sfListener_getGlobalVolume();
+    
+    vol = MAX(vol - 5, 0);
+    sfListener_setGlobalVolume(vol);
+    sound_set_text(engine->scene->get_entity(engine->scene, 53), engine, vol);
     return (true);
 }
 
