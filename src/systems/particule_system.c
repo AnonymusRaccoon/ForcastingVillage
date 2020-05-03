@@ -25,8 +25,7 @@ void *texture, gc_vector2 pos)
 	particule->sprite->scale = (gc_vector2){0.2, 0.2};
 }
 
-void particule_draw(gc_engine *engine, void *system, \
-gc_entity *entity, float dt)
+void particule_draw(gc_engine *engine, gc_entity *entity, float dt)
 {
 	struct particule_component *pm = GETCMP(entity, particule_component);
 	struct transform_component *tc = GETCMP(entity, transform_component);
@@ -44,9 +43,10 @@ gc_entity *entity, float dt)
 	tc->position = player_pos;
 }
 
-void particule_update_entity(gc_engine *engine, void *system, gc_entity *entity, \
-float dtime)
+static void update_entity(gc_engine *engine, va_list args)
 {
+    gc_entity *entity = va_arg(args, gc_entity *);
+    float dtime = va_arg(args, double);
 	struct map_linker *ml = GETCMP(entity, map_linker);
 	struct particule_component *cmp = GETCMP(entity, particule_component);
 	struct transform_component *tc = GETCMP(entity, transform_component);
@@ -60,21 +60,23 @@ float dtime)
 			create_particule(&cmp->particules[i], cmp->lifetime, cmp->texture, tc->position);
 		}
 	}
-	particule_draw(engine, system, entity, dtime);
+	particule_draw(engine, entity, dtime);
 }
 
-void particule_destroy(void *system, gc_engine *engine)
+void ctr(void *system, va_list args)
 {
-	(void)system;
+    gc_engine *engine = va_arg(args, gc_engine *);
+
+    engine->add_event_listener(engine, "linked_entity_draw",&update_entity);
 }
 
 const struct gc_system particule_system = {
 	name: "particule_system",
 	component_name: "particule_component",
 	size: sizeof(gc_system),
-	ctr: NULL,
+	ctr: &ctr,
 	dtr: NULL,
 	check_dependencies: &system_check_dependencies,
-	update_entity: &particule_update_entity,
-	destroy: &particule_destroy
+	update_entity: NULL,
+	destroy: &system_destroy
 };

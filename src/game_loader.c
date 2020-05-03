@@ -149,7 +149,7 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &combat_holder);
     engine->add_system(engine, new_system(&combat_manager, engine));
     engine->add_component(engine, &health_component);
-    engine->add_system(engine, &particule_system);
+    engine->add_system(engine, new_system(&particule_system, engine));
     engine->add_component(engine, &particule_component);
     engine->finish_physics(engine);
     engine->add_dataloader(engine, "enemies", &enemies_dataloader);
