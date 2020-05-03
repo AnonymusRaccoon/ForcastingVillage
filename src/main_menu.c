@@ -77,6 +77,7 @@ enum gc_mousekeys __)
 
     if (!scene)
         scene = scene_create(engine, "prefabs/mainmenu.gcprefab");
+    GETSYS(engine, game_manager_system)->game_scene = NULL;
     if (!scene) {
         engine->should_close = true;
         my_printf("The option scene couldn't be loaded.\n");
