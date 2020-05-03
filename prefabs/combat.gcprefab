@@ -23,6 +23,8 @@
         <sprite name="evil_seed" src="assets/sprites/Evil_seed.png" />
         <sprite name="flower_ennemy" src="assets/sprites/Flower_ennemy.png" />
         <sprite name="t-rex" src="assets/sprites/t-rex.png" />
+
+        <music src="assets/musics/battle_theme.ogg"/>
     </data>
     <gc_entities>
         <gc_entity>
