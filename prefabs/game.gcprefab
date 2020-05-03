@@ -122,6 +122,8 @@
         <sprite name="chest" src="assets/sprites/items/generic-rpg-treasure-closed.png" />
 
         <sprite name="npc_interact" src="assets/tiles/interaction_tile.png" />
+        <sprite name="firecamp" src="assets/sprites/items/firecamp.png" />
+        <sprite name="smoke_particule" src="assets/sprites/items/smoke_particule.png" />
 
 
         <sprite name="empty_slot" src="assets/sprites/inventory/empty_48x48.png" />
@@ -227,6 +229,18 @@
                 <Mayor line="If foes hurt you, please go\ntalk to Mia." />
                 <Mayor line="She will take care of\nyour wounds for you." />
            </dialog_holder>
+        </gc_entity>
+
+		<gc_entity>
+           <transform_component>
+               <Position x="0" y="0" />
+               <Size x="60" y="60" />
+           </transform_component>
+           <renderer src="firecamp">
+                <Rect height="auto" left="0" top="0" width="auto" />
+           </renderer>
+           <map_linker x="48" y="40" centered="true" />
+           <particule_component type="2" nb_particules_max="10" lifetime="30" texture="smoke_particule" />
         </gc_entity>
 
         <gc_entity>

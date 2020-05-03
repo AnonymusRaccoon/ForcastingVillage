@@ -324,7 +324,7 @@ add_executable(my_rpg
         src/npc/mage.c
         src/combat/boss.c
         src/components/combat_holder.c
-        src/systems/combat_utility.c)
+        src/systems/combat_utility.c src/systems/particule_methods.c)
 
 add_compile_options(-W -Wall -Wextra -Wshadow)
 

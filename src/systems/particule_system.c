@@ -7,67 +7,80 @@
 
 #include "engine.h"
 #include "sprite.h"
-#include "systems/sfml_renderer_system.h"
 #include "sfml_renderer.h"
+#include "components/controllable_component.h"
 #include "components/particule_component.h"
 #include "components/map_linker.h"
+#include "systems/particule_system.h"
 #include "system.h"
+#include <stdlib.h>
 
-void create_particule(struct particule *particule, int lifetime, \
-void *texture, gc_vector2 pos)
+void update_entity_type_one(gc_engine *engine, gc_entity *entity, \
+struct particule_component *cmp, float dtime)
 {
-	if (!particule || !particule->sprite)
+	struct map_linker *ml = GETCMP(entity, map_linker);
+	struct transform_component *tc = GETCMP(entity, transform_component);
+	struct controllable_component *cc = GETCMP(entity, controllable_component);
+
+	if (!ml || !tc || !cmp || !cc)
 		return;
-	particule->lifetime = lifetime;
-	particule->sprite->texture = texture;
-	particule->sprite->pos = pos;
-	particule->sprite->rect = (gc_int_rect){16, 16,0,0};
-	particule->sprite->scale = (gc_vector2){0.2, 0.2};
+	for (int i = 0; i < cmp->nb_max_particules; i++) {
+		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
+		if (!cmp->particules[i].lifetime && \
+(cc->movement_x || cc->movement_y) && \
+(!i || cmp->particules[i - 1].lifetime == cmp->lifetime - 20)) {
+			create_particule(&cmp->particules[i], cmp->lifetime, \
+cmp->texture, tc->position);
+		}
+	}
+	particule_draw(engine, entity, dtime);
 }
 
-void particule_draw(gc_engine *engine, gc_entity *entity, float dt)
+void update_entity_type_two(gc_engine *engine, gc_entity *entity, \
+struct particule_component *cmp, float dtime)
 {
-	struct particule_component *pm = GETCMP(entity, particule_component);
+	struct map_linker *ml = GETCMP(entity, map_linker);
 	struct transform_component *tc = GETCMP(entity, transform_component);
-	gc_vector2 player_pos;
+	gc_vector2 sprite_pos;
 
-	if (!pm || !entity || !tc)
+	if (!ml || !tc || !cmp || !cmp->particules || !cmp->particules[0].sprite)
 		return;
-	player_pos = tc->position;
-	for (int i = 0; i < pm->nb_max_particules; i++) {
-		if (!pm->particules[i].sprite || !pm->particules[i].sprite->texture)
-			continue;
-		tc->position = pm->particules[i].sprite->pos;
-		sfmlrenderer_draw_texture(engine, entity, pm->particules[i].sprite, dt);
+	sprite_pos = (gc_vector2){tc->position.x, tc->position.y + 50};
+	for (int i = 0; i < cmp->nb_max_particules; i++) {
+		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
+		cmp->particules[i].sprite->pos.y += 1;
+		if (!cmp->particules[i].lifetime && \
+(!i || cmp->particules[i - 1].lifetime == cmp->lifetime - 20)) {
+			create_particule(&cmp->particules[i], cmp->lifetime, \
+cmp->texture, sprite_pos);
+		}
 	}
-	tc->position = player_pos;
+	particule_draw(engine, entity, dtime);
 }
 
 static void update_entity(gc_engine *engine, va_list args)
 {
     gc_entity *entity = va_arg(args, gc_entity *);
     float dtime = va_arg(args, double);
-	struct map_linker *ml = GETCMP(entity, map_linker);
 	struct particule_component *cmp = GETCMP(entity, particule_component);
-	struct transform_component *tc = GETCMP(entity, transform_component);
 
-	if (!ml || !tc || !cmp)
+	if (!cmp)
 		return;
-	//ml->tile->texture
-	for (int i = 0; i < cmp->nb_max_particules; i++) {
-		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
-		if (!cmp->particules[i].lifetime) {
-			create_particule(&cmp->particules[i], cmp->lifetime, cmp->texture, tc->position);
-		}
+	switch (cmp->type) {
+	case 1:
+		return (update_entity_type_one(engine, entity, cmp, dtime));
+	case 2:
+		return (update_entity_type_two(engine, entity, cmp, dtime));
+	default:
+		break;
 	}
-	particule_draw(engine, entity, dtime);
 }
 
 void ctr(void *system, va_list args)
 {
     gc_engine *engine = va_arg(args, gc_engine *);
 
-    engine->add_event_listener(engine, "linked_entity_draw",&update_entity);
+    engine->add_event_listener(engine, "linked_entity_draw", &update_entity);
 }
 
 const struct gc_system particule_system = {
