@@ -58,6 +58,7 @@ static void combat_ended(gc_engine *engine, va_list args)
     if (!xp)
         return;
     xp_add(xp, engine, 10);
+    (void)enemy;
 }
 
 static void ctr(void *system, va_list list)
