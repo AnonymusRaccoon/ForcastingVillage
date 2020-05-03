@@ -6,12 +6,11 @@
 */
 
 #include "engine.h"
-#include "renderer.h"
 #include "sprite.h"
 #include "systems/sfml_renderer_system.h"
 #include "sfml_renderer.h"
 #include "components/particule_component.h"
-#include "map_linker.h"
+#include "components/map_linker.h"
 #include "system.h"
 
 void create_particule(struct particule *particule, int lifetime, \

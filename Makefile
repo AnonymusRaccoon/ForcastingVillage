@@ -47,7 +47,9 @@ SRC = 	src/main.c \
 	src/npc/lumberjack.c \
 	src/npc/smith.c \
 	src/npc/mage.c \
-	src/combat/boss.c
+	src/combat/boss.c \
+	src/components/particule_component.c \
+	src/systems/particule_system.c
 
 OBJ = $(SRC:%.c=%.o)
 
