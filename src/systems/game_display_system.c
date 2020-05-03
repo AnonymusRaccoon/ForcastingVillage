@@ -44,7 +44,7 @@ void display_health(gc_scene *scene, struct renderer *rend, bool is_player)
     for (; entities; entities = entities->next) {
         entity = entities->data;
         if ((entity->id == 50 && is_player) || (entity->id != 50 && !is_player))
-			break;
+            break;
     }
     ptr = (is_player) ? str : str_ennemy;
     health_cmp = GETCMP(entity, health_component);
@@ -74,23 +74,23 @@ float dtime)
     struct renderer *rend = GETCMP(entity, renderer);
     gc_scene *scene = engine->scene;
 
-	switch (rend->type) {
-	case GC_TEXTUREREND:
-		if (disp->type == SELECT_TILE_DISPLAY)
-			display_current_texture(scene, rend);
-		if (disp->type >= INVENTORY_SLOT_1 && disp->type <= INVENTORY_SLOT_4)
-			display_inv_slot(scene, rend, disp->type - INVENTORY_SLOT_1 + 1);
-		break;
-	case GC_TXTREND:
-		if (disp->type == XP_DISPLAY)
-			display_current_xp(scene, rend);
-		if (disp->type == HEALTH_DISPLAY)
+    switch (rend->type) {
+    case GC_TEXTUREREND:
+        if (disp->type == SELECT_TILE_DISPLAY)
+            display_current_texture(scene, rend);
+        if (disp->type >= INVENTORY_SLOT_1 && disp->type <= INVENTORY_SLOT_4)
+            display_inv_slot(scene, rend, disp->type - INVENTORY_SLOT_1 + 1);
+        break;
+    case GC_TXTREND:
+        if (disp->type == XP_DISPLAY)
+            display_current_xp(scene, rend);
+        if (disp->type == HEALTH_DISPLAY)
             display_health(scene, rend, true);
-		if (disp->type == HEALTH_DISPLAY_ENNEMY)
+        if (disp->type == HEALTH_DISPLAY_ENNEMY)
             display_health(scene, rend, false);
-	default:
-		break;
-	}
+    default:
+        break;
+    }
 }
 
 static void destroy(void *system, gc_engine *engine)
