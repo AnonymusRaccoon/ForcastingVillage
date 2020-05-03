@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <components/renderer.h>
+#include "components/renderer.h"
 #include "systems/combat_manager.h"
 #include "tile.h"
 #include "prefab.h"
@@ -23,9 +23,7 @@
 void combat_start(gc_engine *engine, char *enemy_name)
 {
     struct combat_manager *this = GETSYS(engine, combat_manager);
-    gc_list *li = engine->scene->get_data(engine->scene, "enemies", NULL);
     gc_scene *scene = scene_create(engine, "prefabs/combat.gcprefab");
-    struct enemy *enemy = NULL;
     gc_entity *player;
     gc_entity *player_combat;
 
@@ -42,30 +40,7 @@ void combat_start(gc_engine *engine, char *enemy_name)
     engine->change_scene(engine, scene);
     load_attacks(scene);
     dialog_next(engine);
-    for (; li; li = li->next) {
-        enemy = li->data;
-        if ((!enemy_name && random() % 100 < enemy->spawn_rate)
-            || (enemy_name && !my_strcmp(enemy_name, enemy->name)))
-            break;
-    }
-    if ((this->current_enemy = enemy))
-        prefab_load(engine, enemy->prefab_src);
-}
-
-bool get_player_and_enemy(gc_scene *sce, gc_entity **player, gc_entity **enemy)
-{
-    gc_list *enemies = sce->get_entity_by_cmp(sce, "attack_component");
-
-    if (enemies && enemies->next && ((gc_entity *)enemies->data)->id == 50) {
-        *player = enemies->data;
-        *enemy = enemies->next->data;
-    } else if (enemies && enemies->next) {
-        *enemy = enemies->data;
-        *player = enemies->next->data;
-    }
-    if (!enemy || !player)
-        return (false);
-    return (true);
+    combat_create_enemy(this, engine, enemy_name);
 }
 
 void attack_callback(gc_engine *engine, int index)
@@ -146,9 +121,8 @@ gc_scene *scene, gc_engine *engine)
     int count;
     struct dialog_line *line;
 
-    if (!get_player_and_enemy(scene, &player, &enemy))
-        return;
-    if (!(enemy_attack = GETCMP(enemy, attack_component)))
+    if (!get_player_and_enemy(scene, &player, &enemy)
+        ||!(enemy_attack = GETCMP(enemy, attack_component)))
         return;
     for (count = 0; enemy_attack->attacks[count].name; count++);
     if (count == 0) {
@@ -156,7 +130,7 @@ gc_scene *scene, gc_engine *engine)
         return;
     }
     this->next_enemy_attack = &enemy_attack->attacks[random() % count];
-    snprintf(str, 150, "%s uses attack %s.", "The bee", \
+    snprintf(str, 150, "%s uses %s.", enemy_attack->name, \
 this->next_enemy_attack->name);
     if ((line = dialog_add_line(dialog, NULL, str, NULL)))
         line->callback = &defend_callback;

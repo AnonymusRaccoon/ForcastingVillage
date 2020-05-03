@@ -27,6 +27,8 @@
 #include "map_editor.h"
 #include "components/xp_component.h"
 #include "systems/game_over.h"
+#include "systems/particule_system.h"
+#include "components/particule_component.h"
 #include <malloc.h>
 #include <time.h>
 #include <stdlib.h>
@@ -62,7 +64,11 @@ const struct gc_data game_data[] = {
     {"dialog_callback", "mia_setup", &mia_setup, NULL},
     {"input", "fisherman_next", &fisherman_next, NULL},
     {"dialog_callback", "fisherman_setup", &fisherman_setup, NULL},
+    {"dialog_callback", "fisherman_chest", &fisherman_chest, NULL},
     {"input", "lumberjack_yes", &lumberjack_yes, NULL},
+    {"dialog_callback", "smith_chest", &smith_chest, NULL},
+    {"dialog_callback", "mage_give", &mage_give, NULL},
+    {"close_callback", "boss_start", &boss_start, NULL},
     {NULL, NULL, NULL, NULL}
 };
 
@@ -90,7 +96,8 @@ const struct gc_data attacks[] = {
     {"attack", "Spinning roots", &enemy_attack, NULL},
     {"attack", "Hypnosis", &enemy_attack, NULL},
     {"attack", "Water gun", &enemy_attack, NULL},
-    {NULL, NULL, NULL,                         NULL}
+    {"attack", "Charge", &enemy_attack, NULL},
+    {NULL, NULL, NULL, NULL}
 };
 
 void load_data(gc_scene *scene, const gc_data *datas)
@@ -144,6 +151,8 @@ int register_customcmps(gc_engine *engine, bool map_editor)
     engine->add_component(engine, &combat_holder);
     engine->add_system(engine, new_system(&combat_manager, engine));
     engine->add_component(engine, &health_component);
+    engine->add_system(engine, new_system(&particule_system, engine));
+    engine->add_component(engine, &particule_component);
     engine->finish_physics(engine);
     engine->add_dataloader(engine, "enemies", &enemies_dataloader);
     for (int i = 0; callbacks[i].func; i++)

@@ -30,7 +30,7 @@ void display_current_texture(gc_scene *scene, struct renderer *rend)
     ((gc_sprite *)rend->data)->texture = map->selected_texture;
 }
 
-void display_current_health(gc_scene *scene, struct renderer *rend, bool is_player)
+void display_health(gc_scene *scene, struct renderer *rend, bool is_player)
 {
     gc_list *entities = scene->get_entity_by_cmp(scene, "health_component");
     gc_entity *entity = NULL;
@@ -41,7 +41,7 @@ void display_current_health(gc_scene *scene, struct renderer *rend, bool is_play
 
     if (!entities)
         return;
-    for (; entities; entities = entities->next ) {
+    for (; entities; entities = entities->next) {
         entity = entities->data;
         if ((entity->id == 50 && is_player) || (entity->id != 50 && !is_player))
 			break;
@@ -85,9 +85,9 @@ float dtime)
 		if (disp->type == XP_DISPLAY)
 			display_current_xp(scene, rend);
 		if (disp->type == HEALTH_DISPLAY)
-			display_current_health(scene, rend, true);
+            display_health(scene, rend, true);
 		if (disp->type == HEALTH_DISPLAY_ENNEMY)
-			display_current_health(scene, rend, false);
+            display_health(scene, rend, false);
 	default:
 		break;
 	}

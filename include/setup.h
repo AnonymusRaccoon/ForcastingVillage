@@ -80,9 +80,19 @@ gc_vector2 pos, enum gc_mousekeys key);
 void fisherman_setup(gc_engine *engine);
 bool fisherman_next(gc_engine *engine, gc_entity *entity, \
 gc_vector2 pos, enum gc_mousekeys key);
+bool fisherman_chest(gc_engine *engine, gc_entity *entity, \
+gc_vector2 pos, enum gc_mousekeys key);
 
 bool lumberjack_yes(gc_engine *engine, gc_entity *entity, \
 gc_vector2 pos, enum gc_mousekeys key);
 
+bool smith_chest(gc_engine *engine, gc_entity *entity, \
+gc_vector2 pos, enum gc_mousekeys key);
+
+void mage_give(gc_engine *engine);
+
 void load_data(gc_scene *scene, const gc_data *datas);
 extern const struct gc_data game_data[];
+
+void check_for_boss(gc_engine *engine);
+void boss_start(gc_engine *engine);

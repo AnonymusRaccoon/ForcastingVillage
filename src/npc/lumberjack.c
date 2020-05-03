@@ -8,6 +8,7 @@
 #include <components/player_component.h>
 #include <components/dialog_holder.h>
 #include "engine.h"
+#include "setup.h"
 
 void lumberjack_delete(gc_engine *engine)
 {
@@ -27,8 +28,9 @@ gc_vector2 pos, enum gc_mousekeys key)
     if (!player)
         return (false);
     inv = GETCMP(player, player_component);
-    inv->inventory_upgrades[3] = true;
-    di = dialog_add_line(dialog, NULL, "You gained the shield upgrade!", NULL);
+    inv->inventory_upgrades[2] = true;
+    di = dialog_add_line(dialog, "", "You gained the uppercut upgrade!", NULL);
     di->callback = &lumberjack_delete;
+    check_for_boss(engine);
     return (true);
 }

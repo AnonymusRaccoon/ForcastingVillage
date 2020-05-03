@@ -5,12 +5,16 @@
 ** main_menu
 */
 
-#include <systems/sfml_renderer_system.h>
+#include "systems/sfml_renderer_system.h"
+#include "components/dialog_holder.h"
+#include "components/dialog_holder.h"
 #include "engine.h"
 #include "prefab.h"
 #include "scene.h"
 #include "setup.h"
 #include "my.h"
+
+extern int entity_next_id;
 
 bool start_button(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __)
@@ -21,20 +25,20 @@ enum gc_mousekeys __)
     engine->game_loop(engine, 0);
     scene = scene_new(engine);
     load_data(scene, game_data);
-    scene = scene_parse_xml(scene, engine, "prefabs/game.gcprefab");
-    if (!scene) {
+    if (!(scene = scene_parse_xml(scene, engine, "prefabs/game.gcprefab"))) {
         engine->should_close = true;
         my_printf("The game scene couldn't be loaded.\n");
         return (true);
     }
     engine->change_scene(engine, scene);
-    if (prefab_load(engine, "prefabs/player.gcprefab") < 0)
-        my_printf("Could not load the player.\n");
-    else if (prefab_load(engine, "prefabs/map_entities.gcprefab") < 0)
-        return (true);
-    if (engine->get_callback(engine, "map_manage_click"))
+    if (prefab_load(engine, "prefabs/player.gcprefab") < 0
+    || prefab_load(engine, "prefabs/map_entities.gcprefab") < 0)
+        my_printf("Could not load entites.\n");
+    else if (engine->get_callback(engine, "map_manage_click"))
         if (prefab_load(engine, "prefabs/editor_ui.gcprefab") < 0)
             my_printf("Couldn't load the map editor's ui.\n");
+    GETSYS(engine, dialog_manager)->dialog_id = -1;
+    entity_next_id = 0;
     return (true);
 }
 

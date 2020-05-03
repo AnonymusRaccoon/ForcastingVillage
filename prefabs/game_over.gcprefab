@@ -3,11 +3,11 @@
         <font src="assets/fonts/Pixellari.ttf" />
     </data>
     <gc_entities>
-            <camera x="0" y="0" />
-            <panel src="panel" x="50%" y="55%" width="50%" height="70%" tag="game_over" />
-             <text text="GAME OVER" x="50%" y="30%" resize="false" tag="game_over"/>
-            <button text="Continue" x="50%" y="47%" click="hide_game_over" color="black" width="30%" height="20%" resize="false" tag="game_over" />
-            <button text="Restart Game" x="50%" y="61%" click="start_button" color="black" width="30%" height="20%" resize="false" tag="game_over" />
-            <button text="Quit game" x="50%" y="75s%" click="quit" color="black" width="30%" height="20%" resize="false" tag="game_over" />
-        </gc_entities>
+        <camera x="0" y="0" />
+        <panel src="panel" x="50%" y="55%" width="50%" height="70%" tag="game_over" />
+         <text text="GAME OVER" x="50%" y="30%" resize="false" tag="game_over"/>
+        <button text="Continue" x="50%" y="47%" click="hide_game_over" color="black" width="30%" height="20%" resize="false" tag="game_over" />
+        <button text="Restart Game" x="50%" y="61%" click="start_button" color="black" width="30%" height="20%" resize="false" tag="game_over" />
+        <button text="Quit game" x="50%" y="75s%" click="quit" color="black" width="30%" height="20%" resize="false" tag="game_over" />
+    </gc_entities>
 </gc_scene>

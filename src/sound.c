@@ -8,49 +8,24 @@
 #include "entity.h"
 #include "engine.h"
 #include <malloc.h>
+#include <SFML/Audio.h>
 #include "utility.h"
 #include "components/renderer.h"
 #include "systems/sfml_renderer_system.h"
 #include "limits.h"
 
-static const float sound[] = {
-    0,
-    5,
-    10,
-    15,
-    20,
-    25,
-    30,
-    35,
-    40,
-    45,
-    50,
-    55,
-    60,
-    65,
-    70,
-    75,
-    80,
-    85,
-    90,
-    95,
-    100,
-    INT_MAX
-};
-
-void sound_set_text(gc_entity *entity, gc_engine *engine)
+void sound_set_text(gc_entity *entity, gc_engine *engine, float vol)
 {
     struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
     struct renderer *renderer;
-    char *volume;
+    char volume[10];
 
     if (!entity)
         return;
     renderer = GETCMP(entity, renderer);
     if (!rend || !renderer || renderer->type != GC_TXTREND)
         return;
-    volume = tostr(rend->sound);
-    free(((gc_text *)renderer->data)->text);
+    snprintf(volume, 10, "%.0f", vol);
     ((gc_text *)renderer->data)->text = volume;
 }
 
@@ -73,17 +48,10 @@ enum gc_mousekeys __)
 bool sound_up(gc_engine *engine, gc_entity *entity, gc_vector2 _, \
 enum gc_mousekeys __)
 {
-    struct sfml_renderer_system *rend = GETSYS(engine, sfml_renderer_system);
-    int i = 0;
+    float vol = sfListener_getGlobalVolume();
 
-    if (!rend || rend->is_fullscreen)
-        return (false);
-    while (sound[i] <= rend->sound)
-        i++;
-    if (sound[i] == INT_MAX)
-        return (true);
-    sfListener_setGlobalVolume(sound[i]);
-    rend->sound = sound[i];
-    sound_set_text(engine->scene->get_entity(engine->scene, 53), engine);
+    vol = MIN(vol + 5, 100);
+    sfListener_setGlobalVolume(vol);
+    sound_set_text(engine->scene->get_entity(engine->scene, 53), engine, vol);
     return (true);
 }

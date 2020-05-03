@@ -107,6 +107,7 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     int x = xml_getintprop(n, "x");
     int y = xml_getintprop(n, "y");
     char *texture = xml_gettmpstring(n, "tile_texture", NULL);
+    char *cbk = xml_gettempprop(n, "close_callback");
 
     cmp->single_usage = xml_getbool(n, "single_usage", false);
     cmp->text = malloc(sizeof(struct dialog_line *) * (count + 1));
@@ -116,6 +117,10 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     for (int i = 0; n; n = n->next, i++)
         cmp->text[i] = dialog_parse_text(scene, n);
     cmp->text[count] = NULL;
+    if (cbk)
+        cmp->close_callback = scene->get_data(scene, "close_callback", cbk);
+    else
+        cmp->close_callback = NULL;
     setup_tile_interactions(cmp, scene, (gc_vector2i){x, y}, texture);
 }
 

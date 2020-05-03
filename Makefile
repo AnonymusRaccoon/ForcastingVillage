@@ -40,11 +40,17 @@ SRC = 	src/main.c \
 	src/enemy_dataloader.c \
 	src/combat/attacks.c \
 	src/player_utilities.c \
-	src/systems/inventory.c \
-	src/systems/game_over.c \
+	src/inventory.c \
+	src/game_over.c \
 	src/npc/mia.c \
 	src/npc/fisherman.c \
 	src/npc/lumberjack.c \
+	src/npc/smith.c \
+	src/npc/mage.c \
+	src/combat/boss.c \
+	src/components/particule_component.c \
+	src/systems/particule_system.c \
+	src/systems/combat_utility.c \
 	src/sound.c
 
 OBJ = $(SRC:%.c=%.o)
