@@ -101,8 +101,7 @@ gc_scene *scene, gc_engine *engine)
 
     if (!player_entity)
         return;
-    struct health_component *h_cmp = GETCMP(player_entity, health_component);
-    if (h_cmp->dead) {
+    if (GETCMP(player_entity, health_component)->dead) {
         combat_end(engine, false);
         return;
     }

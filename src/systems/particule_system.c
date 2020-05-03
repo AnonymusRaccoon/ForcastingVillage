@@ -22,22 +22,27 @@ void *texture, gc_vector2 pos)
 	particule->lifetime = lifetime;
 	particule->sprite->texture = texture;
 	particule->sprite->pos = pos;
-	particule->sprite->rect = (gc_int_rect){10, 10,0,0};
-	particule->sprite->scale = (gc_vector2){0.5, 0.5};
+	particule->sprite->rect = (gc_int_rect){16, 16,0,0};
+	particule->sprite->scale = (gc_vector2){1, 1};
 }
 
 void particule_draw(gc_engine *engine, void *system, \
 gc_entity *entity, float dt)
 {
 	struct particule_component *pm = GETCMP(entity, particule_component);
+	struct transform_component *tc = GETCMP(entity, transform_component);
+	gc_vector2 player_pos;
 
-	if (!pm || !entity)
+	if (!pm || !entity || !tc)
 		return;
+	player_pos = tc->position;
 	for (int i = 0; i < pm->nb_max_particules; i++) {
-		if (!pm->particules[i].sprite)
+		if (!pm->particules[i].sprite || !pm->particules[i].sprite->texture)
 			continue;
+		tc->position = pm->particules[i].sprite->pos;
 		sfmlrenderer_draw_texture(engine, entity, pm->particules[i].sprite, dt);
 	}
+	tc->position = player_pos;
 }
 
 void particule_update_entity(gc_engine *engine, void *system, gc_entity *entity, \
@@ -49,12 +54,11 @@ float dtime)
 
 	if (!ml || !tc || !cmp)
 		return;
-	cmp->texture = ml->tile->texture;
-	for (int i = 0; i < cmp->nb_max_particules; i++)
-		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
 	for (int i = 0; i < cmp->nb_max_particules; i++) {
-		if (!cmp->particules[i].lifetime)
-			create_particule(&cmp->particules[i], cmp->lifetime, cmp->texture, tc->position);
+		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
+		if (!cmp->particules[i].lifetime) {
+			create_particule(&cmp->particules[i], cmp->lifetime, ml->tile->texture, tc->position);
+		}
 	}
 	particule_draw(engine, system, entity, dtime);
 }

@@ -8,6 +8,7 @@
 #include "xml.h"
 #include "components/particule_component.h"
 #include "components/map_linker.h"
+#include "systems/particule_system.h"
 #include "component.h"
 #include <malloc.h>
 #include "utility.h"
@@ -25,12 +26,13 @@ component;
 	cmp->texture = va_arg(args, void *);
 	cmp->particules = malloc(sizeof(struct particule_component) * \
 (cmp->nb_max_particules + 1));
-	sprites = malloc(sizeof(gc_sprite) * (cmp->nb_max_particules));
+	sprites = malloc(sizeof(gc_sprite) * (cmp->nb_max_particules + 1));
 	if (!cmp->particules || !sprites)
 		return;
 	for (int i = 0; i < cmp->nb_max_particules; i++) {
 		cmp->particules[i].sprite = &sprites[i];
-		cmp->particules[i].lifetime = 0;
+		create_particule(&cmp->particules[i], i * 20, NULL, \
+(gc_vector2){0, 0});
 	}
 }
 
@@ -48,16 +50,17 @@ component;
 	}
 	cmp->type = xml_getintprop(n, "type");
 	cmp->nb_max_particules = xml_getintprop(n, "nb_particules_max");
-	cmp->texture = ml->tile->texture;
+	cmp->texture = NULL;
 	cmp->lifetime = xml_getintprop(n, "lifetime");
 	cmp->particules = malloc(sizeof(struct particule_component) * \
 (cmp->nb_max_particules + 1));
-	sprites = malloc(sizeof(gc_sprite) * (cmp->nb_max_particules));
+	sprites = malloc(sizeof(gc_sprite) * (cmp->nb_max_particules + 1));
 	if (!cmp->particules || !sprites)
 		return;
 	for (int i = 0; i < cmp->nb_max_particules; i++) {
 		cmp->particules[i].sprite = &sprites[i];
-		cmp->particules[i].lifetime = 0;
+		create_particule(&cmp->particules[i], i * 20, NULL, \
+(gc_vector2){0, 0});
 	}
 }
 
