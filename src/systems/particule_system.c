@@ -23,7 +23,7 @@ void *texture, gc_vector2 pos)
 	particule->sprite->texture = texture;
 	particule->sprite->pos = pos;
 	particule->sprite->rect = (gc_int_rect){16, 16,0,0};
-	particule->sprite->scale = (gc_vector2){1, 1};
+	particule->sprite->scale = (gc_vector2){0.2, 0.2};
 }
 
 void particule_draw(gc_engine *engine, void *system, \
@@ -54,10 +54,11 @@ float dtime)
 
 	if (!ml || !tc || !cmp)
 		return;
+	//ml->tile->texture
 	for (int i = 0; i < cmp->nb_max_particules; i++) {
 		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
 		if (!cmp->particules[i].lifetime) {
-			create_particule(&cmp->particules[i], cmp->lifetime, ml->tile->texture, tc->position);
+			create_particule(&cmp->particules[i], cmp->lifetime, cmp->texture, tc->position);
 		}
 	}
 	particule_draw(engine, system, entity, dtime);

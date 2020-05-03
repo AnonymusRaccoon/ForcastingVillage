@@ -50,7 +50,7 @@ component;
 	}
 	cmp->type = xml_getintprop(n, "type");
 	cmp->nb_max_particules = xml_getintprop(n, "nb_particules_max");
-	cmp->texture = NULL;
+	cmp->texture = scene->get_data(scene, "sprite", xml_getproperty(n, "texture"));
 	cmp->lifetime = xml_getintprop(n, "lifetime");
 	cmp->particules = malloc(sizeof(struct particule_component) * \
 (cmp->nb_max_particules + 1));
