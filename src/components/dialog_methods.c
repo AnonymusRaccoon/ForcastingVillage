@@ -9,8 +9,8 @@
 #include "utility.h"
 #include <malloc.h>
 
-struct dialog_line *dialog_add_line(struct dialog_holder *this, char *name, char *text, \
-struct dialog_input *inputs)
+struct dialog_line *dialog_add_line(struct dialog_holder *this, char *name, \
+char *text, struct dialog_input *inputs)
 {
     struct dialog_line *line = malloc(sizeof(*line));
     int count = 0;

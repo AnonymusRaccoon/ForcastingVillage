@@ -20,6 +20,18 @@ static void ctr(void *component, va_list args)
     cmp->type = va_arg(args, display_type_enum);
 }
 
+static void inventory_fdctr(struct game_display *cmp, char *display_type)
+{
+    if (!my_strcmp(display_type, "inventory_1"))
+        cmp->type = INVENTORY_SLOT_1;
+    if (!my_strcmp(display_type, "inventory_2"))
+        cmp->type = INVENTORY_SLOT_2;
+    if (!my_strcmp(display_type, "inventory_3"))
+        cmp->type = INVENTORY_SLOT_3;
+    if (!my_strcmp(display_type, "inventory_4"))
+        cmp->type = INVENTORY_SLOT_4;
+}
+
 static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
 {
     struct game_display *cmp = (struct game_display *)component;
@@ -30,9 +42,9 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
         my_printf("Please select properties\n");
         return;
     }
-    if (!my_strcmp(display_type, "selected_tile")) {
+    if (!my_strcmp(display_type, "selected_tile"))
         cmp->type = SELECT_TILE_DISPLAY;
-    } if (!my_strcmp(display_type, "xp")) {
+    if (!my_strcmp(display_type, "xp")) {
         cmp->type = XP_DISPLAY;
         rend->destroy = &text_safe_destroy;
     } if (!my_strcmp(display_type, "health_ennemy")) {
@@ -41,15 +53,8 @@ static void fdctr(gc_entity *entity, gc_scene *scene, void *component, node *n)
     } if (!my_strcmp(display_type, "health")) {
 		cmp->type = HEALTH_DISPLAY;
 		rend->destroy = &text_safe_destroy;
-	} if (!my_strcmp(display_type, "inventory_1")) {
-    	cmp->type = INVENTORY_SLOT_1;
-    } if (!my_strcmp(display_type, "inventory_2")) {
-		cmp->type = INVENTORY_SLOT_2;
-	} if (!my_strcmp(display_type, "inventory_3")) {
-		cmp->type = INVENTORY_SLOT_3;
-	} if (!my_strcmp(display_type, "inventory_4")) {
-		cmp->type = INVENTORY_SLOT_4;
 	}
+    inventory_fdctr(cmp, display_type);
 }
 
 static void dtr(void *component)

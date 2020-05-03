@@ -24,7 +24,7 @@ bool toggle_pause(gc_engine *engine)
 
     scene->is_paused = !scene->is_paused;
     if (scene->is_paused) {
-        prefab_load(engine,"prefabs/pause.gcprefab");
+        prefab_load(engine, "prefabs/pause.gcprefab");
         return (true);
     }
     list = scene->get_entity_by_cmp(scene, "tag_component");
@@ -40,9 +40,9 @@ static void key_pressed(gc_engine *engine, va_list args)
     gc_keybindings key = va_arg(args, gc_keybindings);
 
     if (key == ESCAPE)
-		toggle_pause(engine);
+        toggle_pause(engine);
     if (key == KEY_E)
-    	toggle_inventory(engine);
+        toggle_inventory(engine);
 }
 
 static void combat_ended(gc_engine *engine, va_list args)

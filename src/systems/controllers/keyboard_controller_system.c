@@ -30,16 +30,11 @@ gc_entity *entity, float dtime)
     (void)dtime;
 }
 
-
-static void ctr(void *system, va_list args)
-{
-}
-
 const gc_system keyboard_controller_system = {
     name: "keyboard_controller_system",
     component_name: "keyboard_controller",
     size: sizeof(gc_system),
-    ctr: &ctr,
+    ctr: NULL,
     dtr: NULL,
     check_dependencies: &system_check_dependencies,
     update_entity: &keyboard_update_entity,
