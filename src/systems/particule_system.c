@@ -58,6 +58,42 @@ cmp->texture, sprite_pos);
     particule_draw(engine, entity, dtime);
 }
 
+void create_particule_spec(struct particule *particule, int lifetime, \
+void *texture, gc_vector2 pos)
+{
+	if (!particule || !particule->sprite)
+		return;
+	pos.x += (rand() % 2) ? rand() % 2500 : (rand() % 2500) * -1;
+	pos.y += (rand() % 2) ? rand() % 500 : (rand() % 500) * -1;
+	particule->lifetime = lifetime;
+	particule->sprite->texture = texture;
+	particule->sprite->pos = (gc_vector2){pos.x, pos.y};
+	particule->sprite->rect = (gc_int_rect){16, 16,0,0};
+	particule->sprite->scale = (gc_vector2){0.6, 0.6};
+}
+
+void update_entity_type_three(gc_engine *engine, gc_entity *entity, \
+struct particule_component *cmp, float dtime)
+{
+	struct transform_component *tc = GETCMP(entity, transform_component);
+	gc_vector2 sprite_pos;
+
+	if (!tc || !cmp || !cmp->particules || !cmp->particules[0].sprite) {
+		return;
+	}
+	sprite_pos = (gc_vector2){tc->position.x + 400, tc->position.y + 5000};
+	for (int i = 0; i < cmp->nb_max_particules; i++) {
+		cmp->particules[i].lifetime -= (cmp->particules[i].lifetime) ? 1 : 0;
+		cmp->particules[i].sprite->pos.y -= 16;
+		cmp->particules[i].sprite->pos.x -= 4;
+		if (!cmp->particules[i].lifetime ) {
+			create_particule_spec(&cmp->particules[i], cmp->lifetime, \
+cmp->texture, sprite_pos);
+		}
+	}
+	particule_draw(engine, entity, dtime);
+}
+
 static void update_entity(gc_engine *engine, va_list args)
 {
     gc_entity *entity = va_arg(args, gc_entity *);
@@ -71,6 +107,8 @@ static void update_entity(gc_engine *engine, va_list args)
         return (update_entity_type_one(engine, entity, cmp, dtime));
     case 2:
         return (update_entity_type_two(engine, entity, cmp, dtime));
+	case 3:
+		return (update_entity_type_three(engine, entity, cmp, dtime));
     default:
         break;
     }

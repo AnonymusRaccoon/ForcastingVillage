@@ -57,7 +57,7 @@ component;
         return;
     for (int i = 0; i < cmp->nb_max_particules; i++) {
         cmp->particules[i].sprite = &sprites[i];
-        create_particule(&cmp->particules[i], i * 20, NULL, \
+        create_particule(&cmp->particules[i], (i / 10) * 5, NULL, \
 (gc_vector2){0, 0});
     }
 }
@@ -84,7 +84,6 @@ const struct particule_component particule_component = {
         size: sizeof(struct particule_component),
         dependencies: (char *[]){
             "transform_component",
-            "map_linker",
             NULL
         },
         ctr: &ctr,
